@@ -24,18 +24,18 @@ TF-LocoformerはWSJ0-2mixなど英語音声データセットでSOTA級の性能
 - [ ] [[音声対話言語モデルのための大規模日本語対話音声コーパス.pdf]]
 - [x] [[【MOC】B4勉強会]]
 - [ ] https://qiita.com/yuAbe/items/e462560da51b886aa321
-- [ ] 研究室GPUマシンへのSSH接続・アカウント作成
-- [ ] CUDA/cuDNN/PyTorch環境の確認
+- [x] 研究室GPUマシンへのSSH接続・アカウント作成
+- [x] CUDA/cuDNN/PyTorch環境の確認
 - [x] `Conda`による仮想環境の準備
 - [x] GPU動作確認
 - [ ] 楠さんとの打ち合わせ
 ### Phase2 : TF-Locoformerのセットアップ
 - [ ] リポジトリのクローン
 - [ ] `1. ESPnet compatible code`の依存関係インストール
-- [ ] ESPnet本体のセットアップ(recipeディレクトリ構成の理解)
+- [ ] ESPnet本体のセットアップ
 - [ ] 公開済み学習済みモデルでの推論動作確認
 ### Phase3 : TF-Locoformerの習熟
-- [ ] ESPnetのrecipe構造(`egs2/`,`conf/`,`local/`,`run.sh`)の把握
+- [ ] [[ESPnet]]のrecipe構造(`egs2/`,`conf/`,`local/`,`run.sh`)の把握
 - [ ] 設定ファイル(`yaml`)の読み書き
 - [ ] WSJ0-2mix等の標準データセットでの再現実験
 - [ ] 学習・評価のログとメトリクスの確認方法
