@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/機械学習・深層学習/機械学習・深層学習 MOC.md",
+                "file": "20_Areas/ソフトウェア開発/Git・GitHub.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "機械学習・深層学習 MOC"
+              "title": "Git・GitHub"
             }
           }
         ]
@@ -225,11 +225,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a5e8de296f8d74d4",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "20_Areas/機械学習・深層学習/機械学習・深層学習 MOC.md",
-    "20_Areas/ソフトウェア開発/詳細設計・実装.md",
     "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
+    "20_Areas/機械学習・深層学習/機械学習・深層学習 MOC.md",
+    "gitignore.txt",
+    "新規 テキスト ドキュメント.txt",
+    "20_Areas/ソフトウェア開発/詳細設計・実装.md",
     "20_Areas/機械学習・深層学習/B4勉強会/【MOC】B4勉強会.md",
     "20_Areas/機械学習・深層学習/決定木.md",
     "20_Areas/【MOC】20_Areas.md",
@@ -259,8 +261,6 @@
     "20_Areas/機械学習・深層学習/機械学習勉強会/無題のフォルダ",
     "20_Areas/機械学習・深層学習",
     "20_Areas/機械学習勉強会/無題のフォルダ",
-    "10_Projects/プロジェクト研究A",
-    "20_Areas/機械学習・深層学習/B4勉強会",
-    "99_Templates"
+    "10_Projects/プロジェクト研究A"
   ]
 }
