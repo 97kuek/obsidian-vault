@@ -1,0 +1,66 @@
+{
+  "biggerIcons": "mobile",
+  "clickableIcons": "desktop",
+  "showAllFileIcons": false,
+  "showAllFolderIcons": false,
+  "minimalFolderIcons": true,
+  "showMarkdownTabIcons": true,
+  "showTitleIcons": true,
+  "showTagPillIcons": false,
+  "showMenuActions": true,
+  "showSuggestionIcons": false,
+  "showQuickSwitcherIcons": true,
+  "showMoveFileIcons": true,
+  "showItemName": "desktop",
+  "biggerSearchResults": "mobile",
+  "maxSearchResults": 50,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "uncolorQuick": false,
+  "maxBackups": 2,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": false,
+    "rulePage": "file"
+  },
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {
+    "00_Inbox": {
+      "color": "gray",
+      "icon": "lucide-inbox"
+    },
+    "10_Projects": {
+      "icon": "lucide-layout-dashboard",
+      "color": "blue"
+    },
+    "20_Areas": {
+      "icon": "lucide-layers",
+      "color": "green"
+    },
+    "30_Resources": {
+      "icon": "lucide-book-open",
+      "color": "purple"
+    },
+    "40_Archive": {
+      "icon": "lucide-archive",
+      "color": "gray"
+    },
+    "99_Templates": {
+      "icon": "lucide-file-code"
+    },
+    "Home.md": {
+      "icon": "lucide-home",
+      "color": "pink"
+    }
+  },
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
+  "ribbonIcons": {},
+  "fileRules": [],
+  "folderRules": []
+}
