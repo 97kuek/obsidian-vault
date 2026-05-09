@@ -1,7 +1,7 @@
 ---
 tags:
   - MOC
-aliases: 
+aliases:
 created: 2026-05-09
 updated: 2026-05-09
 status: active

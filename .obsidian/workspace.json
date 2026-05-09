@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/ESPnet.md",
+                "file": "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ESPnet"
+              "title": "【MOC】プロジェクト研究A"
             }
           }
         ]
@@ -233,8 +233,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "10_Projects/プロジェクト研究A/ESPnet.md",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "Home.md",
     "99_Templates/授業ノート用.md",
     "99_Templates/【MOC】.md",
