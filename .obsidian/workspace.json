@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "【MOC】プロジェクト研究A"
             }
           }
         ]
@@ -234,6 +234,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
     "30_Resources/音源分離/Transformer.pdf",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "10_Projects/プロジェクト研究A/基礎的な知識.md",
@@ -256,7 +257,6 @@
     "20_Areas/【MOC】20_Areas.md",
     "20_Areas/機械学習・深層学習/B4勉強会/B4勉強会 MOC.md",
     "99_Templates/MOCファイル用.md",
-    "Home.md",
     "20_Areas/ソフトウェア開発/ソフトウェア開発 MOC.md",
     "20_Areas/ソフトウェア開発/AI駆動開発.md",
     "99_Templates/授業ノート用.md",
