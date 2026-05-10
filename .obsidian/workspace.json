@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
+                "file": "20_Areas/機械学習・深層学習/ロジスティック回帰.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【MOC】プロジェクト研究A"
+              "title": "ロジスティック回帰"
             }
           }
         ]
@@ -233,14 +233,21 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/機械学習・深層学習/決定木.md",
+    "20_Areas/機械学習・深層学習/主成分分析.md",
+    "20_Areas/機械学習・深層学習/Kaggle",
     "10_Projects/プロジェクト研究A/ESPnet.md",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
-    "Home.md",
-    "99_Templates/授業ノート用.md",
-    "99_Templates/【MOC】.md",
-    "30_Resources/音源分離/Transformer.pdf",
-    "10_Projects/プロジェクト研究A/基礎的な知識.md",
     "99_Templates/プロジェクト用.md",
+    "99_Templates/授業ノート用.md",
+    "30_Resources/音源分離/Transformer.pdf",
+    "20_Areas/【MOC】20_Areas.md",
+    "20_Areas/機械学習・深層学習/ロジスティック回帰.md",
+    "20_Areas/機械学習・深層学習/リッジ回帰・Lasso回帰.md",
+    "20_Areas/機械学習・深層学習/B4勉強会/勉強会04.md",
+    "Home.md",
+    "99_Templates/【MOC】.md",
+    "10_Projects/プロジェクト研究A/基礎的な知識.md",
     "30_Resources/音源分離/Conv-TasNet.pdf",
     "30_Resources/音源分離/音声対話言語モデルのための大規模日本語対話音声コーパス.pdf",
     "30_Resources/音源分離/TF-Locoformer.pdf",
@@ -254,21 +261,13 @@
     "新規 テキスト ドキュメント.txt",
     "20_Areas/ソフトウェア開発/詳細設計・実装.md",
     "20_Areas/機械学習・深層学習/B4勉強会/【MOC】B4勉強会.md",
-    "20_Areas/機械学習・深層学習/決定木.md",
-    "20_Areas/【MOC】20_Areas.md",
     "20_Areas/機械学習・深層学習/B4勉強会/B4勉強会 MOC.md",
     "99_Templates/MOCファイル用.md",
     "20_Areas/ソフトウェア開発/ソフトウェア開発 MOC.md",
     "20_Areas/ソフトウェア開発/AI駆動開発.md",
     "20_Areas/ソフトウェア開発/システム分析.md",
-    "20_Areas/機械学習・深層学習/ロジスティック回帰.md",
-    "20_Areas/機械学習・深層学習/リッジ回帰・Lasso回帰.md",
-    "20_Areas/機械学習・深層学習/B4勉強会/勉強会04.md",
     "20_Areas/機械学習・深層学習/B4勉強会/勉強会02.md",
     "20_Areas/機械学習・深層学習/B4勉強会/勉強会03.md",
-    "無題のファイル.canvas",
-    "20_Areas/ソフトウェア開発/Gitコマンド.md",
-    "20_Areas/Linux",
-    "2026-05-08.md"
+    "無題のファイル.canvas"
   ]
 }
