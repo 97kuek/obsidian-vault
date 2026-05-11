@@ -20,8 +20,8 @@ TF-LocoformerはWSJ0-2mixなど英語音声データセットでSOTA級の性能
 - [x] [[TasNet.pdf]]
 - [x] [[Conv-TasNet.pdf]]
 - [x] [[Transformer.pdf]]
-- [ ] [[TF-Locoformer.pdf]]
-- [ ] [[音声対話言語モデルのための大規模日本語対話音声コーパス.pdf]]
+- [x] [[TF-Locoformer.pdf]]
+- [x] [[音声対話言語モデルのための大規模日本語対話音声コーパス.pdf]]
 - [x] [[【MOC】B4勉強会]]
 - [ ] https://qiita.com/yuAbe/items/e462560da51b886aa321
 - [x] 研究室GPUマシンへのSSH接続・アカウント作成
