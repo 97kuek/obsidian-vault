@@ -1,0 +1,84 @@
+/* ========================================
+   vault-custom.css
+   有効化: 設定 → 外観 → CSSスニペット → vault-custom をオン
+   ======================================== */
+
+/* --- MOCファイルをファイルエクスプローラーで強調 --- */
+.nav-file-title[data-path*="MOC"] {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* --- Dataview テーブルのストライプ表示 --- */
+.dataview.table-view-table tbody tr:nth-child(even) {
+  background-color: var(--background-secondary);
+}
+
+/* --- H1 にアクセントカラーの下線 --- */
+.markdown-rendered h1 {
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.25em;
+  margin-bottom: 0.75em;
+}
+
+/* --- H2 に薄い区切り線 --- */
+.markdown-rendered h2 {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.15em;
+  margin-top: 1.5em;
+}
+
+/* --- タグのカラーリング --- */
+a.tag[href="#paper"] {
+  background-color: #2d6a4f !important;
+  color: white !important;
+  border: none;
+}
+
+a.tag[href="#experiment"] {
+  background-color: #1d3557 !important;
+  color: white !important;
+  border: none;
+}
+
+a.tag[href="#MOC"] {
+  background-color: #7209b7 !important;
+  color: white !important;
+  border: none;
+}
+
+a.tag[href="#permanent"] {
+  background-color: #d62828 !important;
+  color: white !important;
+  border: none;
+}
+
+a.tag[href="#draft"] {
+  background-color: #e76f51 !important;
+  color: white !important;
+  border: none;
+}
+
+/* --- インラインコードの視認性向上 --- */
+.markdown-rendered :not(pre) > code {
+  color: var(--color-accent);
+  background-color: var(--background-secondary);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* --- 完了済みタスクを薄く表示 --- */
+.markdown-rendered .task-list-item.is-checked {
+  opacity: 0.45;
+}
+
+/* --- Reading Modeでフロントマターを薄く --- */
+.markdown-source-view.mod-cm6 .cm-hmd-frontmatter {
+  opacity: 0.4;
+}
+
+/* --- ファイルエクスプローラーのフォルダ名を強調 --- */
+.nav-folder-title {
+  font-weight: 600;
+}

@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Zotero連携ガイド"
             }
+          },
+          {
+            "id": "b7edbddd354ee056",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,43 +246,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "a5e8de296f8d74d4",
   "lastOpenFiles": [
+    "CLAUDE.md",
+    "99_Templates/【MOC】.md",
+    "99_Templates/論文ノート用.md",
+    "99_Templates/週次レビュー用.md",
+    "99_Templates/授業ノート用.md",
+    "99_Templates/実験ノート用.md",
+    "99_Templates/執筆ドラフト用.md",
+    "10_Projects/プロジェクト研究A/実験結果まとめ.md",
+    "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
+    "10_Projects/プロジェクト研究A/下書き",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
+    "20_Areas/永続ノート/【MOC】永続ノート.md",
+    "20_Areas/永続ノート",
+    "30_Resources/音源分離/TF-Locoformer_メモ.md",
+    "99_Templates/月次レビュー用.md",
+    "30_Resources/【MOC】30_Resources.md",
+    "99_Templates/永続ノート用.md",
     "30_Resources/音源分離/音声対話言語モデルのための大規模日本語対話音声コーパス.pdf",
     "30_Resources/音源分離/Transformer_メモ.md",
     "30_Resources/音源分離/J-CHAT_メモ.md",
+    "30_Resources/Zotero連携ガイド.md",
     "30_Resources/音源分離/TasNet_メモ.md",
     "30_Resources/音源分離/Conv-TasNet_メモ.md",
     "30_Resources/音源分離/Conv-TasNet.pdf",
     "20_Areas/【MOC】20_Areas.md",
     "40_Archives/はじめに.md",
     "99_Templates/プロジェクト用.md",
-    "99_Templates/実験ノート用.md",
-    "99_Templates/授業ノート用.md",
-    "99_Templates/週次レビュー用.md",
     "10_Projects/【MOC】10_Projects.md",
     "10_Projects/プロジェクト研究A/ESPnet.md",
     "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
-    "10_Projects/プロジェクト研究A/20260511_音源分離実験用スクリプトの作成.md",
-    "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
-    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
-    "30_Resources/Zotero連携ガイド.md",
-    "Home.md",
-    "99_Templates/論文ノート用.md",
-    "CLAUDE.md",
-    "README.md",
-    "VAULT_INDEX.md",
-    "10_Projects/プロジェクト研究A/実験結果まとめ.md",
-    "00_Inbox/はじめに.md",
-    "99_Templates/【MOC】.md",
     "40_Archives",
     "30_Resources/音源分離/Transformer.pdf",
     "30_Resources/音源分離/TF-Locoformer.pdf",
     "20_Areas/機械学習・深層学習/Kaggle",
     "30_Resources/音源分離/TasNet.pdf",
     "30_Resources/音源分離",
-    "30_Resources/新しいフォルダー",
-    "gitignore.txt",
     "無題のファイル.canvas"
   ]
 }
