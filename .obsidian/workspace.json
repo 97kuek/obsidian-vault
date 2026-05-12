@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/【MOC】10_Projects.md",
+                "file": "00_Inbox/20260512_ObsidianとClaude連携_blog_draft.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【MOC】10_Projects"
+              "title": "20260512_ObsidianとClaude連携_blog_draft"
             }
           }
         ],
@@ -48,6 +48,7 @@
       {
         "id": "1f10fdd3f6788cb7",
         "type": "tabs",
+        "dimension": 74.4517543859649,
         "children": [
           {
             "id": "8495e60b597e8d04",
@@ -94,6 +95,7 @@
       {
         "id": "b0d4bebbce491144",
         "type": "tabs",
+        "dimension": 25.548245614035086,
         "children": [
           {
             "id": "380ad66492c8ef82",
@@ -243,21 +245,25 @@
       "templater-obsidian:Templater": false,
       "iconic:ルールブックを開く": false,
       "homepage:Open homepage": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "periodic-notes:Open this week": false
     }
   },
   "active": "b7edbddd354ee056",
   "lastOpenFiles": [
+    "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
+    "00_Inbox/20260512_ObsidianとClaude連携_blog_draft.md",
+    "99_Templates/論文ノート用.md",
+    "10_Projects/【MOC】10_Projects.md",
     "99_Templates/【MOC】.md",
     "30_Resources/【MOC】30_Resources.md",
     "99_Templates/執筆ドラフト用.md",
     "CLAUDE.md",
-    "99_Templates/論文ノート用.md",
     "99_Templates/週次レビュー用.md",
     "99_Templates/授業ノート用.md",
     "99_Templates/実験ノート用.md",
     "10_Projects/プロジェクト研究A/実験結果まとめ.md",
-    "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
     "10_Projects/プロジェクト研究A/下書き",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "20_Areas/永続ノート/【MOC】永続ノート.md",
@@ -275,9 +281,7 @@
     "20_Areas/【MOC】20_Areas.md",
     "40_Archives/はじめに.md",
     "99_Templates/プロジェクト用.md",
-    "10_Projects/【MOC】10_Projects.md",
     "10_Projects/プロジェクト研究A/ESPnet.md",
-    "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
     "40_Archives",
     "30_Resources/音源分離/Transformer.pdf",
     "30_Resources/音源分離/TF-Locoformer.pdf",
