@@ -8,5 +8,7 @@
   "workspaces-plus",
   "obsidian-git",
   "obsidian-local-rest-api",
-  "mcp-tools"
+  "mcp-tools",
+  "periodic-notes",
+  "obsidian-excalidraw-plugin"
 ]
