@@ -12,7 +12,9 @@
       "mcp__obsidian-mcp-tools__fetch",
       "Bash(git status)",
       "Bash(git diff*)",
-      "Bash(git log*)"
+      "Bash(git log*)",
+      "Bash(git add -A)",
+      "Bash(git commit*)"
     ]
   }
 }

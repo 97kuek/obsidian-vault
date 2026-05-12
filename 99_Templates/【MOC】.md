@@ -1,9 +1,8 @@
 ---
 tags:
   - MOC
-aliases: 
+aliases:
 created: <% tp.file.creation_date("YYYY-MM-DD") %>
-updated: <% tp.file.last_modified_date("YYYY-MM-DD") %>
 status: active
 ---
 ## 概要・目的
@@ -35,4 +34,4 @@ mindmap
 ## メモ・気づき
 
 ---
-**Last reviewed:** <% tp.date.now("YYYY-MM-DD") %>
+**最終更新:** `= this.file.mtime`

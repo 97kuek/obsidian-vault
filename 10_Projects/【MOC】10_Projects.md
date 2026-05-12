@@ -2,8 +2,9 @@
 tags:
   - MOC
 aliases:
+  - Projects
+  - プロジェクト一覧
 created: 2026-05-12
-updated: 2026-05-12
 status: active
 ---
 ## 概要・目的
@@ -33,4 +34,4 @@ mindmap
 ## メモ・気づき
 
 ---
-**Last reviewed:** 2026-05-12
+**最終更新:** `= this.file.mtime`

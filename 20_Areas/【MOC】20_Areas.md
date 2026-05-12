@@ -1,9 +1,10 @@
 ---
 tags:
   - MOC
-aliases: 
+aliases:
+  - Areas
+  - エリア
 created: 2026-05-09
-updated: 2026-05-12
 status: active
 ---
 ## 概要・目的
@@ -43,4 +44,4 @@ mindmap
 ## メモ・気づき
 
 ---
-**Last reviewed:** 2026-05-12
+**最終更新:** `= this.file.mtime`

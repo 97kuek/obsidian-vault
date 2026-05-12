@@ -2,8 +2,10 @@
 tags:
   - MOC
 aliases:
+  - 研究A
+  - 音源分離研究
+  - プロジェクトA
 created: 2026-05-09
-updated: 2026-05-12
 status: active
 ---
 ## 研究概要
@@ -12,16 +14,18 @@ status: active
 
 ## 研究目的
 
-TF-LocoformerはWSJ0-2mixなど英語音声データセットでSOTA級の性能を示している音源分離モデルだが、日本語の自然会話音声に対する有効性は十分に検証されていない。本研究では以下を目的とする。
-
 - 研究室GPU環境を用いた深層学習音声分離パイプラインの構築・運用スキルの習得
 - TF-Locoformer (ESPnet互換版) の実装理解と、独自データへの適用方法の習得
 - 日本語自然会話コーパスJ-CHATにおける音声分離の実現可能性検証
 
 ## 実験ノート
 
-- [[20260511_音源分離実験用スクリプトの作成]]
-- [[20260512_TF-LocoformerでTTS音声を分離する]]
+```dataview
+LIST
+FROM "10_Projects/プロジェクト研究A"
+WHERE contains(tags, "experiment")
+SORT date DESC
+```
 
 ## 参考論文・リソース
 
@@ -31,6 +35,10 @@ TF-LocoformerはWSJ0-2mixなど英語音声データセットでSOTA級の性能
 - [[TasNet_メモ]]
 - [[Conv-TasNet_メモ]]
 - [[ESPnet]]
+
+## 実験結果
+
+- [[実験結果まとめ]]
 
 ## タスク一覧
 
@@ -63,14 +71,14 @@ TF-LocoformerはWSJ0-2mixなど英語音声データセットでSOTA級の性能
 ### Phase4 : J-CHATへの適用
 - [ ] J-CHATコーパスの取得・ライセンス確認
 - [ ] データ仕様の把握(サンプリングレート、話者数、混合の有無など)
-- [ ] J-CHAT用のデータ前処理スクリプト作成(ESPnetのdata.sh/scp形式に合わせる)
-- [ ] ESPnetのrecipeをJ-CHAT用に改変(`egs2/jchat/enh1/`のような構成を新規作成)
+- [ ] J-CHAT用のデータ前処理スクリプト作成
+- [ ] ESPnetのrecipeをJ-CHAT用に改変
 - [ ] ファインチューニングorスクラッチ学習の実施
 - [ ] 評価(客観指標+可能なら聴取確認)
 
 ### Phase5 : 結果分析・まとめ
 - [ ] 英語データセット(WSJ0-2mix)との性能比較
-- [ ] 失敗ケースの分析(どんな会話で分離が難しいか)
+- [ ] 失敗ケースの分析
 - [ ] レポート・スライド作成
 
 ## 関連MOC・上位MOC
@@ -81,4 +89,4 @@ TF-LocoformerはWSJ0-2mixなど英語音声データセットでSOTA級の性能
 ## メモ・気づき
 
 ---
-**Last reviewed:** 2026-05-12
+**最終更新:** `= this.file.mtime`

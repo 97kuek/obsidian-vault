@@ -1,9 +1,10 @@
 ---
 tags:
   - MOC
-aliases: 
+aliases:
+  - 勉強会
+  - B4
 created: 2026-05-09
-updated: 2026-05-12
 status: active
 ---
 ## 概要・目的
@@ -33,10 +34,10 @@ mindmap
 
 ## 主要ノート
 
-- [[20260423_勉強会02]] ... モデル学習の勘所、環境構築
-- [[20260430_勉強会03]] ... Transformer、GPT
-- [[20260507_勉強会04]] ... BERT、CLIP、CLAP
-- [[20260514_勉強会05]] ... AI駆動開発
+- [[20260423_勉強会02]] — GPU/tmux/conda・モデル学習の勘所
+- [[20260430_勉強会03]] — Transformer・GPT（GPT-1〜InstructGPT）
+- [[20260507_勉強会04]] — BERT・CLIP・CLAP
+- [[20260514_勉強会05]] — AI駆動開発
 
 ## 関連MOC・上位MOC
 
@@ -50,4 +51,4 @@ mindmap
 ## メモ・気づき
 
 ---
-**Last reviewed:** 2026-05-12
+**最終更新:** `= this.file.mtime`
