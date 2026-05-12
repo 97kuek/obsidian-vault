@@ -246,8 +246,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1ebee55f2a38cdd2",
+  "active": "380ad66492c8ef82",
   "lastOpenFiles": [
+    "README.md",
     "99_Templates/プロジェクト用.md",
     "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
     "10_Projects/プロジェクト研究A/20260511_音源分離実験用スクリプトの作成.md",
@@ -274,7 +275,6 @@
     "30_Resources/音源分離/J-CHAT_メモ.md",
     "30_Resources/音源分離/Transformer_メモ.md",
     "30_Resources/音源分離/TF-Locoformer_メモ.md",
-    "30_Resources/音源分離/Conv-TasNet_メモ.md",
     "40_Archives",
     "30_Resources/音源分離/Transformer.pdf",
     "30_Resources/音源分離/TF-Locoformer.pdf",
