@@ -6,6 +6,7 @@ tags:
 title: "Conv-TasNet: Surpassing Ideal Time–Frequency Magnitude Masking for Speech Separation"
 authors: "Luo, Yi and Mesgarani, Nima"
 year: 2019
+venue: "IEEE/ACM TASLP"
 status: read
 ---
 # Conv-TasNet 読書メモ
@@ -34,6 +35,10 @@ WSJ0-2mixでSOTA（2019年当時）。理想的なIBMを超えるSDRを達成。
 
 - [[TasNet_メモ]] の後継
 - [[TF-Locoformer_メモ]] はTransformerでさらに発展
+
+## 疑問・未解決
+
+- [ ] 
 
 ## 関連ノート
 

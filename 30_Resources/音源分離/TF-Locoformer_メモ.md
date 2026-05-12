@@ -5,8 +5,9 @@ tags:
   - 音源分離
   - transformer
 title: "TF-Locoformer"
-authors: ""
+authors: "[要確認]"
 year: 2023
+venue: "[要確認]"
 status: read
 ---
 # TF-Locoformer 読書メモ
@@ -37,6 +38,10 @@ Conv-TasNet等のCNNベース手法は局所的な依存関係を捉えるが、
 - ESPnet互換実装あり → [[ESPnet]]
 - 本研究の主要モデル → [[【MOC】プロジェクト研究A]]
 - 日本語音声では英語モデルより性能低下が予想される
+
+## 疑問・未解決
+
+- [ ] 
 
 ## 関連ノート
 

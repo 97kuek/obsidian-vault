@@ -6,6 +6,7 @@ tags:
 title: "Attention Is All You Need"
 authors: "Vaswani et al."
 year: 2017
+venue: "NeurIPS 2017"
 status: read
 ---
 # Transformer 読書メモ
@@ -31,6 +32,10 @@ RNN・CNNを使わずSelf-Attentionのみで系列変換を実現。現代のLLM
 
 - 勉強会での詳しい解説: [[20260430_勉強会03]]
 - 音源分離への応用: [[TF-Locoformer_メモ]]
+
+## 疑問・未解決
+
+- [ ] 
 
 ## 関連ノート
 
