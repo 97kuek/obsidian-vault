@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/音源分離実験用スクリプト.md",
-                "mode": "preview",
+                "file": "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "音源分離実験用スクリプト"
+              "title": "20260512_TF-LocoformerでTTS音声を分離する"
             }
           }
         ]
@@ -234,9 +234,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "99_Templates/実験ノート.md",
-    "10_Projects/プロジェクト研究A/音源分離実験用スクリプト.md",
     "10_Projects/プロジェクト研究A/20260511.md",
+    "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
+    "10_Projects/プロジェクト研究A/ESPnet.md",
+    "Home.md",
+    "10_Projects/プロジェクト研究A/音源分離実験用スクリプト.md",
+    "99_Templates/実験ノート.md",
     "99_Templates/プロジェクト用.md",
     "99_Templates/プロジェクト用 1.md",
     "10_Projects/プロジェクト研究A/Untitled 1.md",
@@ -245,11 +248,9 @@
     "30_Resources/音源分離/Transformer.pdf",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "10_Projects/プロジェクト研究A/202601.md",
-    "Home.md",
     "20_Areas/ソフトウェア開発/AI駆動開発.md",
     "20_Areas/ソフトウェア開発/Git・GitHub.md",
     "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
-    "10_Projects/プロジェクト研究A/ESPnet.md",
     "20_Areas/機械学習・深層学習/ロジスティック回帰.md",
     "20_Areas/機械学習・深層学習/決定木.md",
     "20_Areas/機械学習・深層学習/主成分分析.md",
@@ -269,7 +270,6 @@
     "gitignore.txt",
     "新規 テキスト ドキュメント.txt",
     "20_Areas/ソフトウェア開発/詳細設計・実装.md",
-    "20_Areas/機械学習・深層学習/B4勉強会/【MOC】B4勉強会.md",
     "無題のファイル.canvas"
   ]
 }
