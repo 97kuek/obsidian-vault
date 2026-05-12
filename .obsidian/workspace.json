@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "執筆ロードマップ"
+              "title": "Home"
             }
           }
         ]
@@ -235,7 +235,7 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "a5e8de296f8d74d4",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
     "Home.md",
