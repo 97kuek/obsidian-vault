@@ -3,7 +3,7 @@ tags:
   - MOC
 aliases:
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-12
 status: active
 ---
 ## 研究概要
@@ -23,17 +23,16 @@ TF-LocoformerはWSJ0-2mixなど英語音声データセットでSOTA級の性能
 - [x] [[TF-Locoformer.pdf]]
 - [x] [[音声対話言語モデルのための大規模日本語対話音声コーパス.pdf]]
 - [x] [[【MOC】B4勉強会]]
-- [ ] https://qiita.com/yuAbe/items/e462560da51b886aa321
 - [x] 研究室GPUマシンへのSSH接続・アカウント作成
 - [x] CUDA/cuDNN/PyTorch環境の確認
 - [x] `Conda`による仮想環境の準備
 - [x] GPU動作確認
-- [ ] 楠さんとの打ち合わせ
+- [x] 楠さんとの打ち合わせ
 ### Phase2 : TF-Locoformerのセットアップ
-- [ ] リポジトリのクローン
-- [ ] `1. ESPnet compatible code`の依存関係インストール
-- [ ] ESPnet本体のセットアップ
-- [ ] 公開済み学習済みモデルでの推論動作確認
+- [x] リポジトリのクローン
+- [x] `1. ESPnet compatible code`の依存関係インストール
+- [x] ESPnet本体のセットアップ
+- [x] 公開済み学習済みモデルでの推論動作確認
 ### Phase3 : TF-Locoformerの習熟
 - [ ] [[ESPnet]]のrecipe構造(`egs2/`,`conf/`,`local/`,`run.sh`)の把握
 - [ ] 設定ファイル(`yaml`)の読み書き
