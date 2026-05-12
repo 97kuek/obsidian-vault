@@ -1,4 +1,3 @@
-
 ## Inbox
 ```dataview
 LIST
@@ -7,10 +6,10 @@ SORT file.ctime DESC
 LIMIT 5
 ```
 
-## 最近の授業ノート
+## 最近の更新ノート
 ```dataview
 TABLE date
-FROM "20_Areas/機械学習・深層学習"
+FROM "20_Areas"
 SORT file.mtime DESC
 LIMIT 5
 ```

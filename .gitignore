@@ -1,4 +1,25 @@
+# Obsidian ワークスペース（頻繁に変わるため除外）
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/cache
+
+# APIキー・センシティブなプラグインデータ
+.obsidian/plugins/obsidian-local-rest-api/
+.obsidian/plugins/mcp-tools/
+
+# Obsidianゴミ箱
 .trash/
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# 一時ファイル
+*.tmp
+*.bak

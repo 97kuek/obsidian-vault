@@ -3,23 +3,26 @@ tags:
   - MOC
 aliases:
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-12
 status: active
 ---
 ## 概要・目的
 
-ソフトウェア開発・設計で役に立つ知識や技術などをまとめたMOCファイル
+ソフトウェア開発・設計で役に立つ知識や技術などをまとめたMOC。
+
 ## 構造マップ
 
-​```mermaid
+```mermaid
 mindmap
-  root(("{{title}}"))
-    サブトピック1
-      項目A
-      項目B
-    サブトピック2
-    サブトピック3
-​```
+  root(("ソフトウェア開発"))
+    バージョン管理
+      Git・GitHub
+    設計
+      システム分析
+      詳細設計・実装
+    開発手法
+      AI駆動開発
+```
 
 ## 主要ノート
 
@@ -35,19 +38,19 @@ mindmap
 
 ## 未整理・Inbox
 
-- [ ] [[ ]]
+- [ ] 
 
 ## 動的クエリ（Dataview）
 
-​```dataview
+```dataview
 LIST
-FROM [[]]
+FROM "20_Areas/ソフトウェア開発"
 WHERE !contains(file.name, "MOC")
 SORT file.mtime DESC
 LIMIT 20
-​```
+```
 
 ## メモ・気づき
 
 ---
-**Last reviewed:** {{date:YYYY-MM-DD}}
+**Last reviewed:** 2026-05-12

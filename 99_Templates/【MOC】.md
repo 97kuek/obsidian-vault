@@ -11,15 +11,13 @@ status: active
 
 ## 構造マップ
 
-​```mermaid
+```mermaid
 mindmap
-  root(("{{title}}"))
+  root(("<% tp.file.title %>"))
     サブトピック1
       項目A
-      項目B
     サブトピック2
-    サブトピック3
-​```
+```
 
 ## 主要ノート
 
@@ -32,9 +30,9 @@ mindmap
 
 ## 未整理・Inbox
 
-- [ ] [[ ]]​```
+- [ ] 
 
 ## メモ・気づき
 
 ---
-**Last reviewed:** {{date:YYYY-MM-DD}}
+**Last reviewed:** <% tp.date.now("YYYY-MM-DD") %>

@@ -3,38 +3,44 @@ tags:
   - MOC
 aliases: 
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-12
 status: active
 ---
 ## 概要・目的
 
+継続的に管理・学習しているトピックエリアのハブMOC。
 
 ## 構造マップ
 
-​```mermaid
+```mermaid
 mindmap
-  root(("{{title}}"))
-    サブトピック1
-      項目A
-      項目B
-    サブトピック2
-    サブトピック3
-​```
+  root(("20_Areas"))
+    ソフトウェア開発
+      Git・GitHub
+      システム分析
+      詳細設計・実装
+      AI駆動開発
+    機械学習・深層学習
+      教師あり学習
+      深層学習
+      B4勉強会
+```
 
-## 主要ノート
+## 主要MOC
 
-- 
+- [[【MOC】ソフトウェア開発]]
+- [[【MOC】機械学習・深層学習]]
 
 ## 関連MOC・上位MOC
 
-- 上位: 
-- 関連: 
+- 上位: [[Home]]
+- 関連: [[【MOC】プロジェクト研究A]]
 
 ## 未整理・Inbox
 
-- [ ] [[ ]]​```
+- [ ] 
 
 ## メモ・気づき
 
 ---
-**Last reviewed:** {{date:YYYY-MM-DD}}
+**Last reviewed:** 2026-05-12

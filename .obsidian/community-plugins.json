@@ -6,5 +6,7 @@
   "homepage",
   "calendar",
   "workspaces-plus",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-local-rest-api",
+  "mcp-tools"
 ]

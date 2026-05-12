@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__obsidian-mcp-tools__get_server_info",
+      "mcp__obsidian-mcp-tools__get_vault_file",
+      "mcp__obsidian-mcp-tools__get_active_file",
+      "mcp__obsidian-mcp-tools__list_vault_files",
+      "mcp__obsidian-mcp-tools__search_vault",
+      "mcp__obsidian-mcp-tools__search_vault_simple",
+      "mcp__obsidian-mcp-tools__search_vault_smart",
+      "mcp__obsidian-mcp-tools__show_file_in_obsidian",
+      "mcp__obsidian-mcp-tools__fetch",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ]
+  }
+}
