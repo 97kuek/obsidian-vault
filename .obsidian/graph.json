@@ -8,28 +8,35 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:20_Areas/機械学習・深層学習  ",
+      "query": "path:10_Projects  ",
       "color": {
         "a": 1,
-        "rgb": 2933351
+        "rgb": 14048348
       }
     },
     {
-      "query": "path:20_Areas/ソフトウェア開発  ",
+      "query": "path:00_Inbox  ",
       "color": {
         "a": 1,
-        "rgb": 4358655
+        "rgb": 14069084
       }
     },
     {
-      "query": "path:30_Resources  ",
+      "query": "tag:#MOC  ",
       "color": {
         "a": 1,
-        "rgb": 8421504
+        "rgb": 5342422
+      }
+    },
+    {
+      "query": "path:40_Archives  ",
+      "color": {
+        "a": 1,
+        "rgb": 6513507
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -40,5 +47,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.33692806210688786,
-  "close": false
+  "close": true
 }
