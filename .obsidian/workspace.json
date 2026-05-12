@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/20260511_音源分離実験用スクリプトの作成.md",
+                "file": "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260511_音源分離実験用スクリプトの作成"
+              "title": "【MOC】プロジェクト研究A"
             }
           }
         ]
@@ -233,8 +233,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
     "10_Projects/プロジェクト研究A/20260511_音源分離実験用スクリプトの作成.md",
+    "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
     "10_Projects/プロジェクト研究A/ESPnet.md",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "30_Resources/音源分離/音声対話言語モデルのための大規模日本語対話音声コーパス.pdf",
