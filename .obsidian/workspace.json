@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
+                "file": "20_Areas/授業/ディジタル信号処理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "使用モデルと学習データセットの特徴"
+              "title": "ディジタル信号処理"
             }
           }
         ]
@@ -216,7 +216,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,6 +238,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "10_Projects/プロジェクト研究A/ESPnet.md",
+    "20_Areas/授業/ディジタル信号処理.md",
+    "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "10_Projects/プロジェクト研究A/実験結果まとめ.md",
     "00_Inbox/20260512_ObsidianとClaude連携_blog_draft.md",
     "Home.md",
@@ -264,9 +268,6 @@
     "30_Resources/音源分離/TasNet_メモ.md",
     "30_Resources/音源分離/Conv-TasNet_メモ.md",
     "30_Resources/音源分離/Conv-TasNet.pdf",
-    "20_Areas/【MOC】20_Areas.md",
-    "40_Archives/はじめに.md",
-    "99_Templates/プロジェクト用.md",
     "40_Archives",
     "30_Resources/音源分離/Transformer.pdf",
     "30_Resources/音源分離/TF-Locoformer.pdf",
