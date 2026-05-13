@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
+                "file": "20_Areas/永続ノート/【MOC】永続ノート.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【MOC】ソフトウェア開発"
+              "title": "【MOC】永続ノート"
             }
           }
         ]
@@ -237,9 +237,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
     "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md",
     "20_Areas/授業/【MOC】授業.md",
-    "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
     "20_Areas/機械学習・深層学習/B4勉強会/【MOC】B4勉強会.md",
     "20_Areas/機械学習・深層学習/B4勉強会/20260507_勉強会04.md",
     "20_Areas/授業/ディジタル信号処理.md",
