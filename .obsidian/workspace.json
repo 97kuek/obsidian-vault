@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/永続ノート/【MOC】永続ノート.md",
+                "file": "00_Inbox/はじめに.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【MOC】永続ノート"
+              "title": "はじめに"
             }
           }
         ]
@@ -237,6 +237,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
+    "20_Areas/永続ノート/【MOC】永続ノート.md",
     "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
     "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md",
     "20_Areas/授業/【MOC】授業.md",
@@ -247,7 +249,6 @@
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "10_Projects/プロジェクト研究A/実験結果まとめ.md",
     "00_Inbox/20260512_ObsidianとClaude連携_blog_draft.md",
-    "Home.md",
     "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
     "99_Templates/論文ノート用.md",
     "10_Projects/【MOC】10_Projects.md",
@@ -260,7 +261,6 @@
     "99_Templates/実験ノート用.md",
     "10_Projects/プロジェクト研究A/下書き",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
-    "20_Areas/永続ノート/【MOC】永続ノート.md",
     "20_Areas/永続ノート",
     "30_Resources/音源分離/TF-Locoformer_メモ.md",
     "99_Templates/月次レビュー用.md",
