@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/ディジタル信号処理.md",
+                "file": "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ディジタル信号処理"
+              "title": "【MOC】ソフトウェア開発"
             }
           }
         ]
@@ -216,8 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 325.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,8 +237,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "10_Projects/プロジェクト研究A/ESPnet.md",
+    "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md",
+    "20_Areas/授業/【MOC】授業.md",
+    "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
+    "20_Areas/機械学習・深層学習/B4勉強会/【MOC】B4勉強会.md",
+    "20_Areas/機械学習・深層学習/B4勉強会/20260507_勉強会04.md",
     "20_Areas/授業/ディジタル信号処理.md",
+    "10_Projects/プロジェクト研究A/ESPnet.md",
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "10_Projects/プロジェクト研究A/実験結果まとめ.md",
     "00_Inbox/20260512_ObsidianとClaude連携_blog_draft.md",
@@ -262,11 +266,6 @@
     "99_Templates/月次レビュー用.md",
     "99_Templates/永続ノート用.md",
     "30_Resources/音源分離/音声対話言語モデルのための大規模日本語対話音声コーパス.pdf",
-    "30_Resources/音源分離/Transformer_メモ.md",
-    "30_Resources/音源分離/J-CHAT_メモ.md",
-    "30_Resources/Zotero連携ガイド.md",
-    "30_Resources/音源分離/TasNet_メモ.md",
-    "30_Resources/音源分離/Conv-TasNet_メモ.md",
     "30_Resources/音源分離/Conv-TasNet.pdf",
     "40_Archives",
     "30_Resources/音源分離/Transformer.pdf",

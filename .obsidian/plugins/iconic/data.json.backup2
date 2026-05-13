@@ -45,9 +45,8 @@
       "icon": "lucide-book-open",
       "color": "purple"
     },
-    "40_Archive": {
-      "icon": "lucide-archive",
-      "color": "gray"
+    "40_Archives": {
+      "icon": "lucide-archive"
     },
     "99_Templates": {
       "icon": "lucide-file-code"
