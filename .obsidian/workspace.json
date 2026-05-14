@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/ESPnet.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ESPnet"
+              "title": "Home"
             }
           }
         ]
@@ -237,10 +237,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "10_Projects/プロジェクト研究A/ESPnet.md",
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
     "10_Projects/プロジェクト研究A/20260511_音源分離実験用スクリプトの作成.md",
-    "10_Projects/プロジェクト研究A/ESPnet.md",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "00_Inbox/はじめに.md",
     "Home.md",
