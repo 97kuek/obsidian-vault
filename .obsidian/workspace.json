@@ -11,12 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "30_Resources/音源分離/Transformer.pdf"
+                "file": "20_Areas/授業/ディジタル信号処理.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Transformer"
+              "icon": "lucide-file",
+              "title": "ディジタル信号処理"
             }
           }
         ]
@@ -235,6 +237,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "30_Resources/音源分離/Transformer.pdf",
     "Home.md",
     "20_Areas/機械学習・深層学習/B4勉強会/20260514_勉強会05.md",
     "20_Areas/機械学習・深層学習/B4勉強会/【MOC】B4勉強会.md",
@@ -260,13 +263,11 @@
     "30_Resources/【MOC】30_Resources.md",
     "99_Templates/執筆ドラフト用.md",
     "CLAUDE.md",
-    "99_Templates/週次レビュー用.md",
     "10_Projects/プロジェクト研究A/下書き",
     "20_Areas/永続ノート",
     "30_Resources/音源分離/音声対話言語モデルのための大規模日本語対話音声コーパス.pdf",
     "30_Resources/音源分離/Conv-TasNet.pdf",
     "40_Archives",
-    "30_Resources/音源分離/Transformer.pdf",
     "30_Resources/音源分離/TF-Locoformer.pdf",
     "20_Areas/機械学習・深層学習/Kaggle",
     "30_Resources/音源分離/TasNet.pdf",
