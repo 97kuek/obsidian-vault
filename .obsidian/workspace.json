@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/オペレーティングシステム.md",
+                "file": "00_Inbox/KKT条件 完全まとめ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "オペレーティングシステム"
+              "title": "KKT条件 完全まとめ"
             }
           }
         ]
@@ -238,9 +238,9 @@
   },
   "active": "8495e60b597e8d04",
   "lastOpenFiles": [
-    "00_Inbox/はじめに.md",
-    "20_Areas/授業/オペレーティングシステム.md",
     "Home.md",
+    "20_Areas/授業/オペレーティングシステム.md",
+    "00_Inbox/はじめに.md",
     "00_Inbox/KKT条件 完全まとめ.md",
     "2026-05-12.md",
     "20_Areas/永続ノート/【MOC】永続ノート.md",
