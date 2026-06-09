@@ -238,9 +238,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-06-09 16.43.27.excalidraw.md",
+    "30_Resources/音源分離/RemixIT.md",
+    "Excalidraw",
     "30_Resources/音源分離/J-CHAT_メモ.md",
     "30_Resources/音源分離/音声対話言語モデルのための大規模日本語対話音声コーパス.pdf",
-    "30_Resources/音源分離/RemixIT.md",
     "30_Resources/音源分離/TasNet_メモ.md",
     "30_Resources/音源分離/TasNet.pdf",
     "30_Resources/音源分離/Conv-TasNet_メモ.md",
@@ -272,7 +274,6 @@
     "40_Archives",
     "30_Resources/音源分離/TF-Locoformer.pdf",
     "20_Areas/機械学習・深層学習/Kaggle",
-    "30_Resources/音源分離",
     "無題のファイル.canvas"
   ]
 }
