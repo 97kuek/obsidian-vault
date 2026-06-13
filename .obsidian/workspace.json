@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/センサと制御.md",
+                "file": "20_Areas/授業/人工知能.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "センサと制御"
+              "title": "人工知能"
             }
           }
         ]
@@ -237,7 +237,28 @@
   },
   "active": "ca6ec1dde88a33af",
   "lastOpenFiles": [
+    "README.md.tmp.37964.f7c9d293fd4c",
+    "README.md.tmp.37964.941407412ef2",
+    "README.md.tmp.37964.671acfda80a7",
+    "README.md.tmp.37964.88391c5b6e7e",
+    "CLAUDE.md.tmp.37964.29b937057f0c",
     "20_Areas/授業/人工知能.md",
+    "CLAUDE.md.tmp.37964.25a721cde1d3",
+    "VAULT_INDEX.md.tmp.37964.f3a6d8d63c19",
+    "VAULT_INDEX.md.tmp.37964.5c8c4c57a943",
+    "30_Resources/音源分離/RemixIT_メモ.md",
+    "20_Areas/永続ノート/VC次元と次元の呪い.md",
+    "20_Areas/永続ノート/PAC学習.md",
+    "20_Areas/永続ノート/アンサンブル学習とブースティング.md",
+    "20_Areas/永続ノート/カーネルトリック.md",
+    "20_Areas/永続ノート/マージン最大化とSVM.md",
+    "20_Areas/永続ノート/階層的クラスタリング.md",
+    "20_Areas/永続ノート/K-means法.md",
+    "20_Areas/永続ノート/Q学習.md",
+    "20_Areas/永続ノート/TD学習.md",
+    "20_Areas/永続ノート/探索と活用のジレンマ.md",
+    "20_Areas/永続ノート/強化学習における価値と方策.md",
+    "20_Areas/永続ノート/マルコフ決定過程.md",
     "20_Areas/授業/センサと制御.md",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "30_Resources/音源分離/J-CHAT_メモ.md",
@@ -250,29 +271,8 @@
     "20_Areas/機械学習・深層学習/B4勉強会/20260604_勉強会07.md",
     "20_Areas/永続ノート/20260613_カーネルトリック.md",
     "20_Areas/ソフトウェア開発/AI駆動開発.md",
-    "20_Areas/永続ノート/20260613_強化学習における価値と方策.md",
-    "20_Areas/永続ノート/20260613_階層的クラスタリング.md",
-    "20_Areas/永続ノート/20260613_マージン最大化とSVM.md",
-    "20_Areas/永続ノート/20260613_アンサンブル学習とブースティング.md",
-    "20_Areas/永続ノート/20260613_VC次元と次元の呪い.md",
-    "20_Areas/永続ノート/20260613_TD学習.md",
-    "20_Areas/永続ノート/20260613_Q学習.md",
-    "20_Areas/永続ノート/20260613_K-means法.md",
-    "20_Areas/永続ノート/20260613_PAC学習.md",
-    "20_Areas/機械学習・深層学習/B4勉強会/20260514_勉強会05.md",
-    "20_Areas/機械学習・深層学習/B4勉強会/20260430_勉強会03.md",
-    "20_Areas/機械学習・深層学習/B4勉強会/20260423_勉強会02.md",
-    "20_Areas/永続ノート/【MOC】永続ノート.md",
     "30_Resources/音源分離/Conv-TasNet.pdf",
-    "30_Resources/音源分離/RemixIT.md",
     "VAULT_INDEX.md.tmp.37964.6a3640b8f846",
-    "20_Areas/授業/人工知能.md.tmp.37964.76e75d27c993",
-    "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.37964.b140b4349f3e",
-    "20_Areas/永続ノート/20260613_VC次元と次元の呪い.md.tmp.37964.a1887bad0e24",
-    "20_Areas/永続ノート/20260613_PAC学習.md.tmp.37964.579f4b33c4a3",
-    "VAULT_INDEX.md.tmp.37964.1ed3a52df637",
-    "VAULT_INDEX.md.tmp.37964.8b12276756ee",
-    "VAULT_INDEX.md.tmp.37964.258b96e71ef2",
     "無題のファイル.canvas"
   ]
 }
