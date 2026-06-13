@@ -34,7 +34,10 @@ SORT date DESC
 - [[Transformer_メモ]]
 - [[TasNet_メモ]]
 - [[Conv-TasNet_メモ]]
+- [[RemixIT_メモ]]
 - [[ESPnet]]
+- [[使用モデルと学習データセットの特徴]]
+- [[執筆ロードマップ]]
 
 ## 実験結果
 

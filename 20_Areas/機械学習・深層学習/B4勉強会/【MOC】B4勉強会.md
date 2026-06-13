@@ -38,6 +38,7 @@ mindmap
 - [[20260430_勉強会03]] — Transformer・GPT（GPT-1〜InstructGPT）
 - [[20260507_勉強会04]] — BERT・CLIP・CLAP
 - [[20260514_勉強会05]] — SpeechLLM・VLM・AI駆動開発
+- [[20260604_勉強会07]] — 発表（MISIA Mood Recommender ほか）
 
 ## 関連MOC・上位MOC
 

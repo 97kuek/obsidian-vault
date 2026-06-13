@@ -28,6 +28,7 @@ SORT status ASC, year DESC
 - [[TF-Locoformer_メモ]] — TF-Locoformer（2023）研究の主要モデル
 - [[Transformer_メモ]] — Attention Is All You Need（2017）
 - [[J-CHAT_メモ]] — J-CHATコーパス、研究の評価対象
+- [[RemixIT_メモ]] — RemixIT、クリーン音声なしで学習する音声強調
 
 ## その他リソース
 
