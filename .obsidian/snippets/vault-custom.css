@@ -82,3 +82,13 @@ a.tag[href="#draft"] {
 .nav-folder-title {
   font-weight: 600;
 }
+
+/* --- Claude/Git用の管理ファイルをファイルエクスプローラーから隠す --- */
+/* ファイル自体は残す（CLAUDE.md=Claude Code, README.md=GitHub, VAULT_INDEX.md=索引）が、
+   Obsidianの左ツリーには表示しない。検索/クイックスイッチャーからの除外は
+   設定 → ファイルとリンク → 除外させるファイル で別途指定する。 */
+.nav-file-title[data-path="README.md"],
+.nav-file-title[data-path="CLAUDE.md"],
+.nav-file-title[data-path="VAULT_INDEX.md"] {
+  display: none;
+}
