@@ -245,8 +245,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 505.5,
-    "collapsed": true
+    "width": 505.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,9 +266,11 @@
   },
   "active": "6762d611b9b1efb7",
   "lastOpenFiles": [
+    "2026-05-12.md",
+    "20_Areas/授業/ディジタル信号処理.md",
+    "Home.md",
     "Home.md.tmp.17148.24e1b89c0270",
     "20_Areas/授業/情報通信ネットワークA.md",
-    "Home.md",
     "00_Inbox/情報通信ネットワークA第7章.md",
     "CLAUDE.md.tmp.17148.886d78fe983c",
     "README.md.tmp.17148.615d403f049e",
@@ -283,18 +284,15 @@
     "30_Resources/音源分離/J-CHAT_メモ.md.tmp.17148.5cce9d4f98d2",
     "30_Resources/音源分離/TasNet_メモ.md.tmp.17148.552c15b3eedc",
     "30_Resources/音源分離/Conv-TasNet_メモ.md.tmp.17148.4712f38ae515",
-    "30_Resources/音源分離/Transformer_メモ.md.tmp.17148.eb208dced27e",
     "00_Inbox/はじめに.md",
     "20_Areas/授業/【MOC】授業.md",
     "20_Areas/授業/センサと制御.md",
-    "20_Areas/授業/ディジタル信号処理.md",
     "20_Areas/授業/人工知能.md",
     "00_Inbox/情報通信ネットワークA.md",
     "30_Resources/音源分離/Conv-TasNet_メモ.md",
     "20_Areas/永続ノート/ゲーム理論の均衡概念.md",
     "10_Projects/【MOC】10_Projects.md",
     "2026-W23_週次レビュー.md",
-    "2026-05-12.md",
     "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md",
     "20_Areas/機械学習・深層学習/B4勉強会/【MOC】B4勉強会.md",
     "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
