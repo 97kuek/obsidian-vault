@@ -29,7 +29,7 @@
   └ 下書き/      ← 執筆ドラフト
 20_Areas/        ← 継続的に管理するトピック
   └ 永続ノート/  ← Zettelkasten（1ノート1概念）
-30_Resources/    ← 参考資料・論文メモ＋PDF
+30_Resources/    ← 論文の読書メモ（PDF本体は置かない・Zotero等で管理）
 40_Archives/     ← 完了・不要なノート（削除せず保管）
 99_Templates/    ← Claudeが整形時に当てる「型」（人間は選ばない）
 ```
