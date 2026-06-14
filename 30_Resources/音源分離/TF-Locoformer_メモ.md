@@ -4,10 +4,10 @@ tags:
   - paper
   - 音源分離
   - transformer
-title: "TF-Locoformer"
-authors: "[要確認]"
-year: 2023
-venue: "[要確認]"
+title: "TF-Locoformer: Transformer with Local Modeling by Convolution for Speech Separation and Enhancement"
+authors: "Kohei Saijo, Gordon Wichern, François G. Germain, Zexu Pan, Jonathan Le Roux"
+year: 2024
+venue: "IWAENC 2024"
 status: read
 ---
 # TF-Locoformer 読書メモ

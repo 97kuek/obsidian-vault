@@ -4,10 +4,10 @@ tags:
   - paper
   - corpus
   - 音源分離
-title: "音声対話言語モデルのための大規模日本語対話音声コーパス"
-authors: "[要確認]"
-year: 
-venue: "[要確認]"
+title: "J-CHAT: Japanese Large-scale Spoken Dialogue Corpus for Spoken Dialogue Language Models"
+authors: "Wataru Nakata, Kentaro Seki, Hitomi Yanaka, Yuki Saito, Shinnosuke Takamichi, Hiroshi Saruwatari"
+year: 2024
+venue: "arXiv 2024"
 status: read
 ---
 # J-CHAT コーパス 読書メモ

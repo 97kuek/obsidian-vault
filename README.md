@@ -113,6 +113,11 @@ Claude Code のスラッシュコマンドで半自動化する。**どれも検
 | obsidian-git | 必須 | Vaultの自動git管理 |
 | Periodic Notes | 推奨 | 週次・月次レビューの自動作成 |
 | Excalidraw | 推奨 | アーキテクチャ図・概念図 |
+| Homepage | 推奨 | 起動時にHome.mdを開く |
+| Natural Language Dates | 任意 | `@today` 等の自然言語で日付入力 |
+| Calendar | 任意 | 日付ナビゲーション |
+| Iconic | 任意 | フォルダ/ファイルにアイコンを付与 |
+| Workspaces Plus | 任意 | 作業レイアウトの保存・切替 |
 
 ### 初期設定（一回だけ・ObsidianのUIから手動）
 

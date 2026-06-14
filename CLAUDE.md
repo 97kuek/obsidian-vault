@@ -207,6 +207,7 @@ Home
 │       ├── 【MOC】ソフトウェア開発
 │       ├── 【MOC】機械学習・深層学習
 │       │   └── 【MOC】B4勉強会
+│       ├── 【MOC】授業
 │       └── 【MOC】永続ノート
 └── 30_Resources/
     └── 【MOC】30_Resources

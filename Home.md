@@ -16,6 +16,41 @@ aliases:
 > - グラフビュー … リンクの繋がりから関連知識をたどる
 > - タグをクリック … 同じタグのノートを一覧（例：`#paper` `#permanent`）
 
+## 🔍 検索
+
+```dataviewjs
+const box = dv.el("div", "");
+const input = box.createEl("input", { attr: { type: "text", placeholder: "🔍 ノート名で検索（部分一致）..." } });
+input.style.cssText = "width:100%; padding:6px 10px; margin-bottom:8px; border-radius:6px;";
+const out = box.createEl("div");
+const pages = dv.pages()
+  .where(p => !p.file.path.startsWith("99_Templates/"))
+  .where(p => !p.file.path.startsWith("00_Inbox/"))
+  .where(p => !p.file.path.startsWith("40_Archives/"))
+  .where(p => !p.file.name.startsWith("【MOC】"))
+  .sort(p => p.file.name, "asc");
+function render(q) {
+  out.empty();
+  q = (q || "").trim().toLowerCase();
+  if (!q) { out.createEl("div", { text: "↑ キーワードを入力（ノート名で絞り込み）", attr: { style: "opacity:0.5" } }); return; }
+  const hits = pages.filter(p => p.file.name.toLowerCase().includes(q));
+  if (hits.length === 0) { out.createEl("div", { text: "該当なし", attr: { style: "opacity:0.5" } }); return; }
+  const ul = out.createEl("ul");
+  for (const p of hits.slice(0, 20)) {
+    const li = ul.createEl("li");
+    const a = li.createEl("a", { text: p.file.name });
+    a.style.cursor = "pointer";
+    a.onclick = () => app.workspace.openLinkText(p.file.path, "", false);
+    li.createEl("span", { text: "  — " + p.file.folder, attr: { style: "opacity:0.45; font-size:0.85em" } });
+  }
+  if (hits.length > 20) out.createEl("div", { text: `他 ${hits.length - 20} 件…`, attr: { style: "opacity:0.45; font-size:0.85em" } });
+}
+input.addEventListener("input", e => render(e.target.value));
+render("");
+```
+
+> 全文検索（本文も対象）は `Ctrl + Shift + F`。上のボックスはノート名のインクリメンタル検索。
+
 ---
 
 ## 🗺 知識マップ（MOC）
@@ -51,7 +86,7 @@ SORT file.name ASC
 ```dataview
 TABLE rows.file.link AS "ノート"
 FROM "20_Areas"
-WHERE !contains(tags, "MOC") AND file.folder != "20_Areas/永続ノート"
+WHERE !contains(tags, "MOC") AND file.folder != "20_Areas/永続ノート" AND !regexmatch("^[0-9]{8}", file.name)
 GROUP BY file.folder AS "分野"
 SORT 分野 ASC
 ```
