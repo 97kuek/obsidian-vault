@@ -7,14 +7,8 @@ aliases:
 ---
 # 🧠 Home
 
-このVaultの入口。**知識へ4つの経路で潜れる** — ①構造 / ②概念 / ③トピック / ④検索
-
-> **すばやく潜るショートカット**
-> - `Ctrl + O` … クイックスイッチャー（ノート名で一発ジャンプ）
-> - `Ctrl + Shift + F` … 全文検索（Vault横断）
-> - `Ctrl + P` … コマンドパレット
-> - グラフビュー … リンクの繋がりから関連知識をたどる
-> - タグをクリック … 同じタグのノートを一覧（例：`#paper` `#permanent`）
+> [!tip] すばやく潜る
+> `Ctrl+O` ジャンプ ／ `Ctrl+Shift+F` 全文検索 ／ グラフビュー ／ タグクリック
 
 ## 🔍 検索
 
@@ -49,13 +43,7 @@ input.addEventListener("input", e => render(e.target.value));
 render("");
 ```
 
-> 全文検索（本文も対象）は `Ctrl + Shift + F`。上のボックスはノート名のインクリメンタル検索。
-
----
-
 ## 🗺 知識マップ（MOC）
-
-構造からたどる。各分野のハブ。
 
 ```dataview
 LIST
@@ -66,80 +54,62 @@ SORT file.path ASC
 
 ---
 
-## 🧠 永続ノート（概念インデックス）
+> [!note]- 🧠 永続ノート（概念インデックス）
+> ```dataview
+> LIST
+> FROM "20_Areas/永続ノート"
+> WHERE !contains(tags, "MOC")
+> SORT file.name ASC
+> ```
 
-自分の言葉で書いた原子的な概念。脳内のコア。
+> [!note]- 📖 科目・トピックノート
+> ```dataview
+> TABLE rows.file.link AS "ノート"
+> FROM "20_Areas"
+> WHERE !contains(tags, "MOC") AND file.folder != "20_Areas/永続ノート" AND !regexmatch("^[0-9]{8}", file.name)
+> GROUP BY file.folder AS "分野"
+> SORT 分野 ASC
+> ```
 
-```dataview
-LIST
-FROM "20_Areas/永続ノート"
-WHERE !contains(tags, "MOC")
-SORT file.name ASC
-```
+> [!note]- 🔬 論文メモ
+> ```dataview
+> TABLE WITHOUT ID file.link AS "論文", year AS "年", status AS "状態"
+> FROM "30_Resources"
+> WHERE contains(tags, "paper")
+> SORT status ASC, year DESC
+> ```
 
----
+> [!example]- 🚀 アクティブプロジェクト
+> ```dataview
+> TABLE file.mtime AS "最終更新", length(filter(file.tasks, (t) => !t.completed)) AS "残タスク"
+> FROM "10_Projects"
+> WHERE contains(tags, "MOC") AND file.name != "【MOC】10_Projects"
+> SORT file.mtime DESC
+> ```
 
-## 📖 科目・トピックノート
+> [!todo]- ✅ 未完了タスク
+> ```dataview
+> TASK
+> FROM "10_Projects" OR "20_Areas"
+> WHERE !completed
+> LIMIT 10
+> ```
 
-分野ごとにまとめた知識ノート。
+> [!note]- 📥 Inbox（未整理）
+> ```dataview
+> LIST
+> FROM "00_Inbox"
+> WHERE file.name != "はじめに"
+> SORT file.ctime DESC
+> LIMIT 5
+> ```
 
-```dataview
-TABLE rows.file.link AS "ノート"
-FROM "20_Areas"
-WHERE !contains(tags, "MOC") AND file.folder != "20_Areas/永続ノート" AND !regexmatch("^[0-9]{8}", file.name)
-GROUP BY file.folder AS "分野"
-SORT 分野 ASC
-```
-
----
-
-## 🔬 論文メモ
-
-```dataview
-TABLE WITHOUT ID file.link AS "論文", year AS "年", status AS "状態"
-FROM "30_Resources"
-WHERE contains(tags, "paper")
-SORT status ASC, year DESC
-```
-
----
----
-
-## 🚀 アクティブプロジェクト
-
-```dataview
-TABLE file.mtime AS "最終更新", length(filter(file.tasks, (t) => !t.completed)) AS "残タスク"
-FROM "10_Projects"
-WHERE contains(tags, "MOC") AND file.name != "【MOC】10_Projects"
-SORT file.mtime DESC
-```
-
-## ✅ 未完了タスク
-
-```dataview
-TASK
-FROM "10_Projects" OR "20_Areas"
-WHERE !completed
-LIMIT 10
-```
-
-## 📥 Inbox（未整理）
-
-```dataview
-LIST
-FROM "00_Inbox"
-WHERE file.name != "はじめに"
-SORT file.ctime DESC
-LIMIT 5
-```
-
-## 🕒 最近編集したノート（3日以内）
-
-```dataview
-LIST
-WHERE file.mtime >= date(today) - dur(3 days)
-AND !contains(tags, "MOC")
-AND file.folder != "99_Templates"
-SORT file.mtime DESC
-LIMIT 10
-```
+> [!note]- 🕒 最近編集したノート（3日以内）
+> ```dataview
+> LIST
+> WHERE file.mtime >= date(today) - dur(3 days)
+> AND !contains(tags, "MOC")
+> AND file.folder != "99_Templates"
+> SORT file.mtime DESC
+> LIMIT 10
+> ```

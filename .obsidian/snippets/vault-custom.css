@@ -1,94 +1,89 @@
 /* ========================================
    vault-custom.css
    有効化: 設定 → 外観 → CSSスニペット → vault-custom をオン
+   方針: 「引き算」— 装飾を抑えて視覚ノイズを減らす
    ======================================== */
 
-/* --- MOCファイルをファイルエクスプローラーで強調 --- */
+/* === ファイルエクスプローラー === */
+
+/* MOCファイルを控えめに強調（太字のみ） */
 .nav-file-title[data-path*="MOC"] {
   font-weight: 700;
-  color: var(--color-accent);
 }
 
-/* --- Dataview テーブルのストライプ表示 --- */
-.dataview.table-view-table tbody tr:nth-child(even) {
-  background-color: var(--background-secondary);
-}
-
-/* --- H1 にアクセントカラーの下線 --- */
-.markdown-rendered h1 {
-  border-bottom: 2px solid var(--color-accent);
-  padding-bottom: 0.25em;
-  margin-bottom: 0.75em;
-}
-
-/* --- H2 に薄い区切り線 --- */
-.markdown-rendered h2 {
-  border-bottom: 1px solid var(--background-modifier-border);
-  padding-bottom: 0.15em;
-  margin-top: 1.5em;
-}
-
-/* --- タグのカラーリング --- */
-a.tag[href="#paper"] {
-  background-color: #2d6a4f !important;
-  color: white !important;
-  border: none;
-}
-
-a.tag[href="#experiment"] {
-  background-color: #1d3557 !important;
-  color: white !important;
-  border: none;
-}
-
-a.tag[href="#MOC"] {
-  background-color: #7209b7 !important;
-  color: white !important;
-  border: none;
-}
-
-a.tag[href="#permanent"] {
-  background-color: #d62828 !important;
-  color: white !important;
-  border: none;
-}
-
-a.tag[href="#draft"] {
-  background-color: #e76f51 !important;
-  color: white !important;
-  border: none;
-}
-
-/* --- インラインコードの視認性向上 --- */
-.markdown-rendered :not(pre) > code {
-  color: var(--color-accent);
-  background-color: var(--background-secondary);
-  padding: 0.1em 0.35em;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-
-/* --- 完了済みタスクを薄く表示 --- */
-.markdown-rendered .task-list-item.is-checked {
-  opacity: 0.45;
-}
-
-/* --- Reading Modeでフロントマターを薄く --- */
-.markdown-source-view.mod-cm6 .cm-hmd-frontmatter {
-  opacity: 0.4;
-}
-
-/* --- ファイルエクスプローラーのフォルダ名を強調 --- */
+/* フォルダ名を少し強調 */
 .nav-folder-title {
   font-weight: 600;
 }
 
-/* --- Claude/Git用の管理ファイルをファイルエクスプローラーから隠す --- */
-/* ファイル自体は残す（CLAUDE.md=Claude Code, README.md=GitHub, VAULT_INDEX.md=索引）が、
-   Obsidianの左ツリーには表示しない。検索/クイックスイッチャーからの除外は
-   設定 → ファイルとリンク → 除外させるファイル で別途指定する。 */
+/* --- 管理ファイルを左ツリーから隠す（ファイル本体は残す） --- */
 .nav-file-title[data-path="README.md"],
 .nav-file-title[data-path="CLAUDE.md"],
 .nav-file-title[data-path="VAULT_INDEX.md"] {
   display: none;
+}
+
+/* --- Lv2フォーカス: 普段使わないフォルダを左ツリーから隠す --- */
+/* 表示するのは 00_Inbox / 10_Projects / 20_Areas。
+   30_Resources は Home の「論文メモ」「検索」から辿る。
+   Templates / Archives は普段不要。
+   すべてCSSのみ＝ファイルは消えていない。元に戻すにはこのブロックを削除。 */
+.nav-folder:has(> [data-path="30_Resources"]),
+.nav-folder:has(> [data-path="99_Templates"]),
+.nav-folder:has(> [data-path="40_Archives"]) {
+  display: none;
+}
+
+/* === タグ: 塗りつぶしピル → 控えめな色文字（ノイズ削減） === */
+.markdown-rendered a.tag,
+.cm-s-obsidian a.tag {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 0.15em !important;
+  font-size: 0.82em;
+  font-weight: 500;
+}
+a.tag[href="#paper"]      { color: #5b9279 !important; }
+a.tag[href="#experiment"] { color: #5b7fa6 !important; }
+a.tag[href="#MOC"]        { color: #9b7bbf !important; }
+a.tag[href="#permanent"]  { color: #c06a6a !important; }
+a.tag[href="#draft"]      { color: #cf9b6f !important; }
+a.tag[href="#lecture"]    { color: #7a9c6e !important; }
+
+/* === 見出し: 装飾を軽く === */
+/* H1: アクセント下線をやめ、細い区切り線に */
+.markdown-rendered h1 {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.2em;
+  margin-bottom: 0.6em;
+}
+/* H2: ごく薄い区切り線 */
+.markdown-rendered h2 {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.1em;
+  margin-top: 1.4em;
+}
+
+/* === インラインコード: アクセント色をやめ落ち着かせる === */
+.markdown-rendered :not(pre) > code {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-border);
+  padding: 0.05em 0.3em;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+/* === Dataview テーブルのストライプ（軽め） === */
+.dataview.table-view-table tbody tr:nth-child(even) {
+  background-color: var(--background-secondary);
+}
+
+/* === 補助的な視認性 === */
+/* 完了済みタスクを薄く */
+.markdown-rendered .task-list-item.is-checked {
+  opacity: 0.45;
+}
+/* Reading Modeでフロントマターを薄く */
+.markdown-source-view.mod-cm6 .cm-hmd-frontmatter {
+  opacity: 0.4;
 }
