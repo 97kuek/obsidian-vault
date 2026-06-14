@@ -11,8 +11,6 @@ status: read
 ---
 # Transformer 読書メモ
 
-![[Transformer.pdf]]
-
 ## 一言要約
 
 RNN・CNNを使わずSelf-Attentionのみで系列変換を実現。現代のLLM・音源分離モデルすべての基盤となった。

@@ -11,36 +11,14 @@
             "id": "ca6ec1dde88a33af",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "30_Resources/音源分離/Conv-TasNet.pdf"
+                "file": "30_Resources/音源分離/Conv-TasNet_メモ.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Conv-TasNet"
-            }
-          },
-          {
-            "id": "7abe73d37f65b3df",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "30_Resources/音源分離/TasNet.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "TasNet"
-            }
-          },
-          {
-            "id": "c583f3084bc9b51d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "30_Resources/音源分離/TF-Locoformer.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "TF-Locoformer"
+              "icon": "lucide-file",
+              "title": "Conv-TasNet_メモ"
             }
           },
           {
@@ -72,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -288,6 +266,11 @@
   },
   "active": "6762d611b9b1efb7",
   "lastOpenFiles": [
+    "30_Resources/音源分離/J-CHAT_メモ.md.tmp.17148.5cce9d4f98d2",
+    "30_Resources/音源分離/TasNet_メモ.md.tmp.17148.552c15b3eedc",
+    "30_Resources/音源分離/Conv-TasNet_メモ.md.tmp.17148.4712f38ae515",
+    "30_Resources/音源分離/Transformer_メモ.md.tmp.17148.eb208dced27e",
+    "30_Resources/音源分離/TF-Locoformer_メモ.md.tmp.17148.1fc46e857ef2",
     "Home.md.tmp.17148.5b24e2dd07f1",
     "README.md.tmp.17148.e6b5ca3b1c5b",
     "CLAUDE.md.tmp.17148.58427992a00f",
@@ -303,11 +286,6 @@
     "CLAUDE.md.tmp.37964.781207800644",
     "VAULT_INDEX.md.tmp.37964.c2b7b370b4c1",
     "00_Inbox/情報通信ネットワークA.md",
-    "20_Areas/授業/情報通信ネットワークA.md.tmp.37964.a3388c807758",
-    "10_Projects/HPA",
-    "30_Resources/音源分離/Transformer.pdf",
-    "30_Resources/音源分離/TF-Locoformer.pdf",
-    "30_Resources/音源分離/TasNet.pdf",
     "30_Resources/音源分離/Conv-TasNet_メモ.md",
     "20_Areas/永続ノート/ゲーム理論の均衡概念.md",
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",

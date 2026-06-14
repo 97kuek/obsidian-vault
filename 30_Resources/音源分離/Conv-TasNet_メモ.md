@@ -11,8 +11,6 @@ status: read
 ---
 # Conv-TasNet 読書メモ
 
-![[Conv-TasNet.pdf]]
-
 ## 一言要約
 
 TasNetのLSTMをTemporal Convolutional Network（TCN）に置き換え、精度・速度を大幅改善。理想的なT-Fマスキングを超える性能を達成。

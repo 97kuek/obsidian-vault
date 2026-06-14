@@ -12,8 +12,6 @@ status: read
 ---
 # TF-Locoformer 読書メモ
 
-![[TF-Locoformer.pdf]]
-
 ## 一言要約
 
 時間・周波数軸のLocal/Global Attention（Loco = Local-Global）を組み合わせた音源分離Transformer。英語データセットでSOTA級。
