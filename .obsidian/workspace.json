@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/情報通信ネットワークA第7章.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "情報通信ネットワークA第7章"
+              "title": "Home"
             }
           }
         ],
@@ -245,7 +245,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 505.5
+    "width": 505.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -266,27 +267,28 @@
   },
   "active": "6762d611b9b1efb7",
   "lastOpenFiles": [
+    "Home.md.tmp.17148.24e1b89c0270",
+    "20_Areas/授業/情報通信ネットワークA.md",
+    "Home.md",
+    "00_Inbox/情報通信ネットワークA第7章.md",
+    "CLAUDE.md.tmp.17148.886d78fe983c",
+    "README.md.tmp.17148.615d403f049e",
+    "Home.md.tmp.17148.e6566a7fc883",
+    "Home.md.tmp.17148.7d17a02e176d",
+    "30_Resources/音源分離/J-CHAT_メモ.md.tmp.17148.8d3168f01b6b",
+    "30_Resources/音源分離/TF-Locoformer_メモ.md.tmp.17148.c5b2d3688e9f",
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "VAULT_INDEX.md",
     "Excalidraw/Drawing 2026-06-09 16.43.27.excalidraw.md",
-    "Home.md",
-    "00_Inbox/情報通信ネットワークA第7章.md",
     "30_Resources/音源分離/J-CHAT_メモ.md.tmp.17148.5cce9d4f98d2",
     "30_Resources/音源分離/TasNet_メモ.md.tmp.17148.552c15b3eedc",
     "30_Resources/音源分離/Conv-TasNet_メモ.md.tmp.17148.4712f38ae515",
     "30_Resources/音源分離/Transformer_メモ.md.tmp.17148.eb208dced27e",
-    "30_Resources/音源分離/TF-Locoformer_メモ.md.tmp.17148.1fc46e857ef2",
-    "Home.md.tmp.17148.5b24e2dd07f1",
-    "README.md.tmp.17148.e6b5ca3b1c5b",
-    "CLAUDE.md.tmp.17148.58427992a00f",
     "00_Inbox/はじめに.md",
-    "README.md.tmp.17148.ada17379c516",
     "20_Areas/授業/【MOC】授業.md",
     "20_Areas/授業/センサと制御.md",
     "20_Areas/授業/ディジタル信号処理.md",
     "20_Areas/授業/人工知能.md",
-    "20_Areas/授業/情報通信ネットワークA.md",
-    "CLAUDE.md.tmp.37964.781207800644",
     "00_Inbox/情報通信ネットワークA.md",
     "30_Resources/音源分離/Conv-TasNet_メモ.md",
     "20_Areas/永続ノート/ゲーム理論の均衡概念.md",
@@ -301,7 +303,6 @@
     "20_Areas/永続ノート/強化学習における価値と方策.md",
     "20_Areas/永続ノート/マルチエージェント経路探索.md",
     "20_Areas/永続ノート/VC次元と次元の呪い.md",
-    "20_Areas/永続ノート/Q学習.md",
     "無題のファイル.canvas"
   ]
 }
