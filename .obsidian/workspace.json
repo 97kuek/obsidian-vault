@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "執筆ロードマップ"
             }
           }
         ],
@@ -245,7 +245,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 505.5
+    "width": 505.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,8 +265,12 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "8495e60b597e8d04",
+  "active": "6762d611b9b1efb7",
   "lastOpenFiles": [
+    "00_Inbox/はじめに.md",
+    "00_Inbox/HPA 過年度空力設計.md",
+    "20_Areas/授業/情報通信ネットワークA.md",
+    "Home.md",
     "VAULT_INDEX.md.tmp.17148.c58c83305d3e",
     "00_Inbox/情報通信ネットワークA第7章.md.tmp.17148.44dc9e644ad0",
     "00_Inbox/情報通信ネットワークA第7章.md.tmp.17148.39eedf6a9375",
@@ -274,18 +279,14 @@
     "00_Inbox/情報通信ネットワークA第7章.md.tmp.17148.d743653ae551",
     "2026-05-12.md",
     "20_Areas/授業/ディジタル信号処理.md",
-    "Home.md",
     "Home.md.tmp.17148.24e1b89c0270",
-    "20_Areas/授業/情報通信ネットワークA.md",
     "00_Inbox/情報通信ネットワークA第7章.md",
     "CLAUDE.md.tmp.17148.886d78fe983c",
     "README.md.tmp.17148.615d403f049e",
     "Home.md.tmp.17148.e6566a7fc883",
-    "Home.md.tmp.17148.7d17a02e176d",
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "VAULT_INDEX.md",
     "Excalidraw/Drawing 2026-06-09 16.43.27.excalidraw.md",
-    "00_Inbox/はじめに.md",
     "20_Areas/授業/【MOC】授業.md",
     "20_Areas/授業/センサと制御.md",
     "20_Areas/授業/人工知能.md",

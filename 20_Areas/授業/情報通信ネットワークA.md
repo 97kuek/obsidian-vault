@@ -330,6 +330,8 @@ subject: 情報通信ネットワークA
 - 相手から`SYN・ACK`が返ってきたら、こちらが`ACK`を送って3-wayハンドシェーク完了
 - `ESTABLISHED`になる
 - 通信が終わって`active close`になると、`FIN`を送って`FIN_WAIT_1`へ
+- 自分の`FIN`への`ACK`が返ると`FIN_WAIT_2`
+- 相手の`FIN`が届いたら`ACK`を返して`TIME_WAIT`へ
 
 ```
 CLOSED
@@ -353,7 +355,12 @@ TIME_WAIT
 CLOSED（スタート地点に戻る）
 ```
 
-**サーバ側の典型的な流れ：**
+**サーバ側**
+
+- `passive open`で`LISTEN`に入る。これはサーバ特有の状態
+- クライアントから`SYN`が来たら`SYN・ACK`を返して`SYN_RCVD`．続いて`ACK`を受け取れば3-wayハンドシェーク完了で`ESTABLISHED`
+- 切断はクライアントから`FIN`が来るので、`ACK`を返して`CLOSE_WAIT`へ
+- 自分のアプリが閉じる準備が出来たら`FIN`を送って`LAST_ACK`へ
 
 ```
 CLOSED
@@ -381,8 +388,6 @@ CLOSED（スタート地点に戻る）
 - **同時クローズ**：双方が同時に active close すると `FIN_WAIT_1 → CLOSING` の遷移
 
 #### コネクションのリセット（RST）
-
-次の場合、**RSTを送ってコネクションを中断**する。
 
 - サービスを提供していないポートへの接続要求を受けたとき
 - FINの代わりにRSTで終了させるとき（プログラムが途中で落ちた等）
