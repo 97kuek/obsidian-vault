@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/最適化アルゴリズム.md",
+                "file": "10_Projects/HPA/翼製作.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "最適化アルゴリズム"
+              "title": "翼製作"
+            }
+          },
+          {
+            "id": "9585d77b85a1feae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HPA設計変数多すぎじゃね.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HPA設計変数多すぎじゃね"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -233,13 +248,18 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "9585d77b85a1feae",
   "lastOpenFiles": [
+    "README.md.tmp.54792.3d14b383d7c1",
+    "CLAUDE.md.tmp.54792.19bf9d4aadbd",
+    "10_Projects/HPA/翼製作.md",
+    "HPA設計変数多すぎじゃね.md",
+    "10_Projects/HPA/電装.md",
+    "00_Inbox/情報通信ネットワークA 第9章.md",
+    "00_Inbox/最適化アルゴリズム.md",
     "00_Inbox/はじめに.md",
     "VAULT_INDEX.md.tmp.54792.d5db060be363",
     "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.54792.3c3c69f9826d",
-    "00_Inbox/最適化アルゴリズム.md",
-    "10_Projects/HPA/翼製作.md",
     "20_Areas/永続ノート/自己学習と擬似ラベル.md",
     "20_Areas/永続ノート/自己学習と擬似ラベル.md.tmp.54792.e35d3e0a19ca",
     "20_Areas/永続ノート/スケール不変な評価.md",
@@ -248,7 +268,6 @@
     "10_Projects/HPA/プロペラ製作.md",
     "20_Areas/永続ノート/アンサンブルと集合知.md",
     "20_Areas/【MOC】20_Areas.md",
-    "00_Inbox/情報通信ネットワークA 第9章.md",
     "20_Areas/授業/人工知能.md.tmp.54792.b9b8cb65e546",
     "20_Areas/永続ノート/【MOC】永続ノート.md",
     "20_Areas/永続ノート/ゲーム理論の均衡と協調.md",
@@ -261,15 +280,12 @@
     "VAULT_INDEX.md.tmp.54792.58e8e8a627b6",
     "VAULT_INDEX.md.tmp.54792.3e15ec8eb9a7",
     "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md.tmp.54792.db7d7aa9767f",
-    "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md.tmp.54792.0314a2878a3a",
     "20_Areas/機械学習・深層学習/SVMとカーネル法.md",
     "20_Areas/機械学習・深層学習/クラスタリング.md",
     "20_Areas/機械学習・深層学習/強化学習.md",
     "20_Areas/機械学習・深層学習/PAC学習.md",
     "20_Areas/機械学習・深層学習/マルチエージェント経路探索.md",
     "20_Areas/機械学習・深層学習/敵対的探索.md",
-    "20_Areas/永続ノート/階層的委任による分散管理.md",
-    "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md",
     "無題のファイル.canvas"
   ]
 }
