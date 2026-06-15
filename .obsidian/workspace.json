@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10_Projects/HPA/翼製作.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "翼製作"
-            }
-          },
-          {
             "id": "9585d77b85a1feae",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "情報通信ネットワークA 第3章"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -250,6 +235,17 @@
   },
   "active": "9585d77b85a1feae",
   "lastOpenFiles": [
+    "VAULT_INDEX.md.tmp.54792.cf317d5d59d6",
+    "10_Projects/HPA/製作/駆動・フレーム製作.md",
+    "10_Projects/HPA/製作/電装.md",
+    "10_Projects/HPA/製作/翼製作.md",
+    "10_Projects/HPA/製作/プロペラ製作.md",
+    "10_Projects/HPA/設計/スパン荷重分布と誘導抗力.md",
+    "10_Projects/HPA/設計/向かい風と必要出力.md",
+    "10_Projects/HPA/設計/設計変数と最適化.md",
+    "10_Projects/HPA/設計/過年度空力設計.md",
+    "10_Projects/HPA/製作",
+    "10_Projects/HPA/設計",
     "20_Areas/授業/情報通信ネットワークA.md",
     "00_Inbox/情報通信ネットワークA 第3章.md",
     "00_Inbox/情報通信ネットワークA 第10章.md",
@@ -271,21 +267,10 @@
     "20_Areas/機械学習・深層学習/敵対的探索.md",
     "20_Areas/永続ノート/自己学習と擬似ラベル.md",
     "20_Areas/永続ノート/世代交代する組織の知識継承.md",
-    "20_Areas/永続ノート/妥協できる誤差とできない誤差.md",
-    "20_Areas/永続ノート/スケール不変な評価.md",
-    "20_Areas/永続ノート/エンドツーエンド原理.md",
-    "20_Areas/永続ノート/探索と活用のジレンマ.md",
-    "20_Areas/永続ノート/標本化定理.md",
     "VAULT_INDEX.md.tmp.54792.61c54b5bccd7",
     "VAULT_INDEX.md.tmp.54792.4754c3ab3954",
     "20_Areas/授業/【MOC】授業.md.tmp.54792.d00de859d7ae",
     "10_Projects/HPA/【MOC】HPA.md.tmp.54792.3d915a36bcd6",
-    "20_Areas/授業/情報通信ネットワークA.md.tmp.54792.49a19b3a8644",
-    "20_Areas/永続ノート/アンサンブルと集合知.md",
-    "00_Inbox/楕円循環分布.md",
-    "20_Areas/授業/最適化アルゴリズム.md",
-    "20_Areas/授業/最適化アルゴリズム.md.tmp.54792.da40beb8c853",
-    "00_Inbox/向かい風の方が低出力で飛べるというのは本当なのか？.md",
     "無題のファイル.canvas"
   ]
 }
