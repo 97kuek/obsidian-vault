@@ -2,10 +2,11 @@
 date: 2026-06-09
 tags:
   - paper
-title: ""
-authors: ""
-year:
-venue: ""
+  - 音源分離
+title: "RemixIT: Continual Self-Training of Speech Enhancement Models via Bootstrapped Remixing"
+authors: "Efthymios Tzinis, Yossi Adi, Vamsi Krishna Ithapu, Buye Xu, Paris Smaragdis, Anurag Kumar"
+year: 2022
+venue: "IEEE Journal of Selected Topics in Signal Processing (JSTSP)"
 status: read
 ---
 ## どんな論文か
