@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HPA設計変数多すぎじゃね.md",
+                "file": "00_Inbox/HPA設計変数多すぎじゃね.md",
                 "mode": "source",
                 "source": false
               },
@@ -250,14 +250,15 @@
   },
   "active": "9585d77b85a1feae",
   "lastOpenFiles": [
+    "00_Inbox/はじめに.md",
+    "00_Inbox/楕円循環分布.md",
+    "00_Inbox/HPA設計変数多すぎじゃね.md",
     "README.md.tmp.54792.3d14b383d7c1",
     "CLAUDE.md.tmp.54792.19bf9d4aadbd",
     "10_Projects/HPA/翼製作.md",
-    "HPA設計変数多すぎじゃね.md",
     "10_Projects/HPA/電装.md",
     "00_Inbox/情報通信ネットワークA 第9章.md",
     "00_Inbox/最適化アルゴリズム.md",
-    "00_Inbox/はじめに.md",
     "VAULT_INDEX.md.tmp.54792.d5db060be363",
     "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.54792.3c3c69f9826d",
     "20_Areas/永続ノート/自己学習と擬似ラベル.md",
@@ -279,7 +280,6 @@
     "20_Areas/永続ノート/標本化定理.md",
     "VAULT_INDEX.md.tmp.54792.58e8e8a627b6",
     "VAULT_INDEX.md.tmp.54792.3e15ec8eb9a7",
-    "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md.tmp.54792.db7d7aa9767f",
     "20_Areas/機械学習・深層学習/SVMとカーネル法.md",
     "20_Areas/機械学習・深層学習/クラスタリング.md",
     "20_Areas/機械学習・深層学習/強化学習.md",
