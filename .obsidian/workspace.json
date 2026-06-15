@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/強度と剛性の違い.md",
+                "file": "00_Inbox/HPAにおける静安定・動安定.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "強度と剛性の違い"
+              "title": "HPAにおける静安定・動安定"
             }
           }
         ]
@@ -235,8 +235,9 @@
   },
   "active": "9585d77b85a1feae",
   "lastOpenFiles": [
-    "20_Areas/永続ノート/エンドツーエンド原理.md",
     "00_Inbox/強度と剛性の違い.md",
+    "00_Inbox/HPAにおける静安定・動安定.md",
+    "20_Areas/永続ノート/エンドツーエンド原理.md",
     "30_Resources/音源分離/RemixIT_メモ.md.tmp.54792.d190f9cc84e0",
     "20_Areas/授業/情報通信ネットワークA.md",
     "20_Areas/永続ノート/探索と活用のジレンマ.md",
@@ -270,7 +271,6 @@
     "VAULT_INDEX.md.tmp.54792.f52855e44e2b",
     "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.54792.9966aee1282b",
     "10_Projects/HPA/向かい風と必要出力.md",
-    "20_Areas/機械学習・深層学習/クラスタリング.md",
     "無題のファイル.canvas"
   ]
 }

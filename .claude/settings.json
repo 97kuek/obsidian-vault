@@ -16,5 +16,20 @@
       "Bash(git add -A)",
       "Bash(git commit*)"
     ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/protect-obsidian.sh\"",
+            "statusMessage": ".obsidian 保護チェック"
+          }
+        ]
+      }
+    ]
   }
 }
