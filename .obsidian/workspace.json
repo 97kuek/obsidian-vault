@@ -11,14 +11,10 @@
             "id": "9585d77b85a1feae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Inbox/HPAにおける静安定・動安定.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "HPAにおける静安定・動安定"
+              "title": "新規タブ"
             }
           }
         ]
@@ -235,8 +231,13 @@
   },
   "active": "9585d77b85a1feae",
   "lastOpenFiles": [
-    "00_Inbox/強度と剛性の違い.md",
     "00_Inbox/HPAにおける静安定・動安定.md",
+    "VAULT_INDEX.md.tmp.54792.6687422ebe21",
+    "10_Projects/HPA/設計/強度と剛性.md",
+    "10_Projects/HPA/設計/強度と剛性.md.tmp.54792.b7c29af05ea3",
+    "10_Projects/HPA/設計/飛行安定性.md",
+    "10_Projects/HPA/設計/飛行安定性.md.tmp.54792.3cbc157a3dad",
+    "00_Inbox/強度と剛性の違い.md",
     "20_Areas/永続ノート/エンドツーエンド原理.md",
     "30_Resources/音源分離/RemixIT_メモ.md.tmp.54792.d190f9cc84e0",
     "20_Areas/授業/情報通信ネットワークA.md",
@@ -257,7 +258,6 @@
     "10_Projects/HPA/設計/設計変数と最適化.md",
     "10_Projects/HPA/設計/過年度空力設計.md",
     "10_Projects/HPA/製作",
-    "10_Projects/HPA/設計",
     "00_Inbox/情報通信ネットワークA 第10章.md",
     "00_Inbox/情報通信ネットワークA 第11章.md",
     "00_Inbox/はじめに.md",
@@ -266,11 +266,6 @@
     "Home.md",
     "20_Areas/永続ノート/階層的委任による分散管理.md",
     "20_Areas/機械学習・深層学習/SVMとカーネル法.md",
-    "20_Areas/永続ノート/双対性.md",
-    "20_Areas/永続ノート/効く変数を見抜く.md",
-    "VAULT_INDEX.md.tmp.54792.f52855e44e2b",
-    "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.54792.9966aee1282b",
-    "10_Projects/HPA/向かい風と必要出力.md",
     "無題のファイル.canvas"
   ]
 }
