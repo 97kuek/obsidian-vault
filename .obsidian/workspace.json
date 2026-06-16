@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/ObsidianOtaku_2060308984221868163.md",
+                "file": "10_Projects/HPA/アイデア・検討.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ObsidianOtaku_2060308984221868163"
+              "title": "アイデア・検討"
             }
           }
         ]
@@ -235,9 +235,21 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "VAULT_INDEX.md.tmp.11484.1db6a2edbc78",
+    "VAULT_INDEX.md.tmp.11484.c0a10c7d0732",
+    "VAULT_INDEX.md.tmp.11484.4483ad07069d",
+    "CLAUDE.md.tmp.11484.2f5be126a8b5",
+    "CLAUDE.md.tmp.11484.8d09aca1ac8c",
+    "10_Projects/HPA/【MOC】HPA.md.tmp.11484.60dfbce154ca",
+    "20_Areas/ソフトウェア開発/AI駆動開発.md.tmp.11484.2fc9341fe757",
+    "00_Inbox/ObsidianOtaku_2060308984221868163.md",
+    "10_Projects/HPA/アイデア・検討.md",
+    "10_Projects/HPA/アイデア・検討.md.tmp.11484.af6341ddf5cb",
+    "30_Resources/クリップ/AIエージェントのためのObsidian活用術.md.tmp.11484.626e78df6cb8",
+    "30_Resources/クリップ/AIエージェントのためのObsidian活用術.md",
+    "30_Resources/クリップ",
     "00_Inbox/AkaGhef_2054517342168862808.md",
     "00_Inbox/AkaGhef_2065611906707337552.md",
-    "00_Inbox/ObsidianOtaku_2060308984221868163.md",
     "00_Inbox/trail_mamo_2058933850726969551.md",
     "00_Inbox/trail_mamo_2057818151543504951.md",
     "00_Inbox/opensourcelab9_2066289580194791487.md",
@@ -253,24 +265,12 @@
     "X",
     "Clippings/X/L_go_mrk_2066491158092783805.md",
     "Clippings/X/developer_quant_2064316383798988910.md",
-    "Clippings/X",
-    "Clippings",
     "Clippings/X/L_go_mrk_2063939344079941784.md",
     "Clippings/X/Matsuo_Lab_1899796110102986899.md",
     "20_Areas/【MOC】20_Areas.md",
     "Home.md",
     "00_Inbox/HPAにおける静安定・動安定.md",
-    "VAULT_INDEX.md.tmp.54792.6687422ebe21",
     "10_Projects/HPA/設計/強度と剛性.md",
-    "10_Projects/HPA/設計/強度と剛性.md.tmp.54792.b7c29af05ea3",
-    "10_Projects/HPA/設計/飛行安定性.md",
-    "10_Projects/HPA/設計/飛行安定性.md.tmp.54792.3cbc157a3dad",
-    "00_Inbox/強度と剛性の違い.md",
-    "20_Areas/永続ノート/エンドツーエンド原理.md",
-    "30_Resources/音源分離/RemixIT_メモ.md.tmp.54792.d190f9cc84e0",
-    "20_Areas/授業/情報通信ネットワークA.md.tmp.54792.063663024115",
-    "VAULT_INDEX.md.tmp.54792.603ae6d908bb",
-    "20_Areas/授業/情報通信ネットワークA.md.tmp.54792.c8c6eacac07e",
     "無題のファイル.canvas"
   ]
 }

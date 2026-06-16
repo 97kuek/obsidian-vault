@@ -35,6 +35,13 @@ tags:
 - 落とし穴：未検証のままマージ／機密をプロンプトに入れる はNG。こまめにcommit・TDD・重要ロジックは理解してから採用。
 - 価値が上がるスキル：**問題を正しく定義する力・設計力・レビュー力・ドメイン知識**。
 
+## ツール・サービス候補
+
+クリップ等で見つけた未検証ツールの台帳（1ツール1行）。試して定着したら本文へ昇格する。
+
+- **MarkItDown**（Microsoft, OSS）— Word/PDF/Excel/PowerPoint を表・見出し構造を保ったまま Markdown 化。画像・音声の文字起こしにも対応。AIに資料を渡す前処理に。 出典: [@opensourcelab9](https://x.com/opensourcelab9/status/2066289580194791487)
+- **サイト→DESIGN.md/SKILL.md 生成 Chrome拡張** — 任意サイトのスタイルを抽出して DESIGN.md / SKILL.md を自動生成（詳細未確認）。 出典: [@ClaudeCode_UT](https://x.com/ClaudeCode_UT/status/2066438059428819377)
+
 ## 出典・関連
 
 - 出典: [[20260514_勉強会05]]（AI駆動開発の章）
