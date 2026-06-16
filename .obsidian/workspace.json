@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Inbox/第9回ディジタル信号処理.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "第9回ディジタル信号処理"
+              "title": "新規タブ"
             }
           }
         ]
@@ -233,14 +229,22 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "8495e60b597e8d04",
   "lastOpenFiles": [
-    "20_Areas/ソフトウェア開発/AI駆動開発.md",
+    "00_Inbox/trail_mamo_2058933850726969551.md",
+    "00_Inbox/はじめに.md",
+    "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
+    "00_Inbox/AkaGhef_2065611906707337552.md",
     "00_Inbox/第9回ディジタル信号処理.md",
+    "00_Inbox/AkaGhef_2054517342168862808.md",
+    "00_Inbox/trail_mamo_2057818151543504951.md",
+    "00_Inbox/opensourcelab9_2066289580194791487.md",
+    "00_Inbox/ObsidianOtaku_2060308984221868163.md",
+    "00_Inbox/A_I_News_2066759066786144499.md",
+    "20_Areas/ソフトウェア開発/AI駆動開発.md",
     "20_Areas/ソフトウェア開発/Claude Code運用.md",
     "10_Projects/HPA/アイデア・検討.md",
     "10_Projects/HPA/【MOC】HPA.md",
-    "00_Inbox/はじめに.md",
     "10_Projects/HPA/製作/駆動・フレーム製作.md",
     "10_Projects/HPA/製作/プロペラ製作.md",
     "VAULT_INDEX.md.tmp.11484.1db6a2edbc78",
@@ -250,17 +254,10 @@
     "CLAUDE.md.tmp.11484.8d09aca1ac8c",
     "10_Projects/HPA/【MOC】HPA.md.tmp.11484.60dfbce154ca",
     "20_Areas/ソフトウェア開発/AI駆動開発.md.tmp.11484.2fc9341fe757",
-    "00_Inbox/ObsidianOtaku_2060308984221868163.md",
     "10_Projects/HPA/アイデア・検討.md.tmp.11484.af6341ddf5cb",
     "30_Resources/クリップ/AIエージェントのためのObsidian活用術.md.tmp.11484.626e78df6cb8",
     "30_Resources/クリップ/AIエージェントのためのObsidian活用術.md",
     "30_Resources/クリップ",
-    "00_Inbox/AkaGhef_2054517342168862808.md",
-    "00_Inbox/AkaGhef_2065611906707337552.md",
-    "00_Inbox/trail_mamo_2058933850726969551.md",
-    "00_Inbox/trail_mamo_2057818151543504951.md",
-    "00_Inbox/opensourcelab9_2066289580194791487.md",
-    "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
     "00_Inbox/rymm_nap_2055837086931124231.md",
     "00_Inbox/L_go_mrk_2063939344079941784.md",
     "00_Inbox/developer_quant_2055985766220882190.md",
@@ -270,7 +267,6 @@
     "X/L_go_mrk_2066491158092783805.md",
     "Clippings/X/L_go_mrk_2064286883543155126.md",
     "Clippings/X/L_go_mrk_2066491158092783805.md",
-    "Clippings/X/developer_quant_2064316383798988910.md",
     "無題のファイル.canvas"
   ]
 }
