@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Inbox/L_go_mrk_2063939344079941784.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "L_go_mrk_2063939344079941784"
+              "title": "新規タブ"
             }
           }
         ]
@@ -235,12 +231,19 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "00_Inbox/AkaGhef_2065611906707337552.md",
+    "00_Inbox/AkaGhef_2054517342168862808.md",
+    "00_Inbox/trail_mamo_2058933850726969551.md",
+    "00_Inbox/trail_mamo_2057818151543504951.md",
+    "00_Inbox/opensourcelab9_2066289580194791487.md",
+    "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
+    "00_Inbox/ObsidianOtaku_2060308984221868163.md",
     "00_Inbox/rymm_nap_2055837086931124231.md",
-    "00_Inbox/shiba_program_2047606145909760385.md",
     "00_Inbox/L_go_mrk_2063939344079941784.md",
+    "00_Inbox/developer_quant_2055985766220882190.md",
+    "00_Inbox/shiba_program_2047606145909760385.md",
     "00_Inbox/developer_quant_2064316383798988910.md",
     "X/L_go_mrk_2064286883543155126.md",
-    "00_Inbox/developer_quant_2055985766220882190.md",
     "X/L_go_mrk_2066491158092783805.md",
     "Clippings/X/L_go_mrk_2064286883543155126.md",
     "X",
@@ -261,16 +264,9 @@
     "00_Inbox/強度と剛性の違い.md",
     "20_Areas/永続ノート/エンドツーエンド原理.md",
     "30_Resources/音源分離/RemixIT_メモ.md.tmp.54792.d190f9cc84e0",
-    "20_Areas/授業/情報通信ネットワークA.md",
-    "20_Areas/永続ノート/探索と活用のジレンマ.md",
     "20_Areas/授業/情報通信ネットワークA.md.tmp.54792.063663024115",
     "VAULT_INDEX.md.tmp.54792.603ae6d908bb",
     "20_Areas/授業/情報通信ネットワークA.md.tmp.54792.c8c6eacac07e",
-    "20_Areas/永続ノート/自己学習と擬似ラベル.md",
-    "00_Inbox/情報通信ネットワークA 第3章.md",
-    "10_Projects/HPA/製作/駆動・フレーム製作.md",
-    "10_Projects/HPA/製作/電装.md",
-    "10_Projects/HPA/製作/翼製作.md",
     "無題のファイル.canvas"
   ]
 }
