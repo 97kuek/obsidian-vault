@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "00_Inbox/プロ兼.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "プロ兼"
             }
           }
         ]
@@ -229,8 +233,10 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "8495e60b597e8d04",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "00_Inbox/A_I_News_2066759066786144499.md",
+    "00_Inbox/プロ兼.md",
     "00_Inbox/trail_mamo_2058933850726969551.md",
     "00_Inbox/はじめに.md",
     "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
@@ -240,7 +246,6 @@
     "00_Inbox/trail_mamo_2057818151543504951.md",
     "00_Inbox/opensourcelab9_2066289580194791487.md",
     "00_Inbox/ObsidianOtaku_2060308984221868163.md",
-    "00_Inbox/A_I_News_2066759066786144499.md",
     "20_Areas/ソフトウェア開発/AI駆動開発.md",
     "20_Areas/ソフトウェア開発/Claude Code運用.md",
     "10_Projects/HPA/アイデア・検討.md",
@@ -266,7 +271,6 @@
     "X/L_go_mrk_2064286883543155126.md",
     "X/L_go_mrk_2066491158092783805.md",
     "Clippings/X/L_go_mrk_2064286883543155126.md",
-    "Clippings/X/L_go_mrk_2066491158092783805.md",
     "無題のファイル.canvas"
   ]
 }
