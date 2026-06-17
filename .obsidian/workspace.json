@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/プロ兼.md",
+                "file": "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "プロ兼"
+              "title": "【MOC】プロジェクト研究A"
             }
           }
         ]
@@ -235,8 +235,15 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
+    "00_Inbox/20260617_2ch拡張とfusion設計の検討.md",
+    "10_Projects/プロジェクト研究A/実験結果まとめ.md",
+    "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
+    "10_Projects/プロジェクト研究A/ESPnet.md",
+    "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
+    "10_Projects/プロジェクト研究A/20260511_音源分離実験用スクリプトの作成.md",
     "00_Inbox/A_I_News_2066759066786144499.md",
-    "00_Inbox/プロ兼.md",
     "00_Inbox/trail_mamo_2058933850726969551.md",
     "00_Inbox/はじめに.md",
     "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
@@ -264,13 +271,6 @@
     "30_Resources/クリップ/AIエージェントのためのObsidian活用術.md",
     "30_Resources/クリップ",
     "00_Inbox/rymm_nap_2055837086931124231.md",
-    "00_Inbox/L_go_mrk_2063939344079941784.md",
-    "00_Inbox/developer_quant_2055985766220882190.md",
-    "00_Inbox/shiba_program_2047606145909760385.md",
-    "00_Inbox/developer_quant_2064316383798988910.md",
-    "X/L_go_mrk_2064286883543155126.md",
-    "X/L_go_mrk_2066491158092783805.md",
-    "Clippings/X/L_go_mrk_2064286883543155126.md",
     "無題のファイル.canvas"
   ]
 }
