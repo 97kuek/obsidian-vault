@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
+                "file": "20_Areas/授業/情報通信ネットワークA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【MOC】プロジェクト研究A"
+              "title": "情報通信ネットワークA"
             }
           }
         ]
@@ -235,10 +235,23 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "VAULT_INDEX.md.tmp.64240.a77c9d1f3379",
+    "CLAUDE.md.tmp.64240.0de303edec2d",
+    "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md.tmp.64240.47254f243601",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md.tmp.64240.838c1cf2673e",
+    "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md",
+    "10_Projects/プロジェクト研究A/教師モデル_EarlyFusion設計.md",
+    "CLAUDE.md.tmp.64240.3abe177bb78f",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
+    "VAULT_INDEX.md.tmp.64240.cca32c897120",
+    "VAULT_INDEX.md.tmp.64240.f014f627ad89",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md.tmp.64240.fc2a26b47fe7",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md.tmp.64240.376607b5883b",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md.tmp.64240.b648e359865a",
+    "10_Projects/プロジェクト研究A/教師モデル_EarlyFusion設計.md.tmp.64240.08d7cd656c3f",
     "00_Inbox/20260617_2ch拡張とfusion設計の検討.md",
     "Home.md",
     "10_Projects/プロジェクト研究A/下書き/執筆ロードマップ.md",
-    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "10_Projects/プロジェクト研究A/実験結果まとめ.md",
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "10_Projects/プロジェクト研究A/ESPnet.md",
@@ -258,19 +271,6 @@
     "20_Areas/ソフトウェア開発/Claude Code運用.md",
     "10_Projects/HPA/アイデア・検討.md",
     "10_Projects/HPA/【MOC】HPA.md",
-    "10_Projects/HPA/製作/駆動・フレーム製作.md",
-    "10_Projects/HPA/製作/プロペラ製作.md",
-    "VAULT_INDEX.md.tmp.11484.1db6a2edbc78",
-    "VAULT_INDEX.md.tmp.11484.c0a10c7d0732",
-    "VAULT_INDEX.md.tmp.11484.4483ad07069d",
-    "CLAUDE.md.tmp.11484.2f5be126a8b5",
-    "CLAUDE.md.tmp.11484.8d09aca1ac8c",
-    "10_Projects/HPA/【MOC】HPA.md.tmp.11484.60dfbce154ca",
-    "20_Areas/ソフトウェア開発/AI駆動開発.md.tmp.11484.2fc9341fe757",
-    "10_Projects/HPA/アイデア・検討.md.tmp.11484.af6341ddf5cb",
-    "30_Resources/クリップ/AIエージェントのためのObsidian活用術.md.tmp.11484.626e78df6cb8",
-    "30_Resources/クリップ/AIエージェントのためのObsidian活用術.md",
-    "30_Resources/クリップ",
     "無題のファイル.canvas"
   ]
 }

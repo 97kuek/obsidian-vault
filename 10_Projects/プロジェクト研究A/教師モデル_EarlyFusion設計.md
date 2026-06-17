@@ -1,3 +1,16 @@
+---
+date: 2026-06-17
+tags:
+  - 音源分離
+  - project
+project: プロジェクト研究A
+status: active
+---
+
+# 教師モデル（Early Fusion TF-Locoformer）の設計
+
+パイプライン②「教師あり事前学習＝教師モデル」の実装詳細。全体像は[[研究設計（パイプライン全体）]]。
+
 ## 要点
 
 - 2ch拡張は**Early Fusion**を採用
@@ -18,7 +31,7 @@
 
 ## Early Fusion
 
-- 「usion **入力段階** で行う方式
+- Early Fusion＝ch統合を**入力段階**で行う方式
 
 ### 入力
 
@@ -89,3 +102,12 @@
 - [ ] 残響付与（pyroomacoustics）で実環境ギャップを測る
 - [ ] 残響条件で Early vs Middle の対照実験 → 「Middleが強くなる瞬間」を観測
 - [ ] `remix()` を遅延ありに寄せる検討（todo T7）
+
+## 関連
+
+- 全体像：[[研究設計（パイプライン全体）]]
+- MOC：[[【MOC】プロジェクト研究A]]
+- モデル：[[TF-Locoformer_メモ]]
+
+---
+**最終更新:** `= this.file.mtime`
