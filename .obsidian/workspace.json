@@ -216,7 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 446.5
+    "width": 389.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,6 +237,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "10_Projects/プロジェクト研究A/教師モデル_EarlyFusion設計.md",
     "10_Projects/HPA/アイデア・検討.md",
     "00_Inbox/第9回ディジタル信号処理.md",
     "00_Inbox/はじめに.md",
@@ -247,7 +248,6 @@
     "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md.tmp.64240.47254f243601",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md.tmp.64240.838c1cf2673e",
     "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md",
-    "10_Projects/プロジェクト研究A/教師モデル_EarlyFusion設計.md",
     "CLAUDE.md.tmp.64240.3abe177bb78f",
     "VAULT_INDEX.md.tmp.64240.cca32c897120",
     "VAULT_INDEX.md.tmp.64240.f014f627ad89",
