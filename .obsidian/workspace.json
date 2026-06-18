@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_Resources/音源分離/TasNet_メモ.md",
+                "file": "10_Projects/HPA/アイデア・検討.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TasNet_メモ"
+              "title": "アイデア・検討"
             }
           }
         ]
@@ -237,8 +237,14 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
+    "20_Areas/授業/人工知能.md",
+    "20_Areas/ソフトウェア開発/システム分析.md",
+    "20_Areas/ソフトウェア開発/Git・GitHub.md",
+    "20_Areas/ソフトウェア開発/Claude Code運用.md",
     "10_Projects/プロジェクト研究A/教師モデル_EarlyFusion設計.md",
+    "20_Areas/永続ノート/【MOC】永続ノート.md",
+    "30_Resources/音源分離/TasNet_メモ.md",
+    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
     "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md",
     "10_Projects/HPA/アイデア・検討.md",
     "00_Inbox/第9回ディジタル信号処理.md",
@@ -267,12 +273,6 @@
     "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
     "00_Inbox/AkaGhef_2065611906707337552.md",
     "00_Inbox/AkaGhef_2054517342168862808.md",
-    "00_Inbox/trail_mamo_2057818151543504951.md",
-    "00_Inbox/opensourcelab9_2066289580194791487.md",
-    "00_Inbox/ObsidianOtaku_2060308984221868163.md",
-    "20_Areas/ソフトウェア開発/AI駆動開発.md",
-    "20_Areas/ソフトウェア開発/Claude Code運用.md",
-    "10_Projects/HPA/【MOC】HPA.md",
     "無題のファイル.canvas"
   ]
 }
