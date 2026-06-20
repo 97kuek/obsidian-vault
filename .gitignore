@@ -6,6 +6,7 @@
 # APIキー・センシティブなプラグインデータ
 .obsidian/plugins/obsidian-local-rest-api/
 .obsidian/plugins/mcp-tools/
+.claude/settings.local.json
 
 # Obsidianゴミ箱
 .trash/

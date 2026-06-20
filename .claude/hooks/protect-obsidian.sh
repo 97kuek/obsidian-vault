@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # PreToolUse(Write|Edit|MultiEdit) guard.
 # Block edits under .obsidian/ — except .obsidian/snippets/vault-custom.css —
-# per the CLAUDE.md rule "do not touch .obsidian/ (breaks Obsidian)".
+# per docs/vault-rules.md: do not touch .obsidian/ except the CSS snippet.
 # Only the tool_input.file_path is inspected (note CONTENT mentioning
 # ".obsidian" must NOT trigger a block), so editing CLAUDE.md/README stays fine.
 
@@ -20,7 +20,7 @@ case "$fp" in
   */.obsidian/snippets/vault-custom.css)
     exit 0 ;;
   */.obsidian/*|.obsidian/*)
-    printf '%s\n' "Blocked: .obsidian/ は Obsidian 設定のため保護されています（CLAUDE.md）。編集してよいのは .obsidian/snippets/vault-custom.css のみです。" >&2
+    printf '%s\n' "Blocked: .obsidian/ は Obsidian 設定のため保護されています（docs/vault-rules.md）。編集してよいのは .obsidian/snippets/vault-custom.css のみです。" >&2
     exit 2 ;;
   *)
     exit 0 ;;

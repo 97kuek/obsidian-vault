@@ -44,11 +44,6 @@ SORT date DESC
 - [[Transformer_メモ]]
 - [[TasNet_メモ]]
 - [[Conv-TasNet_メモ]]
-- [[執筆ロードマップ]]
-
-## 実験結果
-
-- [[実験結果まとめ]]
 
 ## タスク一覧
 
@@ -72,7 +67,7 @@ SORT date DESC
 - [x] 公開済み学習済みモデルでの推論動作確認
 
 ### Phase3 : TF-Locoformerの習熟
-- [x] [[ESPnet]]のrecipe構造(`egs2/`,`conf/`,`local/`,`run.sh`)の把握
+- [x] ESPnetのrecipe構造(`egs2/`,`conf/`,`local/`,`run.sh`)の把握
 - [x] 設定ファイル(`yaml`)の読み書き
 - [x] WSJ0-2mix等の標準データセットでの再現実験
 - [x] 学習・評価のログとメトリクスの確認方法
