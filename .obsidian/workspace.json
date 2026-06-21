@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/人工知能.md",
+                "file": "20_Areas/授業/最適化アルゴリズム.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "人工知能"
+              "title": "最適化アルゴリズム"
             }
           }
         ]
@@ -241,10 +241,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/授業/人工知能.md",
     "Home.md",
     "00_Inbox/はじめに.md",
     "10_Projects/HPA/アイデア・検討.md",
-    "20_Areas/授業/人工知能.md",
     "20_Areas/ソフトウェア開発/システム分析.md",
     "20_Areas/ソフトウェア開発/Git・GitHub.md",
     "20_Areas/ソフトウェア開発/Claude Code運用.md",
