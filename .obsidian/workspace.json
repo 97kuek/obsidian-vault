@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/最適化アルゴリズム.md",
+                "file": "00_Inbox/最適化アルゴリズム ネットワーク最適化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "最適化アルゴリズム"
+              "title": "最適化アルゴリズム ネットワーク最適化"
             }
           }
         ]
@@ -241,6 +241,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/授業/最適化アルゴリズム.md",
+    "00_Inbox/最適化アルゴリズム ネットワーク最適化.md",
     "20_Areas/授業/人工知能.md",
     "Home.md",
     "00_Inbox/はじめに.md",
@@ -275,8 +277,6 @@
     "00_Inbox/A_I_News_2066759066786144499.md",
     "00_Inbox/trail_mamo_2058933850726969551.md",
     "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
-    "00_Inbox/AkaGhef_2065611906707337552.md",
-    "00_Inbox/AkaGhef_2054517342168862808.md",
     "無題のファイル.canvas"
   ]
 }
