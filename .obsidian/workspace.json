@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/人工知能.md",
+                "file": "20_Areas/機械学習・深層学習/強化学習.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "人工知能"
+              "title": "強化学習"
             }
           }
         ]
@@ -241,11 +241,16 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/授業/ディジタル信号処理.md",
+    "20_Areas/永続ノート/階層的委任による分散管理.md",
+    "20_Areas/永続ノート/妥協できる誤差とできない誤差.md",
+    "20_Areas/永続ノート/標本化定理.md",
+    "20_Areas/授業/人工知能.md",
+    "20_Areas/機械学習・深層学習/Transformer.md",
     "00_Inbox/最適化アルゴリズム ネットワーク最適化.md",
     "Home.md",
     "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md",
     "20_Areas/授業/最適化アルゴリズム.md",
-    "20_Areas/授業/人工知能.md",
     "00_Inbox/はじめに.md",
     "10_Projects/HPA/アイデア・検討.md",
     "20_Areas/ソフトウェア開発/システム分析.md",
@@ -272,11 +277,6 @@
     "10_Projects/プロジェクト研究A/実験結果まとめ.md",
     "10_Projects/プロジェクト研究A/使用モデルと学習データセットの特徴.md",
     "10_Projects/プロジェクト研究A/ESPnet.md",
-    "10_Projects/プロジェクト研究A/20260512_TF-LocoformerでTTS音声を分離する.md",
-    "10_Projects/プロジェクト研究A/20260511_音源分離実験用スクリプトの作成.md",
-    "00_Inbox/A_I_News_2066759066786144499.md",
-    "00_Inbox/trail_mamo_2058933850726969551.md",
-    "00_Inbox/ClaudeCode_UT_2066438059428819377.md",
     "無題のファイル.canvas"
   ]
 }

@@ -50,6 +50,7 @@ mindmap
 - [[PAC学習]] — 「たぶん・だいたい・正しい」学習の枠組み
 
 ### 深層学習
+- [[Transformer]] — Self-Attentionを中心に系列を処理する基盤アーキテクチャ
 - [[【MOC】B4勉強会]]
 
 ## 関連MOC・上位MOC

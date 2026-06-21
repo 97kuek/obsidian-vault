@@ -28,6 +28,7 @@ RNN・CNNを使わずSelf-Attentionのみで系列変換を実現。現代のLLM
 
 ## 気づき・メモ
 
+- 概念ノート: [[Transformer]]
 - 勉強会での詳しい解説: [[20260430_勉強会03]]
 - 音源分離への応用: [[TF-Locoformer_メモ]]
 
@@ -39,3 +40,4 @@ RNN・CNNを使わずSelf-Attentionのみで系列変換を実現。現代のLLM
 
 - [[TF-Locoformer_メモ]]
 - [[20260430_勉強会03]]
+- [[Transformer]]
