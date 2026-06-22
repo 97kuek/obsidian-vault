@@ -129,7 +129,9 @@ body {
 /* --- 管理ファイルを左ツリーから隠す（ファイル本体は残す） --- */
 .nav-file-title[data-path="README.md"],
 .nav-file-title[data-path="CLAUDE.md"],
-.nav-file-title[data-path="VAULT_INDEX.md"] {
+.nav-file-title[data-path="VAULT_INDEX.md"],
+.nav-file-title[data-path="AGENTS.md"],
+.nav-file-title[data-path^="DESIGN.md"] {  /* DESIGN.md / DESIGN.md.md 両対応 */
   display: none;
 }
 
@@ -140,7 +142,9 @@ body {
    すべてCSSのみ＝ファイルは消えていない。元に戻すにはこのブロックを削除。 */
 .nav-folder:has(> [data-path="30_Resources"]),
 .nav-folder:has(> [data-path="99_Templates"]),
-.nav-folder:has(> [data-path="40_Archives"]) {
+.nav-folder:has(> [data-path="40_Archives"]),
+.nav-folder:has(> [data-path="docs"]),
+.nav-folder:has(> [data-path="tools"]) {
   display: none;
 }
 
@@ -288,9 +292,9 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 /* ========================================
    B. 引用・テーブル・タスク
    ======================================== */
-/* 引用ブロック: coral の細い左ボーダー（コールアウトとは別物） */
+/* 引用ブロック: muted の左ボーダー（coral は使わない＝DESIGN.mdの「coralを多用しない」に従う） */
 .markdown-rendered blockquote {
-  border-left: 3px solid #cc785c;
+  border-left: 3px solid #c9bda9;  /* muted warm */
   color: var(--text-muted);
   padding-left: 1em;
   margin-left: 0;
@@ -348,4 +352,41 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 }
 ::-webkit-scrollbar-track {
   background-color: transparent;
+}
+
+/* ========================================
+   1. グラフビュー: coral + ink の暖色パレットに
+   ======================================== */
+.theme-light {
+  --graph-line:              #d9d0c0;  /* hairline 寄り */
+  --graph-node:              #3d3d3a;  /* body ink */
+  --graph-text:              #141413;  /* ink */
+  --graph-node-focused:      #cc785c;  /* coral: フォーカス時のみ目立たせる */
+  --graph-node-tag:          #5db8a6;  /* teal */
+  --graph-node-attachment:   #e8a55a;  /* amber */
+  --graph-node-unresolved:   #a09d96;  /* muted-soft */
+}
+
+/* ========================================
+   3. プロパティ(frontmatter)欄の作り込み
+   ======================================== */
+.metadata-container {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  padding: 0.4em 0.8em;
+}
+.metadata-property-key,
+.metadata-property-key-input {
+  color: var(--text-muted);
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.metadata-property-icon {
+  color: var(--text-faint);
+}
+/* タグ型などのプロパティ値ピルを surface-cream-strong に */
+.metadata-property .multi-select-pill {
+  background-color: #e8e0d2;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 9999px;
 }
