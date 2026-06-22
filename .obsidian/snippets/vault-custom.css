@@ -11,11 +11,13 @@
    Claude風テーマ（ライト / クリーム基調）
    ライトモード時のみ適用。設定 → 外観 → ベースカラー を「ライト」に。
    ======================================== */
-.theme-light {
+body {
   /* --- カラー: Claude のクリーム/クレイ系 ---
-     セレクタは .theme-light（Obsidian標準と同じ強さ＋スニペットは後読み）
-     にすることで標準テーマの色を上書きできる。 */
-  --background-primary:       #FAF9F5 !important;  /* メインの紙色 */
+     ライト/ダーク判定を外し body へ無条件適用（ライト固定運用のため）。
+     値に !important を付けて標準テーマに必ず詠み勝つ。 */
+  /* 現行Obsidianはエディタ背景を --color-base-00 から再導出するため大元も上書き */
+  --color-base-00:            #F0EEE6 !important;
+  --background-primary:       #F0EEE6 !important;  /* メインの紙色 */
   --background-primary-alt:   #F5F4EC !important;
   --background-secondary:     #F0EEE6 !important;  /* サイドバー */
   --background-secondary-alt: #E9E6DA !important;
@@ -78,10 +80,17 @@ body {
 /* --- 中央エディタ(Live Preview/編集モード)の背景だけクリームに ---
    CodeMirror 本体が独自の白背景を持つため、エディタ要素のみを狙う。
    .view-content は使わない（git/ソースコントロール等まで巻き込み白化する事故を避ける）。 */
-.theme-light .markdown-source-view.mod-cm6 .cm-editor,
-.theme-light .markdown-source-view.mod-cm6 .cm-scroller,
-.theme-light .markdown-source-view.mod-cm6 .cm-gutters {
-  background-color: #FAF9F5 !important;
+.workspace-leaf-content[data-type="markdown"] .view-content,
+.markdown-source-view,
+.cm-editor,
+.cm-scroller,
+.cm-content,
+.cm-sizer,
+.cm-gutters,
+.metadata-container,
+.markdown-reading-view,
+.markdown-preview-view {
+  background-color: #F0EEE6 !important;
 }
 
 /* === ファイルエクスプローラー === */
