@@ -1,8 +1,88 @@
+/* @import は必ずファイル先頭（他ルールより前）に置く */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 /* ========================================
    vault-custom.css
    有効化: 設定 → 外観 → CSSスニペット → vault-custom をオン
    方針: 「引き算」— 装飾を抑えて視覚ノイズを減らす
    ======================================== */
+
+/* ========================================
+   Claude風テーマ（ライト / クリーム基調）
+   ライトモード時のみ適用。設定 → 外観 → ベースカラー を「ライト」に。
+   ======================================== */
+body.theme-light {
+  /* --- カラー: Claude のクリーム/クレイ系 ---
+     セレクタは body.theme-light（Obsidian標準と同じ強さ＋スニペットは後読み）
+     にすることで標準テーマの色を上書きできる。 */
+  --background-primary:       #FAF9F5;  /* メインの紙色 */
+  --background-primary-alt:   #F5F4EC;
+  --background-secondary:     #F0EEE6;  /* サイドバー */
+  --background-secondary-alt: #E9E6DA;
+  --background-modifier-border:        #E5E2D6;
+  --background-modifier-border-hover:  #D9D5C6;
+
+  --text-normal:   #2B2A27;  /* 温かみのあるダークグレー */
+  --text-muted:    #6B6A63;
+  --text-faint:    #9A988E;
+  --text-on-accent:#FFFFFF;
+
+  /* アクセント: Claude のクレイ/テラコッタ */
+  --interactive-accent:        #D97757;
+  --interactive-accent-hover:  #C56A4A;
+  --text-accent:               #C2603F;
+  --text-accent-hover:         #A94E30;
+  --text-selection:            #E6C9B8;
+
+  /* リンク */
+  --link-color:        #C2603F;
+  --link-color-hover:  #A94E30;
+
+  /* 角丸を少し大きく（Claudeの柔らかさ） */
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 14px;
+}
+
+/* --- フォント: Inter（UI/本文） + Source Serif 4（見出し） --- */
+body {
+  --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-text-theme:      'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-monospace-theme: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* 見出しはセリフで Claude の回答ライクに */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-source-view.mod-cm6 .HyperMD-header,
+.markdown-source-view.mod-cm6 .cm-header,
+.inline-title {
+  font-family: 'Source Serif 4', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* 本文の読みやすさを少し調整（行間・字間ゆったり） */
+.markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-line {
+  line-height: 1.7;
+}
+
+/* ボタンを柔らかく */
+body.theme-light button:not(.clickable-icon),
+body.theme-light .mod-cta {
+  border-radius: var(--radius-m);
+}
+
+/* --- 中央エディタ(Live Preview/編集モード)の背景だけクリームに ---
+   CodeMirror 本体が独自の白背景を持つため、エディタ要素のみを狙う。
+   .view-content は使わない（git/ソースコントロール等まで巻き込み白化する事故を避ける）。 */
+body.theme-light .markdown-source-view.mod-cm6 .cm-editor,
+body.theme-light .markdown-source-view.mod-cm6 .cm-scroller,
+body.theme-light .markdown-source-view.mod-cm6 .cm-gutters {
+  background-color: var(--background-primary);
+}
 
 /* === ファイルエクスプローラー === */
 
