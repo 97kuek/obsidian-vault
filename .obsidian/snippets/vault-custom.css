@@ -11,16 +11,16 @@
    Claude風テーマ（ライト / クリーム基調）
    ライトモード時のみ適用。設定 → 外観 → ベースカラー を「ライト」に。
    ======================================== */
-body.theme-light {
+.theme-light {
   /* --- カラー: Claude のクリーム/クレイ系 ---
-     セレクタは body.theme-light（Obsidian標準と同じ強さ＋スニペットは後読み）
+     セレクタは .theme-light（Obsidian標準と同じ強さ＋スニペットは後読み）
      にすることで標準テーマの色を上書きできる。 */
-  --background-primary:       #FAF9F5;  /* メインの紙色 */
-  --background-primary-alt:   #F5F4EC;
-  --background-secondary:     #F0EEE6;  /* サイドバー */
-  --background-secondary-alt: #E9E6DA;
-  --background-modifier-border:        #E5E2D6;
-  --background-modifier-border-hover:  #D9D5C6;
+  --background-primary:       #FAF9F5 !important;  /* メインの紙色 */
+  --background-primary-alt:   #F5F4EC !important;
+  --background-secondary:     #F0EEE6 !important;  /* サイドバー */
+  --background-secondary-alt: #E9E6DA !important;
+  --background-modifier-border:        #E5E2D6 !important;
+  --background-modifier-border-hover:  #D9D5C6 !important;
 
   --text-normal:   #2B2A27;  /* 温かみのあるダークグレー */
   --text-muted:    #6B6A63;
@@ -70,18 +70,18 @@ body {
 }
 
 /* ボタンを柔らかく */
-body.theme-light button:not(.clickable-icon),
-body.theme-light .mod-cta {
+.theme-light button:not(.clickable-icon),
+.theme-light .mod-cta {
   border-radius: var(--radius-m);
 }
 
 /* --- 中央エディタ(Live Preview/編集モード)の背景だけクリームに ---
    CodeMirror 本体が独自の白背景を持つため、エディタ要素のみを狙う。
    .view-content は使わない（git/ソースコントロール等まで巻き込み白化する事故を避ける）。 */
-body.theme-light .markdown-source-view.mod-cm6 .cm-editor,
-body.theme-light .markdown-source-view.mod-cm6 .cm-scroller,
-body.theme-light .markdown-source-view.mod-cm6 .cm-gutters {
-  background-color: var(--background-primary);
+.theme-light .markdown-source-view.mod-cm6 .cm-editor,
+.theme-light .markdown-source-view.mod-cm6 .cm-scroller,
+.theme-light .markdown-source-view.mod-cm6 .cm-gutters {
+  background-color: #FAF9F5 !important;
 }
 
 /* === ファイルエクスプローラー === */
