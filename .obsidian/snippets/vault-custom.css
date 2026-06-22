@@ -1,5 +1,5 @@
 /* @import は必ずファイル先頭（他ルールより前）に置く */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* ========================================
    vault-custom.css
@@ -15,35 +15,52 @@ body {
   /* --- カラー: Claude のクリーム/クレイ系 ---
      ライト/ダーク判定を外し body へ無条件適用（ライト固定運用のため）。
      値に !important を付けて標準テーマに必ず詠み勝つ。 */
-  /* 現行Obsidianはエディタ背景を --color-base-00 から再導出するため大元も上書き */
-  --color-base-00:            #F0EEE6 !important;
-  --background-primary:       #F0EEE6 !important;  /* メインの紙色 */
-  --background-primary-alt:   #F5F4EC !important;
-  --background-secondary:     #F0EEE6 !important;  /* サイドバー */
-  --background-secondary-alt: #E9E6DA !important;
-  --background-modifier-border:        #E5E2D6 !important;
-  --background-modifier-border-hover:  #D9D5C6 !important;
+  /* --- サーフェス: DESIGN.md のクリーム階層に準拠 ---
+     canvas(本文)=最も明るい / surface-card(サイドバー)=一段濃い、で暖色コントラストを作る。
+     現行Obsidianはエディタ背景を --color-base-00 から再導出するため大元も上書き。 */
+  --color-base-00:            #faf9f5 !important;  /* canvas: 本文の床 */
+  --background-primary:       #faf9f5 !important;  /* canvas */
+  --background-primary-alt:   #f5f0e8 !important;  /* surface-soft */
+  --background-secondary:     #efe9de !important;  /* surface-card: サイドバー */
+  --background-secondary-alt: #e8e0d2 !important;  /* surface-cream-strong */
+  --background-modifier-border:        #e6dfd8 !important;  /* hairline */
+  --background-modifier-border-hover:  #dcd3c4 !important;
 
-  --text-normal:   #2B2A27;  /* 温かみのあるダークグレー */
-  --text-muted:    #6B6A63;
-  --text-faint:    #9A988E;
-  --text-on-accent:#FFFFFF;
+  /* --- テキスト: ink(見出し) / body(本文) / muted --- */
+  --text-normal:   #3d3d3a;  /* body: 走り書き本文 */
+  --text-muted:    #6c6a64;  /* muted */
+  --text-faint:    #8e8b82;  /* muted-soft */
+  --text-on-accent:#ffffff;  /* on-primary */
 
-  /* アクセント: Claude のクレイ/テラコッタ */
-  --interactive-accent:        #D97757;
-  --interactive-accent-hover:  #C56A4A;
-  --text-accent:               #C2603F;
-  --text-accent-hover:         #A94E30;
-  --text-selection:            #E6C9B8;
+  /* --- アクセント: Anthropic coral（唯一のブランド色。多用しない） --- */
+  --interactive-accent:        #cc785c;  /* primary */
+  --interactive-accent-hover:  #a9583e;  /* primary-active */
+  --text-accent:               #cc785c;
+  --text-accent-hover:         #a9583e;
+  --text-selection:            rgba(204, 120, 92, 0.18);  /* coral 18% */
 
-  /* リンク */
-  --link-color:        #C2603F;
-  --link-color-hover:  #A94E30;
+  /* リンク: coral */
+  --link-color:        #cc785c;
+  --link-color-hover:  #a9583e;
 
-  /* 角丸を少し大きく（Claudeの柔らかさ） */
+  /* --- コード: ダークネイビーのコードウィンドウ（DESIGN.mdの象徴） --- */
+  --code-background: #181715;   /* surface-dark */
+  --code-radius:     12px;      /* rounded.lg */
+  --code-normal:     #ece6da;   /* on-dark 本文 */
+  --code-comment:    #8e8b82;   /* muted-soft */
+  --code-keyword:    #cc785c;   /* coral */
+  --code-function:   #e8a55a;   /* amber */
+  --code-string:     #5db8a6;   /* teal */
+  --code-value:      #5db8a6;
+  --code-property:   #ece6da;
+  --code-tag:        #cc785c;
+  --code-operator:   #a09d96;   /* on-dark-soft */
+  --code-punctuation:#a09d96;
+
+  /* --- 角丸: DESIGN.md の階層（md=8 ボタン/入力, lg=12 カード/コード） --- */
   --radius-s: 6px;
-  --radius-m: 10px;
-  --radius-l: 14px;
+  --radius-m: 8px;
+  --radius-l: 12px;
 }
 
 /* --- フォント: Inter（UI/本文） + Source Serif 4（見出し） --- */
@@ -53,7 +70,8 @@ body {
   --font-monospace-theme: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-/* 見出しはセリフで Claude の回答ライクに */
+/* 見出しは本文と同じ Inter に統一（ユーザー指定）。
+   ただし色は ink(#141413) で本文 body(#3d3d3a) と階層を付ける（DESIGN.md準拠）。 */
 .markdown-rendered h1,
 .markdown-rendered h2,
 .markdown-rendered h3,
@@ -61,8 +79,10 @@ body {
 .markdown-source-view.mod-cm6 .HyperMD-header,
 .markdown-source-view.mod-cm6 .cm-header,
 .inline-title {
-  font-family: 'Source Serif 4', Georgia, serif;
-  letter-spacing: -0.01em;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #141413;
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
 
 /* 本文の読みやすさを少し調整（行間・字間ゆったり） */
@@ -90,7 +110,7 @@ body {
 .metadata-container,
 .markdown-reading-view,
 .markdown-preview-view {
-  background-color: #F0EEE6 !important;
+  background-color: #faf9f5 !important;  /* canvas */
 }
 
 /* === ファイルエクスプローラー === */
@@ -175,4 +195,82 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 /* Reading Modeでフロントマターを薄く */
 .markdown-source-view.mod-cm6 .cm-hmd-frontmatter {
   opacity: 0.4;
+}
+
+/* ========================================
+   Claude調 仕上げ（暖色・低彩度で統一）
+   ======================================== */
+
+/* === 1. コールアウト: DESIGN.md のパレット（teal/amber/coral/semantic、寒色ブランド色・紫は不使用） === */
+.theme-light {
+  --callout-default:  108, 106, 100;  /* muted */
+  --callout-info:     93, 184, 166;   /* accent-teal */
+  --callout-note:     93, 184, 166;
+  --callout-todo:     93, 184, 166;
+  --callout-abstract: 93, 184, 166;
+  --callout-tip:      93, 184, 114;   /* success */
+  --callout-success:  93, 184, 114;
+  --callout-question: 232, 165, 90;   /* amber */
+  --callout-warning:  212, 160, 23;   /* warning */
+  --callout-failure:  198, 69, 69;    /* error */
+  --callout-danger:   198, 69, 69;
+  --callout-bug:      198, 69, 69;
+  --callout-important:204, 120, 92;   /* coral */
+  --callout-example:  204, 120, 92;   /* coral（紫を廃止） */
+  --callout-quote:    108, 106, 100;  /* muted */
+}
+.callout {
+  --callout-radius: 12px;             /* rounded.lg */
+  border: 1px solid rgba(var(--callout-color), 0.25);
+  background-color: rgba(var(--callout-color), 0.06) !important;
+  box-shadow: none;
+}
+.callout-title {
+  background-color: transparent;
+  padding-bottom: 0.2em;
+}
+
+/* === 2. リンク: coral に統一 === */
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link,
+.cm-editor .cm-hmd-internal-link,
+.cm-editor .cm-link,
+.cm-editor .cm-url {
+  color: #cc785c !important;
+  text-decoration-color: rgba(204, 120, 92, 0.35);
+}
+
+/* === 3. コードブロック: ダークネイビーのコードウィンドウ（DESIGN.md象徴） ===
+   背景色はトークン --code-background で reading/live 両モードに効く。
+   ここでは pre の角丸・パディング・行番号色など仕上げのみ。 */
+.markdown-rendered pre {
+  border-radius: var(--code-radius);
+  padding: 1em 1.2em;
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  background-color: var(--code-background) !important;
+  color: var(--code-normal);
+}
+/* 行番号（gutter）は muted-soft */
+.markdown-rendered .code-block-flair,
+.cm-editor .HyperMD-codeblock .cm-gutters {
+  color: #a09d96;
+}
+/* インラインコードは本文クリームの中で「明るいチップ」に戻す（ダークは block のみ） */
+.markdown-rendered :not(pre) > code,
+.cm-editor .cm-inline-code {
+  background-color: #efe9de !important;  /* surface-card */
+  color: #3d3d3a !important;
+}
+
+/* === 4. 区切り線・選択ハイライト === */
+.markdown-rendered hr {
+  border-color: var(--background-modifier-border);
+}
+::selection {
+  background-color: rgba(204, 120, 92, 0.18);  /* coral 18% */
+}
+/* 編集中のアクティブ行をごく薄い coral に */
+.cm-editor .cm-active.cm-line {
+  background-color: rgba(204, 120, 92, 0.04);
 }
