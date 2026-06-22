@@ -18,8 +18,9 @@ body {
   /* --- サーフェス: DESIGN.md のクリーム階層に準拠 ---
      canvas(本文)=最も明るい / surface-card(サイドバー)=一段濃い、で暖色コントラストを作る。
      現行Obsidianはエディタ背景を --color-base-00 から再導出するため大元も上書き。 */
-  --color-base-00:            #faf9f5 !important;  /* canvas: 本文の床 */
-  --background-primary:       #faf9f5 !important;  /* canvas */
+  /* 本来 canvas は #faf9f5 だが、白く見えるとの判断でサイドと同じ #efe9de に統一 */
+  --color-base-00:            #efe9de !important;  /* canvas（=surface-cardに揃える） */
+  --background-primary:       #efe9de !important;
   --background-primary-alt:   #f5f0e8 !important;  /* surface-soft */
   --background-secondary:     #efe9de !important;  /* surface-card: サイドバー */
   --background-secondary-alt: #e8e0d2 !important;  /* surface-cream-strong */
@@ -110,7 +111,7 @@ body {
 .metadata-container,
 .markdown-reading-view,
 .markdown-preview-view {
-  background-color: #faf9f5 !important;  /* canvas */
+  background-color: #efe9de !important;  /* canvas（サイドと統一） */
 }
 
 /* === ファイルエクスプローラー === */
