@@ -5,16 +5,16 @@ aliases:
   - ホーム
   - ダッシュボード
 ---
-# 🧠 Home
+# Home
 
-> [!tip] すばやく潜る
-> `Ctrl+O` ジャンプ ／ `Ctrl+Shift+F` 全文検索 ／ グラフビュー ／ タグクリック
+> [!tip] Quick navigation
+> `Ctrl+O` jump / `Ctrl+Shift+F` full-text search / Graph view / Tag click
 
-## 🔍 検索
+## Search
 
 ```dataviewjs
 const box = dv.el("div", "");
-const input = box.createEl("input", { attr: { type: "text", placeholder: "🔍 ノート名で検索（部分一致）..." } });
+const input = box.createEl("input", { attr: { type: "text", placeholder: "Search by note name (partial match)..." } });
 input.style.cssText = "width:100%; padding:6px 10px; margin-bottom:8px; border-radius:6px;";
 const out = box.createEl("div");
 const pages = dv.pages()
@@ -26,9 +26,9 @@ const pages = dv.pages()
 function render(q) {
   out.empty();
   q = (q || "").trim().toLowerCase();
-  if (!q) { out.createEl("div", { text: "↑ キーワードを入力（ノート名で絞り込み）", attr: { style: "opacity:0.5" } }); return; }
+  if (!q) { out.createEl("div", { text: "Type a keyword to filter by note name", attr: { style: "opacity:0.5" } }); return; }
   const hits = pages.filter(p => p.file.name.toLowerCase().includes(q));
-  if (hits.length === 0) { out.createEl("div", { text: "該当なし", attr: { style: "opacity:0.5" } }); return; }
+  if (hits.length === 0) { out.createEl("div", { text: "No matches", attr: { style: "opacity:0.5" } }); return; }
   const ul = out.createEl("ul");
   for (const p of hits.slice(0, 20)) {
     const li = ul.createEl("li");
@@ -37,13 +37,13 @@ function render(q) {
     a.onclick = () => app.workspace.openLinkText(p.file.path, "", false);
     li.createEl("span", { text: "  — " + p.file.folder, attr: { style: "opacity:0.45; font-size:0.85em" } });
   }
-  if (hits.length > 20) out.createEl("div", { text: `他 ${hits.length - 20} 件…`, attr: { style: "opacity:0.45; font-size:0.85em" } });
+  if (hits.length > 20) out.createEl("div", { text: `${hits.length - 20} more...`, attr: { style: "opacity:0.45; font-size:0.85em" } });
 }
 input.addEventListener("input", e => render(e.target.value));
 render("");
 ```
 
-## 🗺 知識マップ（MOC）
+## Knowledge Map (MOC)
 
 ```dataview
 LIST
@@ -54,7 +54,7 @@ SORT file.path ASC
 
 ---
 
-> [!note]- 🧠 永続ノート（概念インデックス）
+> [!note]- Permanent Notes (concept index)
 > ```dataview
 > LIST
 > FROM "20_Areas/永続ノート"
@@ -62,32 +62,32 @@ SORT file.path ASC
 > SORT file.name ASC
 > ```
 
-> [!note]- 📖 科目・トピックノート
+> [!note]- Subject & Topic Notes
 > ```dataview
-> TABLE rows.file.link AS "ノート"
+> TABLE rows.file.link AS "Note"
 > FROM "20_Areas"
 > WHERE !contains(tags, "MOC") AND file.folder != "20_Areas/永続ノート" AND !regexmatch("^[0-9]{8}", file.name)
-> GROUP BY file.folder AS "分野"
-> SORT 分野 ASC
+> GROUP BY file.folder AS "Field"
+> SORT Field ASC
 > ```
 
-> [!note]- 🔬 論文メモ
+> [!note]- Paper Notes
 > ```dataview
-> TABLE WITHOUT ID file.link AS "論文", year AS "年", status AS "状態"
+> TABLE WITHOUT ID file.link AS "Paper", year AS "Year", status AS "Status"
 > FROM "30_Resources"
 > WHERE contains(tags, "paper")
 > SORT status ASC, year DESC
 > ```
 
-> [!example]- 🚀 アクティブプロジェクト
+> [!example]- Active Projects
 > ```dataview
-> TABLE file.mtime AS "最終更新", length(filter(file.tasks, (t) => !t.completed)) AS "残タスク"
+> TABLE file.mtime AS "Last Modified", length(filter(file.tasks, (t) => !t.completed)) AS "Open Tasks"
 > FROM "10_Projects"
 > WHERE contains(tags, "MOC") AND file.name != "【MOC】10_Projects"
 > SORT file.mtime DESC
 > ```
 
-> [!todo]- ✅ 未完了タスク
+> [!todo]- Open Tasks
 > ```dataview
 > TASK
 > FROM "10_Projects" OR "20_Areas"
@@ -95,7 +95,7 @@ SORT file.path ASC
 > LIMIT 10
 > ```
 
-> [!note]- 📥 Inbox（未整理）
+> [!note]- Inbox (unsorted)
 > ```dataview
 > LIST
 > FROM "00_Inbox"
@@ -104,7 +104,7 @@ SORT file.path ASC
 > LIMIT 5
 > ```
 
-> [!note]- 🕒 最近編集したノート（3日以内）
+> [!note]- Recently Edited (last 3 days)
 > ```dataview
 > LIST
 > WHERE file.mtime >= date(today) - dur(3 days)

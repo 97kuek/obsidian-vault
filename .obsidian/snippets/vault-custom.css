@@ -144,13 +144,14 @@ body {
   display: none;
 }
 
-/* === タグ: 塗りつぶしピル → 控えめな色文字（ノイズ削減） === */
+/* === タグ: badge-pill（surface-cream-strong 背景＋hairline、pill角丸） === */
 .markdown-rendered a.tag,
 .cm-s-obsidian a.tag {
-  background-color: transparent !important;
-  border: none !important;
-  padding: 0 0.15em !important;
-  font-size: 0.82em;
+  background-color: #e8e0d2 !important;  /* surface-cream-strong */
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 9999px !important;       /* rounded.pill */
+  padding: 0.08em 0.62em !important;
+  font-size: 0.78em;
   font-weight: 500;
 }
 a.tag[href="#paper"]      { color: #5b9279 !important; }
@@ -274,4 +275,77 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 /* 編集中のアクティブ行をごく薄い coral に */
 .cm-editor .cm-active.cm-line {
   background-color: rgba(204, 120, 92, 0.04);
+}
+
+/* ========================================
+   A. サイドバー: 開いているノートを強調（category-tab-active 相当）
+   ======================================== */
+.nav-file-title.is-active {
+  background-color: #e8e0d2 !important;  /* surface-cream-strong */
+  font-weight: 600;
+}
+
+/* ========================================
+   B. 引用・テーブル・タスク
+   ======================================== */
+/* 引用ブロック: coral の細い左ボーダー（コールアウトとは別物） */
+.markdown-rendered blockquote {
+  border-left: 3px solid #cc785c;
+  color: var(--text-muted);
+  padding-left: 1em;
+  margin-left: 0;
+}
+/* テーブル: hairline 罫線＋ヘッダを一段濃いクリームに */
+.markdown-rendered table {
+  border-collapse: collapse;
+}
+.markdown-rendered th,
+.markdown-rendered td {
+  border: 1px solid var(--background-modifier-border);
+  padding: 0.4em 0.7em;
+}
+.markdown-rendered thead th {
+  background-color: #e8e0d2;  /* surface-cream-strong */
+}
+/* チェックボックスを coral アクセントに */
+.markdown-rendered input[type="checkbox"],
+.cm-editor input[type="checkbox"] {
+  accent-color: #cc785c;
+}
+
+/* ========================================
+   C. タイポ階層（見出しサイズの段階＋本文の余白）
+   ======================================== */
+.markdown-rendered h1 { font-size: 1.9em;  margin-top: 1.2em; }
+.markdown-rendered h2 { font-size: 1.5em; }
+.markdown-rendered h3 { font-size: 1.22em; }
+.markdown-rendered h4 { font-size: 1.05em; }
+.markdown-rendered p {
+  margin-block: 0.7em;
+}
+
+/* ========================================
+   D. 周辺UIをクリームに統一（標準色の残りを消す）
+   ======================================== */
+.workspace-tab-header-container,
+.workspace-ribbon,
+.status-bar,
+.titlebar {
+  background-color: #efe9de !important;  /* canvas に合わせる */
+}
+.workspace-tab-header.is-active {
+  background-color: #e8e0d2 !important;  /* アクティブタブを一段濃く */
+}
+/* スクロールバーを暖色の細いピルに */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d9d0c0;
+  border-radius: 9999px;
+  border: 2px solid #efe9de;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
