@@ -331,14 +331,27 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 /* ========================================
    D. 周辺UIをクリームに統一（標準色の残りを消す）
    ======================================== */
-.workspace-tab-header-container,
 .workspace-ribbon,
 .status-bar,
 .titlebar {
-  background-color: #efe9de !important;  /* canvas に合わせる */
+  background-color: #efe9de !important;
+}
+/* タブバー: バーを一段濃い帯に、アクティブタブは canvas 色で下のエディタと繋げる（標準の見え方） */
+.workspace-tab-header-container {
+  background-color: #e8e0d2 !important;       /* surface-cream-strong の帯 */
+  border-bottom: 1px solid var(--background-modifier-border);
 }
 .workspace-tab-header.is-active {
-  background-color: #e8e0d2 !important;  /* アクティブタブを一段濃く */
+  background-color: #efe9de !important;       /* = canvas */
+}
+.workspace-tab-header:not(.is-active) {
+  background-color: transparent !important;   /* 帯の色を見せる */
+}
+.workspace-tab-header-inner-title {
+  color: var(--text-muted);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--text-normal);
 }
 /* スクロールバーを暖色の細いピルに */
 ::-webkit-scrollbar {
