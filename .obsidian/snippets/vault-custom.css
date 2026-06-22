@@ -1,78 +1,143 @@
 /* @import は必ずファイル先頭（他ルールより前）に置く */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* ========================================
-   vault-custom.css
+/* ============================================================
+   vault-custom.css  —  Claude.com 風テーマ（ライト固定 / クリーム基調）
    有効化: 設定 → 外観 → CSSスニペット → vault-custom をオン
-   方針: 「引き算」— 装飾を抑えて視覚ノイズを減らす
-   ======================================== */
+   設計指針: DESIGN.md（Claude 公式デザインスペック）準拠
+   方針メモ:
+     - canvas は本文・サイドとも #efe9de に統一（白く見えないよう揃える）
+     - アクセントは coral #cc785c のみ。多用しない（リンク/インタラクティブ要素に限定）
+     - コードブロックはダークネイビー #181715（DESIGN.md の象徴）
+     - 絵文字は使わない方針
+   構成:
+     1. デザイントークン（カラー / コード / 角丸）
+     2. フォント
+     3. 背景（canvas）を確実にクリームへ
+     4. タイポgrafi（見出し / 本文）
+     5. リンク
+     6. コード（ブロック=ダークネイビー / インライン=明るいチップ）
+     7. コールアウト
+     8. 引用 / テーブル / タスク
+     9. タグ（pill）
+    10. ファイルエクスプローラー（強調 / 非表示 / アクティブ）
+    11. タブバー・最上部ヘッダ
+    12. プロパティ（frontmatter）
+    13. グラフビュー
+    14. 周辺UI（スクロールバー / 区切り線 / 選択）
+    15. プラグイン補助（Dataview / タスク表示）
+   ============================================================ */
 
-/* ========================================
-   Claude風テーマ（ライト / クリーム基調）
-   ライトモード時のみ適用。設定 → 外観 → ベースカラー を「ライト」に。
-   ======================================== */
+/* ============================================================
+   1. デザイントークン
+   ライト/ダーク判定を外し body へ無条件適用（ライト固定運用）。
+   背景系は標準テーマに詠み勝つため値に !important を付ける。
+   ============================================================ */
 body {
-  /* --- カラー: Claude のクリーム/クレイ系 ---
-     ライト/ダーク判定を外し body へ無条件適用（ライト固定運用のため）。
-     値に !important を付けて標準テーマに必ず詠み勝つ。 */
-  /* --- サーフェス: DESIGN.md のクリーム階層に準拠 ---
-     canvas(本文)=最も明るい / surface-card(サイドバー)=一段濃い、で暖色コントラストを作る。
-     現行Obsidianはエディタ背景を --color-base-00 から再導出するため大元も上書き。 */
-  /* 本来 canvas は #faf9f5 だが、白く見えるとの判断でサイドと同じ #efe9de に統一 */
-  --color-base-00:            #efe9de !important;  /* canvas（=surface-cardに揃える） */
-  --background-primary:       #efe9de !important;
+  /* --- サーフェス（DESIGN.md のクリーム階層。canvas は #efe9de に統一） --- */
+  --color-base-00:            #efe9de !important;  /* エディタ背景の大元 */
+  --background-primary:       #efe9de !important;  /* canvas（本文・サイド共通） */
   --background-primary-alt:   #f5f0e8 !important;  /* surface-soft */
-  --background-secondary:     #efe9de !important;  /* surface-card: サイドバー */
+  --background-secondary:     #efe9de !important;  /* surface-card */
   --background-secondary-alt: #e8e0d2 !important;  /* surface-cream-strong */
   --background-modifier-border:        #e6dfd8 !important;  /* hairline */
   --background-modifier-border-hover:  #dcd3c4 !important;
 
-  /* --- テキスト: ink(見出し) / body(本文) / muted --- */
-  --text-normal:   #3d3d3a;  /* body: 走り書き本文 */
-  --text-muted:    #6c6a64;  /* muted */
-  --text-faint:    #8e8b82;  /* muted-soft */
-  --text-on-accent:#ffffff;  /* on-primary */
+  /* --- テキスト --- */
+  --text-normal:    #3d3d3a;  /* body: 本文 */
+  --text-muted:     #6c6a64;  /* muted */
+  --text-faint:     #8e8b82;  /* muted-soft */
+  --text-on-accent: #ffffff;
 
-  /* --- アクセント: Anthropic coral（唯一のブランド色。多用しない） --- */
-  --interactive-accent:        #cc785c;  /* primary */
-  --interactive-accent-hover:  #a9583e;  /* primary-active */
+  /* --- アクセント: Anthropic coral（唯一のブランド色） --- */
+  --interactive-accent:        #cc785c;
+  --interactive-accent-hover:  #a9583e;
   --text-accent:               #cc785c;
   --text-accent-hover:         #a9583e;
-  --text-selection:            rgba(204, 120, 92, 0.18);  /* coral 18% */
+  --text-selection:            rgba(204, 120, 92, 0.18);
+  --link-color:                #cc785c;
+  --link-color-hover:          #a9583e;
 
-  /* リンク: coral */
-  --link-color:        #cc785c;
-  --link-color-hover:  #a9583e;
-
-  /* --- コード: ダークネイビーのコードウィンドウ（DESIGN.mdの象徴） --- */
+  /* --- コード: ダークネイビーのコードウィンドウ --- */
   --code-background: #181715;   /* surface-dark */
   --code-radius:     12px;      /* rounded.lg */
-  --code-normal:     #ece6da;   /* on-dark 本文 */
-  --code-comment:    #8e8b82;   /* muted-soft */
+  --code-normal:     #ece6da;
+  --code-comment:    #8e8b82;
   --code-keyword:    #cc785c;   /* coral */
   --code-function:   #e8a55a;   /* amber */
   --code-string:     #5db8a6;   /* teal */
   --code-value:      #5db8a6;
   --code-property:   #ece6da;
   --code-tag:        #cc785c;
-  --code-operator:   #a09d96;   /* on-dark-soft */
+  --code-operator:   #a09d96;
   --code-punctuation:#a09d96;
 
-  /* --- 角丸: DESIGN.md の階層（md=8 ボタン/入力, lg=12 カード/コード） --- */
+  /* --- 角丸（DESIGN.md の階層: md=8 / lg=12） --- */
   --radius-s: 6px;
   --radius-m: 8px;
   --radius-l: 12px;
 }
 
-/* --- フォント: Inter（UI/本文） + Source Serif 4（見出し） --- */
+/* グラフビュー / コールアウトの色トークンは theme-light スコープで上書き */
+.theme-light {
+  /* グラフ: coral + ink の暖色パレット */
+  --graph-line:            #d9d0c0;
+  --graph-node:            #3d3d3a;
+  --graph-text:            #141413;
+  --graph-node-focused:    #cc785c;
+  --graph-node-tag:        #5db8a6;
+  --graph-node-attachment: #e8a55a;
+  --graph-node-unresolved: #a09d96;
+
+  /* コールアウト: teal/amber/coral/semantic（寒色ブランド色・紫は不使用） */
+  --callout-default:  108, 106, 100;
+  --callout-info:     93, 184, 166;
+  --callout-note:     93, 184, 166;
+  --callout-todo:     93, 184, 166;
+  --callout-abstract: 93, 184, 166;
+  --callout-tip:      93, 184, 114;
+  --callout-success:  93, 184, 114;
+  --callout-question: 232, 165, 90;
+  --callout-warning:  212, 160, 23;
+  --callout-failure:  198, 69, 69;
+  --callout-danger:   198, 69, 69;
+  --callout-bug:      198, 69, 69;
+  --callout-important:204, 120, 92;
+  --callout-example:  204, 120, 92;
+  --callout-quote:    108, 106, 100;
+}
+
+/* ============================================================
+   2. フォント（UI/本文/見出し=Inter, コード=JetBrains Mono）
+   ============================================================ */
 body {
   --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-text-theme:      'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-monospace-theme: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-/* 見出しは本文と同じ Inter に統一（ユーザー指定）。
-   ただし色は ink(#141413) で本文 body(#3d3d3a) と階層を付ける（DESIGN.md準拠）。 */
+/* ============================================================
+   3. 背景(canvas)を確実にクリームへ
+   CodeMirror が独自背景を持つため、エディタ要素を直接塗る。
+   .view-content は markdown レフに限定（git 等の他ビューを巻き込まない）。
+   ============================================================ */
+.workspace-leaf-content[data-type="markdown"] .view-content,
+.markdown-source-view,
+.cm-editor,
+.cm-scroller,
+.cm-content,
+.cm-sizer,
+.cm-gutters,
+.metadata-container,
+.markdown-reading-view,
+.markdown-preview-view {
+  background-color: #efe9de !important;
+}
+
+/* ============================================================
+   4. タイポgrafi
+   見出し=Inter / ink(#141413) で本文 body(#3d3d3a) と階層化。
+   ============================================================ */
 .markdown-rendered h1,
 .markdown-rendered h2,
 .markdown-rendered h3,
@@ -85,75 +150,110 @@ body {
   letter-spacing: -0.02em;
   font-weight: 600;
 }
+.markdown-rendered h1 { font-size: 1.9em;  margin-top: 1.2em; margin-bottom: 0.5em;
+  border-bottom: 1px solid var(--background-modifier-border); padding-bottom: 0.2em; }
+.markdown-rendered h2 { font-size: 1.5em;  margin-top: 1.4em;
+  border-bottom: 1px solid var(--background-modifier-border); padding-bottom: 0.1em; }
+.markdown-rendered h3 { font-size: 1.22em; }
+.markdown-rendered h4 { font-size: 1.05em; }
 
-/* 本文の読みやすさを少し調整（行間・字間ゆったり） */
+/* 本文: 行間・段落余白をゆったり */
 .markdown-rendered,
 .markdown-source-view.mod-cm6 .cm-line {
   line-height: 1.7;
 }
+.markdown-rendered p { margin-block: 0.7em; }
 
 /* ボタンを柔らかく */
-.theme-light button:not(.clickable-icon),
-.theme-light .mod-cta {
+button:not(.clickable-icon),
+.mod-cta {
   border-radius: var(--radius-m);
 }
 
-/* --- 中央エディタ(Live Preview/編集モード)の背景だけクリームに ---
-   CodeMirror 本体が独自の白背景を持つため、エディタ要素のみを狙う。
-   .view-content は使わない（git/ソースコントロール等まで巻き込み白化する事故を避ける）。 */
-.workspace-leaf-content[data-type="markdown"] .view-content,
-.markdown-source-view,
-.cm-editor,
-.cm-scroller,
-.cm-content,
-.cm-sizer,
-.cm-gutters,
-.metadata-container,
-.markdown-reading-view,
-.markdown-preview-view {
-  background-color: #efe9de !important;  /* canvas（サイドと統一） */
+/* ============================================================
+   5. リンク（coral に統一）
+   ============================================================ */
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link,
+.cm-editor .cm-hmd-internal-link,
+.cm-editor .cm-link,
+.cm-editor .cm-url {
+  color: #cc785c !important;
+  text-decoration-color: rgba(204, 120, 92, 0.35);
 }
 
-/* === ファイルエクスプローラー === */
-
-/* MOCファイルを控えめに強調（太字のみ） */
-.nav-file-title[data-path*="MOC"] {
-  font-weight: 700;
+/* ============================================================
+   6. コード（ブロック=ダークネイビー / インライン=明るいチップ）
+   ブロック背景はトークン --code-background で reading/live 両対応。
+   ============================================================ */
+.markdown-rendered pre {
+  border-radius: var(--code-radius);
+  padding: 1em 1.2em;
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  background-color: var(--code-background) !important;
+  color: var(--code-normal);
+}
+.markdown-rendered .code-block-flair,
+.cm-editor .HyperMD-codeblock .cm-gutters {
+  color: #a09d96;
+}
+/* インラインコードは本文クリームの中で明るいチップに（ダークは block のみ） */
+.markdown-rendered :not(pre) > code,
+.cm-editor .cm-inline-code {
+  background-color: #e8e0d2 !important;  /* surface-cream-strong */
+  color: #3d3d3a !important;
+  padding: 0.05em 0.35em;
+  border-radius: var(--radius-s);
+  font-size: 0.88em;
 }
 
-/* フォルダ名を少し強調 */
-.nav-folder-title {
-  font-weight: 600;
+/* ============================================================
+   7. コールアウト（細ボーダー＋淡い塗り、角丸 lg）
+   ============================================================ */
+.callout {
+  --callout-radius: 12px;
+  border: 1px solid rgba(var(--callout-color), 0.25);
+  background-color: rgba(var(--callout-color), 0.06) !important;
+  box-shadow: none;
+}
+.callout-title {
+  background-color: transparent;
+  padding-bottom: 0.2em;
 }
 
-/* --- 管理ファイルを左ツリーから隠す（ファイル本体は残す） --- */
-.nav-file-title[data-path="README.md"],
-.nav-file-title[data-path="CLAUDE.md"],
-.nav-file-title[data-path="VAULT_INDEX.md"],
-.nav-file-title[data-path="AGENTS.md"],
-.nav-file-title[data-path^="DESIGN.md"] {  /* DESIGN.md / DESIGN.md.md 両対応 */
-  display: none;
+/* ============================================================
+   8. 引用 / テーブル / タスク
+   ============================================================ */
+/* 引用: muted の左ボーダー（coral は使わない） */
+.markdown-rendered blockquote {
+  border-left: 3px solid #c9bda9;
+  color: var(--text-muted);
+  padding-left: 1em;
+  margin-left: 0;
 }
-
-/* --- Lv2フォーカス: 普段使わないフォルダを左ツリーから隠す --- */
-/* 表示するのは 00_Inbox / 10_Projects / 20_Areas。
-   30_Resources は Home の「論文メモ」「検索」から辿る。
-   Templates / Archives は普段不要。
-   すべてCSSのみ＝ファイルは消えていない。元に戻すにはこのブロックを削除。 */
-.nav-folder:has(> [data-path="30_Resources"]),
-.nav-folder:has(> [data-path="99_Templates"]),
-.nav-folder:has(> [data-path="40_Archives"]),
-.nav-folder:has(> [data-path="docs"]),
-.nav-folder:has(> [data-path="tools"]) {
-  display: none;
+/* テーブル: hairline 罫線＋ヘッダを一段濃いクリームに */
+.markdown-rendered table { border-collapse: collapse; }
+.markdown-rendered th,
+.markdown-rendered td {
+  border: 1px solid var(--background-modifier-border);
+  padding: 0.4em 0.7em;
 }
+.markdown-rendered thead th { background-color: #e8e0d2; }
+/* チェックボックスを coral アクセントに */
+.markdown-rendered input[type="checkbox"],
+.cm-editor input[type="checkbox"] { accent-color: #cc785c; }
+/* 完了タスクを薄く */
+.markdown-rendered .task-list-item.is-checked { opacity: 0.45; }
 
-/* === タグ: badge-pill（surface-cream-strong 背景＋hairline、pill角丸） === */
+/* ============================================================
+   9. タグ（badge-pill: surface-cream-strong＋hairline＋pill角丸）
+   ============================================================ */
 .markdown-rendered a.tag,
 .cm-s-obsidian a.tag {
-  background-color: #e8e0d2 !important;  /* surface-cream-strong */
+  background-color: #e8e0d2 !important;
   border: 1px solid var(--background-modifier-border) !important;
-  border-radius: 9999px !important;       /* rounded.pill */
+  border-radius: 9999px !important;
   padding: 0.08em 0.62em !important;
   font-size: 0.78em;
   font-weight: 500;
@@ -165,224 +265,101 @@ a.tag[href="#permanent"]  { color: #c06a6a !important; }
 a.tag[href="#draft"]      { color: #cf9b6f !important; }
 a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 
-/* === 見出し: 装飾を軽く === */
-/* H1: アクセント下線をやめ、細い区切り線に */
-.markdown-rendered h1 {
-  border-bottom: 1px solid var(--background-modifier-border);
-  padding-bottom: 0.2em;
-  margin-bottom: 0.6em;
-}
-/* H2: ごく薄い区切り線 */
-.markdown-rendered h2 {
-  border-bottom: 1px solid var(--background-modifier-border);
-  padding-bottom: 0.1em;
-  margin-top: 1.4em;
-}
+/* ============================================================
+   10. ファイルエクスプローラー
+   ============================================================ */
+.nav-file-title[data-path*="MOC"] { font-weight: 700; }
+.nav-folder-title { font-weight: 600; }
 
-/* === インラインコード: アクセント色をやめ落ち着かせる === */
-.markdown-rendered :not(pre) > code {
-  color: var(--text-normal);
-  background-color: var(--background-modifier-border);
-  padding: 0.05em 0.3em;
-  border-radius: 4px;
-  font-size: 0.88em;
-}
-
-/* === Dataview テーブルのストライプ（軽め） === */
-.dataview.table-view-table tbody tr:nth-child(even) {
-  background-color: var(--background-secondary);
-}
-
-/* === 補助的な視認性 === */
-/* 完了済みタスクを薄く */
-.markdown-rendered .task-list-item.is-checked {
-  opacity: 0.45;
-}
-/* Reading Modeでフロントマターを薄く */
-.markdown-source-view.mod-cm6 .cm-hmd-frontmatter {
-  opacity: 0.4;
-}
-
-/* ========================================
-   Claude調 仕上げ（暖色・低彩度で統一）
-   ======================================== */
-
-/* === 1. コールアウト: DESIGN.md のパレット（teal/amber/coral/semantic、寒色ブランド色・紫は不使用） === */
-.theme-light {
-  --callout-default:  108, 106, 100;  /* muted */
-  --callout-info:     93, 184, 166;   /* accent-teal */
-  --callout-note:     93, 184, 166;
-  --callout-todo:     93, 184, 166;
-  --callout-abstract: 93, 184, 166;
-  --callout-tip:      93, 184, 114;   /* success */
-  --callout-success:  93, 184, 114;
-  --callout-question: 232, 165, 90;   /* amber */
-  --callout-warning:  212, 160, 23;   /* warning */
-  --callout-failure:  198, 69, 69;    /* error */
-  --callout-danger:   198, 69, 69;
-  --callout-bug:      198, 69, 69;
-  --callout-important:204, 120, 92;   /* coral */
-  --callout-example:  204, 120, 92;   /* coral（紫を廃止） */
-  --callout-quote:    108, 106, 100;  /* muted */
-}
-.callout {
-  --callout-radius: 12px;             /* rounded.lg */
-  border: 1px solid rgba(var(--callout-color), 0.25);
-  background-color: rgba(var(--callout-color), 0.06) !important;
-  box-shadow: none;
-}
-.callout-title {
-  background-color: transparent;
-  padding-bottom: 0.2em;
-}
-
-/* === 2. リンク: coral に統一 === */
-.markdown-rendered a.internal-link,
-.markdown-rendered a.external-link,
-.cm-editor .cm-hmd-internal-link,
-.cm-editor .cm-link,
-.cm-editor .cm-url {
-  color: #cc785c !important;
-  text-decoration-color: rgba(204, 120, 92, 0.35);
-}
-
-/* === 3. コードブロック: ダークネイビーのコードウィンドウ（DESIGN.md象徴） ===
-   背景色はトークン --code-background で reading/live 両モードに効く。
-   ここでは pre の角丸・パディング・行番号色など仕上げのみ。 */
-.markdown-rendered pre {
-  border-radius: var(--code-radius);
-  padding: 1em 1.2em;
-}
-.markdown-source-view.mod-cm6 .HyperMD-codeblock {
-  background-color: var(--code-background) !important;
-  color: var(--code-normal);
-}
-/* 行番号（gutter）は muted-soft */
-.markdown-rendered .code-block-flair,
-.cm-editor .HyperMD-codeblock .cm-gutters {
-  color: #a09d96;
-}
-/* インラインコードは本文クリームの中で「明るいチップ」に戻す（ダークは block のみ） */
-.markdown-rendered :not(pre) > code,
-.cm-editor .cm-inline-code {
-  background-color: #efe9de !important;  /* surface-card */
-  color: #3d3d3a !important;
-}
-
-/* === 4. 区切り線・選択ハイライト === */
-.markdown-rendered hr {
-  border-color: var(--background-modifier-border);
-}
-::selection {
-  background-color: rgba(204, 120, 92, 0.18);  /* coral 18% */
-}
-/* 編集中のアクティブ行をごく薄い coral に */
-.cm-editor .cm-active.cm-line {
-  background-color: rgba(204, 120, 92, 0.04);
-}
-
-/* ========================================
-   A. サイドバー: 開いているノートを強調（category-tab-active 相当）
-   ======================================== */
+/* 開いているノートを強調 */
 .nav-file-title.is-active {
-  background-color: #e8e0d2 !important;  /* surface-cream-strong */
+  background-color: #e8e0d2 !important;
   font-weight: 600;
 }
 
-/* ========================================
-   B. 引用・テーブル・タスク
-   ======================================== */
-/* 引用ブロック: muted の左ボーダー（coral は使わない＝DESIGN.mdの「coralを多用しない」に従う） */
-.markdown-rendered blockquote {
-  border-left: 3px solid #c9bda9;  /* muted warm */
-  color: var(--text-muted);
-  padding-left: 1em;
-  margin-left: 0;
+/* 管理ファイルを左ツリーから隠す（ファイル本体は残す） */
+.nav-file-title[data-path="README.md"],
+.nav-file-title[data-path="CLAUDE.md"],
+.nav-file-title[data-path="VAULT_INDEX.md"],
+.nav-file-title[data-path="AGENTS.md"],
+.nav-file-title[data-path^="DESIGN.md"] {
+  display: none;
 }
-/* テーブル: hairline 罫線＋ヘッダを一段濃いクリームに */
-.markdown-rendered table {
-  border-collapse: collapse;
-}
-.markdown-rendered th,
-.markdown-rendered td {
-  border: 1px solid var(--background-modifier-border);
-  padding: 0.4em 0.7em;
-}
-.markdown-rendered thead th {
-  background-color: #e8e0d2;  /* surface-cream-strong */
-}
-/* チェックボックスを coral アクセントに */
-.markdown-rendered input[type="checkbox"],
-.cm-editor input[type="checkbox"] {
-  accent-color: #cc785c;
+/* 普段使わないフォルダを左ツリーから隠す（CSSのみ＝ファイルは消えない） */
+.nav-folder:has(> [data-path="30_Resources"]),
+.nav-folder:has(> [data-path="99_Templates"]),
+.nav-folder:has(> [data-path="40_Archives"]),
+.nav-folder:has(> [data-path="docs"]),
+.nav-folder:has(> [data-path="tools"]) {
+  display: none;
 }
 
-/* ========================================
-   C. タイポ階層（見出しサイズの段階＋本文の余白）
-   ======================================== */
-.markdown-rendered h1 { font-size: 1.9em;  margin-top: 1.2em; }
-.markdown-rendered h2 { font-size: 1.5em; }
-.markdown-rendered h3 { font-size: 1.22em; }
-.markdown-rendered h4 { font-size: 1.05em; }
-.markdown-rendered p {
-  margin-block: 0.7em;
-}
-
-/* ========================================
-   D. 周辺UIをクリームに統一（標準色の残りを消す）
-   ======================================== */
+/* ============================================================
+   11. タブバー・最上部ヘッダ（frameless: ウィンドウ最上部）
+   タブが出ないレイアウトでも、view-header のタイトルで
+   「開いているファイル」を ink 太字で明示する。
+   ============================================================ */
+.titlebar,
 .workspace-ribbon,
-.status-bar,
-.titlebar {
+.status-bar {
   background-color: #efe9de !important;
 }
-/* タブバー: バーを一段濃い帯に、アクティブタブは canvas 色で下のエディタと繋げる（標準の見え方） */
+/* タブバーの帯は一段濃く（アクティブタブと差をつけて境界を見せる） */
 .workspace-tab-header-container {
-  background-color: #e8e0d2 !important;       /* surface-cream-strong の帯 */
+  background-color: #e8e0d2 !important;       /* 帯 = surface-cream-strong */
   border-bottom: 1px solid var(--background-modifier-border);
 }
-.workspace-tab-header.is-active {
-  background-color: #efe9de !important;       /* = canvas */
+.workspace-tab-header {
+  padding: 4px 12px !important;
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
 }
-.workspace-tab-header:not(.is-active) {
-  background-color: transparent !important;   /* 帯の色を見せる */
+/* 非アクティブ: 透明（帯の濃い色を見せる）＋muted文字 */
+.workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: transparent !important;
 }
-.workspace-tab-header-inner-title {
-  color: var(--text-muted);
+.workspace-tab-header:not(.is-active):not(.mod-active) .workspace-tab-header-inner-title {
+  color: var(--text-muted) !important;
+  font-weight: 500;
 }
-.workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: var(--text-normal);
+/* アクティブ: canvas色チップ（下のエディタと繋がる）＋ink太字＋coral下線（強制） */
+.workspace-tab-header.is-active,
+.workspace-tab-header.mod-active {
+  background-color: #efe9de !important;       /* = canvas。帯より明るく浮く */
+  box-shadow: inset 0 -3px 0 0 #cc785c !important;  /* coral 下線（!importantで強制） */
 }
-/* スクロールバーを暖色の細いピルに */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+.workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.workspace-tab-header.mod-active .workspace-tab-header-inner-title {
+  color: #141413 !important;
+  font-weight: 700;
 }
-::-webkit-scrollbar-thumb {
-  background-color: #d9d0c0;
-  border-radius: 9999px;
-  border: 2px solid #efe9de;
-}
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-/* ========================================
-   1. グラフビュー: coral + ink の暖色パレットに
-   ======================================== */
-.theme-light {
-  --graph-line:              #d9d0c0;  /* hairline 寄り */
-  --graph-node:              #3d3d3a;  /* body ink */
-  --graph-text:              #141413;  /* ink */
-  --graph-node-focused:      #cc785c;  /* coral: フォーカス時のみ目立たせる */
-  --graph-node-tag:          #5db8a6;  /* teal */
-  --graph-node-attachment:   #e8a55a;  /* amber */
-  --graph-node-unresolved:   #a09d96;  /* muted-soft */
+/* 最上部の view-header（パンくず＋タイトル）= 何が開いているかを明示 */
+.view-header,
+.view-header-title-parent { background-color: transparent !important; }
+.view-header-breadcrumb { color: var(--text-muted); }
+.view-header-title {
+  color: #141413 !important;
+  font-weight: 600;
 }
 
-/* ========================================
-   3. プロパティ(frontmatter)欄の作り込み
-   ======================================== */
+/* 最上部バーのアイコン・ボタン・タブ文字を確実に見えるダーク色に
+   （クリーム背景に溶けて消えるのを防ぐ。muted を !important＋opacity 1 で強制） */
+.titlebar .clickable-icon,
+.titlebar-button,
+.workspace-tab-header-container .clickable-icon,
+.workspace-tab-header-inner-icon,
+.workspace-tab-header-inner-close-button,
+.workspace-tab-header-inner-title,
+.view-header .clickable-icon,
+.view-header-icon,
+.view-actions .clickable-icon,
+.sidebar-toggle-button .clickable-icon {
+  color: var(--text-muted) !important;
+  opacity: 0.9 !important;
+}
+
+/* ============================================================
+   12. プロパティ（frontmatter）
+   ============================================================ */
 .metadata-container {
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-l);
@@ -394,12 +371,34 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
   font-size: 0.85em;
   font-weight: 500;
 }
-.metadata-property-icon {
-  color: var(--text-faint);
-}
-/* タグ型などのプロパティ値ピルを surface-cream-strong に */
+.metadata-property-icon { color: var(--text-faint); }
 .metadata-property .multi-select-pill {
   background-color: #e8e0d2;
   border: 1px solid var(--background-modifier-border);
   border-radius: 9999px;
 }
+
+/* ============================================================
+   13. 周辺UI（区切り線 / 選択 / アクティブ行 / スクロールバー）
+   ============================================================ */
+.markdown-rendered hr { border-color: var(--background-modifier-border); }
+::selection { background-color: rgba(204, 120, 92, 0.18); }
+.cm-editor .cm-active.cm-line { background-color: rgba(204, 120, 92, 0.04); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background-color: #d9d0c0;
+  border-radius: 9999px;
+  border: 2px solid #efe9de;
+}
+::-webkit-scrollbar-track { background-color: transparent; }
+
+/* ============================================================
+   14. プラグイン補助 / 細部
+   ============================================================ */
+/* Dataview テーブルのストライプ（軽め） */
+.dataview.table-view-table tbody tr:nth-child(even) {
+  background-color: var(--background-secondary-alt);
+}
+/* Reading Mode でフロントマターのソースを薄く */
+.markdown-source-view.mod-cm6 .cm-hmd-frontmatter { opacity: 0.4; }
