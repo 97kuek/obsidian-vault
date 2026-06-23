@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/オペレーティングシステムA.md",
+                "file": "10_Projects/HPA/設計/設計変数と最適化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "オペレーティングシステムA"
+              "title": "設計変数と最適化"
             }
           }
         ]
@@ -252,6 +252,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "10_Projects/HPA/設計/飛行安定性.md",
+    "10_Projects/HPA/設計/向かい風と必要出力.md",
+    "10_Projects/HPA/設計/強度と剛性.md",
+    "10_Projects/HPA/設計/過年度空力設計.md",
+    "10_Projects/HPA/製作/駆動・フレーム製作.md",
+    "20_Areas/授業/オペレーティングシステムA.md",
     "00_Inbox/オペレーティングシステム-プロセス管理（中島担当分）.md",
     "20_Areas/機械学習・深層学習/SVMとカーネル法.md",
     "20_Areas/機械学習・深層学習/PAC学習.md",
@@ -269,22 +275,16 @@
     "00_Inbox/はじめに.md",
     "Home.md",
     "10_Projects/【MOC】10_Projects.md",
-    "20_Areas/授業/オペレーティングシステムA.md",
     "20_Areas/授業/【MOC】授業.md",
-    "10_Projects/HPA/設計/過年度空力設計.md",
     "10_Projects/HPA/製作/プロペラ製作.md",
     "10_Projects/HPA/アイデア・検討.md",
     "スクリーンショット 2026-06-22 213527.png",
     "10_Projects/HPA/【MOC】HPA.md",
     "20_Areas/永続ノート/効く変数を見抜く.md",
     "スクリーンショット 2026-06-22 212030.png",
-    "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
-    "20_Areas/永続ノート/妥協できる誤差とできない誤差.md",
     "VAULT_INDEX.md.tmp.19652.866701ebde1c",
     "20_Areas/授業/【MOC】授業.md.tmp.19652.c8c25470b442",
     "20_Areas/授業/【MOC】授業.md.tmp.19652.5da04d3991db",
-    "20_Areas/ソフトウェア開発/詳細設計・実装.md",
-    "AGENTS.md",
     "Home.md.tmp.19652.6f5bd5b9fd53",
     "スクリーンショット 2026-06-22 202914.png",
     "スクリーンショット 2026-06-22 205736.png",
