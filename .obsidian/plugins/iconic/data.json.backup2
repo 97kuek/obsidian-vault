@@ -35,11 +35,11 @@
     },
     "10_Projects": {
       "icon": "lucide-layout-dashboard",
-      "color": "blue"
+      "color": "gray"
     },
     "20_Areas": {
       "icon": "lucide-layers",
-      "color": "green"
+      "color": "gray"
     },
     "30_Resources": {
       "icon": "lucide-book-open",
@@ -53,7 +53,7 @@
     },
     "Home.md": {
       "icon": "lucide-home",
-      "color": "pink"
+      "color": "gray"
     }
   },
   "bookmarkIcons": {},
