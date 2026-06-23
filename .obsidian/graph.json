@@ -15,24 +15,17 @@
       }
     },
     {
-      "query": "path:20_Areas",
+      "query": "path:20_Areas  ",
       "color": {
         "a": 1,
-        "rgb": 14069084
+        "rgb": 6398527
       }
     },
     {
-      "query": "tag:#MOC  ",
+      "query": "tag: #MOC  ",
       "color": {
         "a": 1,
-        "rgb": 5342422
-      }
-    },
-    {
-      "query": "path:40_Archives  ",
-      "color": {
-        "a": 1,
-        "rgb": 6513507
+        "rgb": 13936488
       }
     }
   ],

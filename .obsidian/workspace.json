@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/オペレーティングシステムA.md",
+                "file": "20_Areas/授業/人工知能.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "オペレーティングシステムA"
+              "title": "人工知能"
             }
           }
         ],
@@ -241,7 +241,8 @@
               "title": "グラフビュー"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -266,10 +267,11 @@
   },
   "active": "125fc23c13eb4ccf",
   "lastOpenFiles": [
+    "20_Areas/授業/オペレーティングシステムA.md",
+    "00_Inbox/はじめに.md",
     "20_Areas/授業/【MOC】授業.md",
     "00_Inbox/オペレーティングシステム-プロセス管理（中島担当分）.md",
     "Home.md",
-    "00_Inbox/はじめに.md",
     "10_Projects/HPA/設計/過年度空力設計.md",
     "10_Projects/HPA/製作/プロペラ製作.md",
     "10_Projects/HPA/アイデア・検討.md",
@@ -280,7 +282,6 @@
     "スクリーンショット 2026-06-22 212030.png",
     "10_Projects/【MOC】10_Projects.md",
     "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
-    "20_Areas/授業/オペレーティングシステムA.md",
     "20_Areas/永続ノート/妥協できる誤差とできない誤差.md",
     "VAULT_INDEX.md.tmp.19652.866701ebde1c",
     "20_Areas/授業/【MOC】授業.md.tmp.19652.c8c25470b442",
