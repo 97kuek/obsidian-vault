@@ -2,14 +2,11 @@
 tags:
   - home
 aliases:
-  - ホーム
-  - ダッシュボード
+  - dashboard
+  - home
 ---
-# Home
-
 > [!tip] Quick navigation
 > `Ctrl+O` jump / `Ctrl+Shift+F` full-text search / Graph view / Tag click
-
 ## Search
 
 ```dataviewjs

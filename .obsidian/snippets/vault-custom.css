@@ -37,9 +37,9 @@ body {
   /* --- サーフェス（DESIGN.md のクリーム階層。canvas は #efe9de に統一） --- */
   --color-base-00:            #efe9de !important;  /* エディタ背景の大元 */
   --background-primary:       #efe9de !important;  /* canvas（本文・サイド共通） */
-  --background-primary-alt:   #f5f0e8 !important;  /* surface-soft */
+  --background-primary-alt:   #efe9de !important;  /* surface-soft（クリーム統一） */
   --background-secondary:     #efe9de !important;  /* surface-card */
-  --background-secondary-alt: #e8e0d2 !important;  /* surface-cream-strong */
+  --background-secondary-alt: #efe9de !important;  /* surface-cream-strong（クリーム統一） */
   --background-modifier-border:        #e6dfd8 !important;  /* hairline */
   --background-modifier-border-hover:  #dcd3c4 !important;
 
@@ -201,7 +201,7 @@ button:not(.clickable-icon),
 /* インラインコードは本文クリームの中で明るいチップに（ダークは block のみ） */
 .markdown-rendered :not(pre) > code,
 .cm-editor .cm-inline-code {
-  background-color: #e8e0d2 !important;  /* surface-cream-strong */
+  background-color: #efe9de !important;  /* canvas と同じクリームに統一 */
   color: #3d3d3a !important;
   padding: 0.05em 0.35em;
   border-radius: var(--radius-s);
@@ -239,7 +239,7 @@ button:not(.clickable-icon),
   border: 1px solid var(--background-modifier-border);
   padding: 0.4em 0.7em;
 }
-.markdown-rendered thead th { background-color: #e8e0d2; }
+.markdown-rendered thead th { background-color: #efe9de; }
 /* チェックボックスを coral アクセントに */
 .markdown-rendered input[type="checkbox"],
 .cm-editor input[type="checkbox"] { accent-color: #cc785c; }
@@ -251,7 +251,7 @@ button:not(.clickable-icon),
    ============================================================ */
 .markdown-rendered a.tag,
 .cm-s-obsidian a.tag {
-  background-color: #e8e0d2 !important;
+  background-color: #efe9de !important;
   border: 1px solid var(--background-modifier-border) !important;
   border-radius: 9999px !important;
   padding: 0.08em 0.62em !important;
@@ -273,7 +273,7 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 
 /* 開いているノートを強調 */
 .nav-file-title.is-active {
-  background-color: #e8e0d2 !important;
+  background-color: #efe9de !important;
   font-weight: 600;
 }
 
@@ -306,7 +306,7 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 }
 /* タブバーの帯は一段濃く（アクティブタブと差をつけて境界を見せる） */
 .workspace-tab-header-container {
-  background-color: #e8e0d2 !important;       /* 帯 = surface-cream-strong */
+  background-color: #efe9de !important;       /* 帯 = surface-cream-strong */
   border-bottom: 1px solid var(--background-modifier-border);
 }
 .workspace-tab-header {
@@ -373,7 +373,7 @@ a.tag[href="#lecture"]    { color: #7a9c6e !important; }
 }
 .metadata-property-icon { color: var(--text-faint); }
 .metadata-property .multi-select-pill {
-  background-color: #e8e0d2;
+  background-color: #efe9de;
   border: 1px solid var(--background-modifier-border);
   border-radius: 9999px;
 }
