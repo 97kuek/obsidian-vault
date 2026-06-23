@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10_Projects/HPA/設計/設計変数と最適化.md",
+                "file": "00_Inbox/信号処理とフーリエ変換_試問対策.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "設計変数と最適化"
+              "title": "信号処理とフーリエ変換_試問対策"
             }
           }
         ]
@@ -231,7 +231,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 389.5
+    "width": 389.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,13 +253,15 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "00_Inbox/オペレーティングシステム-プロセス管理（中島担当分）.md",
+    "00_Inbox/信号処理とフーリエ変換_試問対策.md",
+    "10_Projects/HPA/設計/設計変数と最適化.md",
     "10_Projects/HPA/設計/飛行安定性.md",
     "10_Projects/HPA/設計/向かい風と必要出力.md",
     "10_Projects/HPA/設計/強度と剛性.md",
     "10_Projects/HPA/設計/過年度空力設計.md",
     "10_Projects/HPA/製作/駆動・フレーム製作.md",
     "20_Areas/授業/オペレーティングシステムA.md",
-    "00_Inbox/オペレーティングシステム-プロセス管理（中島担当分）.md",
     "20_Areas/機械学習・深層学習/SVMとカーネル法.md",
     "20_Areas/機械学習・深層学習/PAC学習.md",
     "20_Areas/授業/人工知能.md",
@@ -279,8 +282,6 @@
     "10_Projects/HPA/製作/プロペラ製作.md",
     "10_Projects/HPA/アイデア・検討.md",
     "スクリーンショット 2026-06-22 213527.png",
-    "10_Projects/HPA/【MOC】HPA.md",
-    "20_Areas/永続ノート/効く変数を見抜く.md",
     "スクリーンショット 2026-06-22 212030.png",
     "VAULT_INDEX.md.tmp.19652.866701ebde1c",
     "20_Areas/授業/【MOC】授業.md.tmp.19652.c8c25470b442",
