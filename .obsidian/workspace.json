@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/人工知能_9 知識表現.md",
+                "file": "20_Areas/機械学習・深層学習/知識表現.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "人工知能_9 知識表現"
+              "title": "知識表現"
             }
           }
         ]
@@ -250,11 +250,16 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "2f06626f26abc65b",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "00_Inbox/人工知能_9 知識表現.md",
-    "00_Inbox/信号処理とフーリエ変換_試問対策.md",
+    "20_Areas/機械学習・深層学習/強化学習.md",
+    "20_Areas/機械学習・深層学習/クラスタリング.md",
+    "20_Areas/機械学習・深層学習/知識表現.md",
     "00_Inbox/オペレーティングシステム-プロセス管理（中島担当分）.md",
+    "20_Areas/機械学習・深層学習/知識表現.md.tmp.34408.476d49a3e2c6",
+    "00_Inbox/はじめに.md",
+    "00_Inbox/信号処理とフーリエ変換_試問対策.md",
+    "00_Inbox/人工知能_9 知識表現.md",
     "10_Projects/HPA/設計/設計変数と最適化.md",
     "10_Projects/HPA/設計/飛行安定性.md",
     "10_Projects/HPA/設計/向かい風と必要出力.md",
@@ -275,11 +280,7 @@
     "20_Areas/機械学習・深層学習/B4勉強会/20260423_勉強会02.md",
     "20_Areas/ソフトウェア開発/AI駆動開発.md",
     "00_Inbox/人工知能_2.md",
-    "00_Inbox/はじめに.md",
     "Home.md",
-    "10_Projects/【MOC】10_Projects.md",
-    "20_Areas/授業/【MOC】授業.md",
-    "10_Projects/HPA/製作/プロペラ製作.md",
     "スクリーンショット 2026-06-22 213527.png",
     "スクリーンショット 2026-06-22 212030.png",
     "VAULT_INDEX.md.tmp.19652.866701ebde1c",
@@ -297,7 +298,6 @@
     "VAULT_INDEX.md.tmp.64240.a77c9d1f3379",
     "CLAUDE.md.tmp.64240.0de303edec2d",
     "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md.tmp.64240.47254f243601",
-    "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md.tmp.64240.838c1cf2673e",
     "無題のファイル.canvas"
   ]
 }
