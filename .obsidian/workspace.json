@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/ソフトウェア開発/詳細設計・実装.md",
+                "file": "20_Areas/ソフトウェア開発/Claude Code運用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "詳細設計・実装"
+              "title": "Claude Code運用"
             }
           }
         ]
@@ -252,6 +252,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/ソフトウェア開発/AI駆動開発.md",
+    "20_Areas/ソフトウェア開発/詳細設計・実装.md",
+    "VAULT_INDEX.md.tmp.28484.fd94926d0598",
+    "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.28484.1066d164d511",
+    "20_Areas/永続ノート/スケール不変な評価.md.tmp.28484.405227b3271f",
+    "20_Areas/授業/情報通信ネットワークA.md.tmp.28484.07a2a549cdfd",
+    "20_Areas/授業/ディジタル信号処理.md.tmp.28484.84c3b94e5778",
     "00_Inbox/人工知能_課題まとめ.md",
     "10_Projects/プロジェクト研究A/研究設計（パイプライン全体）.md",
     "10_Projects/プロジェクト研究A/【MOC】プロジェクト研究A.md",
@@ -269,12 +276,8 @@
     "20_Areas/機械学習・深層学習/知識表現.md",
     "VAULT_INDEX.md.tmp.34408.6db9aa83e336",
     "VAULT_INDEX.md.tmp.34408.a31dba954a76",
-    "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md.tmp.34408.2a4df582fa80",
-    "20_Areas/機械学習・深層学習/【MOC】機械学習・深層学習.md.tmp.34408.f677ff8ea904",
-    "20_Areas/授業/sedackymo",
     "20_Areas/機械学習・深層学習/強化学習.md",
     "20_Areas/機械学習・深層学習/クラスタリング.md",
-    "20_Areas/機械学習・深層学習/知識表現.md.tmp.34408.476d49a3e2c6",
     "00_Inbox/人工知能_9 知識表現.md",
     "10_Projects/HPA/設計/設計変数と最適化.md",
     "10_Projects/HPA/設計/飛行安定性.md",
@@ -285,9 +288,6 @@
     "20_Areas/授業/オペレーティングシステムA.md",
     "20_Areas/機械学習・深層学習/SVMとカーネル法.md",
     "20_Areas/機械学習・深層学習/PAC学習.md",
-    "20_Areas/授業/人工知能.md",
-    "20_Areas/ソフトウェア開発/Claude Code運用.md",
-    "VAULT_INDEX.md.tmp.24936.3e71d93fa821",
     "スクリーンショット 2026-06-22 213527.png",
     "スクリーンショット 2026-06-22 212030.png",
     "スクリーンショット 2026-06-22 202914.png",
