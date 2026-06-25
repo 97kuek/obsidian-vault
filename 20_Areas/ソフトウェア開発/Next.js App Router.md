@@ -3,7 +3,8 @@ date: 2026-06-25
 tags:
   - reference
   - ソフトウェア開発
----# Next.js App Router
+---
+# Next.js App Router
 
 ## Next.js
 
