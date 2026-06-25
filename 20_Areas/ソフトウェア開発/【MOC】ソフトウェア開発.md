@@ -20,6 +20,9 @@ mindmap
       Git・GitHub
     Web開発
       ReactとNext.js
+        React基礎
+        Next.js App Router
+        AIエージェントへの開発指示
       API
       WebSocket
       Supabase
@@ -39,6 +42,9 @@ mindmap
 - [[AI駆動開発]]
 - [[Claude Code運用]] — 大規模コードベースのハーネス設計・トークン節約
 - [[ReactとNext.js]] — React基礎・Next.js App Router・Server Components/Actions
+- [[React基礎]] — コンポーネント・JSX・props/state・useEffect
+- [[Next.js App Router]] — App Router・Server/Client Components・Server Actions
+- [[AIエージェントへの開発指示]] — Next.js実装を依頼・レビューするときの観点
 - [[API]] — Web API・REST API・リクエスト/レスポンス・Next.js API Route
 - [[WebSocket]] — HTTP Upgrade・フレーム・双方向通信・実務上の注意
 - [[Supabase]] — Postgres中心のBaaS・Auth・RLS・PostgREST

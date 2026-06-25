@@ -30,9 +30,13 @@ SORT status ASC, year DESC
 - [[J-CHAT_メモ]] — J-CHATコーパス、研究の評価対象
 - [[RemixIT_メモ]] — RemixIT、クリーン音声なしで学習する音声強調
 
+### デザイン
+- [[Claude.com_デザインシステム]] — Claude.comの色・タイポグラフィ・コンポーネント設計メモ
+
 ## その他リソース
 
 - [[Zotero連携ガイド]] — Zotero+Obsidian連携の設定手順
+- [[AIエージェントのためのObsidian活用術]] — AIに引かせるVault設計のXクリップ
 
 ## 関連MOC・上位MOC
 

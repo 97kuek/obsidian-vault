@@ -40,7 +40,10 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `ソフトウェア開発/Git・GitHub.md` | Gitコマンド集・ブランチ運用 |
 | `ソフトウェア開発/AI駆動開発.md` | AI駆動開発の知識・手法 |
 | `ソフトウェア開発/Claude Code運用.md` | Claude Code運用ノウハウ（大規模コードベースのハーネス設計・トークン節約） |
-| `ソフトウェア開発/ReactとNext.js.md` | React基礎、Next.js App Router、Server Components/Actions、AIエージェントへの指示観点 |
+| `ソフトウェア開発/ReactとNext.js.md` | React/Next.js関連ノートのハブ |
+| `ソフトウェア開発/React基礎.md` | コンポーネント、JSX、props、state、useEffectなどReactの基本 |
+| `ソフトウェア開発/Next.js App Router.md` | App Router、Server/Client Components、データ取得、Server Actions |
+| `ソフトウェア開発/AIエージェントへの開発指示.md` | Next.js実装をAIエージェントへ依頼・レビューするときの観点 |
 | `ソフトウェア開発/API.md` | Web API・REST API・リクエスト/レスポンス・ステータスコード・Next.js API Route |
 | `ソフトウェア開発/WebSocket.md` | WebSocketの必要性、HTTP Upgrade、フレーム、Ping/Pong、スケーリングと認証 |
 | `ソフトウェア開発/Supabase.md` | Postgres中心のBaaS、Auth、RLS、PostgREST、APIキー、Firebase比較 |
@@ -97,6 +100,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `音源分離/J-CHAT_メモ.md` | J-CHATコーパスメモ・研究の評価対象（status: read） |
 | `音源分離/RemixIT_メモ.md` | RemixIT（クリーン音声なしで学習する音声強調手法）メモ |
 | `クリップ/AIエージェントのためのObsidian活用術.md` | Xクリップ保管（@ObsidianOtaku）。AIに引かせるVault設計＝命名・status・タグの4手がかり |
+| `デザイン/Claude.com_デザインシステム.md` | Claude.comのデザインシステム分析（色・タイポグラフィ・レイアウト・コンポーネント） |
 | `Zotero連携ガイド.md` | Zotero+Obsidian連携の設定手順 |
 
 ## docs/
