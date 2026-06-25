@@ -18,6 +18,12 @@ mindmap
   root(("ソフトウェア開発"))
     バージョン管理
       Git・GitHub
+    Web開発
+      ReactとNext.js
+      API
+      WebSocket
+      Supabase
+      Web認証・認可
     設計
       システム分析
       詳細設計・実装
@@ -32,6 +38,11 @@ mindmap
 - [[詳細設計・実装]]
 - [[AI駆動開発]]
 - [[Claude Code運用]] — 大規模コードベースのハーネス設計・トークン節約
+- [[ReactとNext.js]] — React基礎・Next.js App Router・Server Components/Actions
+- [[API]] — Web API・REST API・リクエスト/レスポンス・Next.js API Route
+- [[WebSocket]] — HTTP Upgrade・フレーム・双方向通信・実務上の注意
+- [[Supabase]] — Postgres中心のBaaS・Auth・RLS・PostgREST
+- [[Web認証・認可]] — 認証/認可・セッション/JWT・OAuth/OIDC
 
 ## 関連MOC・上位MOC
 
@@ -56,3 +67,4 @@ LIMIT 20
 
 ---
 **最終更新:** `= this.file.mtime`
+

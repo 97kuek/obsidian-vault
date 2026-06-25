@@ -1,4 +1,9 @@
-
+---
+date: 2026-06-25
+tags:
+  - reference
+  - ソフトウェア開発
+---
 ## Supabaseとは
 
 - Supabaseは**PostgreSQLを中心に据えたBaaS（Backend as a Service）**

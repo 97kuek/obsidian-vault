@@ -1,3 +1,9 @@
+---
+date: 2026-06-25
+tags:
+  - reference
+  - ソフトウェア開発
+---
 ## APIとは何か
 
 - **Application Programming Interface** の略  
@@ -234,3 +240,4 @@ await fetch("/api/reservations")
 |ステータスコード|成功・失敗を表す番号|
 |認証|ログインしているか確認すること|
 |認可|その操作をしてよい権限があるか確認すること|
+

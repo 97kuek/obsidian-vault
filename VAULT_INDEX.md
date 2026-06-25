@@ -1,7 +1,7 @@
 ---
 tags:
   - index
-updated: 2026-06-21
+updated: 2026-06-25
 ---
 # Vault Index
 
@@ -40,6 +40,11 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `ソフトウェア開発/Git・GitHub.md` | Gitコマンド集・ブランチ運用 |
 | `ソフトウェア開発/AI駆動開発.md` | AI駆動開発の知識・手法 |
 | `ソフトウェア開発/Claude Code運用.md` | Claude Code運用ノウハウ（大規模コードベースのハーネス設計・トークン節約） |
+| `ソフトウェア開発/ReactとNext.js.md` | React基礎、Next.js App Router、Server Components/Actions、AIエージェントへの指示観点 |
+| `ソフトウェア開発/API.md` | Web API・REST API・リクエスト/レスポンス・ステータスコード・Next.js API Route |
+| `ソフトウェア開発/WebSocket.md` | WebSocketの必要性、HTTP Upgrade、フレーム、Ping/Pong、スケーリングと認証 |
+| `ソフトウェア開発/Supabase.md` | Postgres中心のBaaS、Auth、RLS、PostgREST、APIキー、Firebase比較 |
+| `ソフトウェア開発/Web認証・認可.md` | 認証/認可、セッションとJWT、OAuth/OIDCの基礎 |
 | `ソフトウェア開発/システム分析.md` | システム分析 |
 | `ソフトウェア開発/詳細設計・実装.md` | 詳細設計・実装 |
 | `機械学習・深層学習/【MOC】機械学習・深層学習.md` | ML/DL MOC |
@@ -59,6 +64,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `機械学習・深層学習/B4勉強会/20260604_勉強会07.md` | B4勉強会07 |
 | `授業/【MOC】授業.md` | 授業フォルダのハブ |
 | `授業/人工知能.md` | 人工知能の授業（探索による問題解決/情報のない探索・A*・反復改良、敵対的探索、決定木・強化学習・教師なし学習・PAC学習/SVM、知識表現/プロダクションシステム・意味ネットワーク・フレーム） |
+| `授業/人工知能_課題まとめ.md` | 人工知能の課題解答まとめ（決定木、TD法/Q学習、K-means/PCA、SVM/AdaBoost） |
 | `授業/ディジタル信号処理.md` | ディジタル信号処理の授業ノート（サンプリング定理、DTFT/z変換/DFT/STFT、直交変換、DFT/DCT/KLT/MDCT） |
 | `授業/センサと制御.md` | センサと制御の授業ノート（チャタリング 他） |
 | `授業/情報通信ネットワークA.md` | 情報通信ネットワークAの授業ノート（1章 概論、2章 物理層、3章 データリンク層/フレーム化・CRC・ハミング符号・ARQ・CSMA・イーサネット、4章 インターネット層/IP/CIDR、6章 経路制御/RIP/OSPF/BGP、7章 トランスポート層/TCP・UDP・QUIC、8章 DNS、9章 文字コード/UTF-8、10章 Web技術/HTTP・CDN・HTTP2、11章 P2P・セキュリティ/ブロックチェーン・暗号・電子署名・TLS） |
@@ -135,3 +141,4 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `CLAUDE.md` | Claude Code用作業入口。詳細規約と共通手順への案内 |
 | `VAULT_INDEX.md` | このファイル（ファイル索引） |
 | `README.md` | Vault使い方ドキュメント |
+
