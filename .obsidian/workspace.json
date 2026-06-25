@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/認証と認可について.md",
+                "file": "00_Inbox/API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "認証と認可について"
+              "title": "API"
             }
           }
         ]
@@ -252,9 +252,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "00_Inbox/Websocket.md",
-    "00_Inbox/認証と認可について.md",
     "00_Inbox/Supabase.md",
+    "00_Inbox/API.md",
+    "00_Inbox/OAuthとOIDC.md",
+    "00_Inbox/セッション管理.md",
+    "00_Inbox/認証と認可について.md",
+    "00_Inbox/Websocket.md",
     "00_Inbox/ReactとNext.js.md",
     "00_Inbox/人工知能_課題まとめ.md",
     "00_Inbox/面接対策.md",
@@ -284,10 +287,7 @@
     "20_Areas/授業/オペレーティングシステムA.md.tmp.28484.3b404a072a44",
     "00_Inbox/信号処理とフーリエ変換_試問対策.md",
     "00_Inbox/はじめに.md",
-    "00_Inbox/オペレーティングシステム-プロセス管理（中島担当分）.md",
-    "20_Areas/機械学習・深層学習/知識表現.md",
     "VAULT_INDEX.md.tmp.34408.6db9aa83e336",
-    "20_Areas/機械学習・深層学習/強化学習.md",
     "スクリーンショット 2026-06-22 213527.png",
     "スクリーンショット 2026-06-22 212030.png",
     "スクリーンショット 2026-06-22 202914.png",
