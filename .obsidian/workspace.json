@@ -252,9 +252,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "00_Inbox/Supabase.md",
-    "00_Inbox/API.md",
     "00_Inbox/OAuthとOIDC.md",
+    "00_Inbox/API.md",
+    "00_Inbox/Supabase.md",
     "00_Inbox/セッション管理.md",
     "00_Inbox/認証と認可について.md",
     "00_Inbox/Websocket.md",
