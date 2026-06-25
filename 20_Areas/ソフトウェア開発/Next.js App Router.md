@@ -176,7 +176,6 @@ export default function Counter() {
 ```
 
 Client Componentは `useState` や `onClick` が使える代わりに、**DBや秘密には直接触れません**。
-
 #### 境界(boundary)という考え方
 
 - `"use client"` を書いたファイルから先は「クライアントの世界」になる
