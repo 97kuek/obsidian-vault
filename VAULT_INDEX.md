@@ -45,11 +45,13 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `ソフトウェア開発/Next.js App Router.md` | App Router、Server/Client Components、データ取得、Server Actions |
 | `ソフトウェア開発/AIエージェントへの開発指示.md` | Next.js実装をAIエージェントへ依頼・レビューするときの観点 |
 | `ソフトウェア開発/API.md` | Web API・REST API・リクエスト/レスポンス・ステータスコード・Next.js API Route |
+| `ソフトウェア開発/データベース基礎.md` | RDB・SQL・JOIN・制約・トランザクション・正規化・インデックス・ORM・マイグレーション |
 | `ソフトウェア開発/WebSocket.md` | WebSocketの必要性、HTTP Upgrade、フレーム、Ping/Pong、スケーリングと認証 |
 | `ソフトウェア開発/Supabase.md` | Postgres中心のBaaS、Auth、RLS、PostgREST、APIキー、Firebase比較 |
 | `ソフトウェア開発/Web認証・認可.md` | 認証/認可、セッションとJWT、OAuth/OIDCの基礎 |
 | `ソフトウェア開発/システム分析.md` | システム分析 |
 | `ソフトウェア開発/詳細設計・実装.md` | 詳細設計・実装 |
+| `ソフトウェア開発/Webアプリケーションのレイヤードアーキテクチャ.md` | Webアプリの画面層・API層・UseCase層・Domain層・Infrastructure層の責務分割 |
 | `機械学習・深層学習/【MOC】機械学習・深層学習.md` | ML/DL MOC |
 | `機械学習・深層学習/敵対的探索.md` | ミニマックス法とαβ枝刈り（人工知能由来の手法） |
 | `機械学習・深層学習/マルチエージェント経路探索.md` | 協調エージェントの衝突回避（LRA*/CoopA*） |
@@ -145,4 +147,3 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `CLAUDE.md` | Claude Code用作業入口。詳細規約と共通手順への案内 |
 | `VAULT_INDEX.md` | このファイル（ファイル索引） |
 | `README.md` | Vault使い方ドキュメント |
-

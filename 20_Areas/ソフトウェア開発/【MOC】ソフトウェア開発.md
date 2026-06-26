@@ -24,12 +24,14 @@ mindmap
         Next.js App Router
         AIエージェントへの開発指示
       API
+      データベース基礎
       WebSocket
       Supabase
       Web認証・認可
     設計
       システム分析
       詳細設計・実装
+      Webアプリケーションのレイヤードアーキテクチャ
     開発手法
       AI駆動開発
 ```
@@ -46,9 +48,11 @@ mindmap
 - [[Next.js App Router]] — App Router・Server/Client Components・Server Actions
 - [[AIエージェントへの開発指示]] — Next.js実装を依頼・レビューするときの観点
 - [[API]] — Web API・REST API・リクエスト/レスポンス・Next.js API Route
+- [[データベース基礎]] — RDB・SQL・JOIN・制約・トランザクション・正規化・ORM
 - [[WebSocket]] — HTTP Upgrade・フレーム・双方向通信・実務上の注意
 - [[Supabase]] — Postgres中心のBaaS・Auth・RLS・PostgREST
 - [[Web認証・認可]] — 認証/認可・セッション/JWT・OAuth/OIDC
+- [[Webアプリケーションのレイヤードアーキテクチャ]] — 画面層・API層・UseCase層・Domain層・Infrastructure層
 
 ## 関連MOC・上位MOC
 
@@ -73,4 +77,3 @@ LIMIT 20
 
 ---
 **最終更新:** `= this.file.mtime`
-
