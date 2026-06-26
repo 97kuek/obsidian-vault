@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/DB.md",
+                "file": "00_Inbox/レイヤー.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DB"
+              "title": "レイヤー"
             }
           }
         ]
@@ -252,8 +252,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "00_Inbox/はじめに.md",
     "00_Inbox/DB.md",
+    "00_Inbox/レイヤー.md",
+    "00_Inbox/はじめに.md",
     "20_Areas/ソフトウェア開発/Next.js App Router.md",
     "20_Areas/ソフトウェア開発/Git・GitHub.md",
     "20_Areas/ソフトウェア開発/Claude Code運用.md",
@@ -278,7 +279,6 @@
     "00_Inbox/人工知能_課題まとめ.md",
     "00_Inbox/面接対策.md",
     "Home.md",
-    "00_Inbox/20260624_Xクリップ_09pauai.md",
     "00_Inbox/20260624_Xクリップ_MacopeninSUTABA.md.tmp.37596.26d5ad4ff7b6",
     "VAULT_INDEX.md.tmp.28484.fd94926d0598",
     "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.28484.1066d164d511",
