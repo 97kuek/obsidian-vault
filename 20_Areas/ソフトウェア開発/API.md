@@ -135,7 +135,7 @@ Content-Type: application/json
 ## REST APIとは何か
 
 - APIの設計方法の一つに **REST API** がある
-- RESTでは、データを「リソース」として考えます。
+- RESTでは、データを「リソース」として考える
 - たとえばホテル予約システムなら、以下のようにリソースとして扱う
 
 ```text
