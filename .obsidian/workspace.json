@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4ecb25e25e47da7f",
+        "id": "05fad3d061c830dd",
         "type": "tabs",
         "children": [
           {
-            "id": "e0102f7a848836e0",
+            "id": "41c1172dfac052b5",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".claude/commands/pdf-to-md.md",
-                "bFile": ".claude/commands/pdf-to-md.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: pdf-to-md  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新規タブ"
             }
           }
         ]
@@ -235,7 +231,7 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "e0102f7a848836e0",
+  "active": "8495e60b597e8d04",
   "lastOpenFiles": [
     "docs/agent-commands/pdf-to-md.md",
     "tools/vault-gc.ps1.tmp.26732.031fae55ed9d",
