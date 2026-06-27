@@ -120,7 +120,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 | ファイル | 内容 |
 |---|---|
-| `tools/vault-review.ps1` | 切れリンク・命名・索引・Inbox・MOC更新漏れのPowerShell点検 |
+| `tools/vault-review.ps1` | 切れリンク・命名・frontmatter/H1/見出し構造・索引・Inbox・MOC更新漏れのPowerShell点検 |
 | `tools/vault-gc.ps1` | 棚卸し候補抽出用PowerShellスクリプト |
 | `tools/protect-obsidian.ps1` | `.obsidian/` 編集保護チェック |
 

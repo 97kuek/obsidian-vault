@@ -1,5 +1,5 @@
 param(
-  [ValidateSet("All", "Links", "Naming", "Index", "Inbox", "Mocs")]
+  [ValidateSet("All", "Links", "Naming", "Structure", "Index", "Inbox", "Mocs")]
   [string[]]$Check = @("All")
 )
 
@@ -95,6 +95,80 @@ if ((Test-Selected "Naming")) {
     ForEach-Object { $issues.Add("HYPHEN_DATE_PREFIX: $((Resolve-Path -Relative $_.FullName))") }
 
   if ($issues.Count) { $issues } else { "OK: no obvious naming issues found." }
+  ""
+}
+
+if ((Test-Selected "Structure")) {
+  "## Structure"
+  $issues = New-Object System.Collections.Generic.List[string]
+
+  foreach ($file in Get-NoteFiles) {
+    if ($file.Name -eq $IntroFile) { continue }
+
+    $rel = (Resolve-Path -Relative $file.FullName)
+    $text = Get-Content -Raw -Encoding UTF8 -LiteralPath $file.FullName
+    $lines = Get-Content -Encoding UTF8 -LiteralPath $file.FullName
+    $isMoc = $file.Name -like "$MocPrefix*"
+
+    if ($text -notmatch '\A---\r?\n(?<fm>[\s\S]*?)\r?\n---(?:\r?\n|$)') {
+      $issues.Add("MISSING_FRONTMATTER: $rel")
+    }
+    else {
+      $frontmatter = $Matches['fm']
+      if ($frontmatter -notmatch '(?m)^tags:\s*') {
+        $issues.Add("MISSING_TAGS: $rel")
+      }
+      if ($isMoc) {
+        if ($frontmatter -notmatch '(?m)^created:\s*\d{4}-\d{2}-\d{2}\s*$') {
+          $issues.Add("MISSING_MOC_CREATED: $rel")
+        }
+        if ($frontmatter -notmatch '(?m)^status:\s*\S+\s*$') {
+          $issues.Add("MISSING_MOC_STATUS: $rel")
+        }
+      }
+      elseif ($frontmatter -notmatch '(?m)^date:\s*\d{4}-\d{2}-\d{2}\s*$') {
+        $issues.Add("MISSING_DATE: $rel")
+      }
+    }
+
+    if ($text -notmatch '(?m)^# [^#\r\n]') {
+      $issues.Add("MISSING_H1: $rel")
+    }
+    if ($text -match '<%\s*tp\.') {
+      $issues.Add("TEMPLATE_VARIABLE_LEFT: $rel")
+    }
+    if ($text -match '(?m)^#{1,6}\s+Topic\d+\b') {
+      $issues.Add("TOPIC_SPACING: $rel")
+    }
+
+    $previousLevel = 0
+    $insideFence = $false
+    for ($i = 0; $i -lt $lines.Count; $i++) {
+      $line = $lines[$i]
+      if ($line -match '^\s*```') {
+        $insideFence = -not $insideFence
+        continue
+      }
+      if ($insideFence -or $line -notmatch '^(#{1,6})\s+\S') { continue }
+
+      $level = $Matches[1].Length
+      if ($previousLevel -gt 0 -and $level -gt ($previousLevel + 1)) {
+        $issues.Add("HEADING_JUMP: ${rel}:$($i + 1) (H$previousLevel -> H$level)")
+        break
+      }
+      $previousLevel = $level
+    }
+  }
+
+  if (Test-Path "VAULT_INDEX.md") {
+    $indexText = Get-Content -Raw -Encoding UTF8 "VAULT_INDEX.md"
+    $today = (Get-Date).ToString("yyyy-MM-dd")
+    if ($indexText -notmatch "(?m)^updated:\s*$([regex]::Escape($today))\s*$") {
+      $issues.Add("STALE_INDEX_UPDATED: .\VAULT_INDEX.md (expected $today)")
+    }
+  }
+
+  if ($issues.Count) { $issues | Sort-Object -Unique } else { "OK: no structural issues found." }
   ""
 }
 
