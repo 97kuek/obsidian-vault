@@ -70,3 +70,35 @@ if ($permanentDir) {
     }
 }
 
+""
+"## Merge hints: notes sharing 2+ tags (excluding MOC/review/permanent)"
+$tagExclude = @("MOC", "review", "weekly", "monthly", "permanent", "paper", "draft", "project", "experiment")
+$noteTagMap = @{}
+Get-NoteFiles | ForEach-Object {
+  $content = Get-Content -Raw -Encoding UTF8 -LiteralPath $_.FullName
+  if ($content -match '(?s)^---(.+?)---') {
+    $fm = $Matches[1]
+    $tags = [regex]::Matches($fm, '^\s+-\s+(\S+)', [System.Text.RegularExpressions.RegexOptions]::Multiline) |
+      ForEach-Object { $_.Groups[1].Value } |
+      Where-Object { $_ -notin $tagExclude }
+    if ($tags.Count -gt 0) {
+      $noteTagMap[$_.FullName] = @($tags)
+    }
+  }
+}
+$paths = @($noteTagMap.Keys)
+$merged = New-Object System.Collections.Generic.HashSet[string]
+$hints = foreach ($i in 0..($paths.Count - 2)) {
+  foreach ($j in ($i+1)..($paths.Count - 1)) {
+    $a = $paths[$i]; $b = $paths[$j]
+    $key = "$a|$b"
+    if ($merged.Contains($key)) { continue }
+    $shared = $noteTagMap[$a] | Where-Object { $noteTagMap[$b] -contains $_ }
+    if ($shared.Count -ge 2) {
+      [void]$merged.Add($key)
+      "SHARED_TAGS({0}): {1}  <->  {2}" -f ($shared -join ","), (Resolve-Path -Relative $a), (Resolve-Path -Relative $b)
+    }
+  }
+}
+if ($hints) { $hints } else { "OK: no merge hint pairs found." }
+
