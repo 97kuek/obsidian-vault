@@ -115,6 +115,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `docs/agent-commands/vault-gc.md` | Vault棚卸しの共通手順 |
 | `docs/agent-commands/paper.md` | 論文メモ作成の共通手順 |
 | `docs/agent-commands/permanent.md` | 永続ノート作成の共通手順 |
+| `docs/agent-commands/pdf-to-md.md` | PDFをMarkdownに変換してInboxへ投入する共通手順 |
 
 ## tools/
 

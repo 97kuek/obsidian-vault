@@ -129,6 +129,18 @@ if ((Test-Selected "Structure")) {
       elseif ($frontmatter -notmatch '(?m)^date:\s*\d{4}-\d{2}-\d{2}\s*$') {
         $issues.Add("MISSING_DATE: $rel")
       }
+      else {
+        $fmDate = [regex]::Match($frontmatter, '(?m)^date:\s*(\d{4}-\d{2}-\d{2})\s*$').Groups[1].Value
+        if ($fmDate) {
+          $gitFirst = git log --follow --format="%as" -- $file.FullName 2>$null | Select-Object -Last 1
+          if ($gitFirst -and $gitFirst -ne $fmDate) {
+            $diff = [math]::Abs(([datetime]::Parse($fmDate) - [datetime]::Parse($gitFirst)).TotalDays)
+            if ($diff -gt 30) {
+              $issues.Add("DATE_MISMATCH: $rel (frontmatter=$fmDate, git-first=$gitFirst)")
+            }
+          }
+        }
+      }
     }
 
     if ($text -notmatch '(?m)^# [^#\r\n]') {
