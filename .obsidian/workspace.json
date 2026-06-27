@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "20_Areas/授業/人工知能.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "人工知能"
             }
           }
         ]
@@ -250,10 +254,11 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "2f06626f26abc65b",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md",
+    "99_Templates/永続ノート用.md.tmp.26732.83183893f623",
     "20_Areas/ソフトウェア開発/【MOC】ソフトウェア開発.md",
+    "Home.md",
     "00_Inbox/人工知能_課題.md",
     "00_Inbox/人工知能_1.md",
     "20_Areas/授業/人工知能_課題まとめ.md",
@@ -278,7 +283,6 @@
     "20_Areas/ソフトウェア開発/Supabase.md",
     "20_Areas/ソフトウェア開発/WebSocket.md",
     "00_Inbox/Supabase.md",
-    "00_Inbox/セッション管理.md",
     "00_Inbox/20260624_Xクリップ_MacopeninSUTABA.md.tmp.37596.26d5ad4ff7b6",
     "VAULT_INDEX.md.tmp.28484.fd94926d0598",
     "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.28484.1066d164d511",
