@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/ディジタル信号処理＿１.md",
+                "file": "20_Areas/授業/ディジタル信号処理（マルチレート・線形予測・適応フィルタ）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ディジタル信号処理＿１"
+              "title": "ディジタル信号処理（マルチレート・線形予測・適応フィルタ）"
             }
           }
         ]
@@ -237,8 +237,29 @@
   },
   "active": "41c1172dfac052b5",
   "lastOpenFiles": [
-    "10_Projects/プロジェクト研究A/教師モデル_EarlyFusion設計.md",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p58.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p53.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p52.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p46.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p38.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p36.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p32.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p29.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p21.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p15.png",
+    "tmp/pdfs/DSP10-ディジタルフィルタ-p8.png",
+    "tmp/pdfs/DSP11-フィルタバンク.txt",
+    "tmp/pdfs/DSP10-ディジタルフィルタ.txt",
+    "tmp/pdfs/DSP09-直交変換.txt",
+    "tmp/pdfs",
+    "tmp",
+    "00_Inbox/DSP11-フィルタバンク.pdf",
+    "00_Inbox/DSP09-直交変換.pdf",
+    "00_Inbox/DSP10-ディジタルフィルタ.pdf",
+    "20_Areas/授業/ディジタル信号処理.md",
+    "20_Areas/授業/ディジタル信号処理（マルチレート・線形予測・適応フィルタ）.md",
     "00_Inbox/ディジタル信号処理＿１.md",
+    "10_Projects/プロジェクト研究A/教師モデル_EarlyFusion設計.md",
     "docs/agent-commands/pdf-to-md.md",
     "tools/vault-gc.ps1.tmp.26732.031fae55ed9d",
     "Home.md",
@@ -261,28 +282,7 @@
     "20_Areas/ソフトウェア開発/ReactとNext.js.md",
     "20_Areas/ソフトウェア開発/React基礎.md",
     "30_Resources/デザイン/Claude.com_デザインシステム.md",
-    "30_Resources/デザイン",
     "00_Inbox/OAuthとOIDC.md",
-    "20_Areas/ソフトウェア開発/Web認証・認可.md",
-    "00_Inbox/API.md",
-    "20_Areas/ソフトウェア開発/Supabase.md",
-    "00_Inbox/20260624_Xクリップ_MacopeninSUTABA.md.tmp.37596.26d5ad4ff7b6",
-    "VAULT_INDEX.md.tmp.28484.fd94926d0598",
-    "20_Areas/永続ノート/【MOC】永続ノート.md.tmp.28484.1066d164d511",
-    "20_Areas/永続ノート/スケール不変な評価.md.tmp.28484.405227b3271f",
-    "20_Areas/授業/情報通信ネットワークA.md.tmp.28484.07a2a549cdfd",
-    "20_Areas/授業/ディジタル信号処理.md.tmp.28484.84c3b94e5778",
-    "VAULT_INDEX.md.tmp.28484.d0bbfd6134d0",
-    "スクリーンショット 2026-06-22 213527.png",
-    "スクリーンショット 2026-06-22 212030.png",
-    "スクリーンショット 2026-06-22 202914.png",
-    "スクリーンショット 2026-06-22 205736.png",
-    "スクリーンショット 2026-06-22 190855.png",
-    "スクリーンショット 2026-06-22 194534.png",
-    "スクリーンショット 2026-06-22 194517.png",
-    "スクリーンショット 2026-06-22 192024.png",
-    "スクリーンショット 2026-06-22 191616.png",
-    "スクリーンショット 2026-06-22 191217.png",
     "無題のファイル.canvas"
   ]
 }
