@@ -235,8 +235,9 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "380ad66492c8ef82",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_05_トランスポート層.md",
     "tmp/quartz-build-test/node_modules/yoga-layout/dist/src/generated",
     "tmp/quartz-build-test/node_modules/yoga-layout/dist/src/wrapAssembly.js.map",
     "tmp/quartz-build-test/node_modules/yoga-layout/dist/src/wrapAssembly.js",
@@ -247,7 +248,6 @@
     "tmp/quartz-build-test/node_modules/yoga-layout/dist/src/index.js.map",
     "tmp/quartz-build-test/node_modules/yoga-layout/dist/src/index.js",
     "tmp/quartz-build-test/node_modules/yoga-layout/dist/src/index.d.ts",
-    "tmp/quartz-build-test/node_modules/yoga-layout/dist/binaries/yoga-wasm-base64-esm.js",
     "tmp/quartz-build-test/node_modules/yargs-parser/README.md",
     "tmp/quartz-build-test/node_modules/sass/node_modules/chokidar/README.md",
     "tmp/quartz-build-test/node_modules/mdast-util-from-markdown/readme.md",
