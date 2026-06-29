@@ -57,9 +57,11 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
       }),
+      // vault-custom.css と同じく「ライトでも暗いコード窓」にするため、
+      // ライト/ダーク両方を暗いテーマに。窓の地色は custom.scss で #181715 に統一。
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
+          light: "github-dark",
           dark: "github-dark",
         },
         keepBackground: false,

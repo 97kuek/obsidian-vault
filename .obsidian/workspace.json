@@ -237,6 +237,10 @@
   },
   "active": "380ad66492c8ef82",
   "lastOpenFiles": [
+    "site/custom.scss.tmp.25700.ed7a46c7daad",
+    "site/custom.scss",
+    "site/custom.scss.tmp.25700.21337d498e44",
+    "site/quartz.config.ts.tmp.25700.8a118f589d07",
     "site/quartz.config.ts.tmp.25700.f2c4aa96ff35",
     "docs/agent-commands/publish.md",
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_05_トランスポート層.md",
@@ -266,12 +270,9 @@
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_03_データリンク層.md",
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_02_物理層.md",
     "20_Areas/授業/情報通信ネットワークA",
-    "tools/split-large-lecture-notes.mjs",
     "00_Inbox/はじめに.md",
     "20_Areas/授業/人工知能_課題まとめ.md",
     "20_Areas/授業/人工知能.md",
-    "00_Inbox/DSP11-フィルタバンク.pdf",
-    "00_Inbox/DSP09-直交変換.pdf",
     "tmp/pdfs/DSP10-ディジタルフィルタ-p58.png",
     "tmp/pdfs/DSP10-ディジタルフィルタ-p53.png",
     "tmp/pdfs/DSP10-ディジタルフィルタ-p52.png",
@@ -282,7 +283,6 @@
     "tmp/pdfs/DSP10-ディジタルフィルタ-p29.png",
     "tmp/pdfs/DSP10-ディジタルフィルタ-p21.png",
     "tmp/pdfs/DSP10-ディジタルフィルタ-p15.png",
-    "tmp/pdfs/DSP11-フィルタバンク.txt",
     "無題のファイル.canvas"
   ]
 }

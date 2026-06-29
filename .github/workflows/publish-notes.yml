@@ -50,6 +50,7 @@ jobs:
         run: |
           cp site/quartz.config.ts .quartz/quartz.config.ts
           cp site/quartz.layout.ts .quartz/quartz.layout.ts
+          cp site/custom.scss .quartz/quartz/styles/custom.scss
 
       - name: Build site
         working-directory: .quartz

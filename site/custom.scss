@@ -1,0 +1,132 @@
+// Quartz のベーススタイルを取り込む（元 custom.scss の唯一の行。消すと全スタイルが飛ぶ）。
+@use "./base.scss";
+
+// Inter を追加読込（Latin 用）。日本語の Noto Sans JP は config の googleFonts が読む。
+// dart-sass は @import url() を出力先頭へ巻き上げるため @use の後に書いても有効。
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ============================================================
+   custom.scss
+   公開サイト（Quartz）を Obsidian の vault-custom.css と同じ
+   デザインシステム（Anthropic Claude.com 風 / クリーム + coral）へ寄せる。
+
+   役割分担:
+     - 色トークン（背景/文字/アクセント）  -> quartz.config.ts
+     - 構造的な装飾（窓/チップ/pill/罫線）  -> このファイル
+   デプロイ:
+     publish-notes.yml が .quartz/quartz/styles/custom.scss へコピーする。
+   方針メモ:
+     - canvas はクリーム、アクセントは coral #cc785c のみ。
+     - コードブロックは DESIGN.md 象徴のダークネイビー #181715（ライトでも暗い窓）。
+     - 絵文字は使わない。
+   ============================================================ */
+
+:root {
+  /* Latin=Inter / 日本語=Noto Sans JP（config の googleFonts で取得）にフォールバック。
+     Quartz 標準のフォント変数を直接上書きして確実に効かせる。 */
+  --bodyFont: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --headerFont: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --code-window: #181715; /* ダークなコード窓（ライト/ダーク共通） */
+  --hairline: #e6dfd8;
+  --inline-code-bg: #efe9de;
+  --quote-border: #c9bda9;
+  --table-head: #efe9de;
+}
+
+:root[saved-theme="dark"] {
+  --hairline: #2d2b28;
+  --inline-code-bg: #2d2b28;
+  --quote-border: #4a4641;
+  --table-head: #201e1c;
+}
+
+/* ---- フォント（letter-spacing / weight を Obsidian と揃える） ---- */
+body {
+  font-family: var(--bodyFont);
+}
+h1, h2, h3, h4, h5, h6,
+.page-title,
+.article-title {
+  font-family: var(--headerFont);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* ---- 見出し下のヘアライン（Obsidian の h1/h2 罫線に対応） ---- */
+article h1,
+article h2 {
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0.2em;
+}
+
+/* ---- リンク: coral（config の secondary）＋淡い下線 ---- */
+a {
+  text-decoration-color: rgba(204, 120, 92, 0.35);
+}
+
+/* ---- コードブロック: ダークネイビー窓（ライトでも暗い） ----
+   トークン色は config のシンタックステーマ（github-dark）が
+   明色で出すため、地色だけ #181715 に統一する。 */
+pre {
+  background: var(--code-window) !important;
+  border-radius: 12px;
+  padding: 0.9em 1.1em;
+  overflow-x: auto;
+}
+pre > code {
+  background: none !important;
+}
+
+/* ---- インラインコード: 明るいクリームチップ ---- */
+:not(pre) > code {
+  background: var(--inline-code-bg);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  padding: 0.05em 0.35em;
+  font-size: 0.88em;
+}
+
+/* ---- 引用: muted 左ボーダー（coral は使わない） ---- */
+blockquote {
+  border-left: 3px solid var(--quote-border) !important;
+}
+
+/* ---- テーブル: hairline 罫線＋ヘッダを一段濃いクリームに ---- */
+article table {
+  border-collapse: collapse;
+}
+article th,
+article td {
+  border: 1px solid var(--hairline);
+  padding: 0.4em 0.7em;
+}
+article thead th {
+  background: var(--table-head);
+}
+
+/* ---- コールアウト: 角丸 lg ---- */
+.callout {
+  border-radius: 12px;
+}
+
+/* ---- タグ: cream pill ＋ 種別カラー（Obsidian と同じ割当） ---- */
+.tags > li > a,
+a.internal.tag-link {
+  background: var(--inline-code-bg);
+  border: 1px solid var(--hairline);
+  border-radius: 9999px;
+  padding: 0.08em 0.62em;
+  font-weight: 500;
+}
+a[href$="/tags/paper"]      { color: #5b9279; }
+a[href$="/tags/experiment"] { color: #5b7fa6; }
+a[href$="/tags/MOC"]        { color: #9b7bbf; }
+a[href$="/tags/permanent"]  { color: #c06a6a; }
+a[href$="/tags/draft"]      { color: #cf9b6f; }
+a[href$="/tags/lecture"]    { color: #7a9c6e; }
+
+/* ---- 選択範囲: coral ---- */
+::selection {
+  background: rgba(204, 120, 92, 0.18);
+}
