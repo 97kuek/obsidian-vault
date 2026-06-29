@@ -118,6 +118,22 @@ if (publishedNotes.length === 0) {
   throw new Error("No notes contain `publish: true` in frontmatter.")
 }
 
+// サイドカー folder-note の検出（例 `授業/人工知能.md` ＋ 同名フォルダ `授業/人工知能/`）。
+// この種のノートを持つ vault では Quartz のリンク解決（pathToRoot）が末尾スラッシュ配信の
+// URL と 1 段ずれ、パス二重化（404）や base 突き抜け（ポートフォリオへ誤遷移）を起こす。
+// 対策は exportRelativePath（ハブを `<folder>/index.md` に配置）と sanitizeNote（ハブ宛
+// リンクをフルパスに正規化）の二段構え。childDirectories はノートを含むディレクトリ集合。
+const childDirectories = new Set(
+  publishedNotes
+    .map((note) => path.posix.dirname(note.withoutExtension))
+    .filter((dir) => dir !== "."),
+)
+const folderNoteHubs = new Set(
+  publishedNotes
+    .map((note) => note.withoutExtension)
+    .filter((withoutExtension) => childDirectories.has(withoutExtension)),
+)
+
 const noteLookup = new Map()
 function addNoteLookup(key, note) {
   const normalizedKey = key.toLowerCase()
@@ -197,7 +213,18 @@ function sanitizeNote(note) {
     }
 
     const resolved = resolveNote(target, note)
-    if (resolved?.published) return full
+    if (resolved?.published) {
+      // ハブ（folder-note）宛のリンクは bare basename だと Quartz が root スラグと誤認し 404 になる。
+      // フルパスへ正規化すると `/<base>/<hub>` を出力でき、GitHub Pages が `/<hub>/` へ 301 する。
+      if (!embed && folderNoteHubs.has(resolved.withoutExtension)) {
+        const label =
+          display?.trim() ||
+          path.posix.basename(target.split("#")[0].replace(/\.md$/i, "")) ||
+          resolved.basename
+        return `[[${resolved.withoutExtension}|${label}]]`
+      }
+      return full
+    }
 
     const label =
       display?.trim() ||
@@ -219,8 +246,17 @@ if (fs.existsSync(outputRoot)) {
 }
 fs.mkdirSync(outputRoot, { recursive: true })
 
+function exportRelativePath(note) {
+  // 同名の子フォルダを持つノート（folder-note ハブ）はフォルダの index として配置する。
+  // これで Quartz が初めからスラグ `.../index` を割り当て、pathToRoot が正しくなる。
+  if (folderNoteHubs.has(note.withoutExtension)) {
+    return `${note.withoutExtension}/index.md`
+  }
+  return note.relativePath
+}
+
 for (const note of publishedNotes) {
-  const destination = path.join(outputRoot, note.relativePath)
+  const destination = path.join(outputRoot, exportRelativePath(note))
   fs.mkdirSync(path.dirname(destination), { recursive: true })
   fs.writeFileSync(destination, sanitizeNote(note), "utf8")
 }
@@ -241,25 +277,34 @@ function buildTree(notes) {
   return root
 }
 
-const collator = new Intl.Collator("ja")
+const collator = new Intl.Collator("ja", { numeric: true })
 function sortedFiles(files) {
-  // MOC を各フォルダの先頭に、それ以外は五十音順。
+  // MOC を各フォルダの先頭に、それ以外はファイル名順。
+  // ファイル名基準にすると `_01_`,`_02_` の連番ノートが章番号どおりに並ぶ。
   return files.slice().sort((left, right) => {
     const leftMoc = left.basename.includes("【MOC】")
     const rightMoc = right.basename.includes("【MOC】")
     if (leftMoc !== rightMoc) return leftMoc ? -1 : 1
-    return collator.compare(left.title, right.title)
+    return collator.compare(left.basename, right.basename)
   })
 }
 
-// フォルダ=太字、ファイル=リンクの入れ子リストを再帰生成する。
-function renderNode(node, depth, lines) {
+// withoutExtension からノートを引くための索引（folder-note ハブの見出しリンク化に使う）。
+const noteByPath = new Map(publishedNotes.map((note) => [note.withoutExtension, note]))
+
+// フォルダ＝見出し、ファイル＝リンクの入れ子リストを再帰生成する。
+// フォルダに同名の folder-note ハブがあれば、見出し自体をそのハブへのリンクにし、
+// ファイル一覧側では重複させない。
+function renderNode(node, prefix, depth, lines) {
   const indent = "  ".repeat(depth)
   for (const name of [...node.dirs.keys()].sort(collator.compare)) {
-    lines.push(`${indent}- **${name}**`)
-    renderNode(node.dirs.get(name), depth + 1, lines)
+    const childPrefix = prefix ? `${prefix}/${name}` : name
+    const hub = noteByPath.get(childPrefix)
+    lines.push(hub ? `${indent}- [[${hub.withoutExtension}|${name}]]` : `${indent}- **${name}**`)
+    renderNode(node.dirs.get(name), childPrefix, depth + 1, lines)
   }
   for (const note of sortedFiles(node.files)) {
+    if (folderNoteHubs.has(note.withoutExtension)) continue // 見出しに昇格済みなので省く
     lines.push(`${indent}- [[${note.withoutExtension}|${note.title}]]`)
   }
 }
@@ -290,7 +335,7 @@ if (areas.files.length > 0) indexLines.push("")
 for (const name of [...areas.dirs.keys()].sort(collator.compare)) {
   indexLines.push(`## ${name}`, "")
   const lines = []
-  renderNode(areas.dirs.get(name), 0, lines)
+  renderNode(areas.dirs.get(name), `20_Areas/${name}`, 0, lines)
   indexLines.push(...lines, "")
 }
 
