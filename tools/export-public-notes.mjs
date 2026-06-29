@@ -336,8 +336,9 @@ for (const name of [...areas.dirs.keys()].sort(collator.compare)) {
   const lines = []
   renderNode(areas.dirs.get(name), `20_Areas/${name}`, 0, lines)
   const noteCount = lines.filter((line) => line.includes("[[")).length
-  // `[!note]-` の末尾ハイフンで既定折りたたみ。中身は各行に `> ` を付けてコールアウト内に入れる。
-  indexLines.push(`> [!note]- ${name}（${noteCount}）`)
+  // 専用タイプ `category` にして custom.scss 側で cream+coral に寄せる（既定 note の青を避ける）。
+  // 末尾ハイフンで既定折りたたみ。中身は各行に `> ` を付けてコールアウト内に入れる。
+  indexLines.push(`> [!category]- ${name}（${noteCount}）`)
   for (const line of lines) indexLines.push(`> ${line}`)
   indexLines.push("")
 }

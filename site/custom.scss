@@ -107,6 +107,25 @@ article thead th {
   border-radius: 12px;
 }
 
+/* ---- ホームのカテゴリ折りたたみ（[!category]）----
+   既定 note の青（grey 地＋青タイトル＋鉛筆）がクリーム＋coral のホームから浮く。
+   Quartz はタイプ別に `--color`（タイトル・罫線・シェブロン）と `--bg`（地）を持つので、
+   未知タイプ category にはこれを唯一のアクセント coral で与え、窓を cream+coral に揃える。
+   鉛筆アイコンはカテゴリ見出しに無意味なので消す。 */
+.callout[data-callout="category"] {
+  --color: #cc785c; /* coral: タイトル・罫線・展開シェブロン */
+  --border: #cc785c;
+  --bg: rgba(204, 120, 92, 0.07); /* 淡い暖色ウォッシュ */
+}
+:root[saved-theme="dark"] .callout[data-callout="category"] {
+  --color: #e0997b; /* dark の secondary に合わせる */
+  --border: #e0997b;
+  --bg: rgba(224, 153, 123, 0.10);
+}
+.callout[data-callout="category"] .callout-icon {
+  display: none;
+}
+
 /* ---- タグ: cream pill ＋ 種別カラー（Obsidian と同じ割当） ---- */
 .tags > li > a,
 a.internal.tag-link {
