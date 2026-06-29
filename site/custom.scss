@@ -188,12 +188,29 @@ article p {
     overflow-x: auto;
     white-space: nowrap;
   }
+
+  /* 上部の検索＋メニューブロック（スマホでは横並びで上部に積まれる）を小型化。
+     サイト名が大きく場所を取るので縮め、バーを詰めて折返しを許可する。 */
+  .sidebar.left {
+    padding-top: 1rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  /* 検索バーは横いっぱいに使い、トグルと並べてコンパクトに */
+  .sidebar.left .search {
+    flex: 1 1 auto;
+  }
 }
 
-/* 細い端末（<= 420px）: 見出しの折返しと余白をさらに詰める */
+/* 細い端末（<= 420px）: 見出しの折返しと余白、サイト名をさらに詰める */
 @media all and (max-width: 420px) {
   article h1,
   .article-title { font-size: 1.45rem; }
+  .page-title { font-size: 1.15rem; }
   .center {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
