@@ -331,12 +331,15 @@ for (const note of sortedFiles(areas.files)) {
 }
 if (areas.files.length > 0) indexLines.push("")
 
-// 各カテゴリを見出し＋入れ子リストで出す。
+// 各カテゴリを折りたたみコールアウトで出す（初期は畳んだ状態＝スマホで一覧が長くならない）。
 for (const name of [...areas.dirs.keys()].sort(collator.compare)) {
-  indexLines.push(`## ${name}`, "")
   const lines = []
   renderNode(areas.dirs.get(name), `20_Areas/${name}`, 0, lines)
-  indexLines.push(...lines, "")
+  const noteCount = lines.filter((line) => line.includes("[[")).length
+  // `[!note]-` の末尾ハイフンで既定折りたたみ。中身は各行に `> ` を付けてコールアウト内に入れる。
+  indexLines.push(`> [!note]- ${name}（${noteCount}）`)
+  for (const line of lines) indexLines.push(`> ${line}`)
+  indexLines.push("")
 }
 
 fs.writeFileSync(path.join(outputRoot, "index.md"), indexLines.join("\n"), "utf8")
