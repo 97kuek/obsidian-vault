@@ -38,7 +38,10 @@ jobs:
 
       - name: Install Quartz
         working-directory: .quartz
-        run: npm ci
+        run: |
+          npm ci
+          npm update
+          npm audit --audit-level=high
 
       - name: Export approved notes
         run: node tools/export-public-notes.mjs --output .quartz/content

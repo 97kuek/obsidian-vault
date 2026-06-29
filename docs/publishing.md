@@ -41,3 +41,4 @@ node tools/export-public-notes.mjs --output .quartz/content
 - GitHub Pagesは公開Webサイトである。
 - `publish: true` を付ける前に、個人情報、秘密情報、未公開研究、課題の解答、第三者の著作物が含まれていないか確認する。
 - Quartzの更新は、固定コミットを変更してローカルビルドを確認してから行う。
+- ビルド時は固定したQuartz本体に対して互換範囲内の依存更新を適用し、high以上の脆弱性が残る場合はデプロイを停止する。
