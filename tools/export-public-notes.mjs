@@ -225,6 +225,49 @@ for (const note of publishedNotes) {
   fs.writeFileSync(destination, sanitizeNote(note), "utf8")
 }
 
+// 公開ノートをフォルダ階層のツリーに組み立てる（ホームを羅列でなく分類表示にする）。
+function buildTree(notes) {
+  const root = { dirs: new Map(), files: [] }
+  for (const note of notes) {
+    const parts = note.withoutExtension.split("/")
+    parts.pop() // ファイル名を除いた残りがフォルダ階層
+    let node = root
+    for (const dir of parts) {
+      if (!node.dirs.has(dir)) node.dirs.set(dir, { dirs: new Map(), files: [] })
+      node = node.dirs.get(dir)
+    }
+    node.files.push(note)
+  }
+  return root
+}
+
+const collator = new Intl.Collator("ja")
+function sortedFiles(files) {
+  // MOC を各フォルダの先頭に、それ以外は五十音順。
+  return files.slice().sort((left, right) => {
+    const leftMoc = left.basename.includes("【MOC】")
+    const rightMoc = right.basename.includes("【MOC】")
+    if (leftMoc !== rightMoc) return leftMoc ? -1 : 1
+    return collator.compare(left.title, right.title)
+  })
+}
+
+// フォルダ=太字、ファイル=リンクの入れ子リストを再帰生成する。
+function renderNode(node, depth, lines) {
+  const indent = "  ".repeat(depth)
+  for (const name of [...node.dirs.keys()].sort(collator.compare)) {
+    lines.push(`${indent}- **${name}**`)
+    renderNode(node.dirs.get(name), depth + 1, lines)
+  }
+  for (const note of sortedFiles(node.files)) {
+    lines.push(`${indent}- [[${note.withoutExtension}|${note.title}]]`)
+  }
+}
+
+const tree = buildTree(publishedNotes)
+// 大半が 20_Areas 配下なので、その直下のカテゴリを ## セクションとして展開する。
+const areas = tree.dirs.get("20_Areas") ?? tree
+
 const indexLines = [
   "---",
   'title: "Obsidian Browser"',
@@ -235,13 +278,22 @@ const indexLines = [
   "",
   "Obsidianで管理しているノートのうち、公開を許可したものだけを掲載している。",
   "",
-  "## 公開ノート",
-  "",
-  ...publishedNotes
-    .sort((left, right) => left.title.localeCompare(right.title, "ja"))
-    .map((note) => `- [[${note.withoutExtension}|${note.title}]]`),
-  "",
 ]
+
+// カテゴリ直下のノート（全体 MOC 等）を冒頭に出す。
+for (const note of sortedFiles(areas.files)) {
+  indexLines.push(`- [[${note.withoutExtension}|${note.title}]]`)
+}
+if (areas.files.length > 0) indexLines.push("")
+
+// 各カテゴリを見出し＋入れ子リストで出す。
+for (const name of [...areas.dirs.keys()].sort(collator.compare)) {
+  indexLines.push(`## ${name}`, "")
+  const lines = []
+  renderNode(areas.dirs.get(name), 0, lines)
+  indexLines.push(...lines, "")
+}
+
 fs.writeFileSync(path.join(outputRoot, "index.md"), indexLines.join("\n"), "utf8")
 
 const manifest = {
