@@ -1,10 +1,6 @@
 // Quartz のベーススタイルを取り込む（元 custom.scss の唯一の行。消すと全スタイルが飛ぶ）。
 @use "./base.scss";
 
-// Inter を追加読込（Latin 用）。日本語の Noto Sans JP は config の googleFonts が読む。
-// dart-sass は @import url() を出力先頭へ巻き上げるため @use の後に書いても有効。
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
 /* ============================================================
    custom.scss
    公開サイト（Quartz）を Obsidian の vault-custom.css と同じ
@@ -22,8 +18,9 @@
    ============================================================ */
 
 :root {
-  /* Latin=Inter / 日本語=Noto Sans JP（config の googleFonts で取得）にフォールバック。
-     Quartz 標準のフォント変数を直接上書きして確実に効かせる。 */
+  /* フォントは config の googleFonts が確実に読む Noto Sans JP を基本にする。
+     Inter は webfont 読込すると Quartz の CSS 結合で @import 制約に触れてビルドが
+     壊れるため読み込まない。ローカルに Inter があれば使う程度のフォールバック指定に留める。 */
   --bodyFont: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --headerFont: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
@@ -129,4 +126,76 @@ a[href$="/tags/lecture"]    { color: #7a9c6e; }
 /* ---- 選択範囲: coral ---- */
 ::selection {
   background: rgba(204, 120, 92, 0.18);
+}
+
+/* ============================================================
+   読みやすさ / レスポンシブ
+   スマホ第一（PC ブラウザでも快適）を想定し、本文サイズと
+   行間、タップ領域、余白をデバイス幅で最適化する。
+   ブレークポイントは Quartz と同じ 800px（以下=モバイル）。
+   ============================================================ */
+
+/* 基準（PC/タブレット）: ゆったりした行間で長文を読みやすく */
+article {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+article p {
+  margin-block: 0.7em;
+}
+
+/* スマホ（<= 800px）: 指で読む距離に合わせ本文を一段大きく、
+   画面幅を活かすため左右余白を詰め、タップ領域を広げる。 */
+@media all and (max-width: 800px) {
+  article {
+    font-size: 1.06rem;
+    line-height: 1.8;
+  }
+  article h1,
+  .article-title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  article h2 { font-size: 1.34rem; }
+  article h3 { font-size: 1.16rem; }
+
+  /* 中央カラムの左右余白を詰めて本文に幅を回す */
+  .center {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* タップしやすいタグ・リンク（指で押せる高さ） */
+  .tags > li > a,
+  a.internal.tag-link {
+    padding: 0.28em 0.85em;
+    font-size: 0.92rem;
+  }
+  article a {
+    /* 行内リンクのタップ判定を確保 */
+    padding-block: 0.05em;
+  }
+
+  /* コードは少し小さく＋必ず横スクロール（折り返しで崩さない） */
+  pre {
+    font-size: 0.85rem;
+    padding: 0.8em 0.9em;
+  }
+
+  /* テーブルは横スクロールで溢れを防ぐ */
+  article table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* 細い端末（<= 420px）: 見出しの折返しと余白をさらに詰める */
+@media all and (max-width: 420px) {
+  article h1,
+  .article-title { font-size: 1.45rem; }
+  .center {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
 }

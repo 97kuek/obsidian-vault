@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "学習・研究ノート",
+    pageTitle: "Obsidian Browser",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,

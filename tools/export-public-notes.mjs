@@ -227,11 +227,11 @@ for (const note of publishedNotes) {
 
 const indexLines = [
   "---",
-  'title: "学習・研究ノート"',
+  'title: "Obsidian Browser"',
   "publish: true",
   "---",
   "",
-  "# 学習・研究ノート",
+  "# Obsidian Browser",
   "",
   "Obsidianで管理しているノートのうち、公開を許可したものだけを掲載している。",
   "",
