@@ -24,3 +24,6 @@ $RECYCLE.BIN/
 # 一時ファイル
 *.tmp
 *.bak
+
+# 公開サイトのローカルビルド
+.quartz/

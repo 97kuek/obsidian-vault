@@ -37,4 +37,4 @@ $$\Pr\big[\,d_X(h^*, h) \leq \varepsilon\,\big] \geq 1 - \delta$$
 
 ## 出典・根拠
 
-- [[人工知能]] — PAC学習の節
+- [[人工知能_07_PAC学習とSVM|人工知能：PAC学習とSVM]] — PAC学習の節

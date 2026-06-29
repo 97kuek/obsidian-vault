@@ -60,6 +60,16 @@ PDF 本体は vault に置かず、Zotero 等の外部で管理する。
 
 ## Frontmatter
 
+すべてのノートは非公開を既定とする。GitHub Pagesへ公開するノートだけ、通常のfrontmatterへ次を追加する。
+
+```yaml
+publish: true
+```
+
+- `publish: true` がないノートは公開処理の対象外である。
+- 公開前に個人情報、秘密情報、未公開研究、課題解答、第三者の著作物が含まれていないか確認する。
+- 公開処理の詳細は `docs/publishing.md` を参照する。
+
 通常ノート:
 
 ```yaml
@@ -198,4 +208,3 @@ Home
 | モデル | `transformer` `bert` `ai` など |
 
 タグは小文字英語または日本語に統一する。
-
