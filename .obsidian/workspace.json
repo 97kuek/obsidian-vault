@@ -235,8 +235,9 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "380ad66492c8ef82",
   "lastOpenFiles": [
+    "docs/agent-commands/publish.md",
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_05_トランスポート層.md",
     "docs/publishing.md",
     "site/quartz.layout.ts",
@@ -269,7 +270,6 @@
     "20_Areas/授業/人工知能_課題まとめ.md",
     "20_Areas/授業/人工知能.md",
     "30_Resources/デザイン/Claude.com_デザインシステム.md",
-    "20_Areas/授業/ディジタル信号処理.md",
     "00_Inbox/DSP11-フィルタバンク.pdf",
     "00_Inbox/DSP09-直交変換.pdf",
     "tmp/pdfs/DSP10-ディジタルフィルタ-p58.png",
