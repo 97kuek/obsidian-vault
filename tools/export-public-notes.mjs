@@ -47,8 +47,18 @@ function frontmatter(text) {
   return match?.[1] ?? ""
 }
 
-function isPublished(text) {
-  return /(?:^|\n)publish:\s*true\s*(?:\n|$)/i.test(frontmatter(text))
+function isPublished(text, relativePath) {
+  const yaml = frontmatter(text)
+  const explicitTrue = /(?:^|\n)publish:\s*true\s*(?:\n|$)/i.test(yaml)
+  const explicitFalse = /(?:^|\n)publish:\s*false\s*(?:\n|$)/i.test(yaml)
+
+  if (explicitTrue && explicitFalse) {
+    throw new Error(`Conflicting publish values: ${relativePath}`)
+  }
+  if (explicitFalse) return false
+  if (explicitTrue) return true
+
+  return relativePath.startsWith("20_Areas/")
 }
 
 function noteTitle(text, fallback) {
@@ -99,7 +109,7 @@ const notes = markdownFiles.map((absolutePath) => {
     text,
     title: noteTitle(text, path.posix.basename(withoutExtension)),
     aliases: aliases(text),
-    published: isPublished(text),
+    published: isPublished(text, relativePath),
   }
 })
 

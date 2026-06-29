@@ -60,13 +60,27 @@ PDF 本体は vault に置かず、Zotero 等の外部で管理する。
 
 ## Frontmatter
 
-すべてのノートは非公開を既定とする。GitHub Pagesへ公開するノートだけ、通常のfrontmatterへ次を追加する。
+公開の既定値はフォルダで決める。
+
+| フォルダ | 既定 |
+|---|---|
+| `20_Areas/` | 公開 |
+| `00_Inbox/` | 非公開 |
+| `10_Projects/` | 非公開 |
+| `30_Resources/` | 非公開 |
+| `40_Archives/` | 非公開 |
+| その他の運用フォルダ | 非公開 |
+
+個別に既定値を上書きする場合だけ、通常のfrontmatterへ次を追加する。
 
 ```yaml
 publish: true
+# または
+publish: false
 ```
 
-- `publish: true` がないノートは公開処理の対象外である。
+- `20_Areas/` でも、課題解答・個人情報・秘密情報・未公開内容を含むノートには `publish: false` を付ける。
+- `20_Areas/` 以外を例外的に公開する場合は、内容を監査して `publish: true` を付ける。
 - 公開前に個人情報、秘密情報、未公開研究、課題解答、第三者の著作物が含まれていないか確認する。
 - 公開処理の詳細は `docs/publishing.md` を参照する。
 

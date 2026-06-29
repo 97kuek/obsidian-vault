@@ -12,6 +12,7 @@
 - ノート作成・整形は **だ・である調**、箇条書き中心、元情報を削らないことを既定とする。
 - `.obsidian/` は原則編集しない。例外は `.obsidian/snippets/vault-custom.css` の CSS 編集のみ。
 - `99_Templates/` はテンプレート置き場なので、ユーザーが明示した場合だけ編集する。
+- 公開は `20_Areas/` が既定、`00_Inbox/`・`10_Projects/`・`30_Resources/`・`40_Archives/` は非公開が既定である。例外は `docs/agent-commands/publish.md` に従う。
 
 ---
 
@@ -36,6 +37,7 @@
 | `/vault-gc`、月次棚卸し、重複整理 | `docs/agent-commands/vault-gc.md` |
 | `/paper`、論文メモ作成 | `docs/agent-commands/paper.md` |
 | `/permanent`、永続ノート作成 | `docs/agent-commands/permanent.md` |
+| `/publish`、公開候補・公開追加・公開停止・公開監査 | `docs/agent-commands/publish.md` |
 
 Claude Code 専用の MCP ツール名が出てきた場合、Codex では通常のファイル操作・検索に読み替える。
 
@@ -58,6 +60,7 @@ Claude Code 専用の MCP ツール名が出てきた場合、Codex では通常
 | MOC 更新 | 対象 MOC と関連ノートを読み、リンクを追加・整理する |
 | 論文メモ作成 | `99_Templates/論文ノート用.md` の型に合わせ、`30_Resources/` に置く |
 | 永続ノート作成 | 横断概念だけを `20_Areas/永続ノート/` に作り、`【MOC】永続ノート.md` を更新する |
+| 公開ノート管理 | `docs/agent-commands/publish.md` を読み、候補とリスクを提示し、承認後に `publish: true` を付け外しする |
 
 ---
 

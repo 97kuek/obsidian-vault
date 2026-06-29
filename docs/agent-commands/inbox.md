@@ -49,8 +49,9 @@ Inbox が空なら「Inboxはクリーンです」と報告して終了する。
 2. 本文を該当テンプレートの型に整形する。
 3. 規約どおりの名前で正しいフォルダへ移動または新規作成する。
 4. タグを付与する。
-5. 関連リンク、MOC、`VAULT_INDEX.md` を更新する。
-6. `tools/vault-review.ps1 -Check Links` または同等の切れリンク確認を行う。
+5. `20_Areas/` へ移すノートは公開可能か確認し、課題解答・個人情報・秘密情報・未公開内容を含む場合は `publish: false` を付ける。
+6. 関連リンク、MOC、`VAULT_INDEX.md` を更新する。
+7. `tools/vault-review.ps1 -Check Links` または同等の切れリンク確認を行う。
 
 ## サマリー
 
@@ -61,4 +62,3 @@ Inbox が空なら「Inboxはクリーンです」と報告して終了する。
 - 更新したMOC / VAULT_INDEX: ...
 - 残ったInbox: M件（理由）
 ```
-

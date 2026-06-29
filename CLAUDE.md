@@ -19,6 +19,7 @@ Claude Code がこの vault で作業する際の入口である。Codex は `AG
 - AI エージェントは分類・整形・移動・命名・タグ・リンク/MOC/索引更新を提案し、承認後に実行する。
 - ノートは、だ・である調、箇条書き中心、元情報を削らないことを既定とする。
 - 破壊的操作や複数ファイルの作成・削除・リネーム前には作業前コミットを提案する。
+- 公開は `20_Areas/` が既定、`00_Inbox/`・`10_Projects/`・`30_Resources/`・`40_Archives/` は非公開が既定である。例外は `docs/agent-commands/publish.md` に従う。
 
 ---
 
@@ -31,6 +32,7 @@ Claude Code がこの vault で作業する際の入口である。Codex は `AG
 | `/vault-gc`、棚卸し | `docs/agent-commands/vault-gc.md` |
 | `/paper`、論文メモ | `docs/agent-commands/paper.md` |
 | `/permanent`、永続ノート | `docs/agent-commands/permanent.md` |
+| `/publish`、公開候補・公開追加・公開停止・公開監査 | `docs/agent-commands/publish.md` |
 
 ---
 
@@ -59,4 +61,3 @@ Claude Code がこの vault で作業する際の入口である。Codex は `AG
 - ファイルを追加・削除・リネームしたら `VAULT_INDEX.md` を更新する。
 - ルートの運用ドキュメントを変えたら `README.md`、`AGENTS.md`、`CLAUDE.md`、`VAULT_INDEX.md` の整合を確認する。
 - センシティブ情報が必要になったら `99_Private/` を作り、`.gitignore` とこの入口に追記する。
-

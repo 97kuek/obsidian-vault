@@ -132,6 +132,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `docs/agent-commands/paper.md` | 論文メモ作成の共通手順 |
 | `docs/agent-commands/permanent.md` | 永続ノート作成の共通手順 |
 | `docs/agent-commands/pdf-to-md.md` | PDFをMarkdownに変換してInboxへ投入する共通手順 |
+| `docs/agent-commands/publish.md` | 公開候補の選定・公開追加・公開停止・公開監査の共通手順 |
 | `docs/publishing.md` | `publish: true` のノートだけをQuartzとGitHub Pagesで公開する運用手順 |
 
 ## tools/
