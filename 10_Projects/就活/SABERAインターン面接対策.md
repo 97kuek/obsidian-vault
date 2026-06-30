@@ -1,4 +1,15 @@
-# 🎯 jig.jp SABERA 面接 完全カンペ（決定版）
+---
+date: 2026-06-30
+tags:
+  - project
+  - 就活
+  - インターン
+project: SABERAインターン
+status: in-progress
+---
+# SABERAインターン面接対策
+
+## jig.jp SABERA 面接 完全カンペ（決定版）
 
 > 構成: **①直前に見る1枚** → ②katekyo Q&A → ③pacman Q&A → ④行動・動機系 Q&A → ⑤用語早見表 → ⑥弱点リスト 回答の太字＝面接で出す用語。すべて「**用語 → 噛み砕き → トレードオフ**」の順。
 

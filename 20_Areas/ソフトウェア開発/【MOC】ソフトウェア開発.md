@@ -26,6 +26,7 @@ mindmap
       API
       データベース基礎
       WebSocket
+      Docker基礎
       Supabase
       Web認証・認可
     設計
@@ -50,6 +51,7 @@ mindmap
 - [[API]] — Web API・REST API・リクエスト/レスポンス・Next.js API Route
 - [[データベース基礎]] — RDB・SQL・JOIN・制約・トランザクション・正規化・ORM
 - [[WebSocket]] — HTTP Upgrade・フレーム・双方向通信・実務上の注意
+- [[Docker基礎]] — Dockerfile・イメージ・コンテナ・ネットワーク・ボリューム・Compose
 - [[Supabase]] — Postgres中心のBaaS・Auth・RLS・PostgREST
 - [[Web認証・認可]] — 認証/認可・セッション/JWT・OAuth/OIDC
 - [[Webアプリケーションのレイヤードアーキテクチャ]] — 画面層・API層・UseCase層・Domain層・Infrastructure層

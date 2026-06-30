@@ -1,7 +1,6 @@
 ---
 date: 2026-06-29
 tags:
-  - inbox
   - ソフトウェア開発
   - docker
 ---
