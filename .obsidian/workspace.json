@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "20_Areas/授業/離散数学/離散数学_03_グラフ理論5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "離散数学_03_グラフ理論5"
             }
           }
         ]
@@ -239,9 +239,10 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "20_Areas/授業/離散数学/離散数学_04_ニューラルネットワークと計算グラフ.md",
+    "20_Areas/授業/離散数学/離散数学_01_グラフ理論3.md",
+    "Home.md",
     "20_Areas/授業/離散数学/離散数学_03_グラフ理論5.md",
     "20_Areas/授業/離散数学/離散数学_02_グラフ理論4.md",
-    "20_Areas/授業/離散数学/離散数学_01_グラフ理論3.md",
     "20_Areas/授業/離散数学.md",
     "20_Areas/授業/離散数学",
     "00_Inbox/離散数学.md",
@@ -273,7 +274,6 @@
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_05_トランスポート層.md",
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_06_DNS.md",
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_08_P2Pとセキュリティ.md",
-    "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_01_概論.md",
     "tmp/quartz-build-test/quartz/static/og-image.png",
     "tmp/quartz-build-test/quartz/static/icon.png",
     "tmp/quartz-build-test/docs/images/social-image-preview-light.png",
