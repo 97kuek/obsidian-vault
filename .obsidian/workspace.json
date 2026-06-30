@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/離散数学.md",
+                "file": "20_Areas/授業/離散数学/離散数学_04_ニューラルネットワークと計算グラフ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "離散数学"
+              "title": "離散数学_04_ニューラルネットワークと計算グラフ"
             }
           }
         ]
@@ -238,13 +238,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "20_Areas/授業/離散数学/離散数学_04_ニューラルネットワークと計算グラフ.md",
     "20_Areas/授業/離散数学/離散数学_03_グラフ理論5.md",
     "20_Areas/授業/離散数学/離散数学_02_グラフ理論4.md",
     "20_Areas/授業/離散数学/離散数学_01_グラフ理論3.md",
+    "20_Areas/授業/離散数学.md",
+    "20_Areas/授業/離散数学/離散数学_04_ニューラルネットワークと計算グラフ.md",
     "20_Areas/授業/離散数学",
     "00_Inbox/離散数学.md",
-    "20_Areas/授業/離散数学.md",
     "10_Projects/就活/SABERAインターン面接対策.md",
     "20_Areas/ソフトウェア開発/Docker基礎.md",
     "10_Projects/就活",
