@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Areas/授業/ディジタル信号処理.md",
+                "file": "00_Inbox/sabera インターン.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ディジタル信号処理"
+              "title": "sabera インターン"
             }
           }
         ]
@@ -237,6 +237,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "20_Areas/授業/ディジタル信号処理.md",
     "20_Areas/授業/最適化アルゴリズム.md",
     "20_Areas/授業/センサと制御.md",
     "20_Areas/授業/情報通信ネットワークA/情報通信ネットワークA_03_データリンク層.md",
@@ -272,7 +273,6 @@
     "tmp/quartz-build-test/node_modules/@clack/core/README.md",
     "tmp/quartz-build-test/node_modules/picomatch/README.md",
     "tmp/quartz-build-test/node_modules/xmldom-sre/readme.md",
-    "tmp/quartz-build-test/node_modules/@clack/core/CHANGELOG.md",
     "tmp/quartz-build-test/quartz/static/og-image.png",
     "tmp/quartz-build-test/quartz/static/icon.png",
     "tmp/quartz-build-test/docs/images/social-image-preview-light.png",
