@@ -49,7 +49,7 @@ mindmap
 - [[Next.js App Router]] — App Router・Server/Client Components・Server Actions
 - [[AIエージェントへの開発指示]] — Next.js実装を依頼・レビューするときの観点
 - [[API]] — Web API・REST API・リクエスト/レスポンス・Next.js API Route
-- [[データベース基礎]] — RDB・SQL・JOIN・制約・トランザクション・正規化・ORM
+- [[データベース基礎]] — DB・SQL・設計・アプリ連携を6単元に分けた基礎ノートのハブ
 - [[WebSocket]] — HTTP Upgrade・フレーム・双方向通信・実務上の注意
 - [[Docker基礎]] — Dockerfile・イメージ・コンテナ・ネットワーク・ボリューム・Compose
 - [[Supabase]] — Postgres中心のBaaS・Auth・RLS・PostgREST
