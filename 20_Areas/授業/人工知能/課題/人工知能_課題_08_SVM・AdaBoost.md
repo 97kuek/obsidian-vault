@@ -20,19 +20,25 @@ publish: false
   - データが超平面によって例外なく線形分離可能であることを前提とする。
   - 全サンプルに対して次の制約を課し、その範囲でマージンを最大化する。
 
-$$y_k f(\boldsymbol{x}_k) \geq 1 \quad (\forall \boldsymbol{x}_k \in S)$$
+$$
+y_k f(\boldsymbol{x}_k) \ge 1 \quad (\forall \boldsymbol{x}_k \in S)
+$$
 
-  - 目的関数は $\min \frac{1}{2}|\boldsymbol{w}|^2$ である。
+  - 目的関数は $\min \frac{1}{2}\lVert\boldsymbol{w}\rVert^2$ である。
   - 誤分類やマージン内への侵入を一切許さない。
 - **ソフトマージン**
   - 各サンプルにスラック変数 $\zeta_k \geq 0$ を導入し、制約を緩和する。
 
-$$y_kf(\boldsymbol{x}_k) \geq 1 - \zeta_k$$
+$$
+y_kf(\boldsymbol{x}_k) \ge 1 - \zeta_k
+$$
 
   - マージン内に侵入する点（$0 < \zeta_k \leq 1$）や、誤分類される点（$\zeta_k > 1$）を許容する。
   - はみ出しを抑えるため、目的関数に罰則項を加える。
 
-$$\min_{\boldsymbol{w}, b, \boldsymbol{\zeta}}\ \frac{1}{2}|\boldsymbol{w}|^2 + C\sum_k \zeta_k$$
+$$
+\min_{\boldsymbol{w}, b, \boldsymbol{\zeta}}\ \frac{1}{2}\lVert\boldsymbol{w}\rVert^2 + C\sum_k \zeta_k
+$$
 
   - 正則化係数 $C$ は「マージンの大きさ」と「誤分類の少なさ」の釣り合いを制御する。
   - $C$ が大きいほど誤分類を許容しにくく、小さいほど誤分類を許してマージンを広く取る。
@@ -79,13 +85,13 @@ $$\min_{\boldsymbol{w}, b, \boldsymbol{\zeta}}\ \frac{1}{2}|\boldsymbol{w}|^2 + 
 |58|900|No|$-1$|0.1250|$-1$|0|
 |52|750|Yes|$1$|0.2083|$-1$|0.2083|
 
-$h_3$ が誤るのは**第7サンプル（年代52・年収750・ローンYes・貸し倒れYes）のみ**である。年収750万は350万を超えるため $h_3$ は $-1$ を返すが、実際は貸し倒れ（$+1$）であるため誤分類となる。
+- $h_3$ が誤るのは**第7サンプル（年代52・年収750・ローンYes・貸し倒れYes）のみ**である。年収750万は350万を超えるため $h_3$ は $-1$ を返すが、実際は貸し倒れ（$+1$）であるため誤分類となる。
+- **重み付き誤差** は $\varepsilon_3 = \sum \text{Loss} \times \mathcal{D}_3 = 0.2083$。
+- **重要度** は
 
-**重み付き誤差** は $\varepsilon_3 = \sum \text{Loss}\times\mathcal{D}_3 = 0.2083$。
-
-**重要度** は
-
-$$\alpha_3 = \frac{1}{2}\ln\frac{1-\varepsilon_3}{\varepsilon_3} = \frac{1}{2}\ln\frac{0.7917}{0.2083} = \frac{1}{2}\ln 3.8007 = 0.6676$$
+$$
+\alpha_3 = \frac{1}{2}\ln\frac{1-\varepsilon_3}{\varepsilon_3} = \frac{1}{2}\ln\frac{0.7917}{0.2083} = \frac{1}{2}\ln 3.8007 = 0.6676
+$$
 
 ## 最終分類器による一致度の検証
 
@@ -97,7 +103,9 @@ $$\alpha_3 = \frac{1}{2}\ln\frac{1-\varepsilon_3}{\varepsilon_3} = \frac{1}{2}\l
 
 - 最終分類器は次式である。
 
-$$H(\boldsymbol{x}) = \mathrm{sgn}\bigl(0.4581 h_1(\boldsymbol{x}) + 0.2027 h_2(\boldsymbol{x}) + 0.6676 h_3(\boldsymbol{x})\bigr)$$
+$$
+H(\boldsymbol{x}) = \mathrm{sgn}\bigl(0.4581 h_1(\boldsymbol{x}) + 0.2027 h_2(\boldsymbol{x}) + 0.6676 h_3(\boldsymbol{x})\bigr)
+$$
 
 - 各サンプルについて $h_1$（年代32以下→$+1$）、$h_2$（年収700以上→$+1$）、$h_3$（年収350以下→$+1$）の出力と重み付き和を計算すると、次のようになる。
 
