@@ -3,7 +3,7 @@ date: 2026-06-03
 tags:
   - lecture
 subject: 人工知能
-part: 7
+part: 8
 publish: true
 ---
 
