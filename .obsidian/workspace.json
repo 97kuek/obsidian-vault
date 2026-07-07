@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "20_Areas/ソフトウェア開発/システム分析.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "システム分析"
             }
           }
         ]
@@ -231,16 +235,17 @@
       "iconic:ルールブックを開く": false,
       "homepage:Open homepage": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "periodic-notes:Open this week": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
     "20_Areas/機械学習・深層学習/B4勉強会/20260430_勉強会03.md",
     "00_Inbox/AIの用語整理.md",
     "20_Areas/機械学習・深層学習/B4勉強会/20260507_勉強会04.md",
     "20_Areas/機械学習・深層学習/B4勉強会/20260423_勉強会02.md",
-    "Home.md",
     "20_Areas/授業/人工知能/人工知能_06_教師なし学習.md",
     "20_Areas/授業/人工知能/人工知能_03_複数エージェントとゲーム.md",
     "20_Areas/授業/離散数学/離散数学_03_グラフ理論5.md",
