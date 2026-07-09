@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "20_Areas/授業/大規模言語モデル2026/大規模言語モデル2026_01_言語モデルの基礎とスケーリング.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "大規模言語モデル2026_01_言語モデルの基礎とスケーリング"
+              "title": "新規タブ"
             }
           }
         ]
