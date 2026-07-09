@@ -38,6 +38,7 @@
 | `/paper`、論文メモ作成 | `docs/agent-commands/paper.md` |
 | `/permanent`、永続ノート作成 | `docs/agent-commands/permanent.md` |
 | `/publish`、公開候補・公開追加・公開停止・公開監査 | `docs/agent-commands/publish.md` |
+| `/proofread`、指定ファイル・フォルダの文章添削 | `docs/agent-commands/proofread.md` |
 
 Claude Code 専用の MCP ツール名が出てきた場合、Codex では通常のファイル操作・検索に読み替える。
 
@@ -61,6 +62,7 @@ Claude Code 専用の MCP ツール名が出てきた場合、Codex では通常
 | 論文メモ作成 | `99_Templates/論文ノート用.md` の型に合わせ、`30_Resources/` に置く |
 | 永続ノート作成 | 横断概念だけを `20_Areas/永続ノート/` に作り、`【MOC】永続ノート.md` を更新する |
 | 公開ノート管理 | `docs/agent-commands/publish.md` を読み、候補とリスクを提示し、承認後に `publish: true` を付け外しする |
+| 文章添削 | `docs/agent-commands/proofread.md` を読み、指定ファイル・フォルダをだ・である調、箇条書き、表、コードブロック中心に整える |
 
 ---
 

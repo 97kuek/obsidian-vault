@@ -1,7 +1,7 @@
 ---
 tags:
   - index
-updated: 2026-07-01
+updated: 2026-07-09
 ---
 # Vault Index
 
@@ -175,7 +175,14 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `docs/agent-commands/permanent.md` | 永続ノート作成の共通手順 |
 | `docs/agent-commands/pdf-to-md.md` | PDFをMarkdownに変換してInboxへ投入する共通手順 |
 | `docs/agent-commands/publish.md` | 公開候補の選定・公開追加・公開停止・公開監査の共通手順 |
+| `docs/agent-commands/proofread.md` | 指定ファイル・フォルダの文章添削の共通手順 |
 | `docs/publishing.md` | `publish: true` のノートだけをQuartzとGitHub Pagesで公開する運用手順 |
+
+## .claude/
+
+| ファイル | 内容 |
+|---|---|
+| `.claude/commands/proofread.md` | `/proofread` の薄い入口。共通手順 `docs/agent-commands/proofread.md` を呼び出す |
 
 ## tools/
 
