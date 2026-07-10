@@ -21,6 +21,10 @@ mindmap
       敵対的探索
       マルチエージェント経路探索
     強化学習
+      定式化
+      方策勾配法
+      DQN
+      Actor-Critic
     教師なし学習
       クラスタリング
     分類・学習理論
@@ -45,6 +49,14 @@ mindmap
 
 #### 強化学習
 - [[強化学習]] — MDP・価値と方策・TD学習・Q学習
+- [[強化学習の定式化]] — MDP、トラジェクトリ、収益、価値関数
+- [[強化学習の発展手法]] — 方策勾配法、REINFORCE、SARSA、Q学習、DQN、Actor-Criticの入口
+- [[方策勾配法とREINFORCE]] — Log-gradient trick、reward-to-go、重点サンプリング
+- [[DQN]] — Value-based手法、SARSA、Q学習、Replay Buffer、Target Network
+- [[Actor-Critic]] — Actor、Critic、アドバンテージ関数、A3C
+
+#### 基本概念
+- [[AI・機械学習・深層学習の関係]] — AI、機械学習、深層学習、LLM、生成AIの関係
 
 #### 教師なし学習
 - [[クラスタリング]] — K-means・階層的クラスタリング

@@ -3,10 +3,8 @@ date: 2026-07-01
 tags:
   - lecture
 subject: 人工知能
-publish: false
+publish: true
 ---
-
-# Topic 8：SVM・AdaBoost
 ## ソフトマージンとハードマージンの違い
 
 ### 問題

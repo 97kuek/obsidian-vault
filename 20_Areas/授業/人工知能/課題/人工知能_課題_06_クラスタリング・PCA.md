@@ -3,10 +3,8 @@ date: 2026-07-01
 tags:
   - lecture
 subject: 人工知能
-publish: false
+publish: true
 ---
-
-# Topic 6：クラスタリング・PCA
 ## クラスタリングが教師なし学習に分類される理由
 
 ### 問題
