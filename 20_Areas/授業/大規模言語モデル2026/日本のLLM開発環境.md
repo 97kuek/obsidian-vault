@@ -3,7 +3,7 @@ date: 2026-07-10
 tags:
   - lecture
 subject: 大規模言語モデル2026
-publish: false
+publish: true
 ---
 # 日本のLLM開発環境
 
