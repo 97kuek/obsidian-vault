@@ -235,8 +235,8 @@
       "iconic:ルールブックを開く": false,
       "homepage:Open homepage": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "periodic-notes:Open this week": false
+      "periodic-notes:Open this week": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "e7a7b303c61786dc",
