@@ -1,7 +1,7 @@
 ## Codex Vault Guide
 
 このファイルは Codex がこの Obsidian vault で作業する際の入口である。
-詳細な運用規約は `docs/vault-rules.md`、共通作業手順は `docs/agent-commands/` にある。Codex はまずこのファイルを読み、必要に応じて `VAULT_INDEX.md` と各詳細ドキュメントを参照する。
+ドキュメントの案内図は `docs/README.md`、詳細な運用規約は `docs/standards/vault-rules.md`、共通作業手順は `docs/agent-commands/` にある。Codex はまずこのファイルを読み、必要に応じて `VAULT_INDEX.md` と各詳細ドキュメントを参照する。
 
 ---
 
@@ -10,18 +10,18 @@
 - この vault は PARA メソッドで管理する研究・学習用ナレッジベースである。
 - 人間は `00_Inbox/` に殴り書きするだけでよい。分類・整形・移動・命名・タグ・リンク更新は AI エージェントが提案し、承認後に実行する。
 - ノート作成・整形は **だ・である調**、箇条書き中心、元情報を削らないことを既定とする。
-- 学習ノートは、大学授業を `20_Areas/大学授業/`、外部講座を `30_Resources/講座/`、一般化した知識を `20_Areas/` の該当分野へ置く。詳細は `docs/vault-rules.md` の「学習ノートの分類」に従う。
+- 学習ノートは、大学授業を `20_Areas/大学授業/`、外部講座を `30_Resources/講座/`、一般化した知識を `20_Areas/` の該当分野へ置く。詳細は `docs/standards/vault-rules.md` の「学習ノートの分類」に従う。
 - `.obsidian/` は原則編集しない。例外は `.obsidian/snippets/vault-custom.css` の CSS 編集のみ。
 - `99_Templates/` はテンプレート置き場なので、ユーザーが明示した場合だけ編集する。
 - 公開は `20_Areas/` が既定、`00_Inbox/`・`10_Projects/`・`30_Resources/`・`40_Archives/` は非公開が既定である。例外は `docs/agent-commands/publish.md` に従う。
-- 読み取りだけの作業を除き、編集前に `docs/agent-coordination.md` に従って `tools/agent-lock.sh acquire codex "作業内容"` を実行する。ロックを取得できなければ編集しない。
+- 読み取りだけの作業を除き、編集前に `docs/agents/coordination.md` に従って `tools/agent-lock.sh acquire codex "作業内容"` を実行する。ロックを取得できなければ編集しない。
 
 ---
 
 ## 作業開始時
 
 1. `VAULT_INDEX.md` を読んで目的のファイルを特定する。
-2. `docs/vault-rules.md` で命名規則・frontmatter・MOC・タグ規約を確認する。
+2. `docs/standards/vault-rules.md` で命名規則・frontmatter・MOC・タグ規約を確認する。
 3. 必要なファイルだけを読む。全探索は必要最小限にする。
 4. 編集前に `git status --short` で作業ツリーを確認する。
 5. 既存の未コミット変更はユーザーの変更として扱い、勝手に戻さない。
@@ -43,7 +43,7 @@
 | `/publish`、公開候補・公開追加・公開停止・公開監査 | `docs/agent-commands/publish.md` |
 | `/proofread`、指定ファイル・フォルダの文章添削 | `docs/agent-commands/proofread.md` |
 | 今日のタスク、朝のタスク報告、デイリーレポート | `docs/agent-commands/daily-task-report.md` |
-| Slack収集、Hermesログ、Google Calendar連携 | `docs/slack-hermes-workflow.md` |
+| Slack収集、Hermesログ、Google Calendar連携 | `docs/integrations/slack-hermes.md` |
 
 Claude Code 専用の MCP ツール名が出てきた場合、Codex では通常のファイル操作・検索に読み替える。
 
@@ -62,7 +62,7 @@ Claude Code 専用の MCP ツール名が出てきた場合、Codex では通常
 | 依頼 | 手順 |
 |---|---|
 | Inbox を整理して | `docs/agent-commands/inbox.md` を読んで、分類・整形・移動・命名・タグ・MOC/索引更新を提案または実行する |
-| 新規ノート作成 | `docs/vault-rules.md` の命名規則・frontmatter 規約・テンプレートを確認して作る |
+| 新規ノート作成 | `docs/standards/vault-rules.md` の命名規則・frontmatter 規約・テンプレートを確認して作る |
 | MOC 更新 | 対象 MOC と関連ノートを読み、リンクを追加・整理する |
 | 論文メモ作成 | `99_Templates/論文ノート用.md` の型に合わせ、`30_Resources/` に置く |
 | 永続ノート作成 | 横断概念だけを `20_Areas/永続ノート/` に作り、`【MOC】永続ノート.md` を更新する |

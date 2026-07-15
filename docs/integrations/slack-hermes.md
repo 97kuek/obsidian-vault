@@ -2,6 +2,19 @@
 
 個人用Slackを入力・通知画面、Obsidianを正本として使うための運用規約である。
 
+## 現在の実装状態
+
+| 機能 | 状態 | 備考 |
+|---|---|---|
+| Slack接続 | 設定済み | Hermes Gatewayをlaunchdで常駐させる |
+| `#inbox` 自動収集 | Hermes側設定済み | Hermesのチャンネル参加と実投稿テストは運用時に確認する |
+| `#research` 自動収集 | Hermes側設定済み | `arxiv` スキルを割り当て済み。自動分類・移動はしない |
+| `#hermes-log` | チャンネル作成・許可設定済み | 定期ログ配信ジョブは未作成 |
+| Google Calendar | 読み取り専用で認証済み | `calendar.readonly` のみを許可する |
+| 朝9時レポート | 稼働中 | cron ID `0482192c5d6a`。Slack DMへ配信する |
+
+状態は2026-07-15時点である。外部サービス側のチャンネル参加、権限失効、トークン失効はVaultの文書だけでは判定せず、実際の接続テストで確認する。
+
 ## チャンネルの役割
 
 | Slackチャンネル | 用途 | Obsidianでの扱い |
@@ -53,10 +66,17 @@ Hermesは投稿ごとに `tools/capture-slack-message.rb` を実行し、対象�
 
 ## Google Calendar
 
-- 最初はCalendarだけをOAuth連携し、権限を広げすぎない。
+- CalendarだけをOAuth連携し、`https://www.googleapis.com/auth/calendar.readonly` だけを許可する。
 - 朝のタスク報告では、当日予定とObsidianタスクを読み取り、時間の重なりと期限だけを知らせる。
-- 予定の作成、変更、削除はユーザーが明示した場合だけ実行する。
+- 現在の権限では予定の作成、変更、削除を行えない。将来必要になった場合も、ユーザーの明示承認後に別スコープを追加する。
 - OAuthクライアント情報とトークンは `~/.hermes/` に保存し、Vaultへ入れない。
+
+| ローカルファイル | 用途 | Git管理 |
+|---|---|---|
+| `~/.hermes/google_client_secret.json` | OAuthクライアント情報 | 対象外 |
+| `~/.hermes/google_token.json` | 読み取り用アクセストークン・更新情報 | 対象外 |
+
+朝9時ジョブはHermes専用Pythonと `google_api.py calendar list` を使う。一般のPython環境へ依存パッケージを再インストールしない。
 
 ## 主要タスクの管理
 

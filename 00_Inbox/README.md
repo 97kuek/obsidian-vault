@@ -3,7 +3,7 @@ tags:
   - inbox
 created: 2026-05-12
 ---
-## Inbox
+## Inbox Quick Guide
 
 ## ここでのルールは1つだけ
 

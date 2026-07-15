@@ -14,6 +14,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 | ファイル | 内容 |
 |---|---|
+| `README.md` | Inboxでは分類せずに書き、後でAIへ整理を依頼するためのフォルダ案内 |
 | `Slack Inbox.md` | Slack `#inbox` から自動追記する未整理メモの受け皿 |
 | `Slack Research.md` | Slack `#research` から論文・データ・URLを自動追記する受け皿 |
 
@@ -134,6 +135,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `大学授業/離散数学/離散数学_02_グラフ理論4.md` | 5色定理、平面グラフ、辺彩色、最大流 |
 | `大学授業/離散数学/離散数学_03_グラフ理論5.md` | カット、最大フロー・最小カットの定理、マッチング、ホールの定理、ハンガリー法 |
 | `大学授業/離散数学/離散数学_04_ニューラルネットワークと計算グラフ.md` | パーセプトロン、多層ニューラルネットワーク、損失関数、計算グラフ、誤差逆伝播 |
+| `大学授業/離散数学/離散数学_05_形式言語と有限オートマトン.md` | 正規言語、有限オートマトン、文脈自由文法、構文解析、依存構造解析 |
 | `大学授業/オペレーティングシステムA.md` | オペレーティングシステムAの章別ハブ（担当別2部構成、9単元）。内田担当=UNIX基礎・システムコール、中島担当=OS内部実装と講義主題「世界はソフトウェアでできている」 |
 | `大学授業/オペレーティングシステムA/オペレーティングシステムA_01_UNIXの基礎.md` | OSとは・kernelとシステムコール・ユーザ／カーネルモード・PID・UNIXファイルシステム |
 | `大学授業/オペレーティングシステムA/オペレーティングシステムA_02_プロセスの生成と割り込み.md` | fork/exec/wait・シグナル・signal/kill・割り込み |
@@ -185,8 +187,9 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 | ファイル | 内容 |
 |---|---|
-| `docs/vault-rules.md` | Vault共通の詳細規約（命名・frontmatter・MOC・タグ・永続ノート等） |
-| `docs/agent-coordination.md` | Codex・Claude Code・Hermes Agentの役割分担、編集ロック、引き継ぎ規約 |
+| `docs/README.md` | 運用ドキュメントの案内図、正本、配置基準、更新規則 |
+| `docs/standards/vault-rules.md` | Vault共通の詳細規約（分類・命名・frontmatter・MOC・タグ等） |
+| `docs/agents/coordination.md` | Codex・Claude Code・Hermes Agentの役割分担、編集ロック、引き継ぎ規約 |
 | `docs/agent-commands/inbox.md` | Inbox整理の共通手順 |
 | `docs/agent-commands/vault-review.md` | Vault週次点検の共通手順 |
 | `docs/agent-commands/vault-gc.md` | Vault棚卸しの共通手順 |
@@ -196,8 +199,8 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `docs/agent-commands/publish.md` | 公開候補の選定・公開追加・公開停止・公開監査の共通手順 |
 | `docs/agent-commands/proofread.md` | 指定ファイル・フォルダの文章添削の共通手順 |
 | `docs/agent-commands/daily-task-report.md` | 毎朝9時に期限・優先度・出典付きでタスクを報告する読み取り専用手順 |
-| `docs/slack-hermes-workflow.md` | SlackのInbox・Research収集、Hermesログ、Google Calendar、主要タスクの連携規約 |
-| `docs/publishing.md` | `publish: true` のノートだけをQuartzとGitHub Pagesで公開する運用手順 |
+| `docs/integrations/slack-hermes.md` | SlackのInbox・Research収集、Hermesログ、Google Calendar、主要タスクの連携規約 |
+| `docs/operations/publishing.md` | `publish: true` のノートだけをQuartzとGitHub Pagesで公開する運用仕様 |
 
 ## .claude/
 
@@ -243,7 +246,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 | ファイル | 内容 |
 |---|---|
-| `AGENTS.md` | Codex用作業入口。`docs/vault-rules.md` と `docs/agent-commands/` への案内 |
+| `AGENTS.md` | Codex用作業入口。`docs/README.md` と共通規約・作業手順への案内 |
 | `HERMES.md` | Hermes Agent用作業入口。役割分担と編集ロックへの案内 |
 | `Home.md` | ダッシュボード（Dataviewクエリ集） |
 | `CLAUDE.md` | Claude Code用作業入口。詳細規約と共通手順への案内 |

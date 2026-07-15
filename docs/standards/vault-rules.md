@@ -11,7 +11,7 @@
 - ノート作成・整形は、だ・である調、箇条書き中心、元情報を削らないことを既定とする。
 - Markdown の見出しは `##` から始め、`#` は使用しない。ファイル名をノートのタイトルとして扱い、本文の最上位見出しを `##` とする。
 - 複数ファイルの作成・削除・リネームなど大きな整理では、作業前コミットを提案する。
-- 複数のAIエージェントによる編集は `docs/agent-coordination.md` に従い、書き込み前に排他ロックを取得する。
+- 複数のAIエージェントによる編集は `docs/agents/coordination.md` に従い、書き込み前に排他ロックを取得する。
 
 ---
 
@@ -75,7 +75,7 @@ PDF 本体は vault に置かず、Zotero 等の外部で管理する。
 ```
 
 毎朝の集計・報告手順は `docs/agent-commands/daily-task-report.md` に従う。
-Slackからの収集、Hermesログ、Google Calendar連携は `docs/slack-hermes-workflow.md` に従う。
+Slackからの収集、Hermesログ、Google Calendar連携は `docs/integrations/slack-hermes.md` に従う。
 
 ---
 
@@ -132,7 +132,7 @@ publish: false
 - `20_Areas/` でも、課題解答・個人情報・秘密情報・未公開内容を含むノートには `publish: false` を付ける。
 - `20_Areas/` 以外を例外的に公開する場合は、内容を監査して `publish: true` を付ける。
 - 公開前に個人情報、秘密情報、未公開研究、課題解答、第三者の著作物が含まれていないか確認する。
-- 公開処理の詳細は `docs/publishing.md` を参照する。
+- 公開処理の詳細は `docs/operations/publishing.md` を参照する。
 
 通常ノート:
 

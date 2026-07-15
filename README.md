@@ -2,7 +2,7 @@
 
 研究・学習・開発の知識を管理する個人用ナレッジベース。**PARAメソッド**で構成する。
 
-> Claude Code は [`CLAUDE.md`](CLAUDE.md)、Codex は [`AGENTS.md`](AGENTS.md) を入口にする。詳細規約は [`docs/vault-rules.md`](docs/vault-rules.md)。このREADMEは人間向けの概要。
+> Claude Code は [`CLAUDE.md`](CLAUDE.md)、Codex は [`AGENTS.md`](AGENTS.md) を入口にする。ドキュメントの案内図は [`docs/README.md`](docs/README.md)、詳細規約は [`docs/standards/vault-rules.md`](docs/standards/vault-rules.md)。このREADMEは人間向けの概要。
 
 ---
 
@@ -63,7 +63,7 @@
 | 週次／月次／日次 | `2026-W23_週次レビュー.md` / `2026-06_月次レビュー.md` / `2026-05-12.md` |
 
 > 迷ったら「半年後に開いたとき、タイトルに日付があってほしいか？」。記録なら Yes、概念なら No。
-> 日次・週次・月次は Periodic Notes プラグインがISO形式で自動生成する。詳細は `docs/vault-rules.md`。
+> 日次・週次・月次は Periodic Notes プラグインがISO形式で自動生成する。詳細は `docs/standards/vault-rules.md`。
 
 ---
 
@@ -111,7 +111,7 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 - Inbox・Projects・Resources・Archives・運用文書は既定で公開しない。
 - 個別例外はfrontmatterの `publish: true`／`publish: false` で指定する。
 - QuartzによりWikiリンク、検索、バックリンク、グラフ表示へ変換する。
-- 詳細な運用と注意事項は [`docs/publishing.md`](docs/publishing.md) を参照する。
+- 詳細な運用と注意事項は [`docs/operations/publishing.md`](docs/operations/publishing.md) を参照する。
 - AIへ公開候補の選定・追加・停止・監査を依頼する場合は `/publish` を使う。
 
 ---
@@ -143,17 +143,17 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 | 週次・月次の自動生成 | 設定 → Periodic Notes（フォーマット・テンプレ・フォルダを指定） |
 | グラフのカラーグループ | グラフビュー → 表示 → グループ |
 
-> Periodic Notes の具体的なフォーマット文字列は `docs/vault-rules.md` を参照。
+> Periodic Notes の具体的なフォーマット文字列は `docs/standards/vault-rules.md` を参照。
 
 ---
 
 ## AI エージェントとの連携
 
-Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agent-coordination.md` の役割分担と編集ロックに従う。読み取りだけならロック不要、ファイルを書き換える作業では `tools/agent-lock.sh` による排他ロックが必須である。
+Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agents/coordination.md` の役割分担と編集ロックに従う。読み取りだけならロック不要、ファイルを書き換える作業では `tools/agent-lock.sh` による排他ロックが必須である。
 
 毎朝のタスク報告では、未完了タスクへ `📅 YYYY-MM-DD` と必要に応じて `⏫`・`🔼`・`🔽` を付ける。Hermesは `docs/agent-commands/daily-task-report.md` に従い、読み取り専用でSlackへ報告する。
 
-個人用Slackでは `#inbox` をメモ収集、`#research` を論文・データの収集、`#hermes-log` を自動処理の要約ログに使う。保存形式、権限境界、Google Calendarとの連携は `docs/slack-hermes-workflow.md` に従う。
+個人用Slackでは `#inbox` をメモ収集、`#research` を論文・データの収集、`#hermes-log` を自動処理の要約ログに使う。保存形式、権限境界、Google Calendarとの連携は `docs/integrations/slack-hermes.md` に従う。
 
 ```bash
 cd C:\Users\yamashita\Documents\obsidian-vault

@@ -42,7 +42,7 @@
 編集前に次を確認する。
 
 1. `VAULT_INDEX.md` を読んで対象候補を確認する
-2. `docs/vault-rules.md` を読んで文体と frontmatter 規約を確認する
+2. `docs/standards/vault-rules.md` を読んで文体と frontmatter 規約を確認する
 3. `git status --short` で既存変更を確認する
 4. 対象ファイルだけを読む
 

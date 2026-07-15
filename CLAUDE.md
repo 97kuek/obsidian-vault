@@ -1,13 +1,13 @@
 ## Obsidian Vault Guide
 
-Claude Code がこの vault で作業する際の入口である。Codex は `AGENTS.md` を入口にする。共通の詳細規約は `docs/vault-rules.md`、共通コマンド手順は `docs/agent-commands/` にある。
+Claude Code がこの vault で作業する際の入口である。Codex は `AGENTS.md` を入口にする。ドキュメントの案内図は `docs/README.md`、共通の詳細規約は `docs/standards/vault-rules.md`、共通コマンド手順は `docs/agent-commands/` にある。
 
 ---
 
 ## 最初に読む
 
 1. `VAULT_INDEX.md` で目的のファイルを特定する。
-2. `docs/vault-rules.md` で命名規則・frontmatter・MOC・タグ規約を確認する。
+2. `docs/standards/vault-rules.md` で命名規則・frontmatter・MOC・タグ規約を確認する。
 3. `/inbox` などの作業では `docs/agent-commands/<command>.md` を読む。
 4. 編集前に `git status` を確認し、既存の未コミット変更は勝手に戻さない。
 
@@ -18,10 +18,10 @@ Claude Code がこの vault で作業する際の入口である。Codex は `AG
 - 人間は `00_Inbox/` に殴り書きするだけでよい。
 - AI エージェントは分類・整形・移動・命名・タグ・リンク/MOC/索引更新を提案し、承認後に実行する。
 - ノートは、だ・である調、箇条書き中心、元情報を削らないことを既定とする。
-- 学習ノートは、大学授業を `20_Areas/大学授業/`、外部講座を `30_Resources/講座/`、一般化した知識を `20_Areas/` の該当分野へ置く。詳細は `docs/vault-rules.md` の「学習ノートの分類」に従う。
+- 学習ノートは、大学授業を `20_Areas/大学授業/`、外部講座を `30_Resources/講座/`、一般化した知識を `20_Areas/` の該当分野へ置く。詳細は `docs/standards/vault-rules.md` の「学習ノートの分類」に従う。
 - 破壊的操作や複数ファイルの作成・削除・リネーム前には作業前コミットを提案する。
 - 公開は `20_Areas/` が既定、`00_Inbox/`・`10_Projects/`・`30_Resources/`・`40_Archives/` は非公開が既定である。例外は `docs/agent-commands/publish.md` に従う。
-- 読み取りだけの作業を除き、編集前に `docs/agent-coordination.md` に従って `tools/agent-lock.sh acquire claude "作業内容"` を実行する。ロックを取得できなければ編集しない。
+- 読み取りだけの作業を除き、編集前に `docs/agents/coordination.md` に従って `tools/agent-lock.sh acquire claude "作業内容"` を実行する。ロックを取得できなければ編集しない。
 
 ---
 
@@ -44,7 +44,7 @@ Claude Code がこの vault で作業する際の入口である。Codex は `AG
 
 - `.claude/commands/*.md` は共通手順への薄い入口である。
 - `vault-explorer` サブエージェントは重い探索だけに使う。
-- MCP ツールが使える場合でも、最終的な編集規約は `docs/vault-rules.md` に従う。
+- MCP ツールが使える場合でも、最終的な編集規約は `docs/standards/vault-rules.md` に従う。
 - `.claude/settings.json` の hook は `.obsidian/` 直下編集を保護する。
 
 ---

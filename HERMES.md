@@ -4,8 +4,8 @@ Hermes Agent がこの Obsidian vault で作業する際の入口である。
 
 ## 作業開始時
 
-1. `AGENTS.md`、`VAULT_INDEX.md`、`docs/vault-rules.md` を読む。
-2. エージェント間の分担と排他制御は `docs/agent-coordination.md` に従う。
+1. `AGENTS.md`、`VAULT_INDEX.md`、`docs/standards/vault-rules.md` を読む。
+2. エージェント間の分担と排他制御は `docs/agents/coordination.md` に従う。
 3. `git status --short` を確認し、既存の未コミット変更を戻さない。
 4. 読み取り・監視・候補提示だけならロックを取得しない。
 5. ファイルを編集する場合は、先に次を実行する。
@@ -20,7 +20,7 @@ tools/agent-lock.sh acquire hermes "作業内容"
 
 - 定期レビュー、Inbox件数確認、通知、情報収集、整理候補の作成を主担当とする。
 - 毎朝のタスク報告は `docs/agent-commands/daily-task-report.md` を読み、読み取り専用で実行する。
-- Slackの `#inbox`、`#research`、`#hermes-log` は `docs/slack-hermes-workflow.md` に従う。
+- Slackの `#inbox`、`#research`、`#hermes-log` は `docs/integrations/slack-hermes.md` に従う。
 - 自動実行では、提案またはレポートまでを既定とする。例外として、ユーザーが承認済みのSlack収集ファイル2件への追記だけは、ロック取得後に実行してよい。
 - ユーザーが明示的に編集を承認した場合だけ、ロック取得後に編集する。
 - 大規模な移動、リネーム、MOC・索引の一括更新は Codex または Claude Codeへの引き継ぎを優先する。
