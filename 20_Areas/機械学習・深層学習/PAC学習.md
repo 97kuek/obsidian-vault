@@ -7,7 +7,7 @@ aliases:
   - PAC-Learning
   - Probably Approximately Correct
 ---
-# PAC学習（Probably Approximately Correct）
+## PAC学習（Probably Approximately Correct）
 
 「完璧」を諦め、「**たぶん（Probably）・だいたい（Approximately）・正しい（Correct）**」を現実的な合格ラインにする学習の枠組み。
 

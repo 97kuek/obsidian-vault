@@ -10,7 +10,7 @@ year: 2024
 venue: "arXiv 2024"
 status: read
 ---
-# J-CHAT コーパス 読書メモ
+## J-CHAT コーパス 読書メモ
 
 ## 一言要約
 

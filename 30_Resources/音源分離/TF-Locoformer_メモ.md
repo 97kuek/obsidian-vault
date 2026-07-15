@@ -10,7 +10,7 @@ year: 2024
 venue: "IWAENC 2024"
 status: read
 ---
-# TF-Locoformer 読書メモ
+## TF-Locoformer 読書メモ
 
 ## 一言要約
 

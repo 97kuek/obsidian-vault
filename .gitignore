@@ -25,5 +25,8 @@ $RECYCLE.BIN/
 *.tmp
 *.bak
 
+# AIエージェント間のローカル編集ロック
+.agent-lock/
+
 # 公開サイトのローカルビルド
 .quartz/

@@ -8,7 +8,7 @@ aliases:
   - React
   - Next.js
 ---
-# ReactとNext.js
+## ReactとNext.js
 
 ReactとNext.jsに関する基礎ノートのハブ。元の学習メモは、React基礎、Next.js App Router、AIエージェントへの開発指示に分割した。
 

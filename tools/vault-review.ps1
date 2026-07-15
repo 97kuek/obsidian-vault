@@ -143,9 +143,6 @@ if ((Test-Selected "Structure")) {
       }
     }
 
-    if ($text -notmatch '(?m)^# [^#\r\n]') {
-      $issues.Add("MISSING_H1: $rel")
-    }
     if ($text -match '<%\s*tp\.') {
       $issues.Add("TEMPLATE_VARIABLE_LEFT: $rel")
     }
@@ -155,6 +152,8 @@ if ((Test-Selected "Structure")) {
 
     $previousLevel = 0
     $insideFence = $false
+    $hasH1 = $false
+    $hasH2 = $false
     for ($i = 0; $i -lt $lines.Count; $i++) {
       $line = $lines[$i]
       if ($line -match '^\s*```') {
@@ -164,11 +163,19 @@ if ((Test-Selected "Structure")) {
       if ($insideFence -or $line -notmatch '^(#{1,6})\s+\S') { continue }
 
       $level = $Matches[1].Length
+      if ($level -eq 1) { $hasH1 = $true }
+      if ($level -eq 2) { $hasH2 = $true }
       if ($previousLevel -gt 0 -and $level -gt ($previousLevel + 1)) {
         $issues.Add("HEADING_JUMP: ${rel}:$($i + 1) (H$previousLevel -> H$level)")
         break
       }
       $previousLevel = $level
+    }
+    if ($hasH1) {
+      $issues.Add("FORBIDDEN_H1: $rel")
+    }
+    if (-not $hasH2) {
+      $issues.Add("MISSING_H2: $rel")
     }
   }
 

@@ -8,7 +8,7 @@ aliases:
   - A3C
   - アドバンテージ関数
 ---
-# Actor-Critic
+## Actor-Critic
 
 - 親ノート: [[強化学習の発展手法]]
 - 関連: [[方策勾配法とREINFORCE]], [[DQN]]

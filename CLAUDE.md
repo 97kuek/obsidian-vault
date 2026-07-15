@@ -1,4 +1,4 @@
-# Obsidian Vault Guide
+## Obsidian Vault Guide
 
 Claude Code がこの vault で作業する際の入口である。Codex は `AGENTS.md` を入口にする。共通の詳細規約は `docs/vault-rules.md`、共通コマンド手順は `docs/agent-commands/` にある。
 
@@ -18,8 +18,10 @@ Claude Code がこの vault で作業する際の入口である。Codex は `AG
 - 人間は `00_Inbox/` に殴り書きするだけでよい。
 - AI エージェントは分類・整形・移動・命名・タグ・リンク/MOC/索引更新を提案し、承認後に実行する。
 - ノートは、だ・である調、箇条書き中心、元情報を削らないことを既定とする。
+- 学習ノートは、大学授業を `20_Areas/大学授業/`、外部講座を `30_Resources/講座/`、一般化した知識を `20_Areas/` の該当分野へ置く。詳細は `docs/vault-rules.md` の「学習ノートの分類」に従う。
 - 破壊的操作や複数ファイルの作成・削除・リネーム前には作業前コミットを提案する。
 - 公開は `20_Areas/` が既定、`00_Inbox/`・`10_Projects/`・`30_Resources/`・`40_Archives/` は非公開が既定である。例外は `docs/agent-commands/publish.md` に従う。
+- 読み取りだけの作業を除き、編集前に `docs/agent-coordination.md` に従って `tools/agent-lock.sh acquire claude "作業内容"` を実行する。ロックを取得できなければ編集しない。
 
 ---
 

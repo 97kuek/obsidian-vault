@@ -1,4 +1,4 @@
-# Obsidian Vault
+## Obsidian Vault
 
 研究・学習・開発の知識を管理する個人用ナレッジベース。**PARAメソッド**で構成する。
 
@@ -148,6 +148,8 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 ---
 
 ## AI エージェントとの連携
+
+Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agent-coordination.md` の役割分担と編集ロックに従う。読み取りだけならロック不要、ファイルを書き換える作業では `tools/agent-lock.sh` による排他ロックが必須である。
 
 ```bash
 cd C:\Users\yamashita\Documents\obsidian-vault

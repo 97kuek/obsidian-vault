@@ -8,7 +8,7 @@ aliases:
   - reward-to-go
   - 重点サンプリング
 ---
-# 方策勾配法とREINFORCE
+## 方策勾配法とREINFORCE
 
 - 親ノート: [[強化学習の発展手法]]
 - 関連: [[強化学習の定式化]], [[Actor-Critic]]

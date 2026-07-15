@@ -1,4 +1,4 @@
-# 公開サイト運用
+## 公開サイト運用
 
 このvaultは、`20_Areas/` のノートを既定でQuartzの静的サイトへ変換し、GitHub Pagesへ公開する。Inbox・Projects・Resources・Archives・運用文書は既定で公開しない。
 

@@ -11,7 +11,7 @@ author_name: "東大Obsidianオタク｜仕事で使える第2の脳構築"
 posted: 2026-05-29
 status: read
 ---
-# AIエージェントのためのObsidian活用術
+## AIエージェントのためのObsidian活用術
 
 Xクリップを出典として保管したノート。要点は自分の言葉で、原文はそのまま下部に残す。
 

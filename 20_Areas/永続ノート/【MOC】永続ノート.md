@@ -7,7 +7,7 @@ aliases:
 created: 2026-05-12
 status: active
 ---
-# 【MOC】永続ノート
+## 【MOC】永続ノート
 
 Zettelkastenメソッドに基づく永続ノート（Evergreen Notes）のハブ。
 論文メモ・勉強会ノートから「自分の言葉で書いた原子的な知識」を抽出・蓄積する。

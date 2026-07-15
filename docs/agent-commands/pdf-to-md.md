@@ -1,4 +1,4 @@
-# PDF → Markdown 変換
+## PDF → Markdown 変換
 
 `00_Inbox/` に置かれた PDF を精査し、Markdown に変換したうえで元の PDF を削除する。
 

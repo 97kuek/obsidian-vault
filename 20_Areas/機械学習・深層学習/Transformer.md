@@ -11,7 +11,7 @@ aliases:
   - Attention
   - Multi-Head Attention
 ---
-# Transformer
+## Transformer
 
 Transformerは、RNNやCNNではなく**Self-Attentionを中心に系列を処理する**深層学習アーキテクチャである。長距離依存を扱いやすく、並列計算しやすいことから、LLMや音源分離モデルの基盤になった。
 

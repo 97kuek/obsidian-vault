@@ -4,7 +4,7 @@ tags:
   - reference
   - ソフトウェア開発
 ---
-# React基礎
+## React基礎
 
 ## Reactの基礎
 

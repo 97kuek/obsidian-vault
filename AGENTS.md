@@ -1,4 +1,4 @@
-# Codex Vault Guide
+## Codex Vault Guide
 
 このファイルは Codex がこの Obsidian vault で作業する際の入口である。
 詳細な運用規約は `docs/vault-rules.md`、共通作業手順は `docs/agent-commands/` にある。Codex はまずこのファイルを読み、必要に応じて `VAULT_INDEX.md` と各詳細ドキュメントを参照する。
@@ -10,9 +10,11 @@
 - この vault は PARA メソッドで管理する研究・学習用ナレッジベースである。
 - 人間は `00_Inbox/` に殴り書きするだけでよい。分類・整形・移動・命名・タグ・リンク更新は AI エージェントが提案し、承認後に実行する。
 - ノート作成・整形は **だ・である調**、箇条書き中心、元情報を削らないことを既定とする。
+- 学習ノートは、大学授業を `20_Areas/大学授業/`、外部講座を `30_Resources/講座/`、一般化した知識を `20_Areas/` の該当分野へ置く。詳細は `docs/vault-rules.md` の「学習ノートの分類」に従う。
 - `.obsidian/` は原則編集しない。例外は `.obsidian/snippets/vault-custom.css` の CSS 編集のみ。
 - `99_Templates/` はテンプレート置き場なので、ユーザーが明示した場合だけ編集する。
 - 公開は `20_Areas/` が既定、`00_Inbox/`・`10_Projects/`・`30_Resources/`・`40_Archives/` は非公開が既定である。例外は `docs/agent-commands/publish.md` に従う。
+- 読み取りだけの作業を除き、編集前に `docs/agent-coordination.md` に従って `tools/agent-lock.sh acquire codex "作業内容"` を実行する。ロックを取得できなければ編集しない。
 
 ---
 
@@ -23,6 +25,7 @@
 3. 必要なファイルだけを読む。全探索は必要最小限にする。
 4. 編集前に `git status --short` で作業ツリーを確認する。
 5. 既存の未コミット変更はユーザーの変更として扱い、勝手に戻さない。
+6. 編集する場合はエージェントロックを取得し、完了時に解放する。
 
 ---
 
