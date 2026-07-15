@@ -77,6 +77,7 @@ Codexでスラッシュコマンドが使えない場合も、同名の自然言
 7. 公開抽出を実行する。
 
 ```powershell
+node tools/audit-public-notes.mjs
 node tools/export-public-notes.mjs --output .quartz/content
 ```
 
@@ -98,6 +99,7 @@ node tools/export-public-notes.mjs --output .quartz/content
 1. Areas内の全ノート、Areas外の `publish: true`、全フォルダの `publish: false` を列挙する。
 2. manifestの公開一覧と一致するか確認する。
 3. 公開対象外フォルダ、認証情報、個人情報、課題解答、転載物の混入を点検する。
+   - `node tools/audit-public-notes.mjs` を実行し、自動検査を通す。
 4. 公開ノートからのリンク切れ、未公開化された画像、Dataviewの置換結果を確認する。
 5. 「継続公開／要修正／公開停止」の一覧を報告し、変更は承認後に行う。
 

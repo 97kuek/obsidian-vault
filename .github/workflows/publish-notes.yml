@@ -40,8 +40,10 @@ jobs:
         working-directory: .quartz
         run: |
           npm ci
-          npm update
           npm audit --audit-level=high
+
+      - name: Audit publication policy
+        run: node tools/audit-public-notes.mjs
 
       - name: Export approved notes
         run: node tools/export-public-notes.mjs --output .quartz/content

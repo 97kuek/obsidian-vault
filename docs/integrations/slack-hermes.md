@@ -9,9 +9,11 @@
 | Slack接続 | 設定済み | Hermes Gatewayをlaunchdで常駐させる |
 | `#inbox` 自動収集 | Hermes側設定済み | Hermesのチャンネル参加と実投稿テストは運用時に確認する |
 | `#research` 自動収集 | Hermes側設定済み | `arxiv` スキルを割り当て済み。自動分類・移動はしない |
-| `#hermes-log` | チャンネル作成・許可設定済み | 定期ログ配信ジョブは未作成 |
+| `#hermes-log` | 稼働中 | 毎朝9:10にGateway・cron・保留キューの要約を配信する |
 | Google Calendar | 読み取り専用で認証済み | `calendar.readonly` のみを許可する |
 | 朝9時レポート | 稼働中 | cron ID `0482192c5d6a`。Slack DMへ配信する |
+| 日次ヘルスチェック | 稼働中 | cron ID `7614c3f6c280`。`#hermes-log`へ配信する |
+| 週次タスク確認 | 稼働中 | cron ID `63e1b74ad673`。毎週日曜18:00にSlack DMへ主要3件の候補を配信する |
 
 状態は2026-07-15時点である。外部サービス側のチャンネル参加、権限失効、トークン失効はVaultの文書だけでは判定せず、実際の接続テストで確認する。
 
@@ -39,9 +41,10 @@ Hermesは投稿ごとに `tools/capture-slack-message.rb` を実行し、対象�
 
 - 投稿本文、URL、添付ファイル名を削らない。
 - Slack上の秘密情報、OAuthトークン、APIキーは保存しない。検出した場合は追記を中止して警告する。
-- 同じ日に同一内容がすでに保存されていれば追記しない。
+- SlackメッセージIDを受け取れる場合はそれを重複判定に使い、受け取れない場合は同じ日の同一内容を重複として扱う。
+- permalink、投稿時刻、チャンネル名を受け取れる場合は出典メタデータとして保存する。
 - スクリプトは書き込み前にエージェントロックを取得し、終了時に必ず解放する。
-- ロックを取得できない場合は書き込まず、`#hermes-log` へ保留を通知する。
+- ロックを取得できない場合は `.agent-queue/` のローカル再処理キューへ保存し、日次ヘルスチェックで再処理する。
 - 自動保存はこの2ファイルへの追記だけを例外的に承認する。移動、削除、整形、分類は自動実行しない。
 
 ## リサーチ整理
@@ -84,6 +87,7 @@ Hermesは投稿ごとに `tools/capture-slack-message.rb` を実行し、対象�
 - 期限は `📅 YYYY-MM-DD`、優先度は `⏫`、`🔼`、記号なし、`🔽` を使う。
 - 毎朝の報告は最大3件に絞る。
 - 期限なしタスクが多い場合、Hermesは週1回「今週の主要3件」の候補を提示する。
+- 週次確認は候補提示だけを行い、ユーザーが採用番号と必要な期限を返して確定する。
 - Hermesは期限、優先度、完了状態を推測して書き換えない。ユーザーが決めた内容だけを反映する。
 
 ## Slack側の初期設定
@@ -103,3 +107,16 @@ Hermes追加後にGatewayを再起動し、各チャンネルへテスト投稿�
 - `#inbox`: 投稿本文をそのまま `ruby tools/capture-slack-message.rb inbox "投稿本文"` へ渡し、結果だけを短く返信する。
 - `#research`: 投稿本文をそのまま `ruby tools/capture-slack-message.rb research "投稿本文"` へ渡し、保存後に資料種別の候補を1行で返す。
 - `#hermes-log`: ユーザーの収集入力には使わず、自動処理からの通知先にする。
+
+可能な場合は次のオプションも渡す。
+
+```zsh
+ruby tools/capture-slack-message.rb \
+  --id "Slack message ts" \
+  --permalink "Slack permalink" \
+  --timestamp "ISO 8601 timestamp" \
+  --channel-name "inbox" \
+  inbox "投稿本文"
+```
+
+保留キューは `ruby tools/capture-slack-message.rb flush` で再処理する。

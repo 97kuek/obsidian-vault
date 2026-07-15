@@ -212,13 +212,17 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 | ファイル | 内容 |
 |---|---|
-| `tools/vault-review.ps1` | 切れリンク・命名・frontmatter/H1/見出し構造・索引・Inbox・MOC更新漏れのPowerShell点検 |
-| `tools/vault-gc.ps1` | 棚卸し候補抽出用PowerShellスクリプト |
-| `tools/protect-obsidian.ps1` | `.obsidian/` 編集保護チェック |
+| `tools/vault-review.rb` | Macで動くfrontmatter・H1・切れリンクの週次点検 |
+| `tools/vault-gc.rb` | Macで動く空ファイル・重複候補の月次棚卸し |
+| `tools/protect-obsidian.sh` | `.obsidian/` の許可外変更を検出する保護チェック |
+| `tools/vault-review.ps1` | Windows向けの週次点検（互換用） |
+| `tools/vault-gc.ps1` | Windows向けの月次棚卸し（互換用） |
+| `tools/protect-obsidian.ps1` | Windows向けの`.obsidian/`保護チェック（互換用） |
 | `tools/agent-lock.sh` | 複数AIエージェントの同時書き込みを防ぐローカル排他ロック |
 | `tools/collect-daily-tasks.rb` | 朝のタスク報告用に対象フォルダの未完了タスクをJSON抽出するツール |
 | `tools/capture-slack-message.rb` | SlackのInbox・Research投稿を重複・秘密情報・編集競合を検査して追記するツール |
 | `tools/export-public-notes.mjs` | 公開許可ノートと参照画像だけをQuartz用に抽出するスクリプト |
+| `tools/audit-public-notes.mjs` | 課題・秘密情報・公開指定競合をデプロイ前に拒否する監査ツール |
 
 ## 公開サイト
 

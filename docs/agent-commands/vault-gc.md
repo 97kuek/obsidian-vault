@@ -12,7 +12,13 @@ Vault の重い棚卸しを行う。月次から四半期を目安に、重複�
 
 ## 事前準備
 
-`VAULT_INDEX.md`、vault の命名規則、主要 MOC を読む。機械的な候補抽出には `tools/vault-gc.ps1` を使う。
+`VAULT_INDEX.md`、vault の命名規則、主要 MOC を読む。Macでは機械的な候補抽出にRuby版を使う。
+
+```zsh
+ruby tools/vault-gc.rb
+```
+
+Windowsで互換版を使う場合はPowerShell版を実行する。
 
 ```powershell
 .\tools\vault-gc.ps1
@@ -68,4 +74,3 @@ Vault の重い棚卸しを行う。月次から四半期を目安に、重複�
 5. VAULT_INDEX 更新
 6. 切れリンク確認
 ```
-

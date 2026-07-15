@@ -6,7 +6,13 @@ Obsidian vault の軽い健康診断を行う。毎週から隔週を目安に�
 
 `VAULT_INDEX.md` と vault の命名規則を読む。
 
-機械的チェックは PowerShell の `tools/vault-review.ps1` を優先して使う。
+MacではVaultルートでRuby版を使う。
+
+```zsh
+ruby tools/vault-review.rb
+```
+
+Windowsで互換版を使う場合はPowerShell版を実行する。
 
 ```powershell
 .\tools\vault-review.ps1

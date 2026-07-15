@@ -107,7 +107,7 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 
 ## 公開サイト
 
-- GitHub Pagesでは `20_Areas/` を既定で公開する。
+- GitHub Pagesでは `20_Areas/` を既定で公開するが、課題・試験・答案は自動監査で公開を拒否する。
 - Inbox・Projects・Resources・Archives・運用文書は既定で公開しない。
 - 個別例外はfrontmatterの `publish: true`／`publish: false` で指定する。
 - QuartzによりWikiリンク、検索、バックリンク、グラフ表示へ変換する。
@@ -124,7 +124,7 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 |---|---|---|
 | Dataview | 必須 | Home.mdのクエリ（タスク一覧・更新履歴） |
 | Templater | 必須 | テンプレートの変数展開 |
-| Local REST API | 推奨 | Claude Code 等との MCP 連携（使う場合は起動） |
+| Local REST API / MCP Tools | 任意 | 外部エージェント連携。必要な方式だけを有効にする |
 | obsidian-git | 必須 | Vaultの自動git管理 |
 | Periodic Notes | 推奨 | 週次・月次レビューの自動作成 |
 | Excalidraw | 推奨 | アーキテクチャ図・概念図 |
@@ -155,8 +155,8 @@ Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agents/coordi
 
 個人用Slackでは `#inbox` をメモ収集、`#research` を論文・データの収集、`#hermes-log` を自動処理の要約ログに使う。保存形式、権限境界、Google Calendarとの連携は `docs/integrations/slack-hermes.md` に従う。
 
-```bash
-cd C:\Users\yamashita\Documents\obsidian-vault
+```zsh
+cd /Users/keitaro/Documents/obsidian-vault
 claude
 # または
 codex
