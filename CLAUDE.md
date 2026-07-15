@@ -36,6 +36,7 @@ Claude Code がこの vault で作業する際の入口である。Codex は `AG
 | `/permanent`、永続ノート | `docs/agent-commands/permanent.md` |
 | `/publish`、公開候補・公開追加・公開停止・公開監査 | `docs/agent-commands/publish.md` |
 | `/proofread`、指定ファイル・フォルダの文章添削 | `docs/agent-commands/proofread.md` |
+| 今日のタスク、朝のタスク報告、デイリーレポート | `docs/agent-commands/daily-task-report.md` |
 
 ---
 

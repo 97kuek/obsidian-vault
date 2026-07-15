@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "20_Areas/大学授業/センサと制御.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "センサと制御"
             }
           }
         ]
@@ -235,8 +239,11 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "8495e60b597e8d04",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "tools/collect-daily-tasks.rb",
+    "docs/agent-commands/daily-task-report.md",
+    "20_Areas/授業/人工知能/人工知能_08_PAC学習とSVM.md",
     "tools/agent-lock.sh",
     "docs/agent-coordination.md",
     "HERMES.md",
@@ -262,8 +269,6 @@
     "20_Areas/大学授業/情報通信ネットワークA/情報通信ネットワークA_02_物理層.md",
     "20_Areas/大学授業/情報通信ネットワークA/情報通信ネットワークA_01_概論.md",
     "20_Areas/大学授業/人工知能/課題",
-    "20_Areas/大学授業/人工知能/人工知能_09_知識表現.md",
-    "20_Areas/大学授業/人工知能/人工知能_08_PAC学習とSVM.md",
     "20_Areas/大学授業/離散数学",
     "20_Areas/大学授業/情報通信ネットワークA",
     "20_Areas/大学授業/人工知能",
@@ -272,7 +277,6 @@
     "20_Areas/大学授業",
     "30_Resources/講座/大規模言語モデル2026",
     "30_Resources/講座",
-    "20_Areas/授業/大規模言語モデル2026/大規模言語モデル2026_01_言語モデルの基礎とスケーリング.md.tmp.60320.84fb88b79cb8",
     "tmp/quartz-build-test/quartz/static/og-image.png",
     "tmp/quartz-build-test/quartz/static/icon.png",
     "tmp/quartz-build-test/docs/images/social-image-preview-light.png",

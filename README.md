@@ -151,6 +151,8 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 
 Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agent-coordination.md` の役割分担と編集ロックに従う。読み取りだけならロック不要、ファイルを書き換える作業では `tools/agent-lock.sh` による排他ロックが必須である。
 
+毎朝のタスク報告では、未完了タスクへ `📅 YYYY-MM-DD` と必要に応じて `⏫`・`🔼`・`🔽` を付ける。Hermesは `docs/agent-commands/daily-task-report.md` に従い、読み取り専用でSlackへ報告する。
+
 ```bash
 cd C:\Users\yamashita\Documents\obsidian-vault
 claude
