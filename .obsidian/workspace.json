@@ -239,8 +239,12 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "380ad66492c8ef82",
   "lastOpenFiles": [
+    "site/custom.scss",
+    "site/quartz.layout.ts",
+    "site/quartz.config.ts",
+    "site",
     "00_Inbox/Slack Research.md",
     "00_Inbox/Slack Inbox.md",
     "20_Areas/大学授業/センサと制御.md",
@@ -273,10 +277,6 @@
     "20_Areas/大学授業/人工知能/課題/人工知能_課題_02_探索.md",
     "20_Areas/大学授業/人工知能/課題/人工知能_課題_01_AIとエージェント.md",
     "20_Areas/大学授業/離散数学/離散数学_04_ニューラルネットワークと計算グラフ.md",
-    "20_Areas/大学授業/離散数学/離散数学_03_グラフ理論5.md",
-    "20_Areas/大学授業/人工知能/課題",
-    "20_Areas/大学授業/離散数学",
-    "20_Areas/大学授業/情報通信ネットワークA",
     "tmp/quartz-build-test/quartz/static/og-image.png",
     "tmp/quartz-build-test/quartz/static/icon.png",
     "tmp/quartz-build-test/docs/images/social-image-preview-light.png",

@@ -248,7 +248,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 |---|---|
 | `AGENTS.md` | Codex用作業入口。`docs/README.md` と共通規約・作業手順への案内 |
 | `HERMES.md` | Hermes Agent用作業入口。役割分担と編集ロックへの案内 |
-| `Home.md` | ダッシュボード（Dataviewクエリ集） |
+| `Home.md` | 主要MOC・Slack収集・未完了タスクへ移動する軽量ダッシュボード |
 | `CLAUDE.md` | Claude Code用作業入口。詳細規約と共通手順への案内 |
 | `VAULT_INDEX.md` | このファイル（ファイル索引） |
 | `README.md` | Vault使い方ドキュメント |
