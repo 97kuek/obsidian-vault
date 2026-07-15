@@ -28,9 +28,9 @@ SORT status ASC, year DESC
 ### 音源分離
 - [[TasNet_メモ]] — TasNet（2018）時間領域音源分離の先駆け
 - [[Conv-TasNet_メモ]] — Conv-TasNet（2019）TCNベース、当時SOTA
-- [[TF-Locoformer_メモ]] — TF-Locoformer（2023）研究の主要モデル
+- [[TF-Locoformer_メモ]] — TF-Locoformer（2023）、時間・周波数領域を扱う音源分離モデル
 - [[Transformer_メモ]] — Attention Is All You Need（2017）
-- [[J-CHAT_メモ]] — J-CHATコーパス、研究の評価対象
+- [[J-CHAT_メモ]] — 日本語の自然会話音声コーパス
 - [[RemixIT_メモ]] — RemixIT、クリーン音声なしで学習する音声強調
 
 ### デザイン

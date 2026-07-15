@@ -19,12 +19,11 @@ mindmap
     バージョン管理
       Git・GitHub
     Web開発
-      ReactとNext.js
+      React・Next.js
         React基礎
         Next.js App Router
-        AIエージェントへの開発指示
       API
-      データベース基礎
+      データベース
       WebSocket
       Docker基礎
       Supabase
@@ -44,12 +43,11 @@ mindmap
 - [[詳細設計・実装]]
 - [[AI駆動開発]]
 - [[Claude Code運用]] — 大規模コードベースのハーネス設計・トークン節約
-- [[ReactとNext.js]] — React基礎・Next.js App Router・Server Components/Actions
+- [[【MOC】React・Next.js]] — React基礎・Next.js App Router・Server Components/Actions
 - [[React基礎]] — コンポーネント・JSX・props/state・useEffect
 - [[Next.js App Router]] — App Router・Server/Client Components・Server Actions
-- [[AIエージェントへの開発指示]] — Next.js実装を依頼・レビューするときの観点
 - [[API]] — Web API・REST API・リクエスト/レスポンス・Next.js API Route
-- [[データベース基礎]] — DB・SQL・設計・アプリ連携を6単元に分けた基礎ノートのハブ
+- [[【MOC】データベース]] — DB・SQL・設計・アプリ連携を6単元に分けた基礎ノートのMOC
 - [[WebSocket]] — HTTP Upgrade・フレーム・双方向通信・実務上の注意
 - [[Docker基礎]] — Dockerfile・イメージ・コンテナ・ネットワーク・ボリューム・Compose
 - [[Supabase]] — Postgres中心のBaaS・Auth・RLS・PostgREST

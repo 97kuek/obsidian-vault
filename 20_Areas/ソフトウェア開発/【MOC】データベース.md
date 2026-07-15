@@ -1,10 +1,13 @@
 ---
 date: 2026-06-26
 tags:
-  - ソフトウェア開発
-  - データベース
+  - MOC
+aliases:
+  - データベース基礎
+created: 2026-06-26
+status: active
 ---
-## データベース基礎
+## データベース
 
 ## 学習マップ
 
@@ -20,3 +23,6 @@ tags:
 - [[Supabase]]
 - [[API]]
 - [[Next.js App Router]]
+
+---
+**最終更新:** `= this.file.mtime`
