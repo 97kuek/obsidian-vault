@@ -42,4 +42,3 @@ WSJ0-2mixでSOTA（2019年当時）。理想的なIBMを超えるSDRを達成。
 
 - [[TasNet_メモ]]
 - [[TF-Locoformer_メモ]]
-- [[【MOC】プロジェクト研究A]]

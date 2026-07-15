@@ -17,7 +17,7 @@ status: active
 ## 関連MOC・上位MOC
 
 - 上位: [[【MOC】30_Resources]]
-- 関連: [[【MOC】大学授業]]、[[【MOC】機械学習・深層学習]]
+- 関連: [[【MOC】大学授業]]、[[【MOC】人工知能]]
 
 ## 未整理・Inbox
 

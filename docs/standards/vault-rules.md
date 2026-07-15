@@ -95,7 +95,7 @@ Slackからの収集、Hermesログ、Google Calendar連携は `docs/integration
 | 種別 | 命名規則 | 例 |
 |---|---|---|
 | 知識ノート | `概念名.md` | `決定木.md` |
-| MOC | `【MOC】タイトル.md` | `【MOC】プロジェクト研究A.md` |
+| MOC | `【MOC】タイトル.md` | `【MOC】HPA.md` |
 | 論文読書メモ | `略称_メモ.md` | `TF-Locoformer_メモ.md` |
 | 実験ログ | `YYYYMMDD_タイトル.md` | `20260511_音源分離実験.md` |
 | 勉強会 | `YYYYMMDD_勉強会NN.md` | `20260423_勉強会02.md` |
@@ -243,7 +243,7 @@ Home
 ├── 10_Projects/【MOC】10_Projects
 ├── 20_Areas/【MOC】20_Areas
 │   ├── ソフトウェア開発/【MOC】ソフトウェア開発
-│   ├── 機械学習・深層学習/【MOC】機械学習・深層学習
+│   ├── 人工知能/【MOC】人工知能
 │   ├── 大学授業/【MOC】大学授業
 │   └── 永続ノート/【MOC】永続ノート
 └── 30_Resources/【MOC】30_Resources

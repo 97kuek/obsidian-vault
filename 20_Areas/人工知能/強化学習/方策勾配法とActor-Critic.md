@@ -7,11 +7,16 @@ aliases:
   - REINFORCE
   - reward-to-go
   - 重点サンプリング
+  - Actor-Critic
+  - Actor Critic
+  - A2C
+  - A3C
+  - アドバンテージ関数
 ---
-## 方策勾配法とREINFORCE
+## 方策勾配法とActor-Critic
 
-- 親ノート: [[強化学習の発展手法]]
-- 関連: [[強化学習の定式化]], [[Actor-Critic]]
+- 親ノート: [[強化学習]]
+- 関連: [[DQN]]
 
 ## 方策勾配法
 
@@ -209,3 +214,73 @@ $$
 - REINFORCE は基本的に On-Policy である
 - 重点サンプリングを使うと Off-Policy 化できる
 - Off-Policy はデータを使い回せるため、サンプル効率が良い
+
+## Actor-Critic
+
+Actor-Criticは、Policy-basedとValue-basedの考え方を組み合わせる手法である。Actorが方策で行動を選び、Criticが価値関数で行動を評価する。生の報酬和ではなく、価値関数で評価した良し悪しを方策勾配へ掛ける。
+
+| 役割 | 内容 | パラメタ |
+|---|---|---|
+| Actor | 方策で行動を選ぶ | $\theta$ |
+| Critic | 行動を評価して方策更新を補助する | $\phi$ |
+
+## アドバンテージ関数
+
+$$
+A^\pi(s,a) = Q^\pi(s,a) - V^\pi(s)
+$$
+
+- アドバンテージ関数は、行動 $a$ が状態 $s$ における平均的な行動よりどれだけ良いかを表す。
+- 生の報酬和を使うREINFORCEは勾配の分散が大きくなりやすい。
+- $V$ を基準として引き、報酬の絶対値ではなく相対評価にすることで分散を下げ、学習を安定させる。
+
+方策勾配は、アドバンテージを使って次のように書ける。
+
+$$
+\nabla_\theta J(\theta)
+\approx
+\frac{1}{N}
+\sum_i\sum_t
+\nabla_\theta \log \pi_\theta(a_t^{(i)}|s_t^{(i)})
+\cdot A^\pi(s_t,a_t)
+$$
+
+## Criticの学習
+
+$V^\pi$ はCriticのニューラルネットワーク $V_\phi$ で近似し、モンテカルロで得た報酬和へフィットさせる。
+
+$$
+\mathcal{L}(\phi)=\frac{1}{2}\big(V_\phi^\pi(s_t)-y_t^{(i)}\big)^2
+$$
+
+$$
+y_t^{(i)}=\sum_{t'=t}^{T}r(s_{t'}^{(i)},a_{t'}^{(i)})
+$$
+
+アドバンテージはTD誤差の形でも近似できる。
+
+$$
+A^\pi(s_i,a_i)\approx r(s_i,a_i)+V^\pi(s_i')-V^\pi(s_i)
+$$
+
+## Batch Actor-Critic
+
+1. 方策 $\pi_\theta$ でサンプルを収集する。
+2. Criticの $V_\phi$ を報酬和へフィットさせる。
+3. アドバンテージ $A=r+V(s')-V(s)$ を計算する。
+4. Actorを方策勾配で更新する。
+
+ActorとCriticは別々のパラメタを持ち、相互に影響しながら学習する。
+
+## A3C
+
+A3CはAsynchronous Advantage Actor-Criticの略である。
+
+| 要素 | 内容 |
+|---|---|
+| Asynchronous | 複数のActorを分散並列で動かし、非同期に方策を更新する |
+| Advantage | アドバンテージ関数を使う |
+| Actor-Critic | ActorとCriticを組み合わせる |
+
+- Replay Bufferを使わず、並列で多様なデータを集めることでデータ相関へ対処する。
+- 多様な経験を集めながら高速に学習できる点が特徴である。

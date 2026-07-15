@@ -10,6 +10,8 @@ aliases:
   - Self-Attention
   - Attention
   - Multi-Head Attention
+  - Sparse Transformer
+  - スパースTransformer
 ---
 ## Transformer
 
@@ -48,9 +50,27 @@ Multi-Head Attentionでは、この処理を複数のヘッドで並列に行う
 - 限界：Attentionの計算量が系列長に対して $O(n^2)$ で増える。長い系列では計算・メモリ負荷が重い。
 - 位置情報を明示的に入れないと、系列順序を区別できない。
 
+## Sparse Transformerによる長系列化
+
+Sparse Transformerは、Self-Attentionの参照範囲を疎にすることで、長い系列に対する計算量とメモリ使用量を抑える手法である。通常のSelf-Attentionは系列長 $n$ に対して $O(n^2)$ の計算量とメモリを必要とするが、参照先を限定し、複数層を通じて系列全体へ情報を伝えることで効率と長期依存を両立する。
+
+### Factorized Self-Attention
+
+- **Strided Attention**
+  - 直近の位置と一定間隔で離れた位置を参照する。
+  - 複数層を重ねることで、直接参照しない位置の情報も伝播できる。
+  - 周期性を持つ画像や音声と相性がよい一方、周期性の弱いテキストでは不利になる場合がある。
+- **Fixed Attention**
+  - 直近の位置と、あらかじめ定めた固定位置を参照する。
+  - Strided Attentionが相対的な間隔に基づくのに対し、固定された参照先を使う点が異なる。
+
+Factorized Attentionは、層ごとに異なる参照パターンを交互に使う、参照先を統合する、複数ヘッドへ割り当てる、といった方法で構成できる。Attentionパターンに応じた位置情報やGradient Checkpointingを組み合わせることで、さらに大規模なモデルを扱いやすくなる。
+
+- 利点：長いコンテキストをDense Attentionより少ない計算資源で扱える。
+- 注意点：最適な参照パターンはデータ構造に依存し、すべての系列へ同じパターンが有効とは限らない。
+
 ## 他の概念との関係
 
-- 発展: [[Sparse Transformer]]（Attentionの参照範囲を疎にして長い系列を効率的に扱う）
 - 応用: [[TF-Locoformer_メモ]]（音源分離向けにTransformerを時間・周波数方向へ拡張）
 - 関連: [[20260430_勉強会03]]（TransformerとGPTの勉強会メモ）
 - 出典: [[Transformer_メモ]]（Attention Is All You Need）
@@ -59,3 +79,5 @@ Multi-Head Attentionでは、この処理を複数のヘッドで並列に行う
 
 - [[Transformer_メモ]] — Attention Is All You Need
 - [[20260430_勉強会03]] — Transformer・GPTの勉強会メモ
+- [Sparse Transformerを理解したい](https://zenn.dev/sunbluesome/articles/5f6a86dfa1e1be)
+- Child et al., "Generating Long Sequences with Sparse Transformers," 2019.

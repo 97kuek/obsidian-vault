@@ -16,21 +16,13 @@ status: active
 ```mermaid
 mindmap
   root(("10_Projects"))
-    プロジェクト研究A
-      音源分離実験
-      TF-Locoformer
-      J-CHAT
     HPA
       過年度空力設計
-    就活
-      SABERAインターン面接対策
 ```
 
 ## アクティブなプロジェクト
 
-- [[【MOC】プロジェクト研究A]]
 - [[【MOC】HPA]]
-- [[SABERAインターン面接対策]]
 
 ## 関連MOC・上位MOC
 

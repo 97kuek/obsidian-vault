@@ -44,7 +44,7 @@ SORT status ASC, year DESC
 ## 関連MOC・上位MOC
 
 - 上位: [[Home]]
-- 関連: [[【MOC】プロジェクト研究A]]、[[【MOC】大学授業]]
+- 関連: [[【MOC】大学授業]]
 
 ## 未整理・Inbox
 

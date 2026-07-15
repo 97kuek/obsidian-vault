@@ -41,4 +41,3 @@ WSJ0-2mixデータセットで評価。従来のSTFTベース手法を上回る�
 
 - [[Conv-TasNet_メモ]]
 - [[TF-Locoformer_メモ]]
-- [[【MOC】プロジェクト研究A]]
