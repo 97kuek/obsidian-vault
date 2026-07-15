@@ -39,6 +39,7 @@ jobs:
       - name: Install Quartz
         working-directory: .quartz
         run: |
+          npm audit fix --package-lock-only
           npm ci
           npm audit --audit-level=high
 
