@@ -75,6 +75,7 @@ PDF 本体は vault に置かず、Zotero 等の外部で管理する。
 ```
 
 毎朝の集計・報告手順は `docs/agent-commands/daily-task-report.md` に従う。
+Slackからの収集、Hermesログ、Google Calendar連携は `docs/slack-hermes-workflow.md` に従う。
 
 ---
 

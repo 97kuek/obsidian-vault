@@ -10,6 +10,13 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 ---
 
+## 00_Inbox/
+
+| ファイル | 内容 |
+|---|---|
+| `Slack Inbox.md` | Slack `#inbox` から自動追記する未整理メモの受け皿 |
+| `Slack Research.md` | Slack `#research` から論文・データ・URLを自動追記する受け皿 |
+
 ## 10_Projects/
 
 | ファイル | 内容 |
@@ -189,6 +196,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `docs/agent-commands/publish.md` | 公開候補の選定・公開追加・公開停止・公開監査の共通手順 |
 | `docs/agent-commands/proofread.md` | 指定ファイル・フォルダの文章添削の共通手順 |
 | `docs/agent-commands/daily-task-report.md` | 毎朝9時に期限・優先度・出典付きでタスクを報告する読み取り専用手順 |
+| `docs/slack-hermes-workflow.md` | SlackのInbox・Research収集、Hermesログ、Google Calendar、主要タスクの連携規約 |
 | `docs/publishing.md` | `publish: true` のノートだけをQuartzとGitHub Pagesで公開する運用手順 |
 
 ## .claude/
@@ -206,6 +214,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `tools/protect-obsidian.ps1` | `.obsidian/` 編集保護チェック |
 | `tools/agent-lock.sh` | 複数AIエージェントの同時書き込みを防ぐローカル排他ロック |
 | `tools/collect-daily-tasks.rb` | 朝のタスク報告用に対象フォルダの未完了タスクをJSON抽出するツール |
+| `tools/capture-slack-message.rb` | SlackのInbox・Research投稿を重複・秘密情報・編集競合を検査して追記するツール |
 | `tools/export-public-notes.mjs` | 公開許可ノートと参照画像だけをQuartz用に抽出するスクリプト |
 
 ## 公開サイト

@@ -43,6 +43,7 @@
 | `/publish`、公開候補・公開追加・公開停止・公開監査 | `docs/agent-commands/publish.md` |
 | `/proofread`、指定ファイル・フォルダの文章添削 | `docs/agent-commands/proofread.md` |
 | 今日のタスク、朝のタスク報告、デイリーレポート | `docs/agent-commands/daily-task-report.md` |
+| Slack収集、Hermesログ、Google Calendar連携 | `docs/slack-hermes-workflow.md` |
 
 Claude Code 専用の MCP ツール名が出てきた場合、Codex では通常のファイル操作・検索に読み替える。
 
