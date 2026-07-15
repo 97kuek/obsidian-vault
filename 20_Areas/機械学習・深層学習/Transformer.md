@@ -50,6 +50,7 @@ Multi-Head Attentionでは、この処理を複数のヘッドで並列に行う
 
 ## 他の概念との関係
 
+- 発展: [[Sparse Transformer]]（Attentionの参照範囲を疎にして長い系列を効率的に扱う）
 - 応用: [[TF-Locoformer_メモ]]（音源分離向けにTransformerを時間・周波数方向へ拡張）
 - 関連: [[20260430_勉強会03]]（TransformerとGPTの勉強会メモ）
 - 出典: [[Transformer_メモ]]（Attention Is All You Need）

@@ -2,6 +2,7 @@
 date: 2026-06-13
 tags:
   - lecture
+  - network
 subject: 情報通信ネットワークA
 publish: true
 ---

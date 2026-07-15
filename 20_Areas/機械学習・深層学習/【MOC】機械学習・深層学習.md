@@ -70,6 +70,7 @@ mindmap
 
 ### 深層学習
 - [[Transformer]] — Self-Attentionを中心に系列を処理する基盤アーキテクチャ
+- [[Sparse Transformer]] — 疎なAttentionにより長い系列を効率的に扱うTransformer
 - [[【MOC】B4勉強会]]
 
 ## 関連MOC・上位MOC
