@@ -153,7 +153,7 @@ Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agents/coordi
 
 毎朝のタスク報告では、未完了タスクへ `📅 YYYY-MM-DD` と必要に応じて `⏫`・`🔼`・`🔽` を付ける。Hermesは `docs/agent-commands/daily-task-report.md` に従い、読み取り専用でSlackへ報告する。
 
-個人用Slackでは `#inbox` をメモ収集、`#research` を論文・データの収集、`#hermes-log` を自動処理の要約ログに使う。保存形式、権限境界、Google Calendarとの連携は `docs/integrations/slack-hermes.md` に従う。
+個人用Slackでは `#inbox` をすべての未整理メモ・論文・URLの収集、`#hermes-log` を自動処理の要約ログに使う。保存形式、権限境界、Google Calendarとの連携は `docs/integrations/slack-hermes.md` に従う。
 
 ```zsh
 cd /Users/keitaro/Documents/obsidian-vault

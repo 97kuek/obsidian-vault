@@ -19,7 +19,6 @@ aliases:
 ## Capture
 
 - [[Slack Inbox]]
-- [[Slack Research]]
 
 ## Open Tasks
 

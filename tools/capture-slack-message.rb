@@ -10,8 +10,7 @@ require "time"
 
 ROOT = File.expand_path("..", __dir__)
 TARGETS = {
-  "inbox" => File.join(ROOT, "00_Inbox", "Slack Inbox.md"),
-  "research" => File.join(ROOT, "00_Inbox", "Slack Research.md")
+  "inbox" => File.join(ROOT, "00_Inbox", "Slack Inbox.md")
 }.freeze
 QUEUE = File.join(ROOT, ".agent-queue", "slack-capture.jsonl")
 LOCK = File.join(ROOT, "tools", "agent-lock.sh")
@@ -127,7 +126,7 @@ parser.parse!(ARGV)
 
 channel, message = ARGV
 unless TARGETS.key?(channel) && message && !message.strip.empty?
-  warn "usage: ruby tools/capture-slack-message.rb [options] inbox|research MESSAGE"
+  warn "usage: ruby tools/capture-slack-message.rb [options] inbox MESSAGE"
   warn "       ruby tools/capture-slack-message.rb flush"
   exit 2
 end

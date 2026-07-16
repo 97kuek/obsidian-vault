@@ -14,8 +14,7 @@ CAPTURE = File.join(ROOT, "tools", "capture-slack-message.rb")
 STATE_PATH = File.join(ROOT, ".agent-state", "slack-history.json")
 HERMES_ENV = File.expand_path("~/.hermes/.env")
 CHANNELS = {
-  "inbox" => { id: "C0BGZCQMC5V", name: "inbox" },
-  "research" => { id: "C0BHGM04GFK", name: "research" }
+  "inbox" => { id: "C0BGZCQMC5V", name: "inbox" }
 }.freeze
 
 def load_dotenv(path)

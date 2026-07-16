@@ -4,14 +4,13 @@ tags:
   - inbox
   - research
   - slack
+status: archived
 source_type: personal
 source: Slack #research
 ---
 ## Slack Research
 
-Slackの `#research` から自動保存する論文・データ・URLの未整理記録である。
-
-<!-- Hermesは新しい投稿をこの下へ追記する。既存内容を変更しない。 -->
+Slackの旧 `#research` から保存した記録である。2026-07-16に収集先を `#inbox` へ統合した。
 
 ## 2026-07-15 15:21
 
@@ -20,7 +19,7 @@ Slackの `#research` から自動保存する論文・データ・URLの未整�
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BHGM04GFK/p1784096460004979
 - チャンネル: #research
-- 状態: 未整理
+- 状態: アーカイブ
 
 ## 2026-07-15 15:30
 
@@ -29,7 +28,7 @@ Slackの `#research` から自動保存する論文・データ・URLの未整�
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BHGM04GFK/p1784097041263349
 - チャンネル: #research
-- 状態: 未整理
+- 状態: アーカイブ
 
 ## 2026-07-15 15:49
 
@@ -38,4 +37,4 @@ Slackの `#research` から自動保存する論文・データ・URLの未整�
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BHGM04GFK/p1784098182642329
 - チャンネル: #research
-- 状態: 未整理
+- 状態: Inboxへ移行済み

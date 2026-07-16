@@ -12,6 +12,15 @@ Slackの `#inbox` から自動保存する未整理メモである。
 
 <!-- Hermesは新しい投稿をこの下へ追記する。既存内容を変更しない。 -->
 
+## 2026-07-15 15:49
+
+<!-- slack-id: 7fa79b3978414786 -->
+<https://zenn.dev/sunbluesome/articles/5f6a86dfa1e1be|https://zenn.dev/sunbluesome/articles/5f6a86dfa1e1be>
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BHGM04GFK/p1784098182642329
+- 移行元: #research
+- 状態: 未整理
+
 ## 2026-07-15 19:59
 
 <!-- slack-id: 9d117c0de069ba3f -->
