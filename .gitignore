@@ -29,6 +29,7 @@ $RECYCLE.BIN/
 # AIエージェント間のローカル編集ロック
 .agent-lock/
 .agent-queue/
+.agent-state/
 
 # 公開サイトのローカルビルド
 .quartz/

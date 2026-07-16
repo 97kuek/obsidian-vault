@@ -204,6 +204,8 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `tools/agent-lock.sh` | 複数AIエージェントの同時書き込みを防ぐローカル排他ロック |
 | `tools/collect-daily-tasks.rb` | 朝のタスク報告用に対象フォルダの未完了タスクをJSON抽出するツール |
 | `tools/capture-slack-message.rb` | SlackのInbox・Research投稿を重複・秘密情報・編集競合を検査して追記するツール |
+| `tools/sync-slack-history.rb` | Mac停止中のSlack Inbox・Research投稿を履歴APIから差分回収するツール |
+| `tools/hermes-slack-sync.sh` | Hermesのno-agent cronからSlack差分同期と保留キュー処理を呼び出すラッパー |
 | `tools/export-public-notes.mjs` | 公開許可ノートと参照画像だけをQuartz用に抽出するスクリプト |
 | `tools/audit-public-notes.mjs` | 課題・秘密情報・公開指定競合をデプロイ前に拒否する監査ツール |
 

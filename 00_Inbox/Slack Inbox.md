@@ -74,3 +74,103 @@ LLMのライフサイクルの中での位置づけ
 
 
 - 状態: 未整理
+
+## 2026-07-15 15:20
+
+<!-- slack-id: e54373548450231a -->
+<@U0BGZ628KCP>さんがチャンネルに参加しました
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784096431064049
+- チャンネル: #inbox
+- 状態: 未整理
+
+## 2026-07-15 15:30
+
+<!-- slack-id: 1d12e83ad7222006 -->
+<@U0BHJ9R6YVA>さんがチャンネルに参加しました
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784097011875639
+- チャンネル: #inbox
+- 状態: 未整理
+
+## 2026-07-15 15:56
+
+<!-- slack-id: 714691bbde22578d -->
+テスト
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784098617146259?thread_ts=1784098617.146259&cid=C0BGZCQMC5V
+- チャンネル: #inbox
+- 状態: 未整理
+
+## 2026-07-15 19:05
+
+<!-- slack-id: 5f73d33e9d6d8ea2 -->
+第2回 キーフレーズ
+:one: 大規模言語モデル（LLM）
+• 大量の文章データを学習し、人間のように自然な言葉を理解・生成できる巨大なAIプログラム。
+• ChatGPTやGemini、Claudeなどが代表例。
+:two: 自己回帰言語モデル
+• 確率の連鎖律で分解したモデルのこと。
+• 「日本の、首都、は」と入力されたら、次に最も確率の高い「東京」を予測する、という連鎖で文章を作成する。
+:three:デコーディング
+• LLMが出力を生成するときに、次のトークン（テキストを分割した最小単位）をどのように選ぶかという方法。
+:four: Greedy decoding
+• デコーディングの手法の一つ。毎ステップで「一番確率が高いもの」を選ぶ方法。
+:five: Top-p sampling
+• デコーディングの手法の一つ。確率の高い単語から順に足していき、合計確率が指定した割合（p）に達するまでの候補の中から、サンプリングして選ぶ生成方法。
+:six: プロンプティング
+• 特定の機能の発生を促進 (prompt)するような言語モデルに入力するコンテキスト文。
+:seven: In-context learning
+• モデルの重みを更新せず、入力中の文脈や例を使ってその場でタスクを学習させること。
+:eight: Few-shot prompting
+•  AIに指示を出す際、少数の入出力例をプロンプトに含めて、タスクのやり方を示す方法。
+:nine: Chain-of-Thought（CoT）
+• 答えだけでなく、そこに至る途中の思考過程も含めて書き出すようAIに促すことで、答えの精度を上げること。
+:keycap_ten: Prompt engineering
+• より良い出力を得るために、プロンプトの内容や形式を設計・改善すること。
+• 現在では、AI自身に最適なプロンプトを自動で作らせる研究も進んでいる。
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784109955113509?thread_ts=1784109955.113509&cid=C0BGZCQMC5V
+- チャンネル: #inbox
+- 状態: 未整理
+
+## 2026-07-15 19:58
+
+<!-- slack-id: 10ccb35bb0f8dade -->
+・IaaS→ サーバーを借りる
+・PaaS→ アプリ実行環境を借りる
+・SaaS→ ソフトウェアを利用する
+・リージョン→ クラウドの設置地域
+・AZ→ 障害対策用の拠点
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784113126339859?thread_ts=1784113126.339859&cid=C0BGZCQMC5V
+- チャンネル: #inbox
+- 状態: 未整理
+
+## 2026-07-15 20:58
+
+<!-- slack-id: 07e8884f7337aac2 -->
+Self-consistency / Majority voting は複数の回答を生成し、多数決で最終回答を決める手法
+Self-refine は回答生成 → フィードバック生成 → 回答修正をプロンプトを切り替えながら反復し、出力を洗練する。
+Best-of-N はプロンプティング手法ではなく、複数（N個）の出力を生成させて最良のものを選ぶ推論時のサンプリング／選択戦略。
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784116707838829?thread_ts=1784116707.838829&cid=C0BGZCQMC5V
+- チャンネル: #inbox
+- 状態: 未整理
+
+## 2026-07-15 21:01
+
+<!-- slack-id: f61543570e093a99 -->
+*Self-consistency/Majority voting と Best-of-N の違い*
+
+どちらも「N個の出力を生成する」ところは共通していて、*違いは選び方*にある。
+Self-consistency は、複数の推論経路を生成して、それぞれから最終的な答えを取り出し、一番多かった答えを選ぶ。外部の採点器は要らず、「答え同士の一致」で決める。数学の答えや選択肢問題のように、答えが離散的で「同じかどうか」を比較できるタスクに向いている。
+Best-of-N は、N個生成した後に*スコアリング関数で採点して、一番点数の高い1個を選ぶ*。多数決ではなく、外部の評価器が良し悪しを判断する。自由記述のように「同じ答えが複数出る」とは限らないタスクでも使える。
+ひとことで言うと、*多数決で選ぶのが self-consistency、外部スコアラーで選ぶのが Best-of-N*。
+
+*この内容は「推論」か*
+decoding・prompting・self-consistency・Best-of-N・Self-refine は*すべて推論時のテクニック*。学習済みのモデルの重みは一切変えず、「どう入力を与えるか」「どうサンプリング・選択するか」だけを工夫している。
+
+- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784116898072429?thread_ts=1784116898.072429&cid=C0BGZCQMC5V
+- チャンネル: #inbox
+- 状態: 未整理
