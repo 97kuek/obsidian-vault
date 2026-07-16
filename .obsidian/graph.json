@@ -11,34 +11,34 @@
       "query": "path:10_Projects  ",
       "color": {
         "a": 1,
-        "rgb": 14048348
+        "rgb": 16737894
       }
     },
     {
       "query": "path:20_Areas  ",
       "color": {
         "a": 1,
-        "rgb": 6398527
+        "rgb": 2945629
       }
     },
     {
       "query": "tag: #MOC  ",
       "color": {
         "a": 1,
-        "rgb": 13936488
+        "rgb": 16772659
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1.14273356401384,
-  "lineSizeMultiplier": 1.27837370242215,
+  "nodeSizeMultiplier": 1.00301215277778,
+  "lineSizeMultiplier": 2.32499131944444,
   "collapse-forces": true,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.4046745405851436,
+  "scale": 0.3313920228462061,
   "close": true
 }

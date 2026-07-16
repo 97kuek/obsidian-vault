@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "学習・研究ノート",
+    pageTitle: "Obsidian Browser",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -29,7 +29,7 @@ const config: QuartzConfig = {
           dark: "#24221f",
           secondary: "#326a72",
           tertiary: "#9a6b44",
-          highlight: "rgba(50, 106, 114, 0.14)",
+          highlight: "rgba(36, 34, 31, 0.06)",
           textHighlight: "#f4d35e66",
         },
         darkMode: {
@@ -40,7 +40,7 @@ const config: QuartzConfig = {
           dark: "#f1eee9",
           secondary: "#7db4bc",
           tertiary: "#d2a276",
-          highlight: "rgba(125, 180, 188, 0.16)",
+          highlight: "rgba(241, 238, 233, 0.08)",
           textHighlight: "#a8902f66",
         },
       },

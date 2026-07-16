@@ -1,1 +1,10 @@
 @use "./base.scss";
+
+/* 色付き文字と同系色の背景を重ねず、背景は無彩色に統一する。 */
+.callout {
+  --bg: 170, 163, 154 !important;
+}
+
+:root[saved-theme="dark"] .callout {
+  --bg: 111, 106, 101 !important;
+}

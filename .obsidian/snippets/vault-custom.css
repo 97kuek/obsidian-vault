@@ -1,1 +1,16 @@
-/* Custom styles intentionally left empty to use Obsidian defaults. */
+/*
+  Obsidian の標準デザインは変更せず、AI エージェント向けの
+  運用ファイルだけをファイルエクスプローラーから隠す。
+  ファイル本体や検索結果には影響しない。
+*/
+
+.nav-file-title[data-path="AGENTS.md"],
+.nav-file-title[data-path="CLAUDE.md"],
+.nav-file-title[data-path="HERMES.md"],
+.nav-file-title[data-path="README.md"],
+.nav-file-title[data-path="VAULT_INDEX.md"],
+.nav-folder:has(> .nav-folder-title[data-path="docs"]),
+.nav-folder:has(> .nav-folder-title[data-path="site"]),
+.nav-folder:has(> .nav-folder-title[data-path="tools"]) {
+  display: none;
+}

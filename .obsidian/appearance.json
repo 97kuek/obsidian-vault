@@ -1,6 +1,7 @@
 {
-  "theme": "moonstone",
+  "theme": "obsidian",
   "enabledCssSnippets": [
     "vault-custom"
-  ]
+  ],
+  "translucency": false
 }

@@ -319,8 +319,6 @@ const indexLines = [
   "publish: true",
   "---",
   "",
-  "# Obsidian Browser",
-  "",
   "Obsidianで管理しているノートのうち、公開を許可したものだけを掲載している。",
   "",
 ]
