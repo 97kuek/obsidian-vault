@@ -11,6 +11,7 @@
 | 作業別の実行手順 | `agent-commands/` | Inbox、添削、公開、レビューなど |
 | Slack・Hermes・Calendar連携 | `integrations/slack-hermes.md` | 外部連携と自動化境界 |
 | 公開サイトの仕組み | `operations/publishing.md` | Quartz・GitHub Pagesの構成 |
+| 画像・スクリーンショットの添付 | `operations/attachments.md` | 保存先、貼り付け、リンク確認、公開時の注意 |
 | ファイルの所在 | `../VAULT_INDEX.md` | 追加・削除・移動時に更新 |
 
 同じ規則を複数ファイルへ詳しく複製しない。入口ドキュメントには要約と正本へのリンクだけを置き、具体的な判定基準は上表の正本へ集約する。
@@ -47,4 +48,3 @@ docs/
 - ファイルを追加、削除、移動、改名したら `VAULT_INDEX.md` を更新する。
 - 手順から呼び出すスクリプト名を変えたら、`tools/` と該当する `agent-commands/` を同時に更新する。
 - OAuthトークン、APIキー、Slackトークン、Google認証JSONは `docs/` やVaultへ保存しない。
-

@@ -189,6 +189,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `docs/agent-commands/daily-task-report.md` | 毎朝9時に期限・優先度・出典付きでタスクを報告する読み取り専用手順 |
 | `docs/integrations/slack-hermes.md` | SlackのInbox・Research収集、Hermesログ、Google Calendar、主要タスクの連携規約 |
 | `docs/operations/publishing.md` | `publish: true` のノートだけをQuartzとGitHub Pagesで公開する運用仕様 |
+| `docs/operations/attachments.md` | 画像・スクリーンショットの保存先、貼り付け、リンク確認、公開時の注意 |
 
 ## .claude/
 

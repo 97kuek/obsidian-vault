@@ -32,6 +32,7 @@
 30_Resources/    ← 論文の読書メモ（PDF本体は置かない・Zotero等で管理）
 40_Archives/     ← 完了・不要なノート（削除せず保管）
 99_Templates/    ← AIエージェントが整形時に当てる「型」（人間は選ばない）
+attachments/     ← ノートに貼り付けた画像・スクリーンショット
 ```
 
 **分類に迷ったら「このノートはいつ使うか」で決める。**
@@ -139,11 +140,13 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 | 作業 | 場所 |
 |---|---|
 | CSSスニペット有効化 | 設定 → 外観 → CSSスニペット → `vault-custom` をオン |
+| 画像の保存先 | 設定 → ファイルとリンク → 新規添付ファイルの作成場所 → `attachments` |
 | git自動コミット間隔 | 設定 → Git → Auto commit interval（推奨30分） |
 | 週次・月次の自動生成 | 設定 → Periodic Notes（フォーマット・テンプレ・フォルダを指定） |
 | グラフのカラーグループ | グラフビュー → 表示 → グループ |
 
 > Periodic Notes の具体的なフォーマット文字列は `docs/standards/vault-rules.md` を参照。
+> 画像の貼り付け方とリンク確認は [`docs/operations/attachments.md`](docs/operations/attachments.md) を参照。
 
 ---
 
