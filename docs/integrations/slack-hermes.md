@@ -51,7 +51,7 @@ Hermesは投稿ごとに `tools/capture-slack-message.rb` を実行し、対象�
 
 - Hermes Gatewayはlaunchdでログイン時に自動起動し、Macが起きている間だけ動作する。
 - Slack Socket Mode停止中の投稿は、`tools/sync-slack-history.rb` がSlack履歴APIから差分回収する。
-- no-agent cron `2a1d85ddd0e0` が10分ごとに `~/.hermes/scripts/slack-history-sync.sh` を実行する。
+- no-agent cron `2a1d85ddd0e0` が10分ごとに `~/.hermes/scripts/slack-history-sync.sh` を実行する。このファイルは `tools/hermes-slack-sync.sh` へのsymlinkであり、正本はVault側だけを編集する。
 - 各回はSlackの最新タイムスタンプを比較するだけで、LLMを起動しない。
 - Macがスリープ中は実行せず、復帰後に期限を過ぎた同期ジョブを実行する。
 - 同期位置は `.agent-state/slack-history.json`、実行ログは `.agent-state/hermes-slack-sync.log` に保存し、Git管理しない。

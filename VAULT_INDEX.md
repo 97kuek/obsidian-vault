@@ -100,12 +100,9 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 | ファイル | 内容 |
 |---|---|
-| `tools/vault-review.rb` | Macで動くfrontmatter・H1・切れリンクの週次点検 |
-| `tools/vault-gc.rb` | Macで動く空ファイル・重複候補の月次棚卸し |
+| `tools/vault-review.rb` | frontmatter・H1・切れリンクの週次点検 |
+| `tools/vault-gc.rb` | 空ファイル・重複候補の月次棚卸し |
 | `tools/protect-obsidian.sh` | `.obsidian/` の許可外変更を検出する保護チェック |
-| `tools/vault-review.ps1` | Windows向けの週次点検（互換用） |
-| `tools/vault-gc.ps1` | Windows向けの月次棚卸し（互換用） |
-| `tools/protect-obsidian.ps1` | Windows向けの`.obsidian/`保護チェック（互換用） |
 | `tools/agent-lock.sh` | 複数AIエージェントの同時書き込みを防ぐローカル排他ロック |
 | `tools/collect-daily-tasks.rb` | 朝のタスク報告用に対象フォルダの未完了タスクをJSON抽出するツール |
 | `tools/capture-slack-message.rb` | SlackのInbox・Research投稿を重複・秘密情報・編集競合を検査して追記するツール |

@@ -52,7 +52,7 @@ Inbox が空なら「Inboxはクリーンです」と報告して終了する。
 5. `20_Areas/` へ移すノートは公開可能か確認し、課題解答・個人情報・秘密情報・未公開内容を含む場合は `publish: false` を付ける。
 6. 関連リンク、MOC、`VAULT_INDEX.md` またはリンク先の詳細索引を更新する。
 7. 対象ノートが参照する新規画像を確認し、`Pasted image ...` や `Screenshot ...` のままなら、内容が分かる名前への変更を整理案に含める。承認後はObsidianのリンク更新、または同等の参照更新とセットで改名する。
-8. `tools/vault-review.ps1 -Check Links` または同等の切れリンク確認を行う。
+8. `ruby tools/vault-review.rb` または同等の切れリンク確認を行う。
 
 ## サマリー
 

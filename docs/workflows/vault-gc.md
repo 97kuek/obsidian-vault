@@ -12,16 +12,10 @@ Vault の重い棚卸しを行う。月次から四半期を目安に、重複�
 
 ## 事前準備
 
-`VAULT_INDEX.md`、vault の命名規則、主要 MOC を読む。Macでは機械的な候補抽出にRuby版を使う。
+`VAULT_INDEX.md`、vault の命名規則、主要 MOC を読む。機械的な候補抽出にRuby版を使う。
 
 ```zsh
 ruby tools/vault-gc.rb
-```
-
-Windowsで互換版を使う場合はPowerShell版を実行する。
-
-```powershell
-.\tools\vault-gc.ps1
 ```
 
 スクリプトが出力するのは「分割候補」「陳腐化候補」「被リンクゼロ候補」「同タグ集中ペア（統合候補ヒント）」の4種類。統合候補の最終判断は内容を読んだうえで行う。

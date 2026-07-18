@@ -49,7 +49,7 @@ tools/agent-lock.sh release claude
 
 ## Hermesの自動化境界
 
-Hermesの実行モデルはClaude Sonnet（`claude-sonnet-5`）を用いる。モデルの設定はHermes側の設定ファイルで管理し、Vaultには保存しない。秘密情報もVaultへ保存しない。
+Hermesの実行モデルはChatGPTサブスクリプション経由のGPT（現在 `gpt-5.6-sol`）を用いる。Claude Sonnetへの切り替えは追加使用量の課金が必要なため見送った（2026-07-18判断）。モデルの設定はHermes側の設定ファイルで管理し、Vaultには保存しない。秘密情報もVaultへ保存しない。
 
 朝のタスク報告は `docs/workflows/daily-task-report.md` に従い、読み取り専用で実行する。大規模な移動・リネーム・MOC・索引更新はClaude Codeへ引き継ぐ。
 

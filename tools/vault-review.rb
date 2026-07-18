@@ -15,6 +15,14 @@ files.each do |path|
   names[relative.delete_suffix(".md").downcase] << relative
 end
 
+Dir.glob(File.join(ROOT, "**", "*")).each do |path|
+  next if File.directory?(path) || path.end_with?(".md")
+  relative = path.delete_prefix("#{ROOT}/")
+  next if relative.split("/").any? { |part| EXCLUDED.include?(part) }
+  names[File.basename(path).downcase] << relative
+  names[relative.downcase] << relative
+end
+
 issues = []
 files.each do |path|
   relative = path.delete_prefix("#{ROOT}/")
