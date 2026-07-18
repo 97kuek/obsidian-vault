@@ -26,7 +26,7 @@
 | `#hermes-log` | 自動処理の結果、失敗、稼働確認 | Vaultへ保存せず、Slackだけに要約を残す |
 | HermesとのDM | 朝のタスク報告、対話、承認 | 必要な場合だけVaultへ反映する |
 
-`#inbox` は単一の収集箱であり、自動分類済みノートの置き場ではない。投稿時に種別を選ばず、原文を保存した後で `docs/agent-commands/inbox.md` に従って整理する。
+`#inbox` は単一の収集箱であり、自動分類済みノートの置き場ではない。投稿時に種別を選ばず、原文を保存した後で `docs/workflows/inbox.md` に従って整理する。
 
 ## 自動保存形式
 
@@ -63,7 +63,7 @@ Hermesは投稿ごとに `tools/capture-slack-message.rb` を実行し、対象�
 `#inbox` 内の論文・資料投稿は、保存後に次の順序で扱う。
 
 1. URL、DOI、arXiv IDなどから論文、データセット、記事、未判定に分けた整理候補を提示する。
-2. ユーザー承認後に、論文は `docs/agent-commands/paper.md`、その他は `docs/agent-commands/inbox.md` に従って整理する。
+2. ユーザー承認後に、論文は `docs/workflows/paper.md`、その他は `docs/workflows/inbox.md` に従って整理する。
 3. PDF本体はVaultへ入れず、Zoteroなどで管理する。
 
 ## Hermesログ

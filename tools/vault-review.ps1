@@ -102,6 +102,19 @@ if ((Test-Selected "Structure")) {
   "## Structure"
   $issues = New-Object System.Collections.Generic.List[string]
 
+  $agentDocs = @(
+    Get-ChildItem -Path "docs" -Recurse -File -Filter "*.md" -ErrorAction SilentlyContinue
+    Get-ChildItem -Path ".claude/commands" -File -Filter "*.md" -ErrorAction SilentlyContinue
+    Get-Item -Path "AGENTS.md", "CLAUDE.md", "HERMES.md", "VAULT_INDEX.md" -ErrorAction SilentlyContinue
+  )
+  foreach ($file in $agentDocs) {
+    $lineCount = @(Get-Content -Encoding UTF8 -LiteralPath $file.FullName).Count
+    if ($lineCount -gt 200) {
+      $rel = Resolve-Path -Relative $file.FullName
+      $issues.Add("AGENT_DOC_TOO_LONG: $rel ($lineCount lines)")
+    }
+  }
+
   foreach ($file in Get-NoteFiles) {
     if ($file.Name -eq $IntroFile) { continue }
 

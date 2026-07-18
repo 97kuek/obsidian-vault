@@ -1,67 +1,34 @@
-## Obsidian Vault Guide
+## Claude Code Vault Guide
 
-Claude Code がこの vault で作業する際の入口である。Codex は `AGENTS.md` を入口にする。ドキュメントの案内図は `docs/README.md`、共通の詳細規約は `docs/standards/vault-rules.md`、共通コマンド手順は `docs/agent-commands/` にある。
+このファイルはClaude Code固有の入口である。全エージェント共通の規約は `docs/agents/README.md`、文書の案内図は `docs/README.md` にある。
 
----
+## 作業開始時
 
-## 最初に読む
+1. `docs/agents/README.md` を読む。
+2. `VAULT_INDEX.md` で対象ファイルを特定する。
+3. 配置・命名は `docs/standards/vault-structure.md`、本文・frontmatterは `docs/standards/note-format.md` を確認する。
+4. 定型作業は `docs/workflows/README.md` から該当手順を読む。
+5. `git status --short` を確認し、既存の未コミット変更を保護する。
+6. 編集する場合は `tools/agent-lock.sh acquire claude "作業内容"` でロックを取得する。
 
-1. `VAULT_INDEX.md` で目的のファイルを特定する。
-2. `docs/standards/vault-rules.md` で命名規則・frontmatter・MOC・タグ規約を確認する。
-3. `/inbox` などの作業では `docs/agent-commands/<command>.md` を読む。
-4. 編集前に `git status` を確認し、既存の未コミット変更は勝手に戻さない。
+## Claude Code固有の規約
 
----
+- `.claude/commands/*.md` は `docs/workflows/` にある共通手順への薄い入口とする。
+- MCPツールが使える場合も、最終的な配置・形式は `docs/standards/` の正本に従う。
+- 重い探索だけをサブエージェントへ任せ、通常の検索は `rg` またはMCP検索を使う。
+- `.claude/settings.json` のhookは `.obsidian/` 直下の編集保護に使う。
 
-## 大方針
-
-- 人間は `00_Inbox/` に殴り書きするだけでよい。
-- AI エージェントは分類・整形・移動・命名・タグ・リンク/MOC/索引更新を提案し、承認後に実行する。
-- ノートは、だ・である調、箇条書き中心、元情報を削らないことを既定とする。
-- 学習ノートは、大学授業を `20_Areas/大学授業/`、外部講座を `30_Resources/講座/`、一般化した知識を `20_Areas/` の該当分野へ置く。詳細は `docs/standards/vault-rules.md` の「学習ノートの分類」に従う。
-- 破壊的操作や複数ファイルの作成・削除・リネーム前には作業前コミットを提案する。
-- 公開は `20_Areas/` が既定、`00_Inbox/`・`10_Projects/`・`30_Resources/`・`40_Archives/` は非公開が既定である。例外は `docs/agent-commands/publish.md` に従う。
-- 読み取りだけの作業を除き、編集前に `docs/agents/coordination.md` に従って `tools/agent-lock.sh acquire claude "作業内容"` を実行する。ロックを取得できなければ編集しない。
-
----
-
-## よくある依頼
-
-| 依頼 | 読む手順 |
-|---|---|
-| `/inbox`、Inbox整理 | `docs/agent-commands/inbox.md` |
-| `/vault-review`、週次点検 | `docs/agent-commands/vault-review.md` |
-| `/vault-gc`、棚卸し | `docs/agent-commands/vault-gc.md` |
-| `/paper`、論文メモ | `docs/agent-commands/paper.md` |
-| `/permanent`、永続ノート | `docs/agent-commands/permanent.md` |
-| `/publish`、公開候補・公開追加・公開停止・公開監査 | `docs/agent-commands/publish.md` |
-| `/proofread`、指定ファイル・フォルダの文章添削 | `docs/agent-commands/proofread.md` |
-| 今日のタスク、朝のタスク報告、デイリーレポート | `docs/agent-commands/daily-task-report.md` |
-
----
-
-## Claude Code 固有メモ
-
-- `.claude/commands/*.md` は共通手順への薄い入口である。
-- `vault-explorer` サブエージェントは重い探索だけに使う。
-- MCP ツールが使える場合でも、最終的な編集規約は `docs/standards/vault-rules.md` に従う。
-- `.claude/settings.json` の hook は `.obsidian/` 直下編集を保護する。
-
----
-
-## ツール対応
+## 補助ツール
 
 | 用途 | 優先手段 |
 |---|---|
-| ファイル名・本文検索 | `rg` または MCP 検索 |
-| 切れリンク・命名・索引点検 | `tools/vault-review.ps1` |
-| 棚卸し候補抽出 | `tools/vault-gc.ps1` |
-| `.obsidian/` 保護確認 | `tools/protect-obsidian.ps1` |
+| ファイル名・本文検索 | `rg` またはMCP検索 |
+| 切れリンク・命名・索引点検 | `tools/vault-review.rb` |
+| 棚卸し候補抽出 | `tools/vault-gc.rb` |
+| `.obsidian/` 保護確認 | `tools/protect-obsidian.sh` |
 
----
+## 作業終了時
 
-## 更新ルール
-
-- ファイルを追加・削除・リネームしたら `VAULT_INDEX.md` を更新する。
-- ルートの運用ドキュメントを変えたら `README.md`、`AGENTS.md`、`CLAUDE.md`、`VAULT_INDEX.md` の整合を確認する。
-- センシティブ情報が必要になったら `99_Private/` を作り、`.gitignore` とこの入口に追記する。
+- 差分、リンク、対象文書の行数を確認する。
+- ファイルを追加・削除・リネームした場合は `VAULT_INDEX.md` またはリンク先の詳細索引を更新する。
+- `tools/agent-lock.sh release claude` でロックを解放する。

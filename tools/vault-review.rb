@@ -20,6 +20,9 @@ files.each do |path|
   relative = path.delete_prefix("#{ROOT}/")
   text = File.read(path, encoding: "UTF-8").gsub("\r\n", "\n")
   content_note = relative.match?(%r{\A(?:00_Inbox|10_Projects|20_Areas|30_Resources|40_Archives|99_Templates)/}) || relative == "Home.md" || relative == "VAULT_INDEX.md"
+  agent_document = relative.match?(%r{\A(?:docs/|\.claude/commands/)}) || %w[AGENTS.md CLAUDE.md HERMES.md VAULT_INDEX.md].include?(relative)
+  line_count = text.lines.count
+  issues << ["agent-doc-length", "#{relative}: #{line_count} lines"] if agent_document && line_count > 200
   issues << ["frontmatter", relative] if content_note && !text.start_with?("---\n")
 
   fence = false

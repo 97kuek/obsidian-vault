@@ -2,7 +2,7 @@
 
 研究・学習・開発の知識を管理する個人用ナレッジベース。**PARAメソッド**で構成する。
 
-> Claude Code は [`CLAUDE.md`](CLAUDE.md)、Codex は [`AGENTS.md`](AGENTS.md) を入口にする。ドキュメントの案内図は [`docs/README.md`](docs/README.md)、詳細規約は [`docs/standards/vault-rules.md`](docs/standards/vault-rules.md)。このREADMEは人間向けの概要。
+> Claude Code は [`CLAUDE.md`](CLAUDE.md)、Codex は [`AGENTS.md`](AGENTS.md) を入口にする。ドキュメントの案内図と詳細規約への導線は [`docs/README.md`](docs/README.md) に集約する。このREADMEは人間向けの概要。
 
 ---
 
@@ -64,13 +64,13 @@ attachments/     ← ノートに貼り付けた画像・スクリーンショ�
 | 週次／月次／日次 | `2026-W23_週次レビュー.md` / `2026-06_月次レビュー.md` / `2026-05-12.md` |
 
 > 迷ったら「半年後に開いたとき、タイトルに日付があってほしいか？」。記録なら Yes、概念なら No。
-> 日次・週次・月次は Periodic Notes プラグインがISO形式で自動生成する。詳細は `docs/standards/vault-rules.md`。
+> 日次・週次・月次は Periodic Notes プラグインがISO形式で自動生成する。詳細は `docs/standards/vault-structure.md`。
 
 ---
 
 ## メンテナンス依頼
 
-Claude Code ではスラッシュコマンド、Codex では同じ名前の自然言語依頼として半自動化する。共通手順は `docs/agent-commands/` に置く。**削除/移動/統合は承認後に実行**する。
+Claude Code ではスラッシュコマンド、Codex では同じ名前の自然言語依頼として半自動化する。共通手順は `docs/workflows/` に置く。**削除/移動/統合は承認後に実行**する。
 
 | 依頼 | 頻度 | 何をするか |
 |---|---|---|
@@ -145,7 +145,7 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 | 週次・月次の自動生成 | 設定 → Periodic Notes（フォーマット・テンプレ・フォルダを指定） |
 | グラフのカラーグループ | グラフビュー → 表示 → グループ |
 
-> Periodic Notes の具体的なフォーマット文字列は `docs/standards/vault-rules.md` を参照。
+> Periodic Notes の具体的なフォーマット文字列は `docs/standards/vault-structure.md` を参照。
 > 画像の貼り付け方とリンク確認は [`docs/operations/attachments.md`](docs/operations/attachments.md) を参照。
 
 ---
@@ -154,7 +154,7 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 
 Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agents/coordination.md` の役割分担と編集ロックに従う。読み取りだけならロック不要、ファイルを書き換える作業では `tools/agent-lock.sh` による排他ロックが必須である。
 
-毎朝のタスク報告では、未完了タスクへ `📅 YYYY-MM-DD` と必要に応じて `⏫`・`🔼`・`🔽` を付ける。Hermesは `docs/agent-commands/daily-task-report.md` に従い、読み取り専用でSlackへ報告する。
+毎朝のタスク報告では、未完了タスクへ `📅 YYYY-MM-DD` と必要に応じて `⏫`・`🔼`・`🔽` を付ける。Hermesは `docs/workflows/daily-task-report.md` に従い、読み取り専用でSlackへ報告する。
 
 個人用Slackでは `#inbox` をすべての未整理メモ・論文・URLの収集、`#hermes-log` を自動処理の要約ログに使う。保存形式、権限境界、Google Calendarとの連携は `docs/integrations/slack-hermes.md` に従う。
 

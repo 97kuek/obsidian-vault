@@ -2,7 +2,7 @@
 
 このvaultは、`20_Areas/` のノートを既定でQuartzの静的サイトへ変換し、GitHub Pagesへ公開する。Inbox・Projects・Resources・Archives・運用文書は既定で公開しない。
 
-AIエージェントへ候補選定・公開追加・公開停止・監査を依頼する場合は、`/publish` または同名の自然言語依頼を使い、`docs/agent-commands/publish.md` の手順に従う。
+AIエージェントへ候補選定・公開追加・公開停止・監査を依頼する場合は、`/publish` または同名の自然言語依頼を使い、`docs/workflows/publish.md` の手順に従う。
 
 ## 公開ルール
 

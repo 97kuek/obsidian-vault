@@ -64,7 +64,7 @@ Codexでスラッシュコマンドが使えない場合も、同名の自然言
 
 ## 公開追加の手順
 
-1. `VAULT_INDEX.md`、`docs/standards/vault-rules.md`、`docs/operations/publishing.md` を読む。
+1. `VAULT_INDEX.md`、`docs/standards/note-format.md`、`docs/operations/publishing.md` を読む。
 2. `git status --short` で既存変更を確認する。
 3. 対象ノートと、参照する画像・埋め込み・外部資料を読む。
 4. 次を検索する。
