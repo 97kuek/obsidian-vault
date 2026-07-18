@@ -19,7 +19,7 @@ Slackの `#inbox` から自動保存する未整理メモである。
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BHGM04GFK/p1784098182642329
 - 移行元: #research
-- 状態: 未整理
+- 状態: 整理済み → [[Transformer]] の出典に反映済みを確認
 
 ## 2026-07-15 19:59
 
@@ -31,7 +31,7 @@ Slackの `#inbox` から自動保存する未整理メモである。
 ・AZ→ 障害対策用の拠点
 
 
-- 状態: 未整理
+- 状態: 整理済み → [[クラウドの基礎用語]]（重複分）
 
 ## 2026-07-15 20:59
 
@@ -41,7 +41,7 @@ Self-refine は回答生成 → フィードバック生成 → 回答修正を�
 Best-of-N はプロンプティング手法ではなく、複数（N個）の出力を生成させて最良のものを選ぶ推論時のサンプリング／選択戦略。
 
 
-- 状態: 未整理
+- 状態: 整理済み → [[大規模言語モデル2026_02_推論とプロンプティング]]
 
 ## 2026-07-15 21:02
 
@@ -82,34 +82,7 @@ LLMのライフサイクルの中での位置づけ
 今回のテクニックはこの最後の推論に当たる。ポイントは、prompt engineering も self-consistency も Best-of-N もモデルの重みを触っていないこと。学習し直すコストをかけずに、使い方の工夫だけで性能を引き出そうとしているのが、これらの手法の共通した狙いだと理解しておくといい。
 
 
-- 状態: 未整理
-
-## 2026-07-15 15:20
-
-<!-- slack-id: e54373548450231a -->
-<@U0BGZ628KCP>さんがチャンネルに参加しました
-
-- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784096431064049
-- チャンネル: #inbox
-- 状態: 未整理
-
-## 2026-07-15 15:30
-
-<!-- slack-id: 1d12e83ad7222006 -->
-<@U0BHJ9R6YVA>さんがチャンネルに参加しました
-
-- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784097011875639
-- チャンネル: #inbox
-- 状態: 未整理
-
-## 2026-07-15 15:56
-
-<!-- slack-id: 714691bbde22578d -->
-テスト
-
-- Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784098617146259?thread_ts=1784098617.146259&cid=C0BGZCQMC5V
-- チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[大規模言語モデル2026_02_推論とプロンプティング]]
 
 ## 2026-07-15 19:05
 
@@ -141,7 +114,7 @@ LLMのライフサイクルの中での位置づけ
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784109955113509?thread_ts=1784109955.113509&cid=C0BGZCQMC5V
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[大規模言語モデル2026_02_推論とプロンプティング]]（反映済みを確認）
 
 ## 2026-07-15 19:58
 
@@ -154,7 +127,7 @@ LLMのライフサイクルの中での位置づけ
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784113126339859?thread_ts=1784113126.339859&cid=C0BGZCQMC5V
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[クラウドの基礎用語]]
 
 ## 2026-07-15 20:58
 
@@ -165,7 +138,7 @@ Best-of-N はプロンプティング手法ではなく、複数（N個）の出
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784116707838829?thread_ts=1784116707.838829&cid=C0BGZCQMC5V
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[大規模言語モデル2026_02_推論とプロンプティング]]
 
 ## 2026-07-15 21:01
 
@@ -182,4 +155,4 @@ decoding・prompting・self-consistency・Best-of-N・Self-refine は*すべて�
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784116898072429?thread_ts=1784116898.072429&cid=C0BGZCQMC5V
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[大規模言語モデル2026_02_推論とプロンプティング]]

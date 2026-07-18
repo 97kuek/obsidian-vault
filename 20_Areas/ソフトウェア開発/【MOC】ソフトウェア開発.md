@@ -53,6 +53,7 @@ mindmap
 - [[Supabase]] — Postgres中心のBaaS・Auth・RLS・PostgREST
 - [[Web認証・認可]] — 認証/認可・セッション/JWT・OAuth/OIDC
 - [[Webアプリケーションのレイヤードアーキテクチャ]] — 画面層・API層・UseCase層・Domain層・Infrastructure層
+- [[クラウドの基礎用語]] — IaaS/PaaS/SaaS・リージョン・AZ
 
 ## 関連MOC・上位MOC
 
