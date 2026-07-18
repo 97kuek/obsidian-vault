@@ -11,9 +11,9 @@
 
 ## 事前準備
 
-`VAULT_INDEX.md`、`CLAUDE.md` または `AGENTS.md`、`99_Templates/` の該当テンプレートを読む。
+`VAULT_INDEX.md`、`AGENTS.md`、`99_Templates/` の該当テンプレートを読む。
 
-Inbox の対象は `00_Inbox/` 直下の Markdown で、`はじめに.md` は除外する。Codex では通常のファイル一覧、Claude Code では利用可能な MCP/Bash で確認してよい。
+Inbox の対象は `00_Inbox/` 直下の Markdown で、`はじめに.md` は除外する。ファイル一覧は利用可能な MCP/Bash で確認してよい。
 
 Inbox が空なら「Inboxはクリーンです」と報告して終了する。
 

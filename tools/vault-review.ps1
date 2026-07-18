@@ -105,7 +105,7 @@ if ((Test-Selected "Structure")) {
   $agentDocs = @(
     Get-ChildItem -Path "docs" -Recurse -File -Filter "*.md" -ErrorAction SilentlyContinue
     Get-ChildItem -Path ".claude/commands" -File -Filter "*.md" -ErrorAction SilentlyContinue
-    Get-Item -Path "AGENTS.md", "CLAUDE.md", "HERMES.md", "VAULT_INDEX.md" -ErrorAction SilentlyContinue
+    Get-Item -Path "AGENTS.md", "CLAUDE.md", "VAULT_INDEX.md" -ErrorAction SilentlyContinue
   )
   foreach ($file in $agentDocs) {
     $lineCount = @(Get-Content -Encoding UTF8 -LiteralPath $file.FullName).Count

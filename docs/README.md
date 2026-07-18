@@ -1,6 +1,6 @@
 ## Documentation Index
 
-このディレクトリは、Vaultの運用ドキュメントを責務ごとに管理する場所である。人間向けの概要はルートの `README.md`、AIエージェント共通の入口は `agents/README.md` とする。
+このディレクトリは、Vaultの運用ドキュメントを責務ごとに管理する場所である。人間向けの概要はルートの `README.md`、AIエージェント共通の入口はルートの `AGENTS.md` とする。
 
 ## 正本
 
@@ -8,7 +8,7 @@
 |---|---|
 | フォルダ分類・配置・命名・タスク | `standards/vault-structure.md` |
 | 本文・frontmatter・テンプレート・MOC・タグ | `standards/note-format.md` |
-| エージェント共通の開始・終了手順 | `agents/README.md` |
+| エージェント共通の開始・終了手順 | `../AGENTS.md` |
 | エージェントの役割・編集ロック | `agents/coordination.md` |
 | 依頼単位の実行手順 | `workflows/README.md` |
 | Slack・Hermes・Calendar連携 | `integrations/slack-hermes.md` |
@@ -24,7 +24,7 @@
 docs/
 ├── README.md       # この案内図
 ├── standards/      # Vault全体の規約
-├── agents/         # AIエージェント共通規約と協調
+├── agents/         # AIエージェントの協調規約
 ├── workflows/      # 依頼単位の実行手順
 ├── integrations/   # 外部サービス連携
 ├── operations/     # 公開・保守などの運用仕様
@@ -36,7 +36,7 @@ docs/
 - ディレクトリ名は役割を表す複数形の英単語とする。
 - 規約・仕様は内容を表す英語の名詞句をkebab-caseで命名する。
 - ワークフローは呼び出しIDと同じkebab-caseで命名する。
-- ルートの `AGENTS.md`、`CLAUDE.md`、`HERMES.md` は製品固有の固定名として扱う。
+- ルートの `AGENTS.md` は全エージェント共通の入口、`CLAUDE.md` はClaude Code固有の固定名として扱う。
 - AIエージェント向けMarkdownは1ファイル200行以下とする。
 
 ## 更新ルール

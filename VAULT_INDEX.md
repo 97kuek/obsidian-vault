@@ -74,8 +74,7 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 | `docs/README.md` | 運用ドキュメントの案内図、正本、配置基準、更新規則 |
 | `docs/standards/vault-structure.md` | Vaultの分類・配置・命名・タスク管理規約 |
 | `docs/standards/note-format.md` | 本文・frontmatter・テンプレート・MOC・タグ規約 |
-| `docs/agents/README.md` | 全AIエージェント共通の作業入口と文書命名規則 |
-| `docs/agents/coordination.md` | Codex・Claude Code・Hermes Agentの役割分担、編集ロック、引き継ぎ規約 |
+| `docs/agents/coordination.md` | Claude Code・Hermes Agentの役割分担、編集ロック、Hermes自動化境界、引き継ぎ規約 |
 | `docs/workflows/README.md` | 依頼名から共通手順を選ぶワークフロー索引 |
 | `docs/workflows/inbox.md` | Inbox整理の共通手順 |
 | `docs/workflows/vault-review.md` | Vault週次点検の共通手順 |
@@ -141,9 +140,8 @@ AIエージェントがファイル探索なしに目的のファイルを特定
 
 | ファイル | 内容 |
 |---|---|
-| `AGENTS.md` | Codex固有の作業入口。共通規約は `docs/agents/README.md` を参照 |
-| `HERMES.md` | Hermes Agent用作業入口。役割分担と編集ロックへの案内 |
+| `AGENTS.md` | 全AIエージェント共通の作業入口。開始・終了手順、共通規約、文書命名規則 |
 | `Home.md` | 主要MOC・Slack収集・未完了タスクへ移動する軽量ダッシュボード |
-| `CLAUDE.md` | Claude Code固有の作業入口。共通規約と共通手順への案内 |
+| `CLAUDE.md` | Claude Code固有の差分入口。共通規約は `AGENTS.md` を参照 |
 | `VAULT_INDEX.md` | このファイル（ファイル索引） |
 | `README.md` | Vault使い方ドキュメント |

@@ -2,7 +2,7 @@
 
 研究・学習・開発の知識を管理する個人用ナレッジベース。**PARAメソッド**で構成する。
 
-> Claude Code は [`CLAUDE.md`](CLAUDE.md)、Codex は [`AGENTS.md`](AGENTS.md) を入口にする。ドキュメントの案内図と詳細規約への導線は [`docs/README.md`](docs/README.md) に集約する。このREADMEは人間向けの概要。
+> AIエージェント共通の入口は [`AGENTS.md`](AGENTS.md)。Claude Code は加えて [`CLAUDE.md`](CLAUDE.md) を固有差分として読む。ドキュメントの案内図と詳細規約への導線は [`docs/README.md`](docs/README.md) に集約する。このREADMEは人間向けの概要。
 
 ---
 
@@ -10,7 +10,7 @@
 
 **書くときは何も考えず `00_Inbox/` に殴り書きするだけ。** 種別・置き場所・テンプレ・タグ・日付は決めない。
 
-整理（分類・整形・移動・命名・タグ・リンク）は、あとで Claude Code や Codex に任せる。
+整理（分類・整形・移動・命名・タグ・リンク）は、あとで Claude Code に任せる。
 **悩む前に手が動く**のが正しい状態。
 
 ```
@@ -70,7 +70,7 @@ attachments/     ← ノートに貼り付けた画像・スクリーンショ�
 
 ## メンテナンス依頼
 
-Claude Code ではスラッシュコマンド、Codex では同じ名前の自然言語依頼として半自動化する。共通手順は `docs/workflows/` に置く。**削除/移動/統合は承認後に実行**する。
+Claude Code ではスラッシュコマンド（または同じ意味の自然言語依頼）として半自動化する。共通手順は `docs/workflows/` に置く。**削除/移動/統合は承認後に実行**する。
 
 | 依頼 | 頻度 | 何をするか |
 |---|---|---|
@@ -152,7 +152,7 @@ Claude Code ではスラッシュコマンド、Codex では同じ名前の自�
 
 ## AI エージェントとの連携
 
-Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agents/coordination.md` の役割分担と編集ロックに従う。読み取りだけならロック不要、ファイルを書き換える作業では `tools/agent-lock.sh` による排他ロックが必須である。
+Claude CodeとHermes Agentを併用する場合は、`docs/agents/coordination.md` の役割分担と編集ロックに従う。読み取りだけならロック不要、ファイルを書き換える作業では `tools/agent-lock.sh` による排他ロックが必須である。
 
 毎朝のタスク報告では、未完了タスクへ `📅 YYYY-MM-DD` と必要に応じて `⏫`・`🔼`・`🔽` を付ける。Hermesは `docs/workflows/daily-task-report.md` に従い、読み取り専用でSlackへ報告する。
 
@@ -161,8 +161,6 @@ Codex、Claude Code、Hermes Agentを併用する場合は、`docs/agents/coordi
 ```zsh
 cd /Users/keitaro/Documents/obsidian-vault
 claude
-# または
-codex
 ```
 
 **AIエージェントに頼めること（承認するだけ）：** ノート作成・編集・リネーム／Vault検索／MOC整理・リンク追加／実験ログ整形／論文・永続ノートの作成補助。

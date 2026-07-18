@@ -1,6 +1,6 @@
 ## Vault Structure
 
-このファイルは、Obsidian vault の分類、配置、命名、タスク管理に関する正本である。ノート本文の形式は `note-format.md`、エージェントの作業規約は `../agents/README.md` を参照する。
+このファイルは、Obsidian vault の分類、配置、命名、タスク管理に関する正本である。ノート本文の形式は `note-format.md`、エージェントの作業規約はルートの `AGENTS.md` を参照する。
 
 ## 大方針
 

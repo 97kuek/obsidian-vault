@@ -1,14 +1,13 @@
 ## AIエージェント協調運用
 
-Codex、Claude Code、Hermes Agentが同じVaultを競合せずに扱うための共通規約である。
+Claude CodeとHermes Agentが同じVaultを競合せずに扱うための共通規約である。両者とも共通入口はルートの `AGENTS.md` とする。
 
 ## 役割分担
 
 | エージェント | 主担当 | 既定では行わないこと |
 |---|---|---|
 | Hermes Agent | 定期監視、通知、情報収集、Inboxやレビューの候補作成 | 自動実行からの編集・移動・削除 |
-| Codex | 複数ファイルの整理、実装、移動、リンク・MOC・索引更新、検証 | 常駐監視・無承認の外部操作 |
-| Claude Code | 対話的な日常編集、既存コマンド手順によるInbox整理・添削 | 他エージェントが編集中の同時書き込み |
+| Claude Code | 対話的な日常編集、Inbox整理・添削、複数ファイルの整理・移動、リンク・MOC・索引更新、検証 | 常駐監視、他エージェントが編集中の同時書き込み |
 
 役割は優先担当であり、ユーザーの明示指示があれば別のエージェントも実行できる。ただし編集ロックは必須である。
 
@@ -21,7 +20,6 @@ Codex、Claude Code、Hermes Agentが同じVaultを競合せずに扱うため�
 
 ```zsh
 # 取得
-tools/agent-lock.sh acquire codex "大学授業の整理"
 tools/agent-lock.sh acquire claude "Inbox添削"
 tools/agent-lock.sh acquire hermes "承認済みノート更新"
 
@@ -29,10 +27,10 @@ tools/agent-lock.sh acquire hermes "承認済みノート更新"
 tools/agent-lock.sh status
 
 # 解放
-tools/agent-lock.sh release codex
+tools/agent-lock.sh release claude
 ```
 
-- 取得に失敗したエージェントは編集を開始しない。
+- 取得に失敗したエージェントは編集を開始せず、現在の所有者と作業内容をユーザーへ報告する。
 - ロック所有者と別名義では解放しない。
 - エージェントが異常終了してロックが残った場合は、ユーザーが作業状況と `git status --short` を確認してから `.agent-lock/` を削除する。
 - ロック取得前から存在する未コミット変更は、別作業またはユーザーの変更として保護する。
@@ -50,6 +48,10 @@ tools/agent-lock.sh release codex
 次のエージェントは `git status --short` と差分を確認してから、新しいロックを取得する。
 
 ## Hermesの自動化境界
+
+Hermesの実行モデルはClaude Sonnet（`claude-sonnet-5`）を用いる。モデルの設定はHermes側の設定ファイルで管理し、Vaultには保存しない。秘密情報もVaultへ保存しない。
+
+朝のタスク報告は `docs/workflows/daily-task-report.md` に従い、読み取り専用で実行する。大規模な移動・リネーム・MOC・索引更新はClaude Codeへ引き継ぐ。
 
 Hermesのcronやメッセージ連携では、次を自動実行してよい。
 
@@ -70,5 +72,5 @@ Hermesのcronやメッセージ連携では、次を自動実行してよい。
 
 1. 進行中の編集ロック所有者が作業を完了または安全に中断する。
 2. ユーザーの最新の明示指示を優先する。
-3. 自動実行中のHermesは停止し、対話中のCodexまたはClaude Codeへ譲る。
+3. 自動実行中のHermesは停止し、対話中のClaude Codeへ譲る。
 4. 判断できない場合は読み取りだけに留め、ユーザーへ確認する。

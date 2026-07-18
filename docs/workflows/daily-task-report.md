@@ -22,7 +22,7 @@
 - `30_Resources/`
 - `40_Archives/`
 - `99_Templates/`
-- `docs/`、`README.md`、`AGENTS.md`、`CLAUDE.md`、`HERMES.md`
+- `docs/`、`README.md`、`AGENTS.md`、`CLAUDE.md`
 - コードブロック内のチェックボックス
 - 本文が空の `- [ ]`
 - 明らかな記法例・サンプル
