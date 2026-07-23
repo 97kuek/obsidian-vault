@@ -14,3 +14,19 @@
 .nav-folder:has(> .nav-folder-title[data-path="tools"]) {
   display: none;
 }
+
+/*
+  ノート本文の見出し階層を、下線の太さと色で見分けやすくする。
+  閲覧モードとライブプレビューの両方に適用する。
+*/
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid var(--interactive-accent);
+}
+
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3 {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
