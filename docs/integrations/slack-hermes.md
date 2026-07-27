@@ -7,7 +7,7 @@
 | 機能 | 状態 | 備考 |
 |---|---|---|
 | Slack接続 | 設定済み | Hermes Gatewayをlaunchdで常駐させる |
-| `#inbox` 自動収集 | 稼働中 | メモ・論文・URLを一括で受け、10分ごとの差分同期でMac停止中の投稿も回収する |
+| `#inbox` 自動収集 | 稼働中 | メモ・論文・URLを一括で受け、10分ごとのLLM不使用の差分同期で停止中・利用上限中の投稿も回収する |
 | 旧 `#research` | 廃止 | Hermesの許可対象・差分同期・専用プロンプト・arXivスキルから除外済み。Slack画面でのアーカイブのみ手動 |
 | `#hermes-log` | 稼働中 | 毎朝9:10にGateway・cron・保留キューの要約を配信する |
 | Google Calendar | 読み取り専用で認証済み | `calendar.readonly` のみを許可する |
@@ -16,7 +16,7 @@
 | 週次タスク確認 | 稼働中 | cron ID `63e1b74ad673`。毎週日曜18:00にSlack DMへ主要3件の候補を配信する |
 | Slack履歴差分同期 | 稼働中 | no-agent cron ID `2a1d85ddd0e0`。10分間隔、LLM不使用、出力はローカルのみ |
 
-状態は2026-07-16時点である。外部サービス側のチャンネル参加、権限失効、トークン失効はVaultの文書だけでは判定せず、実際の接続テストで確認する。
+状態は2026-07-27時点である。外部サービス側のチャンネル参加、権限失効、トークン失効はVaultの文書だけでは判定せず、実際の接続テストで確認する。
 
 ## チャンネルの役割
 
@@ -51,11 +51,13 @@ Hermesは投稿ごとに `tools/capture-slack-message.rb` を実行し、対象�
 
 - Hermes Gatewayはlaunchdでログイン時に自動起動し、Macが起きている間だけ動作する。
 - Slack Socket Mode停止中の投稿は、`tools/sync-slack-history.rb` がSlack履歴APIから差分回収する。
-- no-agent cron `2a1d85ddd0e0` が10分ごとに `~/.hermes/scripts/slack-history-sync.sh` を実行する。このファイルは `tools/hermes-slack-sync.sh` へのsymlinkであり、正本はVault側だけを編集する。
+- no-agent cron `2a1d85ddd0e0` が10分ごとに `~/.hermes/scripts/slack-history-sync.sh` を実行する。LLMを起動しないため、ChatGPT/Codexの利用上限中も実行できる。
+- Hermesはscriptsディレクトリ外へ解決されるsymlinkを拒否するため、`~/.hermes/scripts/slack-history-sync.sh` は `tools/hermes-slack-sync.sh` の通常ファイルのコピーとする。正本を変更したらコピーを更新する。
 - 各回はSlackの最新タイムスタンプを比較するだけで、LLMを起動しない。
 - Macがスリープ中は実行せず、復帰後に期限を過ぎた同期ジョブを実行する。
 - 同期位置は `.agent-state/slack-history.json`、実行ログは `.agent-state/hermes-slack-sync.log` に保存し、Git管理しない。
-- 投稿はSlackメッセージIDで重複排除し、ロック競合時は `.agent-queue/` へ退避して次回処理する。
+- 投稿はSlackメッセージIDで重複排除し、ロック競合時は `.agent-queue/` へ退避して次回処理する。保留が残る間はcronを成功扱いにしない。
+- Slack API・ネットワーク・書き込みの失敗時は、成功した最後の投稿より先へ同期位置を進めない。cronを失敗として記録し、次回実行で同じ投稿から再試行する。
 - 初回だけ直近7日を走査し、その後は最後に処理した投稿以降だけを取得する。
 
 ## リサーチ整理

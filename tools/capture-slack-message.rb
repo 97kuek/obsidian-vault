@@ -81,10 +81,16 @@ def queue(payload, reason)
 end
 
 def flush_queue
-  return puts("QUEUE_EMPTY") unless File.exist?(QUEUE)
+  unless File.exist?(QUEUE)
+    puts "QUEUE_EMPTY"
+    return true
+  end
 
   ok, reason = acquire_lock
-  return warn("FLUSH_DEFERRED: #{reason.lines.first.to_s.strip}") unless ok
+  unless ok
+    warn "FLUSH_DEFERRED: #{reason.lines.first.to_s.strip}"
+    return false
+  end
 
   begin
     lines = File.readlines(QUEUE, chomp: true, encoding: "UTF-8")
@@ -105,14 +111,14 @@ def flush_queue
       File.write(QUEUE, failed.join("\n") + "\n", mode: "w", encoding: "UTF-8")
     end
     puts "QUEUE_FLUSHED: #{processed}"
+    failed.empty?
   ensure
     release_lock
   end
 end
 
 if ARGV.first == "flush"
-  flush_queue
-  exit
+  exit(flush_queue ? 0 : 4)
 end
 
 options = {}
