@@ -156,3 +156,20 @@ decoding・prompting・self-consistency・Best-of-N・Self-refine は*すべて�
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784116898072429?thread_ts=1784116898.072429&cid=C0BGZCQMC5V
 - チャンネル: #inbox
 - 状態: 整理済み → [[大規模言語モデル2026_02_推論とプロンプティング]]
+
+## 2026-07-27 16:31
+
+<!-- slack-id: a44fa113a38175bc -->
+*Transformer*
+• 学習時には各トークン位置の損失を並列計算できるが、生成時は並列ではなく前までのトークンを使って次のトークンを1つずつ生成する
+• 一般的なTransformerではFeed Forward層が多くのパラメータを占める
+*Attention*
+• Attention score行列は、一般に対称行列にならない
+Transformer
+• 学習時には各トークン位置の損失を並列計算できるが、生成時は並列ではなく前までのトークンを使って次のトークンを1つずつ生成する
+• 一般的なTransformerではFeed Forward層が多くのパラメータを占める
+Attention
+• Attention score行列は、一般に対称行列にならない
+
+
+- 状態: 未整理
