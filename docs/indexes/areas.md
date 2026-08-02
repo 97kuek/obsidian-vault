@@ -15,7 +15,7 @@
 | `ソフトウェア開発/【MOC】React・Next.js.md` | React/Next.js関連ノートのMOC |
 | `ソフトウェア開発/React基礎.md` | コンポーネント、JSX、props、state、useEffectなどReactの基本 |
 | `ソフトウェア開発/Next.js App Router.md` | App Router、Server/Client Components、データ取得、Server Actions |
-| `ソフトウェア開発/API.md` | Web API・REST API・リクエスト/レスポンス・ステータスコード・Next.js API Route |
+| `ソフトウェア開発/API.md` | Web API・REST API・リクエスト/レスポンス・ステータスコード・Next.js API Route・REST/gRPC/GraphQL比較 |
 | `ソフトウェア開発/【MOC】データベース.md` | データベース基礎6単元のMOC |
 | `ソフトウェア開発/データベース/データベース基礎_01_DB・RDBの基本.md` | DB・DBMS・RDB・主キー・外部キーの基礎 |
 | `ソフトウェア開発/データベース/データベース基礎_02_SQL・JOIN・制約.md` | SQLの基本操作・JOIN・制約 |
@@ -36,6 +36,7 @@
 | `人工知能/機械学習/クラスタリング.md` | K-means・階層的クラスタリング |
 | `人工知能/機械学習/学習理論とSVM.md` | PAC学習・VC次元・マージン最大化・カーネルトリック |
 | `人工知能/機械学習/Transformer.md` | Self-Attentionの基礎とSparse Attentionによる長系列化 |
+| `人工知能/検索拡張生成（RAG）.md` | Document・SQL・Graph RAG、精度評価・改善、LLMOps、RIG |
 | `人工知能/強化学習/強化学習.md` | MDP・価値と方策・TD学習・Q学習 |
 | `人工知能/強化学習/DQN.md` | Value-based強化学習、SARSA、Q学習、Replay Buffer、Target Network |
 | `人工知能/強化学習/方策勾配法とActor-Critic.md` | REINFORCE、重点サンプリング、アドバンテージ、A3C |

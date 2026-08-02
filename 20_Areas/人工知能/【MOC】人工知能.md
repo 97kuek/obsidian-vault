@@ -69,7 +69,13 @@ mindmap
 
 ### 深層学習
 - [[Transformer]] — Self-Attention、基本構造、Sparse Attentionによる長系列化
+- [[検索拡張生成（RAG）]] — Document・SQL・Graph RAG、評価・改善、LLMOps、RIG
 - [[【MOC】B4勉強会]]
+
+### 関連講座
+
+- [[大規模言語モデル2026]] — LLMの基礎、推論、事前学習を扱う外部講座
+- [[深層生成モデル]] — 確率モデル、最尤推定、潜在変数モデルを扱う外部講座
 
 ## 関連MOC・上位MOC
 

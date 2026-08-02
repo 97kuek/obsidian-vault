@@ -1,3 +1,16 @@
+---
+date: 2026-07-24
+tags:
+  - 人工知能
+  - rag
+  - llmops
+publish: false
+---
+## 検索拡張生成（RAG）
+
+- 上位MOC: [[【MOC】人工知能]]
+- 関連: [[大規模言語モデル2026_02_推論とプロンプティング]]
+
 ## 前提となる知識
 
 - In-Context Learning...文脈内学習、プロンプトでなんとかする
@@ -38,7 +51,7 @@
 
 - ドキュメントに対してベクトル検索をして、文章を生成するRAG
 
-![[Pasted image 20260724185819.png]]
+![[rag-document-retrieval-flow.png]]
 
 ### SQL RAG
 
@@ -46,12 +59,12 @@
 - 非常に強力な手法
 - Text-to-SQLという手法で呼ばれることもある
 
-![[Pasted image 20260724185947.png]]
+![[rag-text-to-sql-flow.png]]
 
 - Code Interpreterとも相性が非常にいい
 - SQLクエリによって、取得してきたテーブル情報に対して、データ分析をするためのPythonコードをLLMに生成してもらう手法
 
-![[Pasted image 20260724190119.png]]
+![[rag-code-interpreter-flow.png]]
 
 ### Graph RAG
 
@@ -59,9 +72,9 @@
 - CypherとはGraph DBにおいてデータを検索するためのクエリ言語になる
 - Text-to-Cypherという手法で呼ばれることもある
 
-![[Pasted image 20260724190322.png]]
+![[rag-graph-database-flow.png]]
 
-![[Pasted image 20260724190343.png]]
+![[rag-text-to-cypher-flow.png]]
 
 ## RAGの精度評価アプローチ
 
@@ -100,7 +113,7 @@
 - MLOpsの考え方を拡張した考え方
 - ユーザーが入力するプロンプトや生成文章などをモニタリングする
 
-![[Pasted image 20260724205514.png]]
+![[llmops-lifecycle.png]]
 
 #### LLMOpsのメリット
 
@@ -154,7 +167,7 @@
 2. 分割されたデータの塊に対して、それぞれタスク処理を実行する
 3. 処理結果を統合して、もう一度タスク処理を実行する
 
-![[Pasted image 20260725163656.png]]
+![[map-reduce-document-processing.png]]
 
 ### Refine
 
@@ -168,7 +181,7 @@
 
 - 時系列に歴史的な出来事を記した文章をようやくする場合は適している
 
-![[Pasted image 20260725163923.png]]
+![[refine-document-processing.png]]
 
 ## RIGの概論
 
@@ -183,7 +196,7 @@
 
 - `Has the use of renewables increased in the world?（再利用エネルギーの利用は、世界で向上しましたか？）`というプロンプトを考える
 
-![[Pasted image 20260725162628.png]]
+![[rag-data-commons-flow.png]]
 
 - クエリに対して、クエリ変換を行い、Data Commons のDB（グラフDB）から必要なデータを取得するための複数のクエリを生成する
 - この工程では、通常のLLMではなくクエリ変換に特化したFine-tunedモデルを使用する
@@ -192,7 +205,7 @@
 
 ### RIGを使用したRAGの処理フロー
 
-![[Pasted image 20260725163027.png]]
+![[rig-data-commons-flow.png]]
 
 - 最初のFine-tunedモデルにおいて、クエリ変換は行わず回答結果を生成する
 - 回答文の中で、エビデンスを検索した方が良い箇所に、検索クエリが生成されている

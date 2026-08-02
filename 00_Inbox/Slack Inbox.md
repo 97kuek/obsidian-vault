@@ -172,7 +172,7 @@ Attention
 • Attention score行列は、一般に対称行列にならない
 
 
-- 状態: 未整理
+- 状態: 整理済み → [[大規模言語モデル2026_03_事前学習]]、[[Transformer]]
 
 ## 2026-07-19 20:51
 
@@ -218,7 +218,7 @@ Attention
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784461890708279
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[API]]
 
 ## 2026-07-22 13:51
 
@@ -277,7 +277,7 @@ forkでOS内に生成されるデータ構造
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1784695906220119?thread_ts=1784695906.220119&cid=C0BGZCQMC5V
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[オペレーティングシステムA]]（既存の関連章で反映済みを確認）
 
 ## 2026-07-27 16:31
 
@@ -290,7 +290,7 @@ forkでOS内に生成されるデータ構造
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1785137487637619?thread_ts=1785137487.637619&cid=C0BGZCQMC5V
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[大規模言語モデル2026_03_事前学習]]、[[Transformer]]（重複分）
 
 ## 2026-08-02 13:21
 
@@ -304,7 +304,7 @@ forkでOS内に生成されるデータ構造
 • 潜在変数を導入すると、複数のクラスタや多峰性を持つ複雑なデータ分布を表現しやすくなる
 
 
-- 状態: 未整理
+- 状態: 整理済み → [[深層生成モデル_01_生成モデルの基礎]]（重複分）
 
 ## 2026-08-02 13:20
 
@@ -319,4 +319,4 @@ forkでOS内に生成されるデータ構造
 
 - Slack: https://keitaropersonal.slack.com/archives/C0BGZCQMC5V/p1785644439130189?thread_ts=1785644439.130189&cid=C0BGZCQMC5V
 - チャンネル: #inbox
-- 状態: 未整理
+- 状態: 整理済み → [[深層生成モデル_01_生成モデルの基礎]]
